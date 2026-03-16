@@ -212,6 +212,18 @@
   font-size: 0.95rem;
 }
 
+.exp-desc-list {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.exp-desc-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
 .language-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -244,4 +256,262 @@
     position: relative;
     top: 0;
   }
+}
+
+/* Download Button Styling */
+.download-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+  filter: brightness(1.1);
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+    size: A4;
+  }
+
+  .app-container {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 240px 1fr;
+    max-width: none;
+    animation: none !important;
+  }
+
+  .sidebar {
+    position: relative;
+    top: 0;
+    padding: 20px;
+    background: #f8fafc !important;
+    /* Very light gray for print */
+  }
+
+  .download-btn {
+    display: none;
+  }
+
+  .main-content {
+    gap: 20px;
+  }
+
+  .content-card {
+    padding: 20px;
+  }
+
+  .name {
+    -webkit-text-fill-color: var(--primary-color) !important;
+    background: none !important;
+    color: var(--primary-color) !important;
+    font-size: 1.8rem;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .experience-item {
+    page-break-inside: avoid;
+  }
+}
+
+/* PDF Mode Styles - Professional Black & White Redesign */
+.app-container.pdf-mode {
+  background: white !important;
+  color: #1a1a1a !important;
+  margin: 0 !important;
+  padding: 10mm !important;
+  display: block !important;
+  /* Block for float flow */
+  max-width: none !important;
+  width: 100% !important;
+  animation: none !important;
+  font-family: 'Outfit', sans-serif !important;
+}
+
+.pdf-mode * {
+  color: #1a1a1a !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: #e5e7eb !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: initial !important;
+}
+
+/* Clearfix for the container */
+.app-container.pdf-mode::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Sidebar as a floating element for better page flow */
+.pdf-mode .sidebar {
+  float: left !important;
+  width: 250px !important;
+  margin-right: 40px !important;
+  margin-bottom: 20px !important;
+  padding: 0 !important;
+  border: none !important;
+  border-right: 1px solid #eee !important;
+  padding-right: 20px !important;
+  position: static !important;
+}
+
+.pdf-mode .profile-section {
+  text-align: center !important;
+  margin-bottom: 30px !important;
+}
+
+.pdf-mode .profile-img-container {
+  width: 120px !important;
+  height: 120px !important;
+  margin: 0 auto 15px !important;
+  border: 1px solid #000 !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+.pdf-mode .profile-img {
+  width: 100% !important;
+  height: 100% !important;
+  filter: grayscale(100%) !important;
+  object-fit: cover !important;
+}
+
+.pdf-mode .name {
+  font-size: 1.6rem !important;
+  line-height: 1.2 !important;
+  margin-bottom: 5px !important;
+  text-align: center !important;
+}
+
+.pdf-mode .title {
+  font-size: 1rem !important;
+  color: #666 !important;
+  text-align: center !important;
+}
+
+.pdf-mode .contact-info {
+  margin-bottom: 30px !important;
+}
+
+.pdf-mode .contact-item {
+  font-size: 0.8rem !important;
+  margin-bottom: 8px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.pdf-mode .sidebar-section {
+  margin-bottom: 25px !important;
+  break-inside: avoid !important;
+}
+
+.pdf-mode .sidebar-section-title {
+  font-size: 1rem !important;
+  border-bottom: 1px solid #000 !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase !important;
+}
+
+/* Main Content Flow */
+.pdf-mode .main-content {
+  display: block !important;
+  /* Allow it to flow around the floated sidebar */
+  overflow: visible !important;
+}
+
+.pdf-mode .content-card {
+  margin-bottom: 25px !important;
+  border: none !important;
+  padding: 0 !important;
+  break-inside: avoid !important;
+}
+
+.pdf-mode .section-title {
+  font-size: 1.3rem !important;
+  margin-bottom: 15px !important;
+  border-bottom: 2px solid #1a1a1a !important;
+  padding-bottom: 5px !important;
+  text-transform: uppercase !important;
+}
+
+.pdf-mode .section-title::after {
+  display: none !important;
+}
+
+.pdf-mode .experience-item {
+  margin-bottom: 20px !important;
+  padding-left: 20px !important;
+  border-left: 1px solid #ccc !important;
+  break-inside: avoid !important;
+}
+
+.pdf-mode .experience-item::before {
+  left: -4px !important;
+  width: 7px !important;
+  height: 7px !important;
+  background: #000 !important;
+}
+
+.pdf-mode .duration {
+  font-size: 0.8rem !important;
+  font-weight: bold !important;
+  color: #444 !important;
+}
+
+.pdf-mode .role {
+  font-style: italic !important;
+  margin-bottom: 5px !important;
+}
+
+.pdf-mode .exp-desc {
+  font-size: 0.9rem !important;
+  line-height: 1.4 !important;
+}
+
+.pdf-mode .skill-tag {
+  border: 1px solid #999 !important;
+  padding: 2px 6px !important;
+  font-size: 0.75rem !important;
+  margin: 2px !important;
+  border-radius: 2px !important;
+}
+
+.pdf-mode .download-btn {
+  display: none !important;
+}
+
+.pdf-mode svg {
+  fill: #000 !important;
+}
+
+/* Special rule to ensure clear separation if sidebar is very long */
+.pdf-mode .main-content>section {
+  clear: none !important;
+}
+
+/* Page Break Utility */
+.pdf-mode .page-break {
+  page-break-before: always !important;
 }

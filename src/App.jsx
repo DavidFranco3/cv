@@ -1,6 +1,19 @@
+import { buildPdfHtml } from './utils/pdfTemplate'
+import { generatePdf } from './utils/pdfGenerator'
 import './App.css'
 
 function App() {
+
+  const handleDownload = async () => {
+    const pdfData = {
+      ...data,
+      avatarUrl
+    };
+
+    const htmlString = buildPdfHtml(pdfData);
+    await generatePdf(htmlString, `CV_${data.name.replace(/\s+/g, '_')}.pdf`);
+  };
+
   // Using a placeholder avatar since we don't have the original image file
   const avatarUrl = 'https://api.dicebear.com/7.x/avataaars/svg?seed=JoseDavid';
 
@@ -18,7 +31,7 @@ function App() {
     },
     objective: "Ingeniero en Informática con sólida experiencia como Desarrollador Full Stack. Especializado en la creación de aplicaciones web escalables y soluciones móviles robustas, integrando metodologías de desarrollo asistido por IA (AI-Assisted Development) para optimizar la productividad y garantizar código de alta calidad. Apasionado por la arquitectura de software y la implementación de tecnologías modernas.",
     skills: {
-      backend: ['Express.js', 'Laravel', 'SpringBoot', 'PHP', 'Java', 'Node.js'],
+      backend: ['Express.js', 'Laravel', 'SpringBoot', 'PHP', 'Java', 'Node.js', 'Python (Básico)'],
       frontend: ['React', 'JavaScript (ES6+)', 'HTML5', 'CSS3 / Sass', 'Bootstrap 5'],
       mobile: ['Flutter', 'Dart', 'Kotlin'],
       databases: ['MySQL', 'MongoDB'],
@@ -29,7 +42,14 @@ function App() {
         company: "Isotech",
         role: "Desarrollador Full Stack",
         duration: "2022 - Actualidad",
-        description: "Liderazgo y desarrollo de aplicaciones integrales utilizando Express, Laravel y SpringBoot para el backend. Implementación de interfaces dinámicas y responsivas con React. Desarrollo de aplicaciones móviles multiplataforma con Flutter. Gestión de datos escalables utilizando MongoDB y arquitecturas relacionales con MySQL."
+        description: [
+          "Liderazgo técnico en el diseño y desarrollo de arquitecturas robustas bajo microservicios utilizando Laravel y Spring Boot.",
+          "Desarrollo de interfaces dinámicas y de alto rendimiento con React, integrando estados complejos y consumo de APIs REST.",
+          "Implementación de aplicaciones móviles nativas y multiplataforma mediante Flutter, garantizando una excelente experiencia de usuario (UX).",
+          "Gestión avanzada de bases de datos relacionales (MySQL) y no relacionales (MongoDB), optimizando consultas y escalabilidad.",
+          "Pionero en la adopción de AI-Assisted Development, integrando herramientas de IA para acelerar el ciclo de desarrollo y mejorar la calidad del código.",
+          "Colaboración en la definición de requerimientos técnicos y mentoría a desarrolladores junior."
+        ]
       },
       {
         company: "Tienda de Abarrotes",
@@ -63,7 +83,7 @@ function App() {
       { name: "Español", level: "Nativo" },
       { name: "Inglés", level: "B1 (Intermedio)" }
     ],
-    interests: ["Arquitectura de Software", "Desarrollo con IA", "Ajedrez", "Fútbol"]
+    interests: ["Arquitectura de Software", "Desarrollo con IA", "Fútbol"]
   };
 
   return (
@@ -127,6 +147,10 @@ function App() {
             ))}
           </div>
         </div>
+
+        <button className="download-btn" onClick={handleDownload} data-html2canvas-ignore="true" style={{ display: 'none' }}>
+          <span>📄</span> Descargar CV en PDF
+        </button>
       </aside>
 
       {/* Main Content */}
@@ -134,6 +158,31 @@ function App() {
         <section className="content-card">
           <h2 className="section-title">Sobre Mí</h2>
           <p className="exp-desc">{data.objective}</p>
+        </section>
+
+        <section className="content-card">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
+            <div>
+              <h2 className="section-title" style={{ fontSize: '1.4rem' }}>Formación</h2>
+              {data.education.map((edu, index) => (
+                <div key={index} className="experience-item" style={{ paddingLeft: '20px', marginBottom: '10px' }}>
+                  <h3 className="company" style={{ fontSize: '1rem' }}>{edu.institution}</h3>
+                  <p className="role" style={{ fontSize: '0.9rem', marginBottom: '5px' }}>{edu.degree}</p>
+                  <p className="exp-desc" style={{ fontSize: '0.85rem' }}>{edu.description}</p>
+                </div>
+              ))}
+            </div>
+            <div>
+              <h2 className="section-title" style={{ fontSize: '1.4rem' }}>Certificaciones</h2>
+              {data.certifications.map((cert, index) => (
+                <div key={index} className="experience-item" style={{ paddingLeft: '20px', marginBottom: '10px' }}>
+                  <h3 className="company" style={{ fontSize: '1rem' }}>{cert.title}</h3>
+                  <p className="role" style={{ fontSize: '0.9rem', marginBottom: '5px' }}>{cert.provider}</p>
+                  <p className="exp-desc" style={{ fontSize: '0.85rem' }}>{cert.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         <section className="content-card">
@@ -147,7 +196,15 @@ function App() {
                 </span>
               </div>
               <p className="role">{exp.role}</p>
-              <p className="exp-desc">{exp.description}</p>
+              {Array.isArray(exp.description) ? (
+                <ul className="exp-desc-list">
+                  {exp.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="exp-desc">{exp.description}</p>
+              )}
             </div>
           ))}
         </section>
@@ -188,31 +245,6 @@ function App() {
                   </span>
                 ))}
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="content-card">
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '30px' }}>
-            <div>
-              <h2 className="section-title" style={{ fontSize: '1.4rem' }}>Formación</h2>
-              {data.education.map((edu, index) => (
-                <div key={index} className="experience-item" style={{ paddingLeft: '20px', marginBottom: '10px' }}>
-                  <h3 className="company" style={{ fontSize: '1rem' }}>{edu.institution}</h3>
-                  <p className="role" style={{ fontSize: '0.9rem', marginBottom: '5px' }}>{edu.degree}</p>
-                  <p className="exp-desc" style={{ fontSize: '0.85rem' }}>{edu.description}</p>
-                </div>
-              ))}
-            </div>
-            <div>
-              <h2 className="section-title" style={{ fontSize: '1.4rem' }}>Certificaciones</h2>
-              {data.certifications.map((cert, index) => (
-                <div key={index} className="experience-item" style={{ paddingLeft: '20px', marginBottom: '10px' }}>
-                  <h3 className="company" style={{ fontSize: '1rem' }}>{cert.title}</h3>
-                  <p className="role" style={{ fontSize: '0.9rem', marginBottom: '5px' }}>{cert.provider}</p>
-                  <p className="exp-desc" style={{ fontSize: '0.85rem' }}>{cert.description}</p>
-                </div>
-              ))}
             </div>
           </div>
         </section>
