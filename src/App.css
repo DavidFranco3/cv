@@ -515,3 +515,22 @@
 .pdf-mode .page-break {
   page-break-before: always !important;
 }
+/* Fix for the education/certifications grid in PDF */
+.pdf-mode .content-card > div[style*="display: grid"] {
+  display: block !important;
+}
+
+.pdf-mode .content-card > div[style*="display: grid"] > div {
+  width: 100% !important;
+  margin-bottom: 20px !important;
+}
+
+/* Ensure icons are visible but clean */.pdf-mode .contact-item span {
+  margin-right: 8px !important;
+  font-size: 1.1rem !important;
+}
+
+/* Professional spacing adjustments */.pdf-mode .section-title {
+  margin-top: 10px !important;
+  letter-spacing: 1px !important;
+}

@@ -1,57 +1,59 @@
 import html2pdf from 'html2pdf.js';
 
 /**
- * Utility to generate a PDF from an HTML string using html2pdf.js
+ * Utility to generate a PDF from an actual DOM element.
+ * This approach ensures that the PDF looks exactly as the live app does.
  */
-export const generatePdf = async (htmlString, filename = 'CV_Jose_David_Ayala_Franco.pdf') => {
-    // Create a hidden iframe to render the standalone HTML
-    // This ensures the PDF has its own scope for styles and doesn't conflict with the App's CSS
-    const iframe = document.createElement('iframe');
-    iframe.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:210mm;height:297mm;border:none;';
-    document.body.appendChild(iframe);
+export const generatePdf = async (element, filename = 'CV_Jose_David_Ayala_Franco.pdf') => {
+    if (!element) {
+        console.error('No element provided for PDF generation');
+        return;
+    }
 
-    const doc = iframe.contentDocument || iframe.contentWindow.document;
-    doc.open();
-    doc.write(htmlString);
-    doc.close();
+    // Add a temporary class to the element for PDF-specific CSS overrides
+    element.classList.add('pdf-mode');
 
-    // Force light mode and white background on iframe to prevent transparency/dark inheritance
-    doc.documentElement.style.colorScheme = 'light';
-    doc.body.style.backgroundColor = '#ffffff';
-    doc.body.style.color = '#1a1a1a';
+    const opt = {
+        margin: [5, 5, 5, 5], // Small margins to avoid edge cutting
+        filename: filename,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: {
+            scale: 3, // High scale for crisp text
+            useCORS: true,
+            letterRendering: true,
+            allowTaint: true,
+            backgroundColor: '#ffffff',
+            logging: false,
+        },
+        jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait',
+            compress: true
+        },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
 
-    // Wait for resources (fonts, images) to load
-    // 800ms is usually enough for Google Fonts and external images
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            const opt = {
-                margin: 0,
-                filename: filename,
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: {
-                    scale: 3, // Higher scale for better retina/print quality
-                    useCORS: true,
-                    allowTaint: true,
-                    backgroundColor: '#ffffff',
-                    logging: false,
-                    letterRendering: true,
-                },
-                jsPDF: {
-                    unit: 'mm',
-                    format: 'a4',
-                    orientation: 'portrait',
-                    compress: true
-                },
-            };
+    try {
+        const worker = html2pdf().set(opt).from(element).toPdf().get('pdf');
 
-            html2pdf()
-                .set(opt)
-                .from(doc.body)
-                .save()
-                .then(() => {
-                    document.body.removeChild(iframe);
-                    resolve();
-                });
-        }, 1000);
-    });
+        await worker.then((pdf) => {
+            const totalPages = pdf.internal.getNumberOfPages();
+            for (let i = 1; i <= totalPages; i++) {
+                pdf.setPage(i);
+                pdf.setFontSize(10);
+                pdf.setTextColor(150);
+                pdf.text(
+                    `Página ${i} de ${totalPages}`,
+                    pdf.internal.pageSize.getWidth() - 30,
+                    pdf.internal.pageSize.getHeight() - 10
+                );
+            }
+        }).save();
+    } catch (error) {
+        console.error('PDF Generation failed:', error);
+    } finally {
+        // Clean up classes
+        element.classList.remove('pdf-mode');
+    }
 };

@@ -1,17 +1,14 @@
-import { buildPdfHtml } from './utils/pdfTemplate'
+import { useRef } from 'react'
 import { generatePdf } from './utils/pdfGenerator'
 import './App.css'
 
 function App() {
+  const resumeRef = useRef(null);
 
   const handleDownload = async () => {
-    const pdfData = {
-      ...data,
-      avatarUrl
-    };
-
-    const htmlString = buildPdfHtml(pdfData);
-    await generatePdf(htmlString, `CV_${data.name.replace(/\s+/g, '_')}.pdf`);
+    if (resumeRef.current) {
+      await generatePdf(resumeRef.current, `CV_${data.name.replace(/\s+/g, '_')}.pdf`);
+    }
   };
 
   // Using a placeholder avatar since we don't have the original image file
@@ -87,7 +84,7 @@ function App() {
   };
 
   return (
-    <div className="app-container">
+    <div className="app-container" ref={resumeRef}>
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="profile-section">
@@ -148,7 +145,7 @@ function App() {
           </div>
         </div>
 
-        <button className="download-btn" onClick={handleDownload} data-html2canvas-ignore="true" style={{ display: 'none' }}>
+        <button className="download-btn" onClick={handleDownload} data-html2canvas-ignore="true">
           <span>📄</span> Descargar CV en PDF
         </button>
       </aside>
