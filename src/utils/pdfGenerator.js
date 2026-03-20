@@ -120,7 +120,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         { label: 'Email',     value: data.contact.email },
         { label: 'Tel',       value: data.contact.phone },
         { label: 'GitHub',    value: `github.com/${data.contact.github}` },
-        { label: 'LinkedIn',  value: `in/${data.contact.linkedin}` },
+        { label: 'LinkedIn',  value: `in/${decodeURIComponent(data.contact.linkedin)}` },
         { label: 'Ubicación', value: data.contact.location },
     ];
     contactItems.forEach(c => {

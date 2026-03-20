@@ -41,7 +41,7 @@ const cvData = {
     email: "josedavidayalafranco3@gmail.com",
     phone: "453-152-7363",
     github: "DavidFranco3",
-    linkedin: "josedavidayalafranco"
+    linkedin: "jos%C3%A9-david-ayala-franco-247701220"
   },
   skills: [
     { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
