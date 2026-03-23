@@ -91,32 +91,57 @@ body {
   color: var(--primary);
   opacity: 0.9;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-family: 'Fira Code', monospace;
 }
 
-/* Contact Grid */
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+.terminal-card-hero {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
+  text-align: left;
 }
 
+
+/* Contact Grid */
+.contact-grid {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  flex-wrap: nowrap !important;
+  gap: 10px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 10px 5px;
+  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+}
+
+.contact-grid::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+
+
+
 .contact-card-mini {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   align-items: center;
   gap: 10px;
-  padding: 16px;
+  padding: 20px 15px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid var(--border-color);
   border-radius: 16px;
   text-decoration: none;
   color: var(--text-muted);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  min-width: 170px;
+  text-align: center;
 }
+
+
 
 .contact-card-mini svg {
   color: var(--primary);
@@ -385,7 +410,8 @@ body {
   .hero-name { font-size: 2.5rem; }
   .info-grid { grid-template-columns: 1fr; }
   .exp-info { flex-direction: column; }
-  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { justify-content: center; gap: 8px; }
+
 }
 
 /* =========================================
