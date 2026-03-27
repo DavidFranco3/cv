@@ -10,8 +10,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     // ── Load photo ────────────────────────────────────────────────
     let photoDataUrl = null;
     try {
-        // const response = await fetch('/fotografia.png'); // ← foto real
-        const response = await fetch('/avatar_caricature.png'); // ← avatar caricatura
+        const response = await fetch('/fotografia.png'); // ← foto real
         const blob = await response.blob();
         photoDataUrl = await new Promise((resolve) => {
             const reader = new FileReader();
@@ -132,22 +131,35 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     // ══════════════════════════════════════════════════════════════
     // SIDEBAR
     // ══════════════════════════════════════════════════════════════
+    const pdfLabels = data.pdfLabels || {
+        professionalProfile: 'Perfil Profesional',
+        education: 'Formación',
+        softSkills: 'Soft Skills & IA',
+        languages: 'Idiomas',
+        os: 'Sistemas Operativos',
+        experience: 'Experiencia Profesional',
+        techStack: 'Stack Tecnológico',
+        present: 'Presente'
+    };
+
     // ── DATA TRANSFORMATIONS FOR PDF OPTIMIZATION (HR-friendly) ────
     const pdfData = {
         ...data,
-        // Shorten summary for PDF
-        summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.",
-        // Slice experience bullets to max 4
+        // Use summary from data
+        summary: data.summary,
+        // Slice experience bullets to max 5 for PDF to save space
         experience: data.experience.map(exp => ({
             ...exp,
-            bullets: exp.bullets
+            bullets: exp.bullets.slice(0, 5),
+            // Replace "Presente" with localized version if needed
+            date: exp.date.replace("Presente", pdfLabels.present).replace("Present", pdfLabels.present)
         })),
         // Map Web Categories to PDF Proficiency Levels
-        skills: data.skills.filter(s => s.category !== "Sistemas Operativos").map(s => {
+        skills: data.skills.filter(s => s.category !== "Sistemas Operativos" && s.category !== "Operating Systems").map(s => {
             let level = s.category || "Skill";
             if (level.includes("Backend")) level = "Backend";
             if (level.includes("Frontend")) level = "Frontend";
-            if (level.includes("Móvil")) level = "Móvil";
+            if (level.includes("Móvil") || level.includes("Mobile")) level = "Móvil";
             if (level.includes("DevOps")) level = "DevOps / Datos";
             return { level, techs: s.techs };
         })
@@ -179,16 +191,16 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     yS += 0.5;
 
     // ── Profile Summary (Now in Sidebar) ──────────────────────────
-    yS = sectionSide('Perfil Profesional', yS);
+    yS = sectionSide(pdfLabels.professionalProfile, yS);
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(10.5);
     setColor(SIDEBAR_TEXT);
     const summaryLinesS = wrapS(pdfData.summary);
     doc.text(summaryLinesS, SIDE_PAD, yS);
-    yS += summaryLinesS.length * 4.5 + 4;
+    yS += summaryLinesS.length * 4.2 + 3;
 
     // ── Education (Now in Sidebar) ───────────────────────────────
-    yS = sectionSide('Formación', yS);
+    yS = sectionSide(pdfLabels.education, yS);
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(10.5);
     setColor(SIDEBAR_TEXT);
@@ -207,12 +219,12 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     doc.setFontSize(8);
     setColor(SIDEBAR_MUTED);
     doc.text(pdfData.education.period, SIDE_PAD, yS);
-    yS += 9;
+    yS += 7;
 
     // ── Soft Skills ───────────────────────────────────────────────
     const softSkill = pdfData.skills.find(s => s.level.includes("Soft"));
     if (softSkill) {
-        yS = sectionSide('Soft Skills & IA', yS);
+        yS = sectionSide(pdfLabels.softSkills, yS);
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(9.5);
         setColor(SIDEBAR_TEXT);
@@ -225,7 +237,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     }
 
     // ── Languages (Sidebar - Side by Side) ───────────────────────
-    yS = sectionSide('Idiomas', yS);
+    yS = sectionSide(pdfLabels.languages, yS);
     
     let xL = SIDE_PAD;
     pdfData.languages.forEach((lang, i) => {
@@ -244,9 +256,9 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     yS += 12;
 
     // ── Operating Systems (Sidebar - Side by Side) ────────────────
-    const osSkill = data.skills.find(s => s.category === "Sistemas Operativos");
+    const osSkill = data.skills.find(s => s.category === "Sistemas Operativos" || s.category === "Operating Systems");
     if (osSkill) {
-        yS = sectionSide('Sistemas Operativos', yS);
+        yS = sectionSide(pdfLabels.os, yS);
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(11);
         setColor(SIDEBAR_TEXT);
@@ -308,7 +320,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
 
 
     // ── Experience ────────────────────────────────────────────────
-    yM = sectionMain('Experiencia Profesional', yM);
+    yM = sectionMain(pdfLabels.experience, yM);
     const bulletSpacing = 4.8;
 
     pdfData.experience.forEach((exp, idx) => {
@@ -336,26 +348,27 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         setColor(MAIN_TEXT);
         const descLines = wrapM(exp.desc);
         doc.text(descLines, MAIN_X, yM);
-        yM += descLines.length * 4.5 + 1.5;
+        yM += descLines.length * 4.2 + 1;
 
         exp.bullets.forEach(bullet => {
-            doc.setFontSize(11);
+            doc.setFontSize(10.5);
             const bLines = wrapM(`•  ${bullet}`, MAIN_W - 4);
             doc.text(bLines, MAIN_X + 2, yM);
-            yM += bLines.length * 4.5;
+            yM += bLines.length * 4.2;
         });
 
-        yM += 3;
+        yM += 2;
         if (idx < pdfData.experience.length - 1) {
+            yM += 2; // Extra space before line
             hlineMain(yM);
-            yM += 4;
+            yM += 6; // More space after line to avoid overlap with next title
         }
     });
 
     // ── Tech Stack (Relocated to bottom and reformatted as lists) ─
     if (yM > PAGE_H - 50) { doc.addPage(); yM = 20; doc.setFillColor(...SIDEBAR_BG); doc.rect(0, 0, SIDE_W, PAGE_H, 'F'); }
     yM += 2;
-    yM = sectionMain('Stack Tecnológico', yM);
+    yM = sectionMain(pdfLabels.techStack, yM);
     
     const techSkills = pdfData.skills.filter(s => !s.level.includes("Soft"));
     const colW = (MAIN_W / 2) - 4;
@@ -378,7 +391,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         setColor(MAIN_TEXT);
         s1.techs.forEach(t => {
             doc.text(`• ${t}`, MAIN_X + 2, y1);
-            y1 += 4.5;
+            y1 += 4.2;
         });
 
         // Category 2
@@ -395,7 +408,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
             setColor(MAIN_TEXT);
             s2.techs.forEach(t => {
                 doc.text(`• ${t}`, x2 + 2, y2);
-                y2 += 4.5;
+                y2 += 4.2;
             });
         }
         yM = Math.max(y1, y2) + 6;

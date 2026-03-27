@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { generatePdf } from './utils/pdfGenerator'
 import './App.css'
+import { translations } from './utils/translations'
 
 // Iconos SVG
 const Icons = {
@@ -31,85 +32,33 @@ const Icons = {
   )
 };
 
-const fullSummary = "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.";
-
-const cvData = {
-  name: "José David Ayala Franco",
-  role: "Software Developer",
-  contact: {
-    location: "Parácuaro, Michoacán, México",
-    email: "josedavidayalafranco3@gmail.com",
-    phone: "453-152-7363",
-    github: "DavidFranco3",
-    linkedin: "jos%C3%A9-david-ayala-franco-247701220"
-  },
-  skills: [
-    { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Python (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
-    { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
-    { category: "Móvil", techs: ["Flutter", "Dart", "Java(Bases)", "Kotlin(Bases)"], color: "#ec4899" },
-    { category: "DevOps & Datos", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker"], color: "#10b981" },
-    { category: "Sistemas Operativos", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
-    { category: "Soft Skills", techs: ["Trabajo en Equipo", "Aprendizaje Acelerado", "Prompt Engineering", "Resolución de Problemas Críticos"], color: "#8b5cf6" }
-  ],
-  experience: [
-    {
-      company: "Isotech",
-      role: "Full Stack Developer",
-      date: "2022 - Presente",
-      desc: "Desarrollo integral de soluciones escalables, especializándome en arquitecturas robustas de Backend y optimización de flujos con IA.",
-      bullets: [
-        "Adaptación e integración de API para la automatización de procesos de facturación electrónica (CFDI 4.0) en sistemas SaaS.",
-        "Diseño y desarrollo de APIs RESTful con Express.js (arquitectura desacoplada) y sistemas monolíticos con Laravel.",
-        "Gestión eficiente de bases de datos relacionales (MySQL) y no relacionales (MongoDB).",
-        "Construcción de interfaces modernas con React y Vite, aplicando Sass y Tailwind para UIs responsivas.",
-        "Desarrollo de aplicaciones móviles profesionales multiplataforma con Flutter y Dart.",
-        "Uso estratégico de IA para agilizar procesos de desarrollo y mejorar la calidad del código.",
-        "Mentoría y trabajo colaborativo en equipo bajo metodologías ágiles."
-      ],
-      commits: ["feat: rest-api-express", "style: tailwind-ui-refactor", "init: flutter-mobile-core"]
-    },
-    {
-      company: "Gestión Comercial",
-      role: "Software Engineer",
-      date: "2021",
-      desc: "Digitalización de procesos comerciales y control administrativo mediante herramientas a la medida.",
-      bullets: [
-        "Diseño de sistemas de inventario y punto de venta con enfoque en usabilidad y precisión de datos.",
-        "Automatización de reportes de rentabilidad y procesos de auditoría manual."
-      ],
-      commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
-    },
-  ],
-  education: {
-    degree: "Ingeniería en Informática",
-    school: "Instituto Tecnológico Superior de Apatzingán",
-    period: "2018 - 2023",
-    desc: "Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software."
-  },
-  languages: [
-    { name: "Español", level: "Nativo" },
-    { name: "Inglés", level: "B1" }
-  ]
-};
-
 function App() {
+  const [language, setLanguage] = useState('es');
   const [typedText, setTypedText] = useState('');
+  
+  const { ui, cv: cvData } = translations[language];
+  const fullSummary = cvData.summary;
+
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'es' ? 'en' : 'es');
+  };
 
   useEffect(() => {
     let i = 0;
+    setTypedText(''); // Reset typed text on language change
     const interval = setInterval(() => {
       setTypedText(fullSummary.slice(0, i));
       i++;
       if (i > fullSummary.length) clearInterval(interval);
     }, 20);
     return () => clearInterval(interval);
-  }, []);
+  }, [language, fullSummary]);
 
   const handleDownload = async () => {
     // Para el PDF usamos la versión optimizada (concisa)
     await generatePdf(
       { ...cvData, summary: fullSummary },
-      `CV_DavidFranco_Software_Developer.pdf`
+      `CV_DavidFranco_${language.toUpperCase()}.pdf`
     );
   };
 
@@ -119,7 +68,18 @@ function App() {
 
       {/* Sección de Encabezado */}
       <header className="hero-section">
-        <div className="status-badge"><span></span> LISTO PARA CONSTRUIR SOLUCIONES IMPACTANTES</div>
+        <div className="top-bar">
+          <div className="status-badge"><span></span> {ui.status}</div>
+          <div className="top-actions">
+            <button className="download-btn-top" onClick={handleDownload}>
+              {ui.downloadCv}
+            </button>
+            <button className="lang-toggle" onClick={toggleLanguage}>
+              {language === 'es' ? 'EN' : 'ES'}
+            </button>
+          </div>
+        </div>
+
         <h1 className="hero-name">{cvData.name}</h1>
         <h2 className="hero-role">{cvData.role}</h2>
 
@@ -151,10 +111,10 @@ function App() {
           <div className="dashboard-card terminal-card">
             <div className="card-header">
               <div className="dots"><span className="red"></span><span className="yellow"></span><span className="green"></span></div>
-              <span className="file-name">resumen_profesional.js</span>
+              <span className="file-name">{ui.professionalSummary}</span>
             </div>
             <div className="terminal-content">
-              <span className="prompt">$ whoami</span>
+              <span className="prompt">{ui.whoami}</span>
               <p className="typed-text">{typedText}<span className="cursor">_</span></p>
             </div>
           </div>
@@ -165,7 +125,7 @@ function App() {
         {/* Formación, Certificaciones e Idiomas */}
         <section className="info-grid">
           <div className="dashboard-card info-card">
-            <h5>FORMACIÓN_ACADÉMICA /&gt;</h5>
+            <h5>{ui.academicTraining}</h5>
             <div className="info-content">
               <strong>{cvData.education.degree}</strong>
               <p>{cvData.education.school}</p>
@@ -174,7 +134,7 @@ function App() {
             </div>
           </div>
           <div className="dashboard-card info-card">
-            <h5>IDIOMAS /&gt;</h5>
+            <h5>{ui.languages}</h5>
             {cvData.languages.map((lang, i) => (
               <div key={i} className="info-content">
                 <strong>{lang.name}</strong>
@@ -186,7 +146,7 @@ function App() {
 
         {/* Stack Tecnológico */}
         <section className="skills-section">
-          <h3 className="section-title">Habilidades y Tecnologías</h3>
+          <h3 className="section-title">{ui.skillsAndTech}</h3>
           <div className="skills-grid">
             {cvData.skills.map((skill, idx) => (
               <div key={idx} className="skill-card" style={{ "--accent": skill.color }}>
@@ -201,7 +161,7 @@ function App() {
 
         {/* Experiencia */}
         <section className="experience-section">
-          <h3 className="section-title">Experiencia Profesional</h3>
+          <h3 className="section-title">{ui.professionalExperience}</h3>
           <div className="timeline">
             {cvData.experience.map((exp, idx) => (
               <div key={idx} className="timeline-item">
@@ -228,11 +188,6 @@ function App() {
         </section>
       </main>
 
-      <div className="actions-bar">
-        <button className="download-btn-modern primary" onClick={handleDownload}>
-          DESCARGAR CV (PDF)
-        </button>
-      </div>
     </div>
   )
 }
