@@ -31,7 +31,7 @@ const Icons = {
   )
 };
 
-const fullSummary = "Ingeniero en Informática y Desarrollador Full Stack con especial enfoque en Backend. Experto en construir arquitecturas robustas con Laravel y Express.js, y el diseño de interfaces dinámicas con React y Vite. Apasionado por la optimización mediante IA y el desarrollo móvil con Flutter. Me distingo por mi capacidad de aprendizaje acelerado y eficiencia en entornos colaborativos.";
+const fullSummary = "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.";
 
 const cvData = {
   name: "José David Ayala Franco",
@@ -44,11 +44,12 @@ const cvData = {
     linkedin: "jos%C3%A9-david-ayala-franco-247701220"
   },
   skills: [
-    { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
-    { category: "Frontend & UI/UX", techs: ["React", "Vite", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5/CSS3"], color: "#f59e0b" },
-    { category: "Móvil & Otros", techs: ["Flutter", "Dart", "Java/Kotlin (Bases)", "Python (Bases)"], color: "#ec4899" },
-    { category: "DevOps & Datos", techs: ["MySQL", "MongoDB", "Git", "Postman", "Docker"], color: "#10b981" },
-    { category: "Soft Skills", techs: ["Trabajo en Equipo", "Aprendizaje Acelerado", "Comprensión Rápida", "IA Workflow Optimization"], color: "#8b5cf6" }
+    { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Python (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
+    { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
+    { category: "Móvil", techs: ["Flutter", "Dart", "Java(Bases)", "Kotlin(Bases)"], color: "#ec4899" },
+    { category: "DevOps & Datos", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker"], color: "#10b981" },
+    { category: "Sistemas Operativos", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
+    { category: "Soft Skills", techs: ["Trabajo en Equipo", "Aprendizaje Acelerado", "Prompt Engineering", "Resolución de Problemas Críticos"], color: "#8b5cf6" }
   ],
   experience: [
     {
@@ -57,6 +58,7 @@ const cvData = {
       date: "2022 - Presente",
       desc: "Desarrollo integral de soluciones escalables, especializándome en arquitecturas robustas de Backend y optimización de flujos con IA.",
       bullets: [
+        "Adaptación e integración de API para la automatización de procesos de facturación electrónica (CFDI 4.0) en sistemas SaaS.",
         "Diseño y desarrollo de APIs RESTful con Express.js (arquitectura desacoplada) y sistemas monolíticos con Laravel.",
         "Gestión eficiente de bases de datos relacionales (MySQL) y no relacionales (MongoDB).",
         "Construcción de interfaces modernas con React y Vite, aplicando Sass y Tailwind para UIs responsivas.",
@@ -77,16 +79,6 @@ const cvData = {
       ],
       commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
     },
-    {
-      company: "Desafíos Algorítmicos",
-      role: "8vo Lugar Nacional de Programación",
-      date: "2019",
-      desc: "Competición de alto nivel en lógica y optimización de algoritmos complejos.",
-      bullets: [
-        "Resolución de problemas críticos en tiempo real, destacando en eficiencia de código y lógica computacional."
-      ],
-      commits: ["alg: competition-finals", "rank: top-8-mexico"]
-    }
   ],
   education: {
     degree: "Ingeniería en Informática",
@@ -94,9 +86,6 @@ const cvData = {
     period: "2018 - 2023",
     desc: "Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software."
   },
-  certifications: [
-    { title: "Ciberseguridad", provider: "CISCO - Netacad", desc: "Gestión de seguridad en infraestructuras digitales." }
-  ],
   languages: [
     { name: "Español", level: "Nativo" },
     { name: "Inglés", level: "B1" }
@@ -117,6 +106,7 @@ function App() {
   }, []);
 
   const handleDownload = async () => {
+    // Para el PDF usamos la versión optimizada (concisa)
     await generatePdf(
       { ...cvData, summary: fullSummary },
       `CV_DavidFranco_Software_Developer.pdf`
@@ -184,16 +174,6 @@ function App() {
             </div>
           </div>
           <div className="dashboard-card info-card">
-            <h5>CERTIFICACIONES /&gt;</h5>
-            {cvData.certifications.map((cert, i) => (
-              <div key={i} className="info-content">
-                <strong>{cert.title}</strong>
-                <p>{cert.provider}</p>
-                <p className="small-desc">{cert.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div className="dashboard-card info-card">
             <h5>IDIOMAS /&gt;</h5>
             {cvData.languages.map((lang, i) => (
               <div key={i} className="info-content">
@@ -204,7 +184,7 @@ function App() {
           </div>
         </section>
 
-        {/* Stack Tecnológico (Movido antes de experiencia) */}
+        {/* Stack Tecnológico */}
         <section className="skills-section">
           <h3 className="section-title">Habilidades y Tecnologías</h3>
           <div className="skills-grid">
@@ -219,7 +199,7 @@ function App() {
           </div>
         </section>
 
-        {/* Experiencia (Bloque de valor principal) */}
+        {/* Experiencia */}
         <section className="experience-section">
           <h3 className="section-title">Experiencia Profesional</h3>
           <div className="timeline">

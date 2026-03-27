@@ -101,7 +101,6 @@ body {
   text-align: left;
 }
 
-
 /* Contact Grid */
 .contact-grid {
   display: flex !important;
@@ -114,15 +113,12 @@ body {
   margin: 0 auto;
   overflow-x: auto;
   padding: 10px 5px;
-  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+  scrollbar-width: none;
 }
 
 .contact-grid::-webkit-scrollbar {
-  display: none; /* Hide scrollbar for Chrome/Safari */
+  display: none;
 }
-
-
-
 
 .contact-card-mini {
   display: flex !important;
@@ -140,8 +136,6 @@ body {
   min-width: 170px;
   text-align: center;
 }
-
-
 
 .contact-card-mini svg {
   color: var(--primary);
@@ -168,7 +162,7 @@ body {
   opacity: 1;
 }
 
-/* Dashboard Grid */
+/* Dashboard Content */
 .dashboard-grid {
   display: flex;
   flex-direction: column;
@@ -182,6 +176,11 @@ body {
   border-radius: 20px;
   padding: 28px;
   transition: transform 0.3s, border-color 0.3s;
+}
+
+.dashboard-card:hover {
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Terminal Card */
@@ -228,7 +227,7 @@ body {
 
 @keyframes blink { 50% { opacity: 0; } }
 
-/* Skills Grid */
+/* Sections Styling */
 .section-title {
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -239,28 +238,37 @@ body {
   padding-left: 15px;
 }
 
+/* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
 .skill-card {
   background: var(--card-bg);
-  border-radius: 16px;
-  padding: 24px;
   border: 1px solid var(--border-color);
-  border-top: 3px solid var(--accent);
-  transition: all 0.3s;
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
 }
 
-.skill-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--accent);
+}
 
 .skill-category {
-  font-weight: 700;
   font-size: 0.8rem;
+  font-weight: 700;
   color: var(--accent);
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -272,15 +280,22 @@ body {
 }
 
 .tech-tag {
-  background: rgba(255, 255, 255, 0.04);
-  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
   border-radius: 8px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #cbd5e1;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
 }
 
-/* Experience Roadmap */
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Timeline / Experience */
 .timeline {
   display: flex;
   flex-direction: column;
@@ -362,7 +377,7 @@ body {
   border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
-/* Info Grid (Formación, Certificaciones, Idiomas) */
+/* Info Grid (Education, Certs, Languages) */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
