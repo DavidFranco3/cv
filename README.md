@@ -1,16 +1,47 @@
-# React + Vite
+# 🚀 Digital CV - José David Ayala Franco
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de **CV Digital e Interactivo** diseñado para destacar habilidades técnicas con una estética de terminal moderna y profesional. El proyecto permite visualizar el perfil profesional de forma dinámica y generar un PDF optimizado en tiempo real.
 
-Currently, two official plugins are available:
+![Preview](public/avatar_caricature.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características Principales
 
-## React Compiler
+-   **Interfaz de Terminal**: Diseño inspirado en herramientas de desarrollo con animaciones de escritura (typing effect).
+-   **Diseño Responsivo**: Adaptado para todo tipo de pantallas mediante un sistema de cuadrícula inteligente (3x2 en desktop).
+-   **Generador de PDF Personalizado**: Motor propio utilizando `jsPDF` que transforma los datos del CV en un documento A4 profesional, con soporte para saltos de página automáticos y diseño de dos columnas.
+-   **Multilenguaje**: Soporte nativo para Español e Inglés con traducciones centralizadas.
+-   **Integración NPM**: Enlace directo al perfil de contribuidor y mención de librerías open-source.
+-   **Aesthetica Premium**: Uso de degradados, desenfoques (backdrop-filters) y micro-animaciones para una experiencia visual de alto nivel.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+-   **Core**: React 18 + Vite
+-   **Styling**: CSS3 (Vanilla) con variables para modo oscuro.
+-   **Documentación**: jsPDF para la generación dinámica de archivos.
+-   **Iconografía**: SVG personalizados integrados como componentes React.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Estructura del Proyecto
+
+-   `src/App.jsx`: Componente principal y lógica de la interfaz.
+-   `src/utils/pdfGenerator.js`: El "corazón" del sistema; el algoritmo que construye el PDF píxel a píxel.
+-   `src/utils/translations.js`: Diccionario de datos y contenidos para fácil mantenimiento.
+-   `public/`: Assets estáticos y recursos como el avatar caricature.
+
+## ⚙️ Instalación y Uso
+
+1.  Clonar el repositorio:
+    ```bash
+    git clone https://github.com/DavidFranco3/cv.git
+    ```
+2.  Instalar dependencias:
+    ```bash
+    npm install
+    ```
+3.  Iniciar servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo como inspiración para tu propio CV.
