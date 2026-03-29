@@ -29,6 +29,11 @@ const Icons = {
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
     </svg>
+  ),
+  Npm: () => (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M0 0h24v24H0z" stroke="none"/><path d="M1 8h22v7H11v2H7v-2H1V8zm3 5h2V9H4v4zm3 0h2V9H7v4zm3-2h2V9h-2v2zm3 2h2V9h-2v4zm3 0h2V9h-2v4zm3 0h2V9h-2v4z" fill="currentColor" stroke="none"/>
+    </svg>
   )
 };
 
@@ -99,6 +104,10 @@ function App() {
           <a href={`https://linkedin.com/in/${cvData.contact.linkedin}`} target="_blank" className="contact-card-mini">
             <Icons.LinkedIn />
             <span>LinkedIn</span>
+          </a>
+          <a href={`https://www.npmjs.com/~${cvData.contact.npm}`} target="_blank" className="contact-card-mini">
+            <Icons.Npm />
+            <span>NPM</span>
           </a>
           <div className="contact-card-mini">
             <Icons.Location />

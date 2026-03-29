@@ -10,7 +10,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     // ── Load photo ────────────────────────────────────────────────
     let photoDataUrl = null;
     try {
-        const response = await fetch('/fotografia.png'); // ← foto real
+        const response = await fetch('/avatar_caricature.png'); // Usa el avatar caricature
         const blob = await response.blob();
         photoDataUrl = await new Promise((resolve) => {
             const reader = new FileReader();
@@ -27,7 +27,8 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         phone:    '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />',
         email:    '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" />',
         github:   '<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />',
-        linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />'
+        linkedin: '<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />',
+        npm: '<path d="M0 0h24v24H0z" stroke="none"/><path d="M1 8h22v7H11v2H7v-2H1V8zm3 5h2V9H4v4zm3 0h2V9H7v4zm3-2h2V9h-2v2zm3 2h2V9h-2v4zm3 0h2V9h-2v4zm3 0h2V9h-2v4z" fill="#444" stroke="none"/>'
     };
 
     const iconsData = {};
@@ -139,6 +140,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         os: 'Sistemas Operativos',
         experience: 'Experiencia Profesional',
         techStack: 'Stack Tecnológico',
+        projects: 'Librerías Públicas / NPM',
         present: 'Presente'
     };
 
@@ -150,7 +152,8 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         // Slice experience bullets to max 5 for PDF to save space
         experience: data.experience.map(exp => ({
             ...exp,
-            bullets: exp.bullets.slice(0, 5),
+            // Keep all bullets, rendering loop will handle page breaks
+            bullets: exp.bullets,
             // Replace "Presente" with localized version if needed
             date: exp.date.replace("Presente", pdfLabels.present).replace("Present", pdfLabels.present)
         })),
@@ -288,33 +291,49 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     setColor(MAIN_MID);
     doc.text(pdfData.role.toUpperCase(), MAIN_X, yM + 19);
 
-    // --- Header: Contact Info (Right) ---
-    const contactX = MAIN_X + 72;
-    let yC = yM + 2;
-    const headerContacts = [
+    // --- Header: 3 Contacts to the Right (Vertical) ---
+    const contactX = MAIN_X + 70;
+    const verticalContacts = [
         { type: 'location', value: pdfData.contact.location },
         { type: 'phone',    value: pdfData.contact.phone },
-        { type: 'email',    value: pdfData.contact.email, link: `mailto:${pdfData.contact.email}` },
-        { type: 'github',   value: "github.com/DavidFranco3", link: `https://github.com/DavidFranco3` },
-        { type: 'linkedin', value: "in/David-Ayala-Franco", link: "https://linkedin.com/in/jos%C3%A9-david-ayala-franco-247701220" }
+        { type: 'email',    value: pdfData.contact.email, link: `mailto:${pdfData.contact.email}` }
     ];
 
-    headerContacts.forEach(c => {
-        drawIcon(c.type, contactX, yC);
+    verticalContacts.forEach((c, i) => {
+        const currentY = yM + (i * 7.5) + 2; // Restored row spacing
+        drawIcon(c.type, contactX, currentY);
         setColor(MAIN_TEXT);
-        doc.setFontSize(9);
-        
+        doc.setFontSize(8.5); // Restored font size
         if (c.link) {
             const textW = doc.getTextWidth(c.value);
-            doc.link(contactX + 6, yC - 3, textW, 4, { url: c.link });
+            doc.link(contactX + 6, currentY - 3, textW, 4, { url: c.link });
         }
-
-        const wrappedVal = doc.splitTextToSize(c.value, 50);
-        doc.text(wrappedVal, contactX + 6, yC);
-        yC += wrappedVal.length * 5 + 1.5;
+        doc.text(doc.splitTextToSize(c.value, 60), contactX + 6, currentY);
     });
 
-    yM = Math.max(yM + 25, yC + 2);
+    yM += 28; // Restored vertical space after name/role block
+
+    // --- Header: 3 Contacts Below (Horizontal) ---
+    const horizontalContacts = [
+        { type: 'github',   value: "github.com/DavidFranco3", link: `https://github.com/DavidFranco3` },
+        { type: 'linkedin', value: "in/David-Ayala-Franco", link: "https://linkedin.com/in/jos%C3%A9-david-ayala-franco-247701220" },
+        { type: 'npm',      value: "npmjs.com/~davidfranco3", link: "https://www.npmjs.com/~davidfranco3" }
+    ];
+
+    const headerColW = MAIN_W / 3;
+    horizontalContacts.forEach((c, i) => {
+        const currentX = MAIN_X + (i * headerColW);
+        drawIcon(c.type, currentX, yM);
+        setColor(MAIN_TEXT);
+        doc.setFontSize(8.5);
+        if (c.link) {
+            const textW = doc.getTextWidth(c.value);
+            doc.link(currentX + 6, yM - 3, textW, 4, { url: c.link });
+        }
+        doc.text(doc.splitTextToSize(c.value, headerColW - 8), currentX + 6, yM);
+    });
+
+    yM += 8; // Restored divider space
     hlineMain(yM);
     yM += 6;
 
@@ -343,18 +362,30 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         doc.text(exp.role, MAIN_X, yM);
         yM += 5.5;
 
-        doc.setFont('helvetica', 'normal');
-        doc.setFontSize(11);
+        doc.setFont('helvetica', 'normal'); // Reset to normal font
+        doc.setFontSize(11); 
         setColor(MAIN_TEXT);
         const descLines = wrapM(exp.desc);
         doc.text(descLines, MAIN_X, yM);
         yM += descLines.length * 4.2 + 1;
 
         exp.bullets.forEach(bullet => {
-            doc.setFontSize(10.5);
+            // Check for page overflow inside the bullet loop
+            if (yM > PAGE_H - 15) { 
+                doc.addPage(); 
+                yM = 20; 
+                doc.setFillColor(...SIDEBAR_BG); 
+                doc.rect(0, 0, SIDE_W, PAGE_H, 'F'); 
+                
+                // Re-set font for the new page
+                doc.setFont('helvetica', 'normal');
+                setColor(MAIN_TEXT);
+            }
+
+            doc.setFontSize(10.5); // Restored from 9.5
             const bLines = wrapM(`•  ${bullet}`, MAIN_W - 4);
             doc.text(bLines, MAIN_X + 2, yM);
-            yM += bLines.length * 4.2;
+            yM += bLines.length * 4.2; // Restored line height
         });
 
         yM += 2;

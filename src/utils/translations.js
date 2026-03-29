@@ -13,13 +13,14 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.",
+      summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Contribuidor activo al ecosistema open-source mediante la creación y mantenimiento de librerías en NPM. Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
         phone: "453-152-7363",
         github: "DavidFranco3",
-        linkedin: "jos%C3%A9-david-ayala-franco-247701220"
+        linkedin: "jos%C3%A9-david-ayala-franco-247701220",
+        npm: "davidfranco3"
       },
       skills: [
         { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Python (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
@@ -94,13 +95,14 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer and Full Stack Developer with a focus on Backend and Web architecture. Experience in hybrid mobile development (Flutter/Dart) and adaptation and integration of APIs for electronic invoicing (CFDI 4.0). Skilled in building robust systems with Laravel, Express.js, and React, with a high capacity for analysis to understand existing architectures, solve critical bugs, and implement new functionalities. Passionate about optimizing workflows through AI.",
+      summary: "Computer Engineer and Full Stack Developer focusing on Backend and Web architecture. Experience in hybrid mobile development (Flutter/Dart) and adaptation and integration of APIs for electronic invoicing (CFDI 4.0). Active contributor to the open-source ecosystem through the creation and maintenance of NPM libraries. Skilled in building robust systems with Laravel, Express.js, and React, with a high capacity for analysis to understand existing architectures, solve critical bugs, and implement new functionalities. Passionate about optimizing workflows through AI.",
       contact: {
         location: "Paracuaro, Michoacan, Mexico",
         email: "josedavidayalafranco3@gmail.com",
         phone: "453-152-7363",
         github: "DavidFranco3",
-        linkedin: "jos%C3%A9-david-ayala-franco-247701220"
+        linkedin: "jos%C3%A9-david-ayala-franco-247701220",
+        npm: "davidfranco3"
       },
       skills: [
         { category: "Backend (Preferred)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Basics)", "Python (Basics)", "Web/API Architecture"], color: "#3b82f6" },

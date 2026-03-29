@@ -154,17 +154,20 @@ body {
 
 /* Contact Grid */
 .contact-grid {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: center;
-  flex-wrap: nowrap !important;
-  gap: 10px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 15px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
-  overflow-x: auto;
   padding: 10px 5px;
-  scrollbar-width: none;
+}
+
+@media (max-width: 600px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .contact-grid::-webkit-scrollbar {
@@ -449,6 +452,8 @@ body {
 
 .info-content strong { display: block; color: #fff; font-size: 1.1rem; margin-bottom: 4px; }
 .small-text { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; display: block; }
+.small-desc { font-size: 0.9rem; color: var(--text-muted); }
+
 .small-desc { font-size: 0.9rem; color: var(--text-muted); }
 
 /* RESPONSIVE */
