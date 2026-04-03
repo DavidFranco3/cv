@@ -454,7 +454,45 @@ body {
 .small-text { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; display: block; }
 .small-desc { font-size: 0.9rem; color: var(--text-muted); }
 
-.small-desc { font-size: 0.9rem; color: var(--text-muted); }
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.project-link {
+  color: var(--primary);
+  transition: transform 0.2s;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
 
 /* RESPONSIVE */
 @media (max-width: 800px) {

@@ -129,31 +129,8 @@ function App() {
           </div>
         </section>
       </header>
-
       <main className="dashboard-grid">
-        {/* Formación, Certificaciones e Idiomas */}
-        <section className="info-grid">
-          <div className="dashboard-card info-card">
-            <h5>{ui.academicTraining}</h5>
-            <div className="info-content">
-              <strong>{cvData.education.degree}</strong>
-              <p>{cvData.education.school}</p>
-              <span className="small-text">{cvData.education.period}</span>
-              <p className="small-desc">{cvData.education.desc}</p>
-            </div>
-          </div>
-          <div className="dashboard-card info-card">
-            <h5>{ui.languages}</h5>
-            {cvData.languages.map((lang, i) => (
-              <div key={i} className="info-content">
-                <strong>{lang.name}</strong>
-                <p className="small-text">{lang.level}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Stack Tecnológico */}
+        {/* Stack Tecnológico (Moviendo arriba) */}
         <section className="skills-section">
           <h3 className="section-title">{ui.skillsAndTech}</h3>
           <div className="skills-grid">
@@ -191,6 +168,28 @@ function App() {
                     {exp.commits.map((c, i) => <span key={i} className="commit-tag">{c}</span>)}
                   </div>
                 </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Formación e Idiomas (Bajando abajo) */}
+        <section className="info-grid footer-info">
+          <div className="dashboard-card info-card">
+            <h5>{ui.academicTraining}</h5>
+            <div className="info-content">
+              <strong>{cvData.education.degree}</strong>
+              <p>{cvData.education.school}</p>
+              <span className="small-text">{cvData.education.period}</span>
+              <p className="small-desc">{cvData.education.desc}</p>
+            </div>
+          </div>
+          <div className="dashboard-card info-card">
+            <h5>{ui.languages}</h5>
+            {cvData.languages.map((lang, i) => (
+              <div key={i} className="info-content">
+                <strong>{lang.name}</strong>
+                <p className="small-text">{lang.level}</p>
               </div>
             ))}
           </div>

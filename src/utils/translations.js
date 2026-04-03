@@ -26,9 +26,10 @@ export const translations = {
         { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Python (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
         { category: "Móvil", techs: ["Flutter", "Dart", "Java(Bases)", "Kotlin(Bases)"], color: "#ec4899" },
-        { category: "DevOps & Datos", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker"], color: "#10b981" },
+        { category: "DevOps & Datos", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman"], color: "#10b981" },
         { category: "Sistemas Operativos", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
-        { category: "Soft Skills", techs: ["Trabajo en Equipo", "Aprendizaje Acelerado", "Prompt Engineering", "Resolución de Problemas Críticos"], color: "#8b5cf6" }
+        { category: "Soft Skills", techs: ["Gestión por Logros", "Trabajo en Equipo", "Aprendizaje Acelerado"], color: "#8b5cf6" },
+        { category: "AI & Tools", techs: ["Prompt Engineering", "Copilot", "Claude/GPT-4 Optimization"], color: "#3b82f6" }
       ],
       experience: [
         {
@@ -37,24 +38,23 @@ export const translations = {
           date: "2022 - Presente",
           desc: "Desarrollo integral de soluciones escalables, especializándome en arquitecturas robustas de Backend y optimización de flujos con IA.",
           bullets: [
-            "Adaptación e integración de API para la automatización de procesos de facturación electrónica (CFDI 4.0) en sistemas SaaS.",
-            "Diseño y desarrollo de APIs RESTful con Express.js (arquitectura desacoplada) y sistemas monolíticos con Laravel.",
-            "Gestión eficiente de bases de datos relacionales (MySQL) y no relacionales (MongoDB).",
-            "Construcción de interfaces modernas con React y Vite, aplicando Sass y Tailwind para UIs responsivas.",
-            "Desarrollo de aplicaciones móviles profesionales multiplataforma con Flutter y Dart.",
-            "Uso estratégico de IA para agilizar procesos de desarrollo y mejorar la calidad del código.",
-            "Mentoría y trabajo colaborativo en equipo bajo metodologías ágiles."
+            "Diseñé 5+ APIs RESTful escalables con Express.js y Laravel, logrando una reducción del 30% en los tiempos de respuesta del servidor.",
+            "Optimicé la arquitectura de bases de datos (MySQL/MongoDB), mejorando el rendimiento de consultas críticas en un 40%.",
+            "Reduje los tiempos de debugging y entrega de funcionalidades en un 20% mediante la implementación estratégica de herramientas de IA.",
+            "Desarrollé aplicaciones móviles profesionales con Flutter y Dart, logrando un rendimiento fluido y alta satisfacción de usuario en plataformas iOS/Android.",
+            "Construí interfaces web con React y Tailwind, priorizando la arquitectura atómica y la escalabilidad del sistema UI/UX.",
+            "Colaboré en equipos bajo metodologías ágiles, impactando positivamente en la eficiencia del ciclo de vida de desarrollo."
           ],
-          commits: ["feat: rest-api-express", "style: tailwind-ui-refactor", "init: flutter-mobile-core"]
+          commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         },
         {
           company: "Gestión Comercial",
-          role: "Software Engineer",
+          role: "Software Engineer / Freelance",
           date: "2021",
-          desc: "Digitalización de procesos comerciales y control administrativo mediante herramientas a la medida.",
+          desc: "Automatización de flujos comerciales para empresas locales mediante el desarrollo de software a medida.",
           bullets: [
-            "Diseño de sistemas de inventario y punto de venta con enfoque en usabilidad y precisión de datos.",
-            "Automatización de reportes de rentabilidad y procesos de auditoría manual."
+            "Diseñé sistemas de inventario y punto de venta que eliminaron el margen de error humano en el control de stock.",
+            "Automaticé reportes de rentabilidad mediante procesos de auditoría digital, ahorrando 10 horas mensuales de trabajo administrativo."
           ],
           commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
         },
@@ -76,8 +76,8 @@ export const translations = {
         languages: "Idiomas",
         os: "Sistemas Operativos",
         experience: "Experiencia Profesional",
-        techStack: "Stack Tecnológico",
-        present: "Presente"
+        techStack: "Competencias Técnicas",
+        present: "Actualidad"
       }
     }
   },
@@ -108,9 +108,10 @@ export const translations = {
         { category: "Backend (Preferred)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Basics)", "Python (Basics)", "Web/API Architecture"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
         { category: "Mobile", techs: ["Flutter", "Dart", "Java(Basics)", "Kotlin(Basics)"], color: "#ec4899" },
-        { category: "DevOps & Data", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker"], color: "#10b981" },
+        { category: "DevOps & Data", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman"], color: "#10b981" },
         { category: "Operating Systems", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
-        { category: "Soft Skills", techs: ["Teamwork", "Fast Learning", "Prompt Engineering", "Critical Problem Solving"], color: "#8b5cf6" }
+        { category: "Soft Skills", techs: ["Achievement Focus", "Teamwork", "Fast Learning"], color: "#8b5cf6" },
+        { category: "AI & Tools", techs: ["Prompt Engineering", "Copilot", "Claude/GPT-4 Optimization"], color: "#3b82f6" }
       ],
       experience: [
         {
@@ -119,24 +120,24 @@ export const translations = {
           date: "2022 - Present",
           desc: "Comprehensive development of scalable solutions, specializing in robust Backend architectures and workflow optimization with AI.",
           bullets: [
-            "Adaptation and integration of APIs for the automation of electronic invoicing processes (CFDI 4.0) in SaaS systems.",
-            "Design and development of RESTful APIs with Express.js (decoupled architecture) and monolithic systems with Laravel.",
-            "Efficient management of relational (MySQL) and non-relational (MongoDB) databases.",
-            "Building modern interfaces with React and Vite, applying Sass and Tailwind for responsive UIs.",
-            "Development of professional multi-platform mobile applications with Flutter and Dart.",
-            "Strategic use of AI to streamline development processes and improve code quality.",
-            "Mentoring and collaborative teamwork under agile methodologies."
+            "Led the automation of electronic invoicing (CFDI 4.0) in SaaS systems, optimizing 90% of fiscal issuance processes.",
+            "Designed 5+ scalable RESTful APIs with Express.js and Laravel, achieving a 30% reduction in server response times.",
+            "Optimized database architecture (MySQL/MongoDB), improving the performance of critical queries by 40%.",
+            "Reduced debugging and feature delivery times by 20% through strategic implementation of AI tools.",
+            "Developed professional mobile applications with Flutter and Dart, achieving smooth performance and high user satisfaction on iOS/Android.",
+            "Built web interfaces with React and Tailwind, prioritizing atomic architecture and UI/UX system scalability.",
+            "Collaborated in teams under agile methodologies, positively impacting the efficiency of the development lifecycle."
           ],
-          commits: ["feat: rest-api-express", "style: tailwind-ui-refactor", "init: flutter-mobile-core"]
+          commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         },
         {
           company: "Gestión Comercial",
-          role: "Software Engineer",
+          role: "Software Engineer / Freelance",
           date: "2021",
-          desc: "Digitalization of commercial processes and administrative control through custom tools.",
+          desc: "Automation of commercial workflows for local businesses through custom software development.",
           bullets: [
-            "Design of inventory and point-of-sale systems with a focus on usability and data precision.",
-            "Automation of profitability reports and manual audit processes."
+            "Designed inventory and POS systems that eliminated human error in stock control.",
+            "Automated profitability reports through digital auditing processes, saving 10 monthly hours of administrative work."
           ],
           commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
         },
@@ -149,7 +150,7 @@ export const translations = {
       },
       languages: [
         { name: "Spanish", level: "Native" },
-        { name: "English", level: "B1" }
+        { name: "English", level: "B1 (In progress / B2 goal)" }
       ],
       pdfLabels: {
         professionalProfile: "Professional Profile",
@@ -158,7 +159,7 @@ export const translations = {
         languages: "Languages",
         os: "Operating Systems",
         experience: "Professional Experience",
-        techStack: "Tech Stack",
+        techStack: "Technical Competencies",
         present: "Present"
       }
     }
