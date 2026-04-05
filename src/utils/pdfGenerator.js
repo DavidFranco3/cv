@@ -59,11 +59,11 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
 
     const sectionTitle = (title, yPos) => {
         doc.setFont('helvetica', 'bold');
-        doc.setFontSize(12);
+        doc.setFontSize(13);
         setColor(BLACK);
         doc.text(title.toUpperCase(), MARGIN_X, yPos);
         hline(yPos + 1.0); // Slightly more space
-        return yPos + 5.0; // Slightly more space
+        return yPos + 6.0; // Slightly more space
     };
 
     const drawIcon = (type, x, y) => {
@@ -90,68 +90,76 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     // ══════════════════════════════════════════════════════════════
     // HEADER (Centered)
     // ══════════════════════════════════════════════════════════════
-    let y = 12; // A bit more top space
+    let y = 14; // A bit more top space
 
     // Name
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(22);
+    doc.setFontSize(24); // Increased from 22
     setColor(BLACK);
     doc.text(data.name.toUpperCase(), PAGE_W / 2, y, { align: 'center' });
-    y += 10;
+    y += 11;
 
     // Contact Information (Centered row - Compact)
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9);
+    doc.setFontSize(10); // Increased from 9
     setColor(DARK_GRAY);
-    
+
     const contactInfo = [
         data.contact.location,
         data.contact.phone,
         data.contact.email
     ].join('  •  ');
     doc.text(contactInfo, PAGE_W / 2, y, { align: 'center' });
-    y += 5;
+    y += 5.5;
 
-    // Links (Centered row - Icons + Text)
     const links = [
-        { type: 'linkedin', value: 'LinkedIn', link: `https://linkedin.com/in/${data.contact.linkedin}` },
-        { type: 'github', value: 'GitHub', link: `https://github.com/${data.contact.github}` },
-        { type: 'npm', value: 'NPM', link: `https://www.npmjs.com/~${data.contact.npm}` }
+        { label: 'Github', name: data.contact.github, url: `https://github.com/${data.contact.github}` },
+        { label: 'Linkedin', name: 'David Franco', url: `https://www.linkedin.com/in/${data.contact.linkedin}/` },
+        { label: 'NPM', name: data.contact.npm, url: `https://www.npmjs.com/~${data.contact.npm}` }
     ];
 
-    let currentXLinks = PAGE_W / 2 - 38; 
-    links.forEach((l) => {
-        drawIcon(l.type, currentXLinks, y);
-        doc.text(l.value, currentXLinks + 4.5, y);
-        doc.link(currentXLinks, y - 3, 20, 4, { url: l.link });
-        currentXLinks += 26;
+    doc.setFontSize(10); // Increased from 9
+    const bullet = '   •   ';
+    const linkItems = links.map(l => `${l.label}: ${l.name}`);
+    const totalW = doc.getTextWidth(linkItems.join(bullet));
+
+    let currentX = (PAGE_W / 2) - (totalW / 2);
+    links.forEach((l, i) => {
+        const itemText = `${l.label}: ${l.name}`;
+        const itemW = doc.getTextWidth(itemText);
+
+        doc.text(itemText, currentX, y);
+        doc.link(currentX, y - 3, itemW, 4, { url: l.url });
+
+        currentX += itemW;
+        if (i < links.length - 1) {
+            doc.text(bullet, currentX, y);
+            currentX += doc.getTextWidth(bullet);
+        }
     });
 
-    y += 10;
+    y += 12;
 
     // ══════════════════════════════════════════════════════════════
     // PROFESSIONAL SUMMARY
     // ══════════════════════════════════════════════════════════════
     y = sectionTitle(pdfLabels.professionalProfile, y);
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(11); // Reverted from 11.5
+    doc.setFontSize(11.5); // Unified to 11.5
     setColor(DARK_GRAY);
     const summaryLines = wrapM(data.summary);
     doc.text(summaryLines, MARGIN_X, y);
-    y += summaryLines.length * 4.5 + 5; // Reverted leading
-    
+    y += summaryLines.length * 4.8 + 6; // Adjusted leading
+
     // Save current Y for skills
     const skillsY = y;
 
     // ══════════════════════════════════════════════════════════════
     // TECHNICAL SKILLS (Balanced 3-Column Layout) - MOVED UP
     // ══════════════════════════════════════════════════════════════
-    const getCatH = (t) => 4.5 + (t.length * 3.8) + 3; // Even more compact
+    const getCatH = (t) => 5 + (t.length * 4.0) + 3; // Adjusted for font size
 
-    const filteredSkills = data.skills.filter(s => 
-        !s.category.toLowerCase().includes('sistemas operativos') &&
-        !s.category.toLowerCase().includes('operating systems')
-    );
+    const filteredSkills = data.skills;
 
     const cols = [[], [], []];
     const heights = [0, 0, 0];
@@ -172,25 +180,25 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     const sectionH = Math.max(...heights) + 8;
 
     // Check for page break (very lenient)
-    if (y + sectionH > PAGE_H - 5) { doc.addPage(); y = 10; }
+    if (y + sectionH > PAGE_H - 10) { doc.addPage(); y = 15; }
     y = sectionTitle(pdfLabels.techStack, y);
     const gridStartY = y;
     const colWidth = (CONTENT_W / 3) - 6;
 
     const renderBlock = (skill, x, currentY) => {
         doc.setFont('helvetica', 'bold');
-        doc.setFontSize(10.2); // Reverted from 10.8
+        doc.setFontSize(11); // Increased from 10.2
         setColor(BLACK);
         doc.text(skill.category.toUpperCase(), x, currentY);
-        currentY += 4.2;
+        currentY += 4.5;
         doc.setFont('helvetica', 'normal');
         setColor(DARK_GRAY);
-        doc.setFontSize(9.5); // Reverted from 10
+        doc.setFontSize(10.5); // Increased from 9.5
         skill.techs.forEach(tech => {
             doc.text(`• ${tech}`, x, currentY);
-            currentY += 3.8;
+            currentY += 4.0;
         });
-        return currentY + 2;
+        return currentY + 2.5;
     };
 
     // Render Columns & Track actual max Y
@@ -202,7 +210,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         if (cy > maxY) maxY = cy;
     });
 
-    y = maxY + 3.5; // "Poquito no tanto" (a bit more space)
+    y = maxY + 4.5; // (adjusted)
 
     // ══════════════════════════════════════════════════════════════
     // EXPERIENCE
@@ -210,11 +218,11 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     y = sectionTitle(pdfLabels.experience, y);
 
     data.experience.forEach((exp, idx) => {
-        if (y > PAGE_H - 15) { doc.addPage(); y = 10; }
+        if (y > PAGE_H - 20) { doc.addPage(); y = 15; }
 
         // Company & Date Header
         doc.setFont('helvetica', 'bold');
-        doc.setFontSize(11.2); // Reverted from 11.8
+        doc.setFontSize(12.5); // Increased from 11.2
         setColor(BLACK);
         doc.text(exp.company.toUpperCase(), MARGIN_X, y);
 
@@ -224,45 +232,45 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
             .replace(/presente/gi, pdfLabels.present)
             .replace(/present/gi, pdfLabels.present)
             .replace(/actualidad/gi, pdfLabels.present);
-            
+
         const dateW = doc.getTextWidth(dateStr);
         doc.text(dateStr, PAGE_W - MARGIN_X - dateW, y);
-        y += 4.8;
+        y += 5.2;
 
         // Role
         doc.setFont('helvetica', 'bold italic');
-        doc.setFontSize(10.5); // Reverted from 11
+        doc.setFontSize(11.5); // Increased from 10.5
         setColor(DARK_GRAY);
         doc.text(exp.role, MARGIN_X, y);
-        y += 4.5;
+        y += 4.8;
 
         // Description
         doc.setFont('helvetica', 'normal');
-        doc.setFontSize(10); // Reverted from 10.5
+        doc.setFontSize(10.5); // Unified
         setColor(DARK_GRAY);
         const descLines = wrapM(exp.desc);
         doc.text(descLines, MARGIN_X, y);
-        y += descLines.length * 4.2 + 0.8;
+        y += descLines.length * 4.5 + 1.2;
 
         // Bullets
         exp.bullets.forEach(bullet => {
-            if (y > PAGE_H - 10) { doc.addPage(); y = 10; }
+            if (y > PAGE_H - 12) { doc.addPage(); y = 15; }
             const bLines = wrapM(`•  ${bullet}`, CONTENT_W - 5);
             doc.text(bLines, MARGIN_X + 2, y);
-            y += bLines.length * 4.0; // Reverted leading
+            y += bLines.length * 4.2; 
         });
 
-        y += 5.5; // Back to standard spacing
+        y += 6.5; 
     });
 
     // ══════════════════════════════════════════════════════════════
     // EDUCATION (Moved to Bottom)
     // ══════════════════════════════════════════════════════════════
-    if (y > PAGE_H - 22) { doc.addPage(); y = 15; }
+    if (y > PAGE_H - 30) { doc.addPage(); y = 20; }
     y = sectionTitle(pdfLabels.education, y);
 
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(11.5); // Reverted from 12
+    doc.setFontSize(12.5); // Increased from 11.5
     setColor(BLACK);
     doc.text(data.education.school.toUpperCase(), MARGIN_X, y);
 
@@ -270,16 +278,21 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     doc.setFont('helvetica', 'italic');
     const eduDateW = doc.getTextWidth(data.education.period);
     doc.text(data.education.period, PAGE_W - MARGIN_X - eduDateW, y);
-    y += 4.8;
+    y += 5.2;
 
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(11); // Reverted from 11.5
+    doc.setFontSize(11.5); // Increased from 11
     setColor(DARK_GRAY);
     doc.text(data.education.degree, MARGIN_X, y);
-    y += 8;
+    y += 5.5;
+
+    // Education Description
+    doc.setFont('helvetica', 'italic');
+    doc.setFontSize(10.5); // Consistently 10.5
+    setColor(MID_GRAY);
+    const eduDescLines = wrapM(data.education.desc);
+    doc.text(eduDescLines, MARGIN_X, y);
+    y += eduDescLines.length * 4.5 + 10;
 
     doc.save(filename);
 };
-
-
-

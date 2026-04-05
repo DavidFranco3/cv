@@ -13,50 +13,38 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y adaptación e integración de API para facturación electrónica (CFDI 4.0). Contribuidor activo al ecosistema open-source mediante la creación y mantenimiento de librerías en NPM. Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, con alta capacidad de análisis para comprender arquitecturas existentes, resolver bugs críticos e implementar nuevas funcionalidades. Apasionado por la optimización de flujos mediante IA.",
+      summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Poseo experiencia comprobada en la automatización de flujos comerciales e industriales mediante el desarrollo de software a medida y la implementación de APIs de terceros. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y contribuidor activo al ecosistema open-source mediante la creación y mantenimiento de librerías en NPM. Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, siempre enfocado en la optimización de procesos y arquitecturas escalables.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
         phone: "453-152-7363",
         github: "DavidFranco3",
-        linkedin: "jos%C3%A9-david-ayala-franco-247701220",
+        linkedin: "david-franco-247701220",
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Bases)", "Python (Bases)", "Arquitectura Web/API"], color: "#3b82f6" },
+        { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java", "Python", "Arquitectura Web/API"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
-        { category: "Móvil", techs: ["Flutter", "Dart", "Java(Bases)", "Kotlin(Bases)"], color: "#ec4899" },
-        { category: "DevOps & Datos", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman"], color: "#10b981" },
-        { category: "Sistemas Operativos", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
-        { category: "Soft Skills", techs: ["Gestión por Logros", "Trabajo en Equipo", "Aprendizaje Acelerado"], color: "#8b5cf6" },
-        { category: "AI & Tools", techs: ["Prompt Engineering", "Copilot", "Claude/GPT-4 Optimization"], color: "#3b82f6" }
+        { category: "Móvil", techs: ["Flutter", "Dart", "Java", "Kotlin"], color: "#ec4899" },
+        { category: "DevOps, Datos e IA", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman", "Prompt Engineering"], color: "#10b981" },
+        { category: "Soft Skills", techs: ["Gestión por Logros", "Trabajo en Equipo", "Aprendizaje Acelerado"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Presente",
-          desc: "Desarrollo integral de soluciones escalables, especializándome en arquitecturas robustas de Backend y optimización de flujos con IA.",
+          desc: "Desarrollo integral de sistemas web mediante el stack MERN (MongoDB, Express, React, Node.js), gestionando arquitecturas desacopladas y monolíticas con Laravel y MySQL.",
           bullets: [
-            "Diseñé 5+ APIs RESTful escalables con Express.js y Laravel, logrando una reducción del 30% en los tiempos de respuesta del servidor.",
-            "Optimicé la arquitectura de bases de datos (MySQL/MongoDB), mejorando el rendimiento de consultas críticas en un 40%.",
-            "Reduje los tiempos de debugging y entrega de funcionalidades en un 20% mediante la implementación estratégica de herramientas de IA.",
-            "Desarrollé aplicaciones móviles profesionales con Flutter y Dart, logrando un rendimiento fluido y alta satisfacción de usuario en plataformas iOS/Android.",
-            "Construí interfaces web con React y Tailwind, priorizando la arquitectura atómica y la escalabilidad del sistema UI/UX.",
-            "Colaboré en equipos bajo metodologías ágiles, impactando positivamente en la eficiencia del ciclo de vida de desarrollo."
+            "Diseñé e implementé interfaces modernas utilizando React con Tailwind CSS y SASS, priorizando la arquitectura atómica y la experiencia de usuario (UI/UX).",
+            "Desarrollé APIs RESTful robustas y escalables con Node.js/Express y PHP/Laravel, aplicando patrones de diseño como MVC y garantizando la fluidez de datos.",
+            "Integré diversas APIs de terceros para añadir funcionalidades críticas como geolocalización, servicios de mapas y automatización de flujos de trabajo.",
+            "Desarrollé aplicaciones móviles híbridas profesionales con Flutter y Dart, logrando un rendimiento fluido y alta satisfacción en iOS/Android.",
+            "Optimicé procesos de desarrollo y flujos operativos mediante el uso estratégico de herramientas de Inteligencia Artificial.",
+            "Lideré equipos técnicos y colaboré en proyectos bajo metodologías ágiles, desempeñando roles de mentoría y asesoramiento para practicantes.",
+            "Realicé aseguramiento de calidad mediante pruebas manuales exhaustivas para garantizar la estabilidad de los entregables antes de producción."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
-        },
-        {
-          company: "Gestión Comercial",
-          role: "Software Engineer / Freelance",
-          date: "2021",
-          desc: "Automatización de flujos comerciales para empresas locales mediante el desarrollo de software a medida.",
-          bullets: [
-            "Diseñé sistemas de inventario y punto de venta que eliminaron el margen de error humano en el control de stock.",
-            "Automaticé reportes de rentabilidad mediante procesos de auditoría digital, ahorrando 10 horas mensuales de trabajo administrativo."
-          ],
-          commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
         },
       ],
       education: {
@@ -74,7 +62,6 @@ export const translations = {
         education: "Formación",
         softSkills: "Soft Skills & IA",
         languages: "Idiomas",
-        os: "Sistemas Operativos",
         experience: "Experiencia Profesional",
         techStack: "Competencias Técnicas",
         present: "Actualidad"
@@ -95,51 +82,38 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer and Full Stack Developer focusing on Backend and Web architecture. Experience in hybrid mobile development (Flutter/Dart) and adaptation and integration of APIs for electronic invoicing (CFDI 4.0). Active contributor to the open-source ecosystem through the creation and maintenance of NPM libraries. Skilled in building robust systems with Laravel, Express.js, and React, with a high capacity for analysis to understand existing architectures, solve critical bugs, and implement new functionalities. Passionate about optimizing workflows through AI.",
+      summary: "Computer Engineer and Full Stack Developer focusing on Backend and Web architecture. I have proven experience in automating commercial and industrial workflows through custom software development and third-party API implementation. Experience in hybrid mobile development (Flutter/Dart) and active contributor to the open-source ecosystem through the creation and maintenance of NPM libraries. Skilled in building robust systems with Laravel, Express.js, and React, always focused on process optimization and scalable architectures.",
       contact: {
         location: "Paracuaro, Michoacan, Mexico",
         email: "josedavidayalafranco3@gmail.com",
         phone: "453-152-7363",
         github: "DavidFranco3",
-        linkedin: "jos%C3%A9-david-ayala-franco-247701220",
+        linkedin: "david-franco-247701220",
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Preferred)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java (Basics)", "Python (Basics)", "Web/API Architecture"], color: "#3b82f6" },
+        { category: "Backend (Preferred)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java", "Python", "Web/API Architecture"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
-        { category: "Mobile", techs: ["Flutter", "Dart", "Java(Basics)", "Kotlin(Basics)"], color: "#ec4899" },
-        { category: "DevOps & Data", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman"], color: "#10b981" },
-        { category: "Operating Systems", techs: ["Windows", "Ubuntu", "MacOS"], color: "#6366f1" },
-        { category: "Soft Skills", techs: ["Achievement Focus", "Teamwork", "Fast Learning"], color: "#8b5cf6" },
-        { category: "AI & Tools", techs: ["Prompt Engineering", "Copilot", "Claude/GPT-4 Optimization"], color: "#3b82f6" }
+        { category: "Mobile", techs: ["Flutter", "Dart", "Java", "Kotlin"], color: "#ec4899" },
+        { category: "DevOps, Data & AI", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman", "Prompt Engineering"], color: "#10b981" },
+        { category: "Soft Skills", techs: ["Achievement Focus", "Teamwork", "Fast Learning"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Present",
-          desc: "Comprehensive development of scalable solutions, specializing in robust Backend architectures and workflow optimization with AI.",
+          desc: "Full-stack development of web systems using the MERN stack (MongoDB, Express, React, Node.js), managing both decoupled and monolithic architectures with Laravel and MySQL.",
           bullets: [
-            "Led the automation of electronic invoicing (CFDI 4.0) in SaaS systems, optimizing 90% of fiscal issuance processes.",
-            "Designed 5+ scalable RESTful APIs with Express.js and Laravel, achieving a 30% reduction in server response times.",
-            "Optimized database architecture (MySQL/MongoDB), improving the performance of critical queries by 40%.",
-            "Reduced debugging and feature delivery times by 20% through strategic implementation of AI tools.",
-            "Developed professional mobile applications with Flutter and Dart, achieving smooth performance and high user satisfaction on iOS/Android.",
-            "Built web interfaces with React and Tailwind, prioritizing atomic architecture and UI/UX system scalability.",
-            "Collaborated in teams under agile methodologies, positively impacting the efficiency of the development lifecycle."
+            "Designed and implemented modern interfaces using React with Tailwind CSS and SASS, prioritizing atomic architecture and user experience (UI/UX).",
+            "Developed robust and scalable RESTful APIs with Node.js/Express and PHP/Laravel, applying design patterns like MVC and ensuring data flow efficiency.",
+            "Integrated various third-party APIs to incorporate critical features such as geolocation, mapping services, and workflow automation.",
+            "Developed professional hybrid mobile applications with Flutter and Dart, achieving smooth performance and high satisfaction on iOS/Android.",
+            "Optimized development processes and operational workflows through the strategic use of Artificial Intelligence tools.",
+            "Led technical teams and collaborated on projects under agile methodologies, performing mentoring and advisory roles for interns.",
+            "Conducted quality assurance through exhaustive manual testing to ensure the stability of deliverables before production releases."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
-        },
-        {
-          company: "Gestión Comercial",
-          role: "Software Engineer / Freelance",
-          date: "2021",
-          desc: "Automation of commercial workflows for local businesses through custom software development.",
-          bullets: [
-            "Designed inventory and POS systems that eliminated human error in stock control.",
-            "Automated profitability reports through digital auditing processes, saving 10 monthly hours of administrative work."
-          ],
-          commits: ["feat: inventory-crud", "fix: stock-sync-logic"]
         },
       ],
       education: {
@@ -150,14 +124,13 @@ export const translations = {
       },
       languages: [
         { name: "Spanish", level: "Native" },
-        { name: "English", level: "B1 (In progress / B2 goal)" }
+        { name: "English", level: "B1" }
       ],
       pdfLabels: {
         professionalProfile: "Professional Profile",
         education: "Education",
         softSkills: "Soft Skills & AI",
         languages: "Languages",
-        os: "Operating Systems",
         experience: "Professional Experience",
         techStack: "Technical Competencies",
         present: "Present"
