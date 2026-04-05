@@ -66,13 +66,6 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         return yPos + 6.0; // Slightly more space
     };
 
-    const drawIcon = (type, x, y) => {
-        if (iconsData[type]) {
-            doc.addImage(iconsData[type], 'PNG', x, y - 3.2, 3.5, 3.5);
-            return 4;
-        }
-        return 0;
-    };
 
     const wrapM = (text, w = CONTENT_W) => doc.splitTextToSize(text, w);
 
@@ -151,8 +144,6 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     doc.text(summaryLines, MARGIN_X, y);
     y += summaryLines.length * 4.8 + 6; // Adjusted leading
 
-    // Save current Y for skills
-    const skillsY = y;
 
     // ══════════════════════════════════════════════════════════════
     // TECHNICAL SKILLS (Balanced 3-Column Layout) - MOVED UP
@@ -217,7 +208,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     // ══════════════════════════════════════════════════════════════
     y = sectionTitle(pdfLabels.experience, y);
 
-    data.experience.forEach((exp, idx) => {
+    data.experience.forEach((exp) => {
         if (y > PAGE_H - 20) { doc.addPage(); y = 15; }
 
         // Company & Date Header
