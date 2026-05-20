@@ -55,7 +55,7 @@ function App() {
       setTypedText(fullSummary.slice(0, i));
       i++;
       if (i > fullSummary.length) clearInterval(interval);
-    }, 20);
+    }, 35);
     return () => clearInterval(interval);
   }, [language, fullSummary]);
 

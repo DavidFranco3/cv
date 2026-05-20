@@ -7,20 +7,8 @@
   --primary: #3b82f6;
   --accent: #8b5cf6;
   --glow: rgba(59, 130, 246, 0.2);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--bg-color);
-  color: var(--text-main);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  overflow-x: hidden;
+  --card-header-bg: #1f2937;
+  --tag-bg: rgba(255, 255, 255, 0.05);
 }
 
 .dashboard-container {
@@ -70,7 +58,7 @@ body {
 
 .download-btn-top {
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-  color: white;
+  color: #fff;
   border: none;
   padding: 0.5rem 1.25rem;
   border-radius: 8px;
@@ -108,7 +96,7 @@ body {
 .lang-toggle {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: var(--text-main);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -117,9 +105,11 @@ body {
   backdrop-filter: blur(10px);
 }
 
+
+
 .lang-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
-  border-color: var(--primary-accent);
+  border-color: var(--primary);
   box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
 }
 
@@ -150,7 +140,7 @@ body {
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 8px;
-  background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+  background: linear-gradient(135deg, #fff 0%, #60a5fa 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -187,6 +177,18 @@ body {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .contact-card-mini {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-card-mini {
+    min-width: auto;
+  }
 }
 
 .contact-grid::-webkit-scrollbar {
@@ -194,8 +196,8 @@ body {
 }
 
 .contact-card-mini {
-  display: flex !important;
-  flex-direction: column !important;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
   padding: 20px 15px;
@@ -209,6 +211,8 @@ body {
   min-width: 170px;
   text-align: center;
 }
+
+
 
 .contact-card-mini svg {
   color: var(--primary);
@@ -263,9 +267,14 @@ body {
   border-color: #2a2a2a;
 }
 
+.terminal-card:hover {
+  border-color: var(--primary);
+}
+
 .card-header {
-  background: #1f2937;
+  background: var(--card-header-bg);
   padding: 10px 18px;
+  transition: background 0.3s;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -283,15 +292,18 @@ body {
   font-family: 'Fira Code', monospace;
 }
 
+
+
 .terminal-content {
   padding: 30px;
   font-family: 'Fira Code', monospace;
   font-size: 1rem;
   line-height: 1.7;
+  color: var(--text-main);
 }
 
 .prompt { color: #10b981; margin-right: 10px; }
-.typed-text { display: inline; color: #f3f4f6; }
+.typed-text { display: inline; color: var(--text-main); }
 
 .cursor {
   animation: blink 0.8s infinite;
@@ -306,7 +318,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 24px;
-  color: #fff;
+  color: var(--text-main);
   border-left: 4px solid var(--primary);
   padding-left: 15px;
 }
@@ -353,20 +365,23 @@ body {
 }
 
 .tech-tag {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--tag-bg);
   padding: 6px 12px;
   border-radius: 8px;
   font-size: 0.9rem;
-  color: #cbd5e1;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
   transition: all 0.3s;
 }
 
 .tech-tag:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: var(--tag-bg);
+  color: var(--text-main);
+  border-color: var(--primary);
   transform: translateY(-2px);
 }
+
+
 
 /* Timeline / Experience */
 .timeline {
@@ -412,11 +427,11 @@ body {
   margin-bottom: 12px;
 }
 
-.exp-company { font-size: 1.35rem; font-weight: 700; color: #fff; }
+.exp-company { font-size: 1.35rem; font-weight: 700; color: var(--text-main); }
 .exp-date { font-size: 0.85rem; color: var(--primary); font-weight: 600; }
 .exp-role { font-size: 1rem; color: var(--accent); font-weight: 500; display: block; margin-top: 4px; }
 
-.exp-short-desc { color: #fff; font-size: 1rem; font-weight: 500; margin-bottom: 15px; }
+.exp-short-desc { color: var(--text-main); font-size: 1rem; font-weight: 500; margin-bottom: 15px; }
 
 .exp-bullets {
   list-style: none;
@@ -450,6 +465,8 @@ body {
   border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
+
+
 /* Info Grid (Education, Certs, Languages) */
 .info-grid {
   display: grid;
@@ -469,7 +486,7 @@ body {
   margin-bottom: 20px;
 }
 
-.info-content strong { display: block; color: #fff; font-size: 1.1rem; margin-bottom: 4px; }
+.info-content strong { display: block; color: var(--text-main); font-size: 1.1rem; margin-bottom: 4px; }
 .small-text { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; display: block; }
 .small-desc { font-size: 0.9rem; color: var(--text-muted); }
 
