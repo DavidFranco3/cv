@@ -68,9 +68,9 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Desarrollador de Software — IBM",
-        recipient: "IBM Talent Acquisition Team\nOficina de Selección de Talento:",
-        body1: "Por medio de la presente, me permito someter a su amable consideración mi candidatura para integrarme al equipo de desarrollo de IBM como Desarrollador de Software. Soy Ingeniero en Informática con una sólida trayectoria en desarrollo Full Stack, con especialización en backend y arquitectura web, y cuento con un historial demostrable en la automatización de flujos comerciales e industriales a través del diseño e implementación de soluciones de software a la medida.",
+        subject: "Solicitud de Empleo — Desarrollador de Software",
+        recipient: "Oficina de Selección de Talento:",
+        body1: "Por medio de la presente, me permito someter a su amable consideración mi candidatura para integrarme a su equipo de desarrollo como Desarrollador de Software. Soy Ingeniero en Informática con una sólida trayectoria en desarrollo Full Stack, con especialización en backend y arquitectura web, y cuento con un historial demostrable en la automatización de flujos comerciales e industriales a través del diseño e implementación de soluciones de software a la medida.",
         body2: "Durante mi ejercicio profesional en Isotech, he tenido a mi cargo el liderazgo técnico y desarrollo de sistemas web empleando el stack MERN y Laravel, así como la integración de APIs de terceros para habilitar funcionalidades críticas tales como geolocalización y automatización de procesos operativos. Adicionalmente, he desarrollado aplicaciones móviles híbridas con Flutter y Dart, y participo activamente en el ecosistema open-source mediante la publicación y mantenimiento de librerías en NPM.",
         body3: "Me distingo por mi orientación hacia la optimización continua de procesos, la adopción estratégica de herramientas de inteligencia artificial para potenciar la productividad, y mi capacidad para dirigir equipos técnicos bajo metodologías ágiles. Mi compromiso se centra en la entrega de soluciones escalables, robustas y alineadas con los más altos estándares de calidad.",
         body4: "Adjunto a la presente mi currículum vitae para su evaluación y quedo a su entera disposición para ampliar la información que consideren pertinente en una entrevista personal. Agradezco de antemano la atención que se sirva dispensar a la presente solicitud.",
@@ -147,9 +147,9 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Employment — Software Developer — IBM",
-        recipient: "IBM Talent Acquisition Team\nOffice of Talent Selection:",
-        body1: "I hereby submit my candidacy for your kind consideration to join IBM's development team as a Software Developer. I hold a degree in Computer Engineering with a solid track record in Full Stack development, specializing in backend and web architecture, and I possess demonstrable experience in automating commercial and industrial workflows through the design and implementation of custom software solutions.",
+        subject: "Application for Employment — Software Developer",
+        recipient: "Office of Talent Selection:",
+        body1: "I hereby submit my candidacy for your kind consideration to join your development team as a Software Developer. I hold a degree in Computer Engineering with a solid track record in Full Stack development, specializing in backend and web architecture, and I possess demonstrable experience in automating commercial and industrial workflows through the design and implementation of custom software solutions.",
         body2: "Throughout my professional career at Isotech, I have been entrusted with the technical leadership and development of web systems using the MERN stack and Laravel, as well as the integration of third-party APIs to enable critical functionalities such as geolocation and operational process automation. Additionally, I have developed hybrid mobile applications with Flutter and Dart, and I actively participate in the open-source ecosystem through the publication and maintenance of NPM libraries.",
         body3: "I am distinguished by my commitment to continuous process optimization, the strategic adoption of artificial intelligence tools to enhance productivity, and my ability to lead technical teams under agile methodologies. My focus is on delivering scalable, robust solutions aligned with the highest quality standards.",
         body4: "Enclosed herein is my curriculum vitae for your evaluation. I remain at your complete disposal to provide any further information you may deem pertinent in a personal interview. I thank you in advance for the attention you may afford this application.",

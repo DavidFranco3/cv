@@ -9,7 +9,7 @@ CV digital interactivo con estética de terminal, soporte bilingüe español/ing
 - **Interfaz tipo terminal** — Diseño inspirado en herramientas de desarrollo con animación de escritura (typing effect), glassmorphism y micro-animaciones.
 - **Multilenguaje** — Soporte nativo para Español e Inglés con traducciones centralizadas en `translations.js`.
 - **Generador de PDF personalizado** — Motor propio con `jsPDF` que produce un documento A4 profesional en formato Harvard/HBS, optimizado para ATS, con saltos de página automáticos.
-- **Carta de presentación** — PDF descargable dirigido a IBM, generado desde los mismos datos del perfil.
+- **Carta de presentación** — PDF descargable tipo carta formal, generado desde los mismos datos del perfil.
 - **Diseño responsive** — Adaptado a desktop, tablet y móvil mediante CSS Grid y media queries.
 - **Docker** — Multi-stage build con Node 24 Alpine + nginx stable-alpine.
 
