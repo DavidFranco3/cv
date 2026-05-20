@@ -1,47 +1,67 @@
-# 🚀 Digital CV - José David Ayala Franco
+# Digital CV — José David Ayala Franco
 
-Este es un proyecto de **CV Digital e Interactivo** diseñado para destacar habilidades técnicas con una estética de terminal moderna y profesional. El proyecto permite visualizar el perfil profesional de forma dinámica y generar un PDF optimizado en tiempo real.
+CV digital interactivo con estética de terminal, soporte bilingüe español/inglés y generación de PDF profesional optimizado para ATS.
 
 ![Preview](public/avatar_caricature.png)
 
-## ✨ Características Principales
+## Características
 
--   **Interfaz de Terminal**: Diseño inspirado en herramientas de desarrollo con animaciones de escritura (typing effect).
--   **Diseño Responsivo**: Adaptado para todo tipo de pantallas mediante un sistema de cuadrícula inteligente (3x2 en desktop).
--   **Generador de PDF Personalizado**: Motor propio utilizando `jsPDF` que transforma los datos del CV en un documento A4 profesional (formato Harvard/HBS), con soporte para saltos de página automáticos y una columna optimizada para ATS.
--   **Multilenguaje**: Soporte nativo para Español e Inglés con traducciones centralizadas.
--   **Integración NPM**: Enlace directo al perfil de contribuidor y mención de librerías open-source.
--   **Aesthetica Premium**: Uso de degradados, desenfoques (backdrop-filters) y micro-animaciones para una experiencia visual de alto nivel.
+- **Interfaz tipo terminal** — Diseño inspirado en herramientas de desarrollo con animación de escritura (typing effect), glassmorphism y micro-animaciones.
+- **Multilenguaje** — Soporte nativo para Español e Inglés con traducciones centralizadas en `translations.js`.
+- **Generador de PDF personalizado** — Motor propio con `jsPDF` que produce un documento A4 profesional en formato Harvard/HBS, optimizado para ATS, con saltos de página automáticos.
+- **Carta de presentación** — PDF descargable dirigido a IBM, generado desde los mismos datos del perfil.
+- **Diseño responsive** — Adaptado a desktop, tablet y móvil mediante CSS Grid y media queries.
+- **Docker** — Multi-stage build con Node 24 Alpine + nginx stable-alpine.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
--   **Core**: React 19 + Vite 8
--   **Styling**: CSS3 (Vanilla) con variables para modo oscuro.
--   **Documentación**: jsPDF para la generación dinámica de archivos.
--   **Iconografía**: SVG personalizados integrados como componentes React.
+| Categoría | Tecnología |
+|---|---|
+| **Framework** | React 19 |
+| **Build** | Vite 8 (Rolldown) con chunk splitting |
+| **Estilos** | CSS3 Vanilla con custom properties |
+| **PDF** | jsPDF con canvas para iconos SVG |
+| **Linter** | ESLint 10 (flat config) con react-hooks |
+| **Infra** | Docker, nginx:stable-alpine |
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
--   `src/App.jsx`: Componente principal y lógica de la interfaz.
--   `src/utils/pdfGenerator.js`: El "corazón" del sistema; el algoritmo que construye el PDF píxel a píxel.
--   `src/utils/translations.js`: Diccionario de datos y contenidos para fácil mantenimiento.
--   `public/`: Assets estáticos y recursos como el avatar caricature.
+```
+src/
+├── App.jsx                    # Componente principal
+├── App.css                    # Estilos globales + print styles
+├── index.css                  # Reset y scrollbar
+├── main.jsx                   # Entry point React
+└── utils/
+    ├── translations.js        # Datos del CV bilingües
+    ├── pdfGenerator.js        # Generador de PDF (CV)
+    └── coverLetterGenerator.js # Generador de PDF (carta)
+```
 
-## ⚙️ Instalación y Uso
+## Instalación y Uso
 
-1.  Clonar el repositorio:
-    ```bash
-    git clone https://github.com/DavidFranco3/cv.git
-    ```
-2.  Instalar dependencias:
-    ```bash
-    npm install
-    ```
-3.  Iniciar servidor de desarrollo:
-    ```bash
-    npm run dev
-    ```
+```bash
+git clone https://github.com/DavidFranco3/cv.git
+cd cv
+npm install
+npm run dev
+```
 
-## 📄 Licencia
+Otros scripts:
+
+```bash
+npm run build    # Build producción
+npm run lint     # ESLint
+npm run preview  # Preview del build
+```
+
+## Docker
+
+```bash
+docker build -t cv .
+docker run -p 80:80 cv
+```
+
+## Licencia
 
 Este proyecto está bajo la licencia MIT. Siéntete libre de usarlo como inspiración para tu propio CV.
