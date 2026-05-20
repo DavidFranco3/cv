@@ -1,4 +1,4 @@
-# Digital CV — José David Ayala Franco
+# Digital CV — David Franco
 
 CV digital interactivo con estética de terminal, soporte bilingüe español/inglés y generación de PDF profesional optimizado para ATS.
 
