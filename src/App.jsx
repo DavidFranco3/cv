@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { generatePdf } from './utils/pdfGenerator'
+import { generateCoverLetter } from './utils/coverLetterGenerator'
 import './App.css'
 import { translations } from './utils/translations'
 
@@ -49,8 +50,7 @@ function App() {
   };
 
   useEffect(() => {
-    let i = 0;
-    setTypedText(''); // Reset typed text on language change
+    let i = 1;
     const interval = setInterval(() => {
       setTypedText(fullSummary.slice(0, i));
       i++;
@@ -59,11 +59,17 @@ function App() {
     return () => clearInterval(interval);
   }, [language, fullSummary]);
 
-  const handleDownload = async () => {
-    // Para el PDF usamos la versión optimizada (concisa)
+  const handleDownloadCv = async () => {
     await generatePdf(
       { ...cvData, summary: fullSummary },
       `CV_DavidFranco_${language.toUpperCase()}.pdf`
+    );
+  };
+
+  const handleDownloadCoverLetter = async () => {
+    await generateCoverLetter(
+      cvData,
+      `Cover_Letter_DavidFranco_${language.toUpperCase()}.pdf`
     );
   };
 
@@ -76,8 +82,11 @@ function App() {
         <div className="top-bar">
           <div className="status-badge"><span></span> {ui.status}</div>
           <div className="top-actions">
-            <button className="download-btn-top" onClick={handleDownload}>
+            <button className="download-btn-top" onClick={handleDownloadCv}>
               {ui.downloadCv}
+            </button>
+            <button className="download-btn-cover" onClick={handleDownloadCoverLetter}>
+              {ui.downloadCoverLetter}
             </button>
             <button className="lang-toggle" onClick={toggleLanguage}>
               {language === 'es' ? 'EN' : 'ES'}

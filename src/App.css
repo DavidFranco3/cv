@@ -86,6 +86,25 @@ body {
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.5);
 }
 
+.download-btn-cover {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 0.5rem 1.25rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.download-btn-cover:hover {
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
 .lang-toggle {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);

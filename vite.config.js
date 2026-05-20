@@ -9,7 +9,7 @@ export default defineConfig({
     rolldownOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes('html2pdf.js')) {
+          if (id.includes('jspdf') || id.includes('html2canvas')) {
             return 'vendor-pdf';
           }
           if (id.includes('react/') || id.includes('react-dom/')) {

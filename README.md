@@ -8,14 +8,14 @@ Este es un proyecto de **CV Digital e Interactivo** diseñado para destacar habi
 
 -   **Interfaz de Terminal**: Diseño inspirado en herramientas de desarrollo con animaciones de escritura (typing effect).
 -   **Diseño Responsivo**: Adaptado para todo tipo de pantallas mediante un sistema de cuadrícula inteligente (3x2 en desktop).
--   **Generador de PDF Personalizado**: Motor propio utilizando `jsPDF` que transforma los datos del CV en un documento A4 profesional, con soporte para saltos de página automáticos y diseño de dos columnas.
+-   **Generador de PDF Personalizado**: Motor propio utilizando `jsPDF` que transforma los datos del CV en un documento A4 profesional (formato Harvard/HBS), con soporte para saltos de página automáticos y una columna optimizada para ATS.
 -   **Multilenguaje**: Soporte nativo para Español e Inglés con traducciones centralizadas.
 -   **Integración NPM**: Enlace directo al perfil de contribuidor y mención de librerías open-source.
 -   **Aesthetica Premium**: Uso de degradados, desenfoques (backdrop-filters) y micro-animaciones para una experiencia visual de alto nivel.
 
 ## 🛠️ Tech Stack
 
--   **Core**: React 18 + Vite
+-   **Core**: React 19 + Vite 8
 -   **Styling**: CSS3 (Vanilla) con variables para modo oscuro.
 -   **Documentación**: jsPDF para la generación dinámica de archivos.
 -   **Iconografía**: SVG personalizados integrados como componentes React.
