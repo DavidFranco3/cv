@@ -229,7 +229,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
         y += 5.2;
 
         // Role
-        doc.setFont('helvetica', 'bold italic');
+        doc.setFont('helvetica', 'bolditalic');
         doc.setFontSize(11.5); // Increased from 10.5
         setColor(DARK_GRAY);
         doc.text(exp.role, MARGIN_X, y);
@@ -255,13 +255,67 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     });
 
     // ══════════════════════════════════════════════════════════════
+    // PROJECTS (New Section)
+    // ══════════════════════════════════════════════════════════════
+    if (doc.internal.getNumberOfPages() === 1) {
+        doc.addPage();
+        y = 15;
+    }
+
+    if (data.projects && data.projects.length > 0) {
+        y = sectionTitle(pdfLabels.projects, y);
+        data.projects.forEach(project => {
+            if (y > PAGE_H - 20) { doc.addPage(); y = 15; }
+            
+            // Project Name & Tech Stack
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(11.5);
+            setColor(BLACK);
+            doc.text(project.name.toUpperCase(), MARGIN_X, y);
+            
+            const techStr = `[${project.techs.join(', ')}]`;
+            const techW = doc.getTextWidth(techStr);
+            doc.setFont('helvetica', 'italic');
+            doc.setFontSize(9.5);
+            setColor(MID_GRAY);
+            doc.text(techStr, PAGE_W - MARGIN_X - techW, y);
+            y += 5.0;
+            
+            // Description & Achievement
+            doc.setFont('helvetica', 'normal');
+            doc.setFontSize(10.5);
+            setColor(DARK_GRAY);
+            const descText = `${project.desc} Logro: ${project.achievement}`;
+            const descLines = wrapM(descText, CONTENT_W);
+            doc.text(descLines, MARGIN_X, y);
+            y += descLines.length * 4.5 + 5.0;
+        });
+        y += 2.0;
+    }
+
+    // ══════════════════════════════════════════════════════════════
+    // OPEN SOURCE & CONTRIBUTIONS (New Section)
+    // ══════════════════════════════════════════════════════════════
+    if (data.openSource) {
+        if (y > PAGE_H - 25) { doc.addPage(); y = 15; }
+        y = sectionTitle(pdfLabels.openSource, y);
+        
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(10.5);
+        setColor(DARK_GRAY);
+        const osLines = wrapM(data.openSource.summary, CONTENT_W);
+        doc.text(osLines, MARGIN_X, y);
+        y += osLines.length * 4.5 + 6.0;
+    }
+
+    // ══════════════════════════════════════════════════════════════
     // EDUCATION (Moved to Bottom)
     // ══════════════════════════════════════════════════════════════
-    if (y > PAGE_H - 30) { doc.addPage(); y = 20; }
+    if (y > PAGE_H - 30) { doc.addPage(); y = 15; }
     y = sectionTitle(pdfLabels.education, y);
 
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(12.5); // Increased from 11.5
+    doc.setFontSize(12.5);
     setColor(BLACK);
     doc.text(data.education.school.toUpperCase(), MARGIN_X, y);
 
@@ -272,18 +326,32 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     y += 5.2;
 
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(11.5); // Increased from 11
+    doc.setFontSize(11.5);
     setColor(DARK_GRAY);
     doc.text(data.education.degree, MARGIN_X, y);
     y += 5.5;
 
     // Education Description
     doc.setFont('helvetica', 'italic');
-    doc.setFontSize(10.5); // Consistently 10.5
+    doc.setFontSize(10.5);
     setColor(MID_GRAY);
     const eduDescLines = wrapM(data.education.desc);
     doc.text(eduDescLines, MARGIN_X, y);
     y += eduDescLines.length * 4.5 + 10;
+
+    // ══════════════════════════════════════════════════════════════
+    // PAGE NUMBERS
+    // ══════════════════════════════════════════════════════════════
+    const totalPages = doc.internal.getNumberOfPages();
+    for (let i = 1; i <= totalPages; i++) {
+        doc.setPage(i);
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(9);
+        setColor(LIGHT_GRAY);
+        const pageText = `${i} / ${totalPages}`;
+        const pageTextW = doc.getTextWidth(pageText);
+        doc.text(pageText, PAGE_W - MARGIN_X - pageTextW, PAGE_H - 8);
+    }
 
     doc.save(filename);
 };

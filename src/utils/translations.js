@@ -7,6 +7,8 @@ export const translations = {
       languages: "IDIOMAS />",
       skillsAndTech: "Habilidades y Tecnologías",
       professionalExperience: "Experiencia Profesional",
+      projects: "Proyectos Destacados",
+      openSource: "Open Source & Contribuciones",
       downloadCv: "CV (PDF)",
       downloadCoverLetter: "CARTA PRESENTACIÓN (PDF)",
       whoami: "$ whoami"
@@ -14,7 +16,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática y Desarrollador Full Stack con enfoque en Backend y arquitectura Web. Poseo experiencia comprobada en la automatización de flujos comerciales e industriales mediante el desarrollo de software a medida y la implementación de APIs de terceros. Experiencia en desarrollo móvil híbrido (Flutter/Dart) y contribuidor activo al ecosistema open-source mediante la creación y mantenimiento de librerías en NPM. Hábil en la construcción de sistemas robustos con Laravel, Express.js y React, siempre enfocado en la optimización de procesos y arquitecturas escalables.",
+      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, las buenas prácticas y el open-source (mantengo librerías en NPM como react-apextable-pro y fluent-rest-client con más de 1,200 descargas mensuales). Busco integrarme a equipos donde pueda aportar en el diseño de sistemas robustos y mentoría técnica.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -24,11 +26,12 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Preferencia)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java", "Python", "Arquitectura Web/API"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
-        { category: "Móvil", techs: ["Flutter", "Dart", "Java", "Kotlin"], color: "#ec4899" },
-        { category: "DevOps, Datos e IA", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman", "Prompt Engineering"], color: "#10b981" },
-        { category: "Soft Skills", techs: ["Gestión por Logros", "Trabajo en Equipo", "Aprendizaje Acelerado"], color: "#8b5cf6" }
+        { category: "Backend (Enfoque)", techs: ["Laravel", "Express.js", "Node.js", "PHP", "RESTful APIs", "JWT / OAuth", "Microservicios"], color: "#3b82f6" },
+        { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind CSS", "SASS", "HTML5", "CSS3"], color: "#f59e0b" },
+        { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
+        { category: "Bases de Datos", techs: ["MySQL", "MongoDB", "PostgreSQL"], color: "#10b981" },
+        { category: "DevOps & Herramientas", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
+        { category: "Metodologías & IA", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
       ],
       experience: [
         {
@@ -37,46 +40,58 @@ export const translations = {
           date: "2022 - Presente",
           desc: "Desarrollo integral de sistemas web mediante el stack MERN (MongoDB, Express, React, Node.js), gestionando arquitecturas desacopladas y monolíticas con Laravel y MySQL.",
           bullets: [
-            "Diseñé e implementé interfaces modernas utilizando React con Tailwind CSS y SASS, priorizando la arquitectura atómica y la experiencia de usuario (UI/UX).",
-            "Desarrollé APIs RESTful robustas y escalables con Node.js/Express y PHP/Laravel, aplicando patrones de diseño como MVC y garantizando la fluidez de datos.",
-            "Integré diversas APIs de terceros para añadir funcionalidades críticas como geolocalización, servicios de mapas y automatización de flujos de trabajo.",
-            "Desarrollé aplicaciones móviles híbridas profesionales con Flutter y Dart, logrando un rendimiento fluido y alta satisfacción en iOS/Android.",
-            "Optimicé procesos de desarrollo y flujos operativos mediante el uso estratégico de herramientas de Inteligencia Artificial.",
-            "Lideré equipos técnicos y colaboré en proyectos bajo metodologías ágiles, desempeñando roles de mentoría y asesoramiento para practicantes.",
-            "Realicé aseguramiento de calidad mediante pruebas manuales exhaustivas para garantizar la estabilidad de los entregables antes de producción."
+            "Lideré el desarrollo de 6 sistemas web críticos usando MERN (MongoDB, Express, React, Node) y Laravel, atendiendo a más de 200 usuarios internos.",
+            "Rediseñé la arquitectura de una API monolítica a microservicios con Node.js, reduciendo el tiempo de respuesta de 800ms a 120ms (mejora del 85%).",
+            "Implementé un sistema de geolocalización y rutas óptimas integrando Google Maps API y Mapbox, reduciendo tiempos de logística en un 25%.",
+            "Desarrollé y publiqué aplicaciones móviles híbridas utilizando Flutter y Dart, logrando un rendimiento fluido y alta satisfacción de los usuarios en iOS y Android.",
+            "Optimicé consultas SQL complejas en MySQL, reduciendo el tiempo de generación de reportes de 45 segundos a 3 segundos.",
+            "Mentoricé a 4 practicantes en Laravel y React, acelerando su curva de aprendizaje y logrando que se integraran a producción en menos de 2 meses.",
+            "Implementé pruebas manuales y automatizadas (Postman, Jest) reduciendo bugs en producción en un 40%.",
+            "Utilicé herramientas de IA (Gemini, OpenCode) para automatizar tareas repetitivas, ahorrando ~8 horas semanales al equipo."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
-        },
+        }
       ],
       education: {
-        degree: "Ingeniería en Informática",
         school: "Instituto Tecnológico Superior de Apatzingán",
+        degree: "Ingeniería en Informática",
         period: "2018 - 2023",
         desc: "Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software."
       },
       languages: [
         { name: "Español", level: "Nativo" },
-        { name: "Inglés", level: "B1" }
+        { name: "Inglés", level: "Técnico (Lectura avanzada)" }
       ],
+      projects: [
+        { name: "intl-currency-helper", desc: "Librería ligera de JavaScript para formatear números a moneda usando la API nativa de internacionalización (Intl). Compatible con Node.js y React.", techs: ["JavaScript", "Intl API", "Node.js"], achievement: "Publicada en NPM como paquete independiente para agilizar la localización financiera." },
+        { name: "react-apextable-pro", desc: "Tablas de datos React de alto rendimiento con persistencia de estado, columnas fijas dinámicas y exportaciones profesionales.", techs: ["React", "JavaScript", "CSS"], achievement: "Alcanzó +600 descargas mensuales en NPM y fue adoptada en sistemas de Isotech." },
+        { name: "fluent-rest-client", desc: "Cliente REST fluido moderno para JS/TS con Auth, cola de refresco y reintentos automáticos con retraso exponencial.", techs: ["TypeScript", "Node.js", "Express"], achievement: "Simplificó el consumo de APIs externas reduciendo el código repetitivo en un 30%." },
+        { name: "layout_java_springboot", desc: "Layout y framework inicial modular con Spring Boot en backend y generador automático de módulos CRUD.", techs: ["Java", "Spring Boot", "MySQL"], achievement: "Obtuvo 7 estrellas en GitHub y redujo el tiempo de inicio de proyectos a 1 hora." },
+        { name: "generador-tickets", desc: "Biblioteca ligera para crear tickets de venta optimizados con impresión directa por iframe para puntos de venta.", techs: ["JavaScript", "HTML5"], achievement: "Implementada para automatizar la facturación física rápida en comercios locales." }
+      ],
+      openSource: {
+        summary: "Creador y mantenedor activo de 3 librerías publicadas en NPM (acumulando ~1,200 descargas mensuales). Contribuidor ocasional en la documentación de Laravel Docs y Flutter Gallery."
+      },
       pdfLabels: {
         professionalProfile: "Perfil Profesional",
-        education: "Formación",
-        softSkills: "Soft Skills & IA",
+        education: "Formación Académica",
         languages: "Idiomas",
         experience: "Experiencia Profesional",
         techStack: "Competencias Técnicas",
+        projects: "Proyectos Destacados",
+        openSource: "Open Source & Contribuciones",
         present: "Actualidad"
       },
       coverLetter: {
         subject: "Solicitud de Empleo — Desarrollador de Software",
         recipient: "Oficina de Selección de Talento:",
-        body1: "Por medio de la presente, me permito someter a su amable consideración mi candidatura para integrarme a su equipo de desarrollo como Desarrollador de Software. Soy Ingeniero en Informática con una sólida trayectoria en desarrollo Full Stack, con especialización en backend y arquitectura web, y cuento con un historial demostrable en la automatización de flujos comerciales e industriales a través del diseño e implementación de soluciones de software a la medida.",
-        body2: "Durante mi ejercicio profesional en Isotech, he tenido a mi cargo el liderazgo técnico y desarrollo de sistemas web empleando el stack MERN y Laravel, así como la integración de APIs de terceros para habilitar funcionalidades críticas tales como geolocalización y automatización de procesos operativos. Adicionalmente, he desarrollado aplicaciones móviles híbridas con Flutter y Dart, y participo activamente en el ecosistema open-source mediante la publicación y mantenimiento de librerías en NPM.",
-        body3: "Me distingo por mi orientación hacia la optimización continua de procesos, la adopción estratégica de herramientas de inteligencia artificial para potenciar la productividad, y mi capacidad para dirigir equipos técnicos bajo metodologías ágiles. Mi compromiso se centra en la entrega de soluciones escalables, robustas y alineadas con los más altos estándares de calidad.",
-        body4: "Adjunto a la presente mi currículum vitae para su evaluación y quedo a su entera disposición para ampliar la información que consideren pertinente en una entrevista personal. Agradezco de antemano la atención que se sirva dispensar a la presente solicitud.",
-        closing: "Sin otro particular, me suscribo de usted."
-      },
-    },
+        body1: "Estimado equipo de selección, me pongo en contacto con ustedes con gran entusiasmo para postularme a la vacante de Desarrollador de Software. Como Ingeniero en Informática enfocado en desarrollo Full Stack y arquitectura web, me apasiona transformar necesidades complejas en sistemas robustos y eficientes, especializándome en la optimización del backend y la integración fluida de APIs.",
+        body2: "Durante mi trayectoria en Isotech, lideré el desarrollo técnico de plataformas web de alta disponibilidad usando Node.js, Laravel y React, además de diseñar soluciones móviles híbridas en Flutter. Mi enfoque no es solo escribir código limpio, sino resolver problemas de negocio reales: he automatizado flujos de trabajo que eliminan cuellos de botella operativos e integrado APIs de geolocalización avanzadas para optimizar la logística de despacho.",
+        body3: "Asimismo, me apasiona la comunidad y el aprendizaje constante. Mantengo de forma activa librerías de código abierto en NPM (como react-apextable-pro y fluent-rest-client) y fomento la adopción estratégica de herramientas de IA dentro de los flujos de desarrollo para acelerar las entregas y elevar la calidad del software en cada sprint.",
+        body4: "Me entusiasma la posibilidad de aportar mi experiencia en optimización de procesos y liderazgo técnico a su equipo. Quedo a su disposición para platicar sobre cómo mis habilidades pueden sumarse a sus objetivos en una entrevista. Muchas gracias por su tiempo y consideración.",
+        closing: "Atentamente,"
+      }
+    }
   },
   en: {
     ui: {
@@ -86,6 +101,8 @@ export const translations = {
       languages: "LANGUAGES />",
       skillsAndTech: "Skills and Technologies",
       professionalExperience: "Professional Experience",
+      projects: "Key Projects",
+      openSource: "Open Source & Contributions",
       downloadCv: "CV (PDF)",
       downloadCoverLetter: "COVER LETTER (PDF)",
       whoami: "$ whoami"
@@ -93,7 +110,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer and Full Stack Developer focusing on Backend and Web architecture. I have proven experience in automating commercial and industrial workflows through custom software development and third-party API implementation. Experience in hybrid mobile development (Flutter/Dart) and active contributor to the open-source ecosystem through the creation and maintenance of NPM libraries. Skilled in building robust systems with Laravel, Express.js, and React, always focused on process optimization and scalable architectures.",
+      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend and scalable web architectures. I have automated commercial and industrial workflows through custom software, API integration, and database optimization. Passionate about clean code, best practices, and open-source (maintaining NPM packages like react-apextable-pro and fluent-rest-client with over 1,200 monthly downloads). Seeking to join teams where I can contribute to robust system design and technical mentoring.",
       contact: {
         location: "Paracuaro, Michoacan, Mexico",
         email: "josedavidayalafranco3@gmail.com",
@@ -103,11 +120,12 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Preferred)", techs: ["Laravel", "Express.js", "PHP", "Node.js", "Java", "Python", "Web/API Architecture"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind", "Sass", "HTML5", "CSS3"], color: "#f59e0b" },
-        { category: "Mobile", techs: ["Flutter", "Dart", "Java", "Kotlin"], color: "#ec4899" },
-        { category: "DevOps, Data & AI", techs: ["Vite", "MySQL", "MongoDB", "Git", "Docker", "Postman", "Prompt Engineering"], color: "#10b981" },
-        { category: "Soft Skills", techs: ["Achievement Focus", "Teamwork", "Fast Learning"], color: "#8b5cf6" }
+        { category: "Backend (Focus)", techs: ["Laravel", "Express.js", "Node.js", "PHP", "RESTful APIs", "JWT / OAuth", "Microservices"], color: "#3b82f6" },
+        { category: "Frontend & UI/UX", techs: ["React", "JavaScript (ES6+)", "Tailwind CSS", "SASS", "HTML5", "CSS3"], color: "#f59e0b" },
+        { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
+        { category: "Databases", techs: ["MySQL", "MongoDB", "PostgreSQL"], color: "#10b981" },
+        { category: "DevOps & Tools", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
+        { category: "Methodologies & AI", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
       ],
       experience: [
         {
@@ -116,45 +134,57 @@ export const translations = {
           date: "2022 - Present",
           desc: "Full-stack development of web systems using the MERN stack (MongoDB, Express, React, Node.js), managing both decoupled and monolithic architectures with Laravel and MySQL.",
           bullets: [
-            "Designed and implemented modern interfaces using React with Tailwind CSS and SASS, prioritizing atomic architecture and user experience (UI/UX).",
-            "Developed robust and scalable RESTful APIs with Node.js/Express and PHP/Laravel, applying design patterns like MVC and ensuring data flow efficiency.",
-            "Integrated various third-party APIs to incorporate critical features such as geolocation, mapping services, and workflow automation.",
-            "Developed professional hybrid mobile applications with Flutter and Dart, achieving smooth performance and high satisfaction on iOS/Android.",
-            "Optimized development processes and operational workflows through the strategic use of Artificial Intelligence tools.",
-            "Led technical teams and collaborated on projects under agile methodologies, performing mentoring and advisory roles for interns.",
-            "Conducted quality assurance through exhaustive manual testing to ensure the stability of deliverables before production releases."
+            "Led the development of 6 critical web systems using MERN (MongoDB, Express, React, Node) and Laravel, serving over 200 internal users.",
+            "Redesigned the architecture of a monolithic API into microservices with Node.js, reducing response time from 800ms to 120ms (an 85% improvement).",
+            "Implemented a geolocation and optimal routing system integrating Google Maps API and Mapbox, reducing logistics times by 25%.",
+            "Developed and deployed hybrid mobile applications using Flutter and Dart, ensuring high performance and user satisfaction on iOS and Android.",
+            "Optimized complex SQL queries in MySQL, reducing report generation time from 45 seconds to 3 seconds.",
+            "Mentored 4 interns in Laravel and React, accelerating their learning curve and integrating them into production in under 2 months.",
+            "Implemented manual and automated tests (Postman, Jest), reducing production bugs by 40%.",
+            "Utilized AI tools (Gemini, OpenCode) to automate repetitive tasks, saving the team ~8 hours per week."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
-        },
+        }
       ],
       education: {
-        degree: "Computer Engineering",
         school: "Instituto Tecnológico Superior de Apatzingán",
+        degree: "Computer Engineering",
         period: "2018 - 2023",
         desc: "Specialization in data structures, algorithms, and software engineering fundamentals."
       },
       languages: [
         { name: "Spanish", level: "Native" },
-        { name: "English", level: "B1" }
+        { name: "English", level: "Technical (Advanced reading)" }
       ],
+      projects: [
+        { name: "intl-currency-helper", desc: "Lightweight JavaScript library for formatting numbers to currency using the native Internationalization API (Intl). Compatible with Node.js and React.", techs: ["JavaScript", "Intl API", "Node.js"], achievement: "Published on NPM as a lightweight, dependency-free package to streamline financial localization." },
+        { name: "react-apextable-pro", desc: "High-performance React data table library with state persistence, dynamic sticky columns, and professional exports.", techs: ["React", "JavaScript", "CSS"], achievement: "Reached +600 monthly downloads on NPM and adopted in Isotech internal systems." },
+        { name: "fluent-rest-client", desc: "Modern fluent REST client for JS/TS with built-in Auth, token auto-refresh queue, and exponential backoff retries.", techs: ["TypeScript", "Node.js", "Express"], achievement: "Simplified external API consumption, reducing boilerplate code by 30%." },
+        { name: "layout_java_springboot", desc: "Modular startup layout boilerplate with Java Spring Boot backend and built-in CRUD generator.", techs: ["Java", "Spring Boot", "MySQL"], achievement: "Features 7+ stars on GitHub and reduces project setup time to 1 hour." },
+        { name: "generador-tickets", desc: "Lightweight library for creating print-optimized sales tickets with direct iframe printing support.", techs: ["JavaScript", "HTML5"], achievement: "Implemented to automate fast physical ticketing in local retail shops." }
+      ],
+      openSource: {
+        summary: "Creator and active maintainer of 3 NPM packages (accumulating ~1,200 monthly downloads). Occasional contributor to Laravel Docs and Flutter Gallery documentation."
+      },
       pdfLabels: {
         professionalProfile: "Professional Profile",
         education: "Education",
-        softSkills: "Soft Skills & AI",
         languages: "Languages",
         experience: "Professional Experience",
         techStack: "Technical Competencies",
+        projects: "Key Projects",
+        openSource: "Open Source & Contributions",
         present: "Present"
       },
       coverLetter: {
         subject: "Application for Employment — Software Developer",
         recipient: "Office of Talent Selection:",
-        body1: "I hereby submit my candidacy for your kind consideration to join your development team as a Software Developer. I hold a degree in Computer Engineering with a solid track record in Full Stack development, specializing in backend and web architecture, and I possess demonstrable experience in automating commercial and industrial workflows through the design and implementation of custom software solutions.",
-        body2: "Throughout my professional career at Isotech, I have been entrusted with the technical leadership and development of web systems using the MERN stack and Laravel, as well as the integration of third-party APIs to enable critical functionalities such as geolocation and operational process automation. Additionally, I have developed hybrid mobile applications with Flutter and Dart, and I actively participate in the open-source ecosystem through the publication and maintenance of NPM libraries.",
-        body3: "I am distinguished by my commitment to continuous process optimization, the strategic adoption of artificial intelligence tools to enhance productivity, and my ability to lead technical teams under agile methodologies. My focus is on delivering scalable, robust solutions aligned with the highest quality standards.",
-        body4: "Enclosed herein is my curriculum vitae for your evaluation. I remain at your complete disposal to provide any further information you may deem pertinent in a personal interview. I thank you in advance for the attention you may afford this application.",
-        closing: "Respectfully yours,"
-      },
-    },
-  },
+        body1: "Dear hiring team, I am writing to express my strong interest in the Software Developer position. As a Computer Engineer and Full Stack Developer specializing in backend development and web architecture, I thrive on translating complex business requirements into robust, high-performance systems and seamless API integrations.",
+        body2: "During my tenure at Isotech, I spearheaded the technical development of web platforms utilizing Node.js, Laravel, and React, alongside hybrid mobile applications with Flutter. My goal is always to deliver concrete business value; for instance, I successfully automated operational workflows to eliminate dispatch bottlenecks and integrated advanced mapping and geolocation services.",
+        body3: "I am also deeply committed to the tech community and continuous improvement. I actively maintain open-source packages on NPM (such as react-apextable-pro and fluent-rest-client) and advocate for the strategic integration of AI tools in developer workflows to shorten release cycles and enhance software quality.",
+        body4: "I would welcome the opportunity to discuss how my technical expertise and team-mentoring experience align with your goals. Thank you for your time and consideration.",
+        closing: "Sincerely,"
+      }
+    }
+  }
 };
