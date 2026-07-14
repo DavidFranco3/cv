@@ -16,7 +16,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, las buenas prácticas y el open-source (mantengo librerías en NPM como react-apextable-pro y fluent-rest-client con más de 1,200 descargas mensuales). Busco integrarme a equipos donde pueda aportar en el diseño de sistemas robustos y mentoría técnica.",
+      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, las buenas prácticas y el open-source (mantengo y contribuyo a librerías publicadas en NPM como react-apextable-pro y fluent-rest-client). Busco integrarme a equipos donde pueda aportar en el diseño de sistemas robustos y mentoría técnica.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -64,13 +64,13 @@ export const translations = {
       ],
       projects: [
         { name: "intl-currency-helper", desc: "Librería ligera de JavaScript para formatear números a moneda usando la API nativa de internacionalización (Intl). Compatible con Node.js y React.", techs: ["JavaScript", "Intl API", "Node.js"], achievement: "Publicada en NPM como paquete independiente para agilizar la localización financiera." },
-        { name: "react-apextable-pro", desc: "Tablas de datos React de alto rendimiento con persistencia de estado, columnas fijas dinámicas y exportaciones profesionales.", techs: ["React", "JavaScript", "CSS"], achievement: "Alcanzó +600 descargas mensuales en NPM y fue adoptada en sistemas de Isotech." },
+        { name: "react-apextable-pro", desc: "Tablas de datos React de alto rendimiento con persistencia de estado, columnas fijas dinámicas y exportaciones profesionales.", techs: ["React", "JavaScript", "CSS"], achievement: "Alcanzó amplia adopción en NPM y fue integrada con éxito en los sistemas internos de Isotech." },
         { name: "fluent-rest-client", desc: "Cliente REST fluido moderno para JS/TS con Auth, cola de refresco y reintentos automáticos con retraso exponencial.", techs: ["TypeScript", "Node.js", "Express"], achievement: "Simplificó el consumo de APIs externas reduciendo el código repetitivo en un 30%." },
         { name: "layout_java_springboot", desc: "Layout y framework inicial modular con Spring Boot en backend y generador automático de módulos CRUD.", techs: ["Java", "Spring Boot", "MySQL"], achievement: "Obtuvo 7 estrellas en GitHub y redujo el tiempo de inicio de proyectos a 1 hora." },
         { name: "generador-tickets", desc: "Biblioteca ligera para crear tickets de venta optimizados con impresión directa por iframe para puntos de venta.", techs: ["JavaScript", "HTML5"], achievement: "Implementada para automatizar la facturación física rápida en comercios locales." }
       ],
       openSource: {
-        summary: "Creador y mantenedor activo de 3 librerías publicadas en NPM (acumulando ~1,200 descargas mensuales). Contribuidor ocasional en la documentación de Laravel Docs y Flutter Gallery."
+        summary: "Creador y mantenedor activo de librerías publicadas en NPM de código abierto. Contribuidor ocasional en la documentación oficial de Laravel Docs y Flutter Gallery."
       },
       pdfLabels: {
         professionalProfile: "Perfil Profesional",
@@ -110,7 +110,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend and scalable web architectures. I have automated commercial and industrial workflows through custom software, API integration, and database optimization. Passionate about clean code, best practices, and open-source (maintaining NPM packages like react-apextable-pro and fluent-rest-client with over 1,200 monthly downloads). Seeking to join teams where I can contribute to robust system design and technical mentoring.",
+      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend and scalable web architectures. I have automated commercial and industrial workflows through custom software, API integration, and database optimization. Passionate about clean code, best practices, and open-source (maintaining and contributing to NPM packages like react-apextable-pro and fluent-rest-client). Seeking to join teams where I can contribute to robust system design and technical mentoring.",
       contact: {
         location: "Paracuaro, Michoacan, Mexico",
         email: "josedavidayalafranco3@gmail.com",
@@ -158,13 +158,13 @@ export const translations = {
       ],
       projects: [
         { name: "intl-currency-helper", desc: "Lightweight JavaScript library for formatting numbers to currency using the native Internationalization API (Intl). Compatible with Node.js and React.", techs: ["JavaScript", "Intl API", "Node.js"], achievement: "Published on NPM as a lightweight, dependency-free package to streamline financial localization." },
-        { name: "react-apextable-pro", desc: "High-performance React data table library with state persistence, dynamic sticky columns, and professional exports.", techs: ["React", "JavaScript", "CSS"], achievement: "Reached +600 monthly downloads on NPM and adopted in Isotech internal systems." },
+        { name: "react-apextable-pro", desc: "High-performance React data table library with state persistence, dynamic sticky columns, and professional exports.", techs: ["React", "JavaScript", "CSS"], achievement: "Achieved wide adoption on NPM and was successfully integrated into Isotech's internal systems." },
         { name: "fluent-rest-client", desc: "Modern fluent REST client for JS/TS with built-in Auth, token auto-refresh queue, and exponential backoff retries.", techs: ["TypeScript", "Node.js", "Express"], achievement: "Simplified external API consumption, reducing boilerplate code by 30%." },
         { name: "layout_java_springboot", desc: "Modular startup layout boilerplate with Java Spring Boot backend and built-in CRUD generator.", techs: ["Java", "Spring Boot", "MySQL"], achievement: "Features 7+ stars on GitHub and reduces project setup time to 1 hour." },
         { name: "generador-tickets", desc: "Lightweight library for creating print-optimized sales tickets with direct iframe printing support.", techs: ["JavaScript", "HTML5"], achievement: "Implemented to automate fast physical ticketing in local retail shops." }
       ],
       openSource: {
-        summary: "Creator and active maintainer of 3 NPM packages (accumulating ~1,200 monthly downloads). Occasional contributor to Laravel Docs and Flutter Gallery documentation."
+        summary: "Creator and active maintainer of open-source packages published on NPM. Occasional contributor to the official Laravel Docs and Flutter Gallery documentation."
       },
       pdfLabels: {
         professionalProfile: "Professional Profile",
