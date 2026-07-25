@@ -7,7 +7,7 @@ export const translations = {
       languages: "IDIOMAS />",
       skillsAndTech: "Habilidades y Tecnologías",
       professionalExperience: "Experiencia Profesional",
-      projects: "Proyectos Destacados",
+      projects: "Proyecto Destacado",
       openSource: "Open Source & Contribuciones",
       downloadCv: "CV (PDF)",
       downloadCoverLetter: "CARTA PRESENTACIÓN (PDF)",
@@ -68,18 +68,6 @@ export const translations = {
           desc: "Framework monolítico Full-Stack profesional (Express 5 + React 19 + MongoDB Mongoose) con CLI de scaffolding instantáneo (`dstack g resource`), arquitectura por capas, validación Zod e integración nativa de un ecosistema de librerías publicadas por el autor (react-apextable-pro, fluent-rest-client, intl-currency-helper).", 
           techs: ["TypeScript", "Node.js", "Express 5", "React 19", "Vite", "MongoDB", "NPM"], 
           achievement: "Publicado como CLI global en NPM para automatizar la creación de monolitos enterprise type-safe en menos de 1 segundo." 
-        },
-        { 
-          name: "layout_java_springboot", 
-          desc: "Layout y framework inicial modular con Spring Boot en backend y generador automático de módulos CRUD.", 
-          techs: ["Java", "Spring Boot", "MySQL"], 
-          achievement: "Obtuvo 7+ estrellas en GitHub y redujo el tiempo de inicio de proyectos Java a 1 hora." 
-        },
-        { 
-          name: "generador-tickets", 
-          desc: "Biblioteca ligera para crear tickets de venta optimizados con impresión directa por iframe para puntos de venta.", 
-          techs: ["JavaScript", "HTML5"], 
-          achievement: "Implementada para automatizar la facturación física rápida en comercios locales." 
         }
       ],
       openSource: {
@@ -91,7 +79,7 @@ export const translations = {
         languages: "Idiomas",
         experience: "Experiencia Profesional",
         techStack: "Competencias Técnicas",
-        projects: "Proyectos Destacados",
+        projects: "Proyecto Destacado",
         openSource: "Open Source & Contribuciones",
         present: "Actualidad"
       },
@@ -114,7 +102,7 @@ export const translations = {
       languages: "LANGUAGES />",
       skillsAndTech: "Skills and Technologies",
       professionalExperience: "Professional Experience",
-      projects: "Key Projects",
+      projects: "Featured Project",
       openSource: "Open Source & Contributions",
       downloadCv: "CV (PDF)",
       downloadCoverLetter: "COVER LETTER (PDF)",
@@ -175,18 +163,6 @@ export const translations = {
           desc: "Professional Full-Stack monolith framework (Express 5 + React 19 + MongoDB Mongoose) featuring instant CLI resource scaffolding (`dstack g resource`), layered architecture, Zod validation, and native integration with the author's published NPM ecosystem libraries (react-apextable-pro, fluent-rest-client, intl-currency-helper).", 
           techs: ["TypeScript", "Node.js", "Express 5", "React 19", "Vite", "MongoDB", "NPM"], 
           achievement: "Published as a global NPM CLI tool, reducing enterprise full-stack scaffolding time to seconds." 
-        },
-        { 
-          name: "layout_java_springboot", 
-          desc: "Modular startup layout boilerplate with Java Spring Boot backend and built-in CRUD generator.", 
-          techs: ["Java", "Spring Boot", "MySQL"], 
-          achievement: "Features 7+ stars on GitHub and reduces project setup time to 1 hour." 
-        },
-        { 
-          name: "generador-tickets", 
-          desc: "Lightweight library for creating print-optimized sales tickets with direct iframe printing support.", 
-          techs: ["JavaScript", "HTML5"], 
-          achievement: "Implemented to automate fast physical ticketing in local retail shops." 
         }
       ],
       openSource: {
@@ -198,7 +174,7 @@ export const translations = {
         languages: "Languages",
         experience: "Professional Experience",
         techStack: "Technical Competencies",
-        projects: "Key Projects",
+        projects: "Featured Project",
         openSource: "Open Source & Contributions",
         present: "Present"
       },
