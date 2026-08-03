@@ -1,5 +1,10 @@
 import { jsPDF } from 'jspdf';
 import fs from 'fs';
+import { translations } from './src/utils/translations.js';
+
+const cvData = translations.en.cv;
+const letter = cvData.coverLetter;
+const contact = cvData.contact;
 
 const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
 
@@ -20,15 +25,15 @@ let y = 25;
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(16);
 setColor(BLACK);
-doc.text('JOSÉ DAVID AYALA FRANCO', MARGIN_L, y);
+doc.text(cvData.name.toUpperCase(), MARGIN_L, y);
 y += 6;
 
 doc.setFont('helvetica', 'normal');
 doc.setFontSize(10);
 setColor(DARK_GRAY);
-doc.text('Parácuaro, Michoacán, México | (+52) 453-152-7363 | josedavidayalafranco3@gmail.com', MARGIN_L, y);
+doc.text(`${contact.location} | Tel: ${contact.phone} | ${contact.email}`, MARGIN_L, y);
 y += 5;
-doc.text('GitHub: github.com/DavidFranco3 | LinkedIn: linkedin.com/in/david-franco-247701220', MARGIN_L, y);
+doc.text(`GitHub: github.com/${contact.github} | LinkedIn: linkedin.com/in/${contact.linkedin}`, MARGIN_L, y);
 y += 8;
 
 // Divider line
@@ -52,17 +57,14 @@ y += 10;
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(10.5);
 setColor(BLACK);
-doc.text('To: Hiring Manager / Selection Team', MARGIN_L, y);
-y += 5;
-doc.setFont('helvetica', 'normal');
-doc.text('Re: Application for Full Stack Developer / Software Engineer', MARGIN_L, y);
+doc.text(letter.recipient, MARGIN_L, y);
 y += 10;
 
 // Subject Line
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(11);
 setColor(BLACK);
-doc.text('SUBJECT: Cover Letter — Full Stack / Backend Developer Position', MARGIN_L, y);
+doc.text(letter.subject, MARGIN_L, y);
 y += 10;
 
 // Body
@@ -71,12 +73,10 @@ doc.setFontSize(10.5);
 setColor(DARK_GRAY);
 
 const paragraphs = [
-  "Dear Hiring Manager,",
-  "I am writing to express my enthusiastic interest in joining your organization as a Full Stack Developer / Software Engineer. With 4 years of experience specializing in backend architecture, scalable web systems, and database optimization, I am eager to bring my technical expertise and problem-solving skills to your team.",
-  "Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React, Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into microservices (reducing response times by 85% from 800ms to 120ms), optimizing complex MySQL/PostgreSQL queries (cutting report generation times from 45s to 3s), and developing geolocation platforms that improved logistical efficiency by 25%.",
-  "In addition to enterprise solutions, I am an active open-source creator and maintainer with packages published on NPM (such as fluent-rest-client and react-apextable-pro). I am deeply committed to writing clean, maintainable code, implementing rigorous automated testing (Jest, Postman), and mentoring junior developers to accelerate team productivity.",
-  "My strong foundation in computer engineering and software design principles allows me to master new technologies quickly and deliver immediate value. I welcome the opportunity to discuss how my experience and passion for engineering excellence align with your goals.",
-  "Thank you for your time and consideration."
+  letter.body1,
+  letter.body2,
+  letter.body3,
+  letter.body4
 ];
 
 for (const p of paragraphs) {
@@ -92,18 +92,18 @@ y += 4;
 doc.setFont('helvetica', 'normal');
 doc.setFontSize(10.5);
 setColor(DARK_GRAY);
-doc.text('Sincerely,', MARGIN_L, y);
+doc.text(letter.closing, MARGIN_L, y);
 y += 8;
 
 doc.setFont('helvetica', 'bold');
 doc.setFontSize(11);
 setColor(BLACK);
-doc.text('José David Ayala Franco', MARGIN_L, y);
+doc.text(cvData.name, MARGIN_L, y);
 y += 5;
 doc.setFont('helvetica', 'normal');
 doc.setFontSize(10);
 setColor(DARK_GRAY);
-doc.text('Software Developer / Computer Engineer', MARGIN_L, y);
+doc.text(cvData.role, MARGIN_L, y);
 
 const pdfBuffer = Buffer.from(doc.output('arraybuffer'));
 const outputPath = '/home/david/development/cv/Cover_Letter_David_Franco_EN.pdf';

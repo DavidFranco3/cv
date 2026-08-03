@@ -106,15 +106,15 @@ function App() {
             <Icons.Phone />
             <span>{cvData.contact.phone}</span>
           </div>
-          <a href={`https://github.com/${cvData.contact.github}`} target="_blank" className="contact-card-mini">
+          <a href={`https://github.com/${cvData.contact.github}`} target="_blank" rel="noreferrer" className="contact-card-mini">
             <Icons.GitHub />
             <span>GitHub</span>
           </a>
-          <a href={`https://linkedin.com/in/${cvData.contact.linkedin}`} target="_blank" className="contact-card-mini">
+          <a href={`https://linkedin.com/in/${cvData.contact.linkedin}`} target="_blank" rel="noreferrer" className="contact-card-mini">
             <Icons.LinkedIn />
             <span>LinkedIn</span>
           </a>
-          <a href={`https://www.npmjs.com/~${cvData.contact.npm}`} target="_blank" className="contact-card-mini">
+          <a href={`https://www.npmjs.com/~${cvData.contact.npm}`} target="_blank" rel="noreferrer" className="contact-card-mini">
             <Icons.Npm />
             <span>NPM</span>
           </a>
@@ -124,7 +124,7 @@ function App() {
           </div>
         </div>
 
-        {/* Resumen Profesional debajo de las redes */}
+        {/* Resumen Profesional */}
         <section className="terminal-card-hero">
           <div className="dashboard-card terminal-card">
             <div className="card-header">
@@ -138,8 +138,9 @@ function App() {
           </div>
         </section>
       </header>
+
       <main className="dashboard-grid">
-        {/* Stack Tecnológico (Moviendo arriba) */}
+        {/* Stack Tecnológico */}
         <section className="skills-section">
           <h3 className="section-title">{ui.skillsAndTech}</h3>
           <div className="skills-grid">
@@ -154,7 +155,7 @@ function App() {
           </div>
         </section>
 
-        {/* Experiencia */}
+        {/* Experiencia Profesional */}
         <section className="experience-section">
           <h3 className="section-title">{ui.professionalExperience}</h3>
           <div className="timeline">
@@ -182,30 +183,7 @@ function App() {
           </div>
         </section>
 
-        {/* Proyectos Destacados */}
-        <section className="projects-section">
-          <h3 className="section-title">{ui.projects}</h3>
-          <div className="projects-grid">
-            {cvData.projects.map((proj, idx) => (
-              <div key={idx} className="dashboard-card project-card">
-                <div className="project-card-inner">
-                  <h4 className="project-name">{proj.name}</h4>
-                  <p className="project-desc">{proj.desc}</p>
-                  <div className="project-achievement">
-                    <span className="achievement-label">Logro:</span> {proj.achievement}
-                  </div>
-                </div>
-                <div className="project-footer">
-                  <div className="project-techs">
-                    {proj.techs.map((t, i) => <span key={i} className="tech-tag">{t}</span>)}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Formación e Idiomas */}
+        {/* Formación, Idiomas y Open Source */}
         <section className="info-grid footer-info">
           <div className="dashboard-card info-card">
             <h5>{ui.academicTraining}</h5>
@@ -225,15 +203,16 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="dashboard-card info-card">
-            <h5>{ui.openSource}</h5>
-            <div className="info-content">
-              <p className="small-desc">{cvData.openSource.summary}</p>
+          {cvData.openSource && (
+            <div className="dashboard-card info-card">
+              <h5>{ui.openSource}</h5>
+              <div className="info-content">
+                <p className="small-desc">{cvData.openSource.summary}</p>
+              </div>
             </div>
-          </div>
+          )}
         </section>
       </main>
-
     </div>
   )
 }
