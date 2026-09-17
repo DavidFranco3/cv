@@ -57,15 +57,17 @@ export const generateCoverLetter = async (data, filename = 'Cover_Letter_David_F
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(10.5);
   setColor(BLACK);
-  doc.text(letter.recipient, MARGIN_L, y);
-  y += 10;
+  const recLines = wrap(letter.recipient);
+  doc.text(recLines, MARGIN_L, y);
+  y += recLines.length * 4.8 + 4;
 
   // Subject
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(11);
   setColor(BLACK);
-  doc.text(letter.subject, MARGIN_L, y);
-  y += 10;
+  const subjLines = wrap(letter.subject);
+  doc.text(subjLines, MARGIN_L, y);
+  y += subjLines.length * 4.8 + 4;
 
   // Body
   doc.setFont('helvetica', 'normal');

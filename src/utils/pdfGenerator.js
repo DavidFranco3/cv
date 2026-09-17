@@ -72,6 +72,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     const pdfLabels = data.pdfLabels || {
         professionalProfile: 'Perfil Profesional',
         education: 'Formación Académica',
+        certifications: 'Certificaciones',
         languages: 'Idiomas',
         experience: 'Experiencia Profesional',
         techStack: 'Competencias Técnicas',
@@ -158,7 +159,7 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
 
     allSkillCategories.forEach((skill) => {
         const labelText = `•  ${skill.category}: `;
-        const fullText = `${labelText}${skill.techs.join('  •  ')}`;
+        const fullText = `${labelText}${skill.techs.join('  |  ')}`;
 
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(9.8);
@@ -313,6 +314,56 @@ export const generatePdf = async (data, filename = 'CV_Jose_David_Ayala_Franco.p
     const eduDescLines = wrapM(data.education.desc);
     doc.text(eduDescLines, MARGIN_X, y);
     y += eduDescLines.length * 4.3;
+
+    // ══════════════════════════════════════════════════════════════
+    // CERTIFICATIONS
+    // ══════════════════════════════════════════════════════════════
+    if (data.certifications && data.certifications.length > 0) {
+        y += 3.5;
+        if (y > PAGE_H - 35) { doc.addPage(); y = 15; }
+        y = sectionTitle(pdfLabels.certifications || 'CERTIFICACIONES', y);
+
+        data.certifications.forEach((cert) => {
+            if (y > PAGE_H - 18) { doc.addPage(); y = 15; }
+
+            doc.setFont('helvetica', 'bold');
+            doc.setFontSize(10.5);
+            setColor(BLACK);
+            doc.text(cert.title, MARGIN_X, y);
+
+            setColor(MID_GRAY);
+            doc.setFont('helvetica', 'italic');
+            doc.setFontSize(9);
+            const certDateStr = `${cert.date} (${cert.hours})`;
+            const certDateW = doc.getTextWidth(certDateStr);
+            doc.text(certDateStr, PAGE_W - MARGIN_X - certDateW, y);
+            y += 4.0;
+
+            doc.setFont('helvetica', 'normal');
+            doc.setFontSize(9.5);
+            setColor(DARK_GRAY);
+
+            let prefixText = cert.issuer;
+            if (cert.credentialId) {
+                prefixText += `  •  ID: ${cert.credentialId}`;
+            }
+
+            if (cert.url) {
+                prefixText += '  •  ';
+                doc.text(prefixText, MARGIN_X, y);
+                const prefixW = doc.getTextWidth(prefixText);
+
+                const cleanUrl = cert.url.replace(/^https?:\/\//, '');
+                setColor([2, 132, 199]); // link blue
+                doc.text(cleanUrl, MARGIN_X + prefixW, y);
+                const urlW = doc.getTextWidth(cleanUrl);
+                doc.link(MARGIN_X + prefixW, y - 3, urlW, 4, { url: cert.url });
+            } else {
+                doc.text(prefixText, MARGIN_X, y);
+            }
+            y += 4.5;
+        });
+    }
 
     // ══════════════════════════════════════════════════════════════
     // PAGE NUMBERS (Only if multi-page)

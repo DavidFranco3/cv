@@ -489,6 +489,21 @@
 .info-content strong { display: block; color: var(--text-main); font-size: 1.1rem; margin-bottom: 4px; }
 .small-text { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 8px; display: block; }
 .small-desc { font-size: 0.9rem; color: var(--text-muted); }
+.cert-verify-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-family: 'Fira Code', monospace;
+  transition: all 0.2s ease;
+}
+.cert-verify-link:hover {
+  text-decoration: underline;
+  filter: brightness(1.2);
+}
 
 /* Projects Grid */
 .projects-grid {

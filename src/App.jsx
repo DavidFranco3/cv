@@ -183,7 +183,32 @@ function App() {
           </div>
         </section>
 
-        {/* Formación, Idiomas y Open Source */}
+        {/* Proyectos Destacados */}
+        {cvData.projects && cvData.projects.length > 0 && (
+          <section className="projects-section">
+            <h3 className="section-title">{ui.projects}</h3>
+            <div className="projects-grid">
+              {cvData.projects.map((proj, idx) => (
+                <div key={idx} className="dashboard-card project-card">
+                  <div className="project-card-inner">
+                    <h4 className="project-name">{proj.name}</h4>
+                    <p className="project-desc">{proj.desc}</p>
+                    <div className="project-achievement">
+                      <span className="achievement-label">{language === 'es' ? 'Logro:' : 'Achievement:'}</span> {proj.achievement}
+                    </div>
+                  </div>
+                  <div className="project-footer">
+                    <div className="project-techs">
+                      {proj.techs.map((t, i) => <span key={i} className="tech-tag">{t}</span>)}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Formación, Certificaciones e Idiomas */}
         <section className="info-grid footer-info">
           <div className="dashboard-card info-card">
             <h5>{ui.academicTraining}</h5>
@@ -194,6 +219,30 @@ function App() {
               <p className="small-desc">{cvData.education.desc}</p>
             </div>
           </div>
+          {cvData.certifications && cvData.certifications.length > 0 && (
+            <div className="dashboard-card info-card">
+              <h5>{ui.certifications}</h5>
+              {cvData.certifications.map((cert, i) => (
+                <div key={i} className="info-content">
+                  <strong>{cert.title}</strong>
+                  <p>{cert.issuer} • {cert.date} ({cert.hours})</p>
+                  {cert.credentialId && (
+                    <span className="small-text">ID: {cert.credentialId}</span>
+                  )}
+                  {cert.url && (
+                    <a
+                      href={cert.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="cert-verify-link"
+                    >
+                      {language === 'es' ? 'Verificar credencial ↗' : 'Verify credential ↗'}
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
           <div className="dashboard-card info-card">
             <h5>{ui.languages}</h5>
             {cvData.languages.map((lang, i) => (

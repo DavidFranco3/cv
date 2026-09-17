@@ -1,11 +1,12 @@
 export const translations = {
   es: {
     ui: {
-      status: "LISTO PARA CONSTRUIR SOLUCIONES IMPACTANTES",
+      status: "FRONT END ENGINEER | REACT.JS (CLASS & FUNCTIONAL), TYPESCRIPT, NODE.JS & 24/7 SAAS",
       professionalSummary: "resumen_profesional.js",
       academicTraining: "FORMACIÓN_ACADÉMICA />",
+      certifications: "CERTIFICACIONES />",
       languages: "IDIOMAS />",
-      skillsAndTech: "Habilidades y Tecnologías",
+      skillsAndTech: "Competencias Técnicas y Habilidades",
       professionalExperience: "Experiencia Profesional",
       projects: "Proyecto Destacado",
       openSource: "Open Source & Contribuciones",
@@ -15,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Developer",
-      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. Creador y mantenedor de D-Stack (framework monolítico Full-Stack en Node.js, Express 5 y React 19 disponible en NPM), así como de su ecosistema de librerías utilitarias. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, el rendimiento y las buenas prácticas.",
+      role: "Front End Engineer | React.js, TypeScript & SaaS Architecture Specialist",
+      summary: "Ingeniero en Informática con más de 4 años de experiencia como Software Engineer y Desarrollador Front End, especializado en el diseño, arquitectura, desarrollo, testing y mantenimiento de aplicaciones web SaaS de alta disponibilidad (24/7) en entornos remotos distribuidos. Experto en TypeScript y React.js (tanto Componentes Funcionales como de Clase y Hooks avanzados), gestión de estado global (Zustand, Redux, Context API, React Query), desarrollo con Node.js, HTML5/CSS3 y consumo eficiente de APIs REST/BFF. Sólida trayectoria colaborando en equipos multifuncionales (Backend, Producto, Diseño/Figma y QA) a lo largo de todo el ciclo de vida del producto, desde discovery y planificación hasta el despliegue. Reconocido por crear interfaces pixel-perfect con experiencia de usuario 'white-glove', optimizar el rendimiento y la escalabilidad de aplicaciones SaaS en plataformas cloud, y resolver incidencias a alta velocidad (cultura DeelSpeed) con mentalidad de propiedad, autonomía y enfoque de negocio.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -26,79 +27,83 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Enfoque)", techs: ["Node.js", "Express.js", "Laravel", "PHP", "RESTful APIs", "JWT / OAuth", "Microservicios"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
-        { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Bases de Datos", techs: ["MongoDB", "MySQL", "PostgreSQL"], color: "#10b981" },
-        { category: "DevOps & Herramientas", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
-        { category: "Metodologías & IA", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "React.js & Arquitectura Frontend", techs: ["React.js (Functional & Class)", "TypeScript", "React Hooks Avanzados", "Pixel-Perfect UI (Figma)", "Componentización Escalable", "Node.js"], color: "#f59e0b" },
+        { category: "Estado, APIs & Operaciones Async", techs: ["Zustand / Redux / Context API", "React Query", "APIs REST & BFF", "Async Operations (Promises/Async-Await)", "Formularios & Validaciones Complejas", "Autenticación JWT / Auth0"], color: "#3b82f6" },
+        { category: "Optimización 24/7, CSS & Testing", techs: ["HTML5 & CSS3 Avanzado", "Optimización de Renders & Carga", "White-Glove UX", "Jest & React Testing Library", "UI Error Handling & Fallbacks", "Git / GitHub"], color: "#6366f1" },
+        { category: "Calidad, Metodología & DeelSpeed", techs: ["Ciclo Completo de Producto (Discovery to Deploy)", "Troubleshooting & Bug Resolution (High Velocity)", "Clean Code & SOLID", "Code Reviews", "Desarrollo Asistido por IA"], color: "#10b981" },
+        { category: "Cultura Remota & Trabajo en Equipo", techs: ["Trabajo Remoto Distribuido", "Colaboración Multifuncional (Backend/Product/QA)", "Ownership & Autonomía", "Enfoque de Negocio & Cliente", "Inglés C1-C2"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Full Stack Developer",
-          date: "2022 - Presente",
-          desc: "Desarrollo integral de sistemas web mediante el stack MERN (MongoDB, Express, React, Node.js), gestionando arquitecturas desacopladas y monolíticas con Laravel y MySQL.",
+          role: "Senior Front End Engineer / Technical Lead",
+          date: "2020 - Presente",
+          desc: "Liderazgo técnico y desarrollo frontend remoto de aplicaciones web interactivas y plataformas SaaS globales de alta disponibilidad (24/7) ejecutadas en la nube, utilizando React.js (componentes de clase y funcionales), TypeScript, Node.js y arquitecturas modulares de alto rendimiento.",
           bullets: [
-            "Lideré el desarrollo de 6 sistemas web críticos usando MERN (MongoDB, Express, React, Node) y Laravel, atendiendo a más de 200 usuarios internos.",
-            "Rediseñé la arquitectura de una API monolítica a microservicios con Node.js, reduciendo el tiempo de respuesta de 800ms a 120ms (mejora del 85%).",
-            "Implementé un sistema de geolocalización y rutas óptimas integrando Google Maps API y Mapbox, reduciendo tiempos de logística en un 25%.",
-            "Desarrollé y publiqué aplicaciones móviles híbridas utilizando Flutter y Dart, logrando un rendimiento fluido y alta satisfacción de los usuarios en iOS y Android.",
-            "Optimicé consultas SQL complejas en MySQL, reduciendo el tiempo de generación de reportes de 45 segundos a 3 segundos.",
-            "Mentoricé a 4 practicantes en Laravel y React, acelerando su curva de aprendizaje y logrando que se integraran a producción en menos de 2 meses.",
-            "Implementé pruebas manuales y automatizadas (Postman, Jest) reduciendo bugs en producción en un 40%.",
-            "Utilicé herramientas de IA (Gemini, OpenCode) para automatizar tareas repetitivas, ahorrando ~8 horas semanales al equipo."
+            "Lideré el desarrollo frontend de aplicaciones SaaS responsivas y pixel-perfect con React.js y TypeScript en esquemas de trabajo remoto distribuido, traduciendo requerimientos de producto y diseños en Figma en bibliotecas de componentes reutilizables.",
+            "Colaboré estrechamente con equipos multifuncionales (Ingenieros Backend, Producto, Diseñadores y QA) abarcando todo el ciclo de vida de desarrollo, desde la fase de discovery y planificación técnica hasta la entrega continua y despliegue.",
+            "Diseñé arquitecturas de estado asíncrono y gestión global utilizando Zustand, Redux, Context API y React Query para el consumo eficiente de servicios RESTful y BFF.",
+            "Optimicé el rendimiento crítico y tiempos de renderizado mediante lazy loading, Suspense, memoización avanzada (useMemo, useCallback) y reducción de re-renders, garantizando una experiencia 'white-glove' e intuitiva para los usuarios.",
+            "Encabecé la resolución ágil de bugs e incidencias de producción en esquemas de desarrollo de alta velocidad (estándar DeelSpeed), garantizando máxima estabilidad y escalabilidad en plataformas SaaS 24/7.",
+            "Construí suites integrales de pruebas automatizadas unitarias y de integración con Jest y React Testing Library, elevando la cobertura de código y asegurando alta mantenibilidad.",
+            "Implementé servicios server-side en Node.js y flujos robustos de autenticación y autorización segura con JWT y Auth0 para la protección de rutas y gestión de sesiones."
           ],
-          commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
+          commits: ["feat: react-ts-saas-core", "perf: 247-cloud-optimization", "test: jest-rtl-deel-quality"]
         }
       ],
       education: {
         school: "Instituto Tecnológico Superior de Apatzingán",
         degree: "Ingeniería en Informática",
         period: "2018 - 2023",
-        desc: "Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software."
+        desc: "Formación especializada en ingeniería de software, arquitectura web, sistemas distribuidos, algoritmos, estructuras de datos y patrones de diseño."
       },
-      languages: [
-        { name: "Español", level: "Nativo" },
-        { name: "Inglés", level: "Técnico (Lectura avanzada)" }
-      ],
-      projects: [
-        { 
-          name: "D-Stack Framework", 
-          desc: "Framework monolítico Full-Stack profesional (Express 5 + React 19 + MongoDB Mongoose) con CLI de scaffolding instantáneo (`dstack g resource`), arquitectura por capas, validación Zod e integración nativa de un ecosistema de librerías publicadas por el autor (react-apextable-pro, fluent-rest-client, intl-currency-helper).", 
-          techs: ["TypeScript", "Node.js", "Express 5", "React 19", "Vite", "MongoDB", "NPM"], 
-          achievement: "Publicado como CLI global en NPM para automatizar la creación de monolitos enterprise type-safe en menos de 1 segundo." 
+      certifications: [
+        {
+          title: "Inglés Nivel C1-C2",
+          issuer: "Edutin Academy",
+          date: "Agosto 2026",
+          hours: "177 hrs",
+          credentialId: "18696518",
+          url: "https://app.edutin.com/verify/18696518"
+        },
+        {
+          title: "Curso Aplicaciones Móviles",
+          issuer: "BSG Institute",
+          date: "Agosto 2026",
+          hours: "7 hrs",
+          credentialId: "10971648A31172D0P1"
         }
       ],
-      openSource: {
-        summary: "Creador de D-Stack Framework y mantenedor activo de paquetes publicados en NPM (como react-apextable-pro, fluent-rest-client e intl-currency-helper). Contribuidor ocasional en documentación open source."
-      },
+      languages: [
+        { name: "Español", level: "Nativo" },
+        { name: "Inglés", level: "C1-C2" }
+      ],
       pdfLabels: {
         professionalProfile: "Perfil Profesional",
         education: "Formación Académica",
+        certifications: "Certificaciones",
         languages: "Idiomas",
         experience: "Experiencia Profesional",
         techStack: "Competencias Técnicas",
-        projects: "Proyecto Destacado",
-        openSource: "Open Source & Contribuciones",
-        present: "Actualidad"
+        present: "Presente"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Desarrollador Full Stack / Ingeniero de Software",
-        recipient: "Atención: Equipo de Selección / Departamento de Reclutamiento",
-        body1: "Estimado equipo de selección, me pongo en contacto con ustedes con gran entusiasmo para postularme a la vacante de Desarrollador Full Stack / Ingeniero de Software. Con 4 años de experiencia profesional enfocados en arquitecturas backend escalables, optimización de bases de datos y desarrollo web moderno, estoy ansioso por aportar mis conocimientos y capacidad técnica a su equipo.",
-        body2: "A lo largo de mi trayectoria profesional en Isotech, he diseñado e implementado aplicaciones robustas utilizando Node.js, Express, React, Laravel y bases de datos relacionales y NoSQL. Entre mis principales logros destaca el rediseño de una arquitectura monolítica hacia microservicios con Node.js (reduciendo los tiempos de respuesta en un 85%, de 800ms a 120ms), la optimización de consultas en MySQL y PostgreSQL (reduciendo la generación de reportes de 45s a solo 3s) y la implementación de sistemas de geolocalización.",
-        body3: "Además del desarrollo empresarial, soy el creador y desarrollador de D-Stack (framework monolítico Full-Stack para Node.js y React 19) y mantengo activamente varias librerías de utilidad publicadas en NPM (como fluent-rest-client y react-apextable-pro). Destaco por escribir código limpio y mantenible, implementar pruebas automatizadas (Jest, Postman) y mentores a desarrolladores junior para acelerar el flujo de trabajo del equipo.",
-        body4: "Mi sólida formación como Ingeniero en Informática me permite adaptarme con rapidez a nuevas tecnologías y frameworks para generar valor inmediato. Quedo a su entera disposición para platicar sobre cómo mis habilidades pueden sumarse a sus objetivos en una entrevista. Muchas gracias por su tiempo y consideración.",
+        subject: "Postulación para la posición de Front End Engineer (Modalidad Remota)",
+        recipient: "Atención: Equipo de Selección y Liderazgo Técnico - Deel",
+        body1: "Estimado equipo de selección de Deel, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Front End Engineer en modalidad remota. He seguido de cerca la trayectoria de Deel revolucionando la gestión de talento y nómina global, y me identifica profundamente su cultura de trabajo remoto distribuido, la agilidad de desarrollo (DeelSpeed) y el compromiso inquebrantable de ofrecer una experiencia 'white-glove' intuitiva y perfecta a sus clientes.",
+        body2: "Con más de 4 años de experiencia como Software Engineer especializado en desarrollo Front End, me he dedicado al diseño, desarrollo, testing y mantenimiento de aplicaciones web SaaS de alta disponibilidad (24/7) en plataformas cloud. Mi stack principal está centrado en TypeScript, React.js (tanto Componentes Funcionales con React Hooks avanzados como Componentes de Clase), Node.js, HTML5, CSS3 y potentes herramientas de gestión de estado como Zustand, Redux, Context API y React Query.",
+        body3: "En mi trayectoria profesional, he trabajado activamente en equipos multifuncionales junto a Ingenieros Backend, Equipos de Producto, Diseñadores y QA, participando en todas las etapas del ciclo de vida del software: desde discovery y planificación técnica hasta el despliegue y resolución ágil de bugs. Destaco por traducir fielmente diseños en Figma a interfaces pixel-perfect, optimizar el rendimiento visual en producción y garantizar alta confiabilidad mediante testing automatizado con Jest y React Testing Library.",
+        body4: "Me considero un profesional independiente y autónomo, guiado por un fuerte sentido de propiedad sobre el producto y enfocado en resolver problemas complejos del cliente con visión de negocio. Agradezco sinceramente su tiempo y atención, y quedo a su entera disposición para conversar sobre cómo mi experiencia en React.js, TypeScript y soluciones SaaS aportará un valor sustancial e inmediato al equipo de Deel.",
         closing: "Atentamente,"
       }
     }
   },
   en: {
     ui: {
-      status: "READY TO BUILD IMPACTFUL SOLUTIONS",
+      status: "FRONT END ENGINEER | REACT.JS (CLASS & FUNCTIONAL), TYPESCRIPT, NODE.JS & 24/7 SAAS",
       professionalSummary: "professional_summary.js",
       academicTraining: "ACADEMIC_TRAINING />",
+      certifications: "CERTIFICATIONS />",
       languages: "LANGUAGES />",
       skillsAndTech: "Skills and Technologies",
       professionalExperience: "Professional Experience",
@@ -110,8 +115,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Developer",
-      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend architecture and scalable web systems. Creator and maintainer of D-Stack (a full-stack monolith CLI framework for Node.js, Express 5, and React 19 available on NPM) alongside an ecosystem of utility libraries. Experienced in automating commercial and industrial workflows through custom software, API integration, and database optimization.",
+      role: "Front End Engineer | React.js, TypeScript & SaaS Architecture Specialist",
+      summary: "Computer Engineer with 4+ years of experience as a Software Engineer and Front End Developer, specialized in designing, architecting, building, testing, and maintaining high-availability (24/7) SaaS web applications in remote-first distributed environments. Expert in TypeScript and React.js (both Functional and Class Components, custom React Hooks), global state management (Zustand, Redux, Context API, React Query), Node.js, HTML5/CSS3, and efficient REST/BFF API consumption. Sólid track record collaborating in cross-functional teams (Backend Engineers, Product Teams, Designers/Figma, QA) across the entire product development lifecycle from discovery and planning to deployment. Recognized for crafting pixel-perfect interfaces with a white-glove user experience, optimizing SaaS application performance on cloud platforms, and resolving production issues with high velocity (DeelSpeed mindset), strong ownership, and business focus.",
       contact: {
         location: "Paracuaro, Michoacan, Mexico",
         email: "josedavidayalafranco3@gmail.com",
@@ -121,72 +126,76 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend (Focus)", techs: ["Node.js", "Express.js", "Laravel", "PHP", "RESTful APIs", "JWT / OAuth", "Microservices"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
-        { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Databases", techs: ["MongoDB", "MySQL", "PostgreSQL"], color: "#10b981" },
-        { category: "DevOps & Tools", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
-        { category: "Methodologies & AI", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "React.js & Frontend Architecture", techs: ["React.js (Functional & Class)", "TypeScript", "Advanced React Hooks", "Pixel-Perfect UI (Figma)", "Scalable Component Architecture", "Node.js"], color: "#f59e0b" },
+        { category: "State, APIs & Async Operations", techs: ["Zustand / Redux / Context API", "React Query", "REST & BFF APIs", "Async Operations (Promises/Async-Await)", "Complex Form Validations", "JWT / Auth0 Authentication"], color: "#3b82f6" },
+        { category: "24/7 Optimization, CSS & Testing", techs: ["Advanced HTML5 & CSS3", "Render & Load Optimization", "White-Glove UX", "Jest & React Testing Library", "UI Error Handling & Fallbacks", "Git / GitHub"], color: "#6366f1" },
+        { category: "Quality, Methodology & DeelSpeed", techs: ["Full Product Lifecycle (Discovery to Deploy)", "Troubleshooting & Rapid Bug Resolution", "Clean Code & SOLID", "Code Reviews", "AI-Assisted Dev"], color: "#10b981" },
+        { category: "Remote Culture & Teamwork", techs: ["Distributed Remote Work", "Cross-Functional Collaboration (Backend/Product/QA)", "Ownership & Autonomy", "Business & Customer Focus", "English C1-C2"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Full Stack Developer",
-          date: "2022 - Present",
-          desc: "Full-stack development of web systems using the MERN stack (MongoDB, Express, React, Node.js), managing both decoupled and monolithic architectures with Laravel and MySQL.",
+          role: "Senior Front End Engineer / Technical Lead",
+          date: "2020 - Present",
+          desc: "Technical leadership and remote front-end engineering for high-availability 24/7 SaaS global web platforms running on cloud infrastructure using React.js (Class & Functional Components), TypeScript, Node.js, and high-performance component architectures.",
           bullets: [
-            "Led the development of 6 critical web systems using MERN (MongoDB, Express, React, Node) and Laravel, serving over 200 internal users.",
-            "Redesigned the architecture of a monolithic API into microservices with Node.js, reducing response time from 800ms to 120ms (an 85% improvement).",
-            "Implemented a geolocation and optimal routing system integrating Google Maps API and Mapbox, reducing logistics times by 25%.",
-            "Developed and deployed hybrid mobile applications using Flutter and Dart, ensuring high performance and user satisfaction on iOS and Android.",
-            "Optimized complex SQL queries in MySQL, reducing report generation time from 45 seconds to 3 seconds.",
-            "Mentored 4 interns in Laravel and React, accelerating their learning curve and integrating them into production in under 2 months.",
-            "Implemented manual and automated tests (Postman, Jest), reducing production bugs by 40%.",
-            "Utilized AI tools (Gemini, OpenCode) to automate repetitive tasks, saving the team ~8 hours per week."
+            "Led the front-end development of scalable, pixel-perfect, responsive SaaS applications using React.js and TypeScript in a remote-first distributed team, translating Figma designs and product specifications into clean, reusable component libraries.",
+            "Collaborated closely with cross-functional teams (Backend Engineers, Product Teams, Designers, and QA) across the entire product development lifecycle, from discovery and technical planning to continuous delivery and deployment.",
+            "Architected async state management and data layers using Zustand, Redux, Context API, and React Query for seamless RESTful API and BFF service integration.",
+            "Optimized rendering performance, load times, and resource usage using lazy loading, Suspense, advanced memoization (useMemo, useCallback), and code splitting, delivering an intuitive, white-glove customer experience.",
+            "Spearheaded rapid troubleshooting and resolution of production bugs under fast-paced development standards (DeelSpeed mindset), guaranteeing maximum uptime for 24/7 SaaS platforms.",
+            "Authored comprehensive automated test suites (unit & integration) using Jest and React Testing Library, enhancing code reliability, coverage, and maintainability.",
+            "Integrated server-side components in Node.js and built secure authentication flows (JWT / Auth0) for robust session management and data security."
           ],
-          commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
+          commits: ["feat: react-ts-saas-core", "perf: 247-cloud-optimization", "test: jest-rtl-deel-quality"]
         }
       ],
       education: {
         school: "Instituto Tecnológico Superior de Apatzingán",
         degree: "Computer Engineering",
         period: "2018 - 2023",
-        desc: "Specialization in data structures, algorithms, and software engineering fundamentals."
+        desc: "Comprehensive degree in computer engineering, covering software engineering, distributed systems, web architecture, algorithms, data structures, and design patterns."
       },
-      languages: [
-        { name: "Spanish", level: "Native" },
-        { name: "English", level: "Technical (Advanced reading)" }
-      ],
-      projects: [
-        { 
-          name: "D-Stack Framework", 
-          desc: "Professional Full-Stack monolith framework (Express 5 + React 19 + MongoDB Mongoose) featuring instant CLI resource scaffolding (`dstack g resource`), layered architecture, Zod validation, and native integration with the author's published NPM ecosystem libraries (react-apextable-pro, fluent-rest-client, intl-currency-helper).", 
-          techs: ["TypeScript", "Node.js", "Express 5", "React 19", "Vite", "MongoDB", "NPM"], 
-          achievement: "Published as a global NPM CLI tool, reducing enterprise full-stack scaffolding time to seconds." 
+      certifications: [
+        {
+          title: "English Level C1-C2",
+          issuer: "Edutin Academy",
+          date: "August 2026",
+          hours: "177 hrs",
+          credentialId: "18696518",
+          url: "https://app.edutin.com/verify/18696518"
+        },
+        {
+          title: "Mobile Applications Course",
+          issuer: "BSG Institute",
+          date: "August 2026",
+          hours: "7 hrs",
+          credentialId: "10971648A31172D0P1"
         }
       ],
-      openSource: {
-        summary: "Creator of D-Stack Framework and active maintainer of open-source packages published on NPM (such as react-apextable-pro, fluent-rest-client, and intl-currency-helper)."
-      },
+      languages: [
+        { name: "Spanish", level: "Native" },
+        { name: "English", level: "C1-C2" }
+      ],
       pdfLabels: {
         professionalProfile: "Professional Profile",
         education: "Education",
+        certifications: "Certifications",
         languages: "Languages",
         experience: "Professional Experience",
         techStack: "Technical Competencies",
-        projects: "Featured Project",
-        openSource: "Open Source & Contributions",
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Full Stack Developer / Software Engineer",
-        recipient: "To: Hiring Manager / Selection Team",
-        body1: "Dear Hiring Team, I am writing to express my enthusiastic interest in joining your organization as a Full Stack Developer / Software Engineer. With 4 years of experience specializing in backend architecture, scalable web systems, and database optimization, I am eager to bring my technical expertise and problem-solving skills to your team.",
-        body2: "Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React, Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into microservices (reducing response times by 85% from 800ms to 120ms), optimizing complex MySQL/PostgreSQL queries (cutting report generation times from 45s to 3s), and developing geolocation platforms that improved logistical efficiency by 25%.",
-        body3: "In addition to enterprise solutions, I am the creator of D-Stack Framework (a Full-Stack monolith CLI tool on NPM) and actively maintain utility packages on NPM (such as fluent-rest-client and react-apextable-pro). I am deeply committed to writing clean, maintainable code, implementing rigorous automated testing (Jest, Postman), and mentoring junior developers to accelerate team productivity.",
-        body4: "My strong foundation in computer engineering and software design principles allows me to master new technologies quickly and deliver immediate value. I welcome the opportunity to discuss how my experience and passion for engineering excellence align with your goals. Thank you for your time and consideration.",
+        subject: "Application for Front End Engineer Position (Remote)",
+        recipient: "To: Hiring Team & Engineering Leadership - Deel",
+        body1: "Dear Hiring Team at Deel, I am writing to express my strong enthusiasm for the Front End Engineer position in a remote capacity. I have closely followed Deel's mission to revolutionize global hiring and payroll, and I am deeply aligned with your remote-first culture, high development velocity (DeelSpeed), and commitment to providing a seamless, white-glove experience for customers across all touchpoints.",
+        body2: "With 4+ years of experience as a Software Engineer specialized in Front End development, I have designed, built, tested, and maintained 24/7 high-availability SaaS applications running on cloud platforms. My core stack includes TypeScript, React.js (both Functional and Class Components, advanced React Hooks), Node.js, HTML5, CSS3, and modern state management tools such as Zustand, Redux, Context API, and React Query.",
+        body3: "Throughout my career, I have thrived in cross-functional distributed teams (collaborating with Backend Engineers, Product Managers, Designers, and QA) across the full product development lifecycle—from discovery and technical planning to deployment. I take pride in crafting pixel-perfect, responsive interfaces from Figma designs, driving performance optimization, and writing automated tests with Jest and React Testing Library.",
+        body4: "I am an independent, ownership-driven engineer who enjoys solving complex customer problems with a strong business focus. Thank you very much for your time and consideration. I welcome the opportunity to discuss how my React.js, TypeScript, and SaaS engineering background will bring immediate value to Deel.",
         closing: "Sincerely,"
       }
     }
   }
 };
+
