@@ -16,7 +16,7 @@
 endobj
 4 0 obj
 <<
-/Length 8994
+/Length 8874
 >>
 stream
 0.5670000000000001 w
@@ -31,49 +31,49 @@ ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
-0.157 g
+0. g
 160.9802952755906347 773.291574803149615 Td
 (SOFTWARE DEVELOPER  |  FULL STACK & BACKEND) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 109.1417952755906242 757.7010236220472734 Td
 (Parácuaro, Michoacán, México   •   453-152-7363   •   josedavidayalafranco3@gmail.com) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 131.6537952755905962 742.9608661417322537 Td
 (Github: DavidFranco3) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 224.4857952755905899 742.9608661417322537 Td
 (     •     ) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 254.725795275590599 742.9608661417322537 Td
 (Linkedin: David Franco) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 352.2617952755906572 742.9608661417322537 Td
 (     •     ) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 382.5017952755906663 742.9608661417322537 Td
 (NPM: davidfranco3) Tj
 ET
@@ -92,7 +92,7 @@ S
 BT
 /F1 9.8 Tf
 11.2699999999999996 TL
-0.157 g
+0. g
 42.5196850393700814 706.1104724409448181 Td
 (Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend architecture and) Tj
 T* (scalable web systems. Creator and active maintainer of open-source utility libraries published on NPM for the Node.js) Tj
@@ -121,7 +121,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 133.0546850393700993 626.4569291338582389 Td
 (Node.js  |  Express.js  |  Laravel  |  PHP  |  RESTful APIs  |  JWT / OAuth  |  Microservices) Tj
 ET
@@ -135,7 +135,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 135.4296850393700993 610.8663779527558972 Td
 (React 19  |  JavaScript \(ES6+\)  |  TypeScript  |  Tailwind CSS  |  SASS  |  HTML5/CSS3) Tj
 ET
@@ -149,7 +149,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 86.9796850393700822 595.2758267716535556 Td
 (Flutter  |  Dart  |  Kotlin  |  Java) Tj
 ET
@@ -163,7 +163,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 104.0796850393700907 579.6852755905511003 Td
 (MongoDB  |  MySQL  |  PostgreSQL) Tj
 ET
@@ -177,7 +177,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 128.3996850393700981 564.0947244094487587 Td
 (Docker  |  CI/CD  |  AWS \(EC2/S3\)  |  Git  |  Vite  |  Postman  |  Linux) Tj
 ET
@@ -191,7 +191,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 145.4046850393700936 548.5041732283464171 Td
 (Scrum / Agile  |  Kanban  |  TDD / Testing \(Jest\)  |  MVC  |  Prompt Engineering) Tj
 ET
@@ -205,7 +205,7 @@ ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
-0.157 g
+0. g
 106.834685039370072 532.9136220472440755 Td
 (Spanish: Native  |  English: C1-C2) Tj
 ET
@@ -231,21 +231,21 @@ ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
-0.314 g
+0. g
 477.89090551181107 488.9766141732283131 Td
 (2022 - Present) Tj
 ET
 BT
 /F4 10.2 Tf
 11.7299999999999986 TL
-0.157 g
+0. g
 42.5196850393700814 475.9372440944881646 Td
 (Full Stack Developer) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 42.5196850393700814 464.0317322834645779 Td
 (Full-stack development of web systems using the MERN stack \(MongoDB, Express, React, Node.js\), managing both) Tj
 T* (decoupled and monolithic architectures with Laravel and MySQL.) Tj
@@ -253,7 +253,7 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 432.5671653543307116 Td
 (•  Led the development of 6 critical web systems using MERN \(MongoDB, Express, React, Node\) and Laravel,) Tj
 T* (serving over 200 internal users.) Tj
@@ -261,7 +261,7 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 406.7718897637795408 Td
 (•  Redesigned the architecture of a monolithic API into microservices with Node.js, reducing response time from) Tj
 T* (800ms to 120ms \(an 85% improvement\).) Tj
@@ -269,7 +269,7 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 380.97661417322837 Td
 (•  Implemented a geolocation and optimal routing system integrating Google Maps API and Mapbox, reducing) Tj
 T* (logistics times by 25%.) Tj
@@ -277,7 +277,7 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 355.1813385826771992 Td
 (•  Developed and deployed hybrid mobile applications using Flutter and Dart, ensuring high performance and user) Tj
 T* (satisfaction on iOS and Android.) Tj
@@ -285,14 +285,14 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 329.3860629921260852 Td
 (•  Optimized complex SQL queries in MySQL, reducing report generation time from 45 seconds to 3 seconds.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 315.3545669291339664 Td
 (•  Mentored 4 interns in Laravel and React, accelerating their learning curve and integrating them into production in) Tj
 T* (under 2 months.) Tj
@@ -300,14 +300,14 @@ ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 289.5592913385827387 Td
 (•  Implemented manual and automated tests \(Postman, Jest\), reducing production bugs by 40%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
-0.157 g
+0. g
 48.1889763779527627 275.5277952755907336 Td
 (•  Integrated AI-assisted engineering workflows to accelerate complex refactoring, unit test generation, and technical) Tj
 T* (documentation, saving ~8 engineering hours weekly.) Tj
@@ -334,21 +334,21 @@ ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
-0.314 g
+0. g
 491.9209055118110996 222.8033858267717733 Td
 (2018 - 2023) Tj
 ET
 BT
 /F1 10.2 Tf
 11.7299999999999986 TL
-0.157 g
+0. g
 42.5196850393700814 210.0474803149608078 Td
 (Computer Engineering) Tj
 ET
 BT
 /F3 9.3 Tf
 10.6950000000000003 TL
-0.314 g
+0. g
 42.5196850393700814 198.1419685039371643 Td
 (Specialization in data structures, algorithms, and software engineering fundamentals.) Tj
 ET
@@ -374,14 +374,14 @@ ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
-0.314 g
+0. g
 470.2259055118111064 159.3073228346459018 Td
 (October 2026 \(4 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
-0.157 g
+0. g
 42.5196850393700814 147.4018110236222583 Td
 (mouredev & BIG school) Tj
 ET
@@ -395,21 +395,21 @@ ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
-0.314 g
+0. g
 464.3759055118111405 132.6616535433073523 Td
 (August 2026 \(177 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
-0.157 g
+0. g
 42.5196850393700814 120.7561417322837087 Td
 (Edutin Academy  •  ID: 18696518  •  ) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
-0.008 0.518 0.78 rg
+0. g
 192.5286850393701457 120.7561417322837087 Td
 (app.edutin.com/verify/18696518) Tj
 ET
@@ -423,14 +423,14 @@ ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
-0.314 g
+0. g
 474.2759055118110609 106.0159842519688027 Td
 (August 2026 \(7 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
-0.157 g
+0. g
 42.5196850393700814 94.1104724409452729 Td
 (BSG Institute  •  ID: 10971648A31172D0P1) Tj
 ET
@@ -606,7 +606,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261106164426-06'00')
+/CreationDate (D:20261106164943-06'00')
 >>
 endobj
 20 0 obj
@@ -620,33 +620,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010024 00000 n 
-0000011841 00000 n 
+0000009904 00000 n 
+0000011721 00000 n 
 0000000015 00000 n 
 0000000978 00000 n 
-0000010081 00000 n 
-0000010206 00000 n 
-0000010336 00000 n 
-0000010469 00000 n 
-0000010606 00000 n 
-0000010729 00000 n 
-0000010858 00000 n 
-0000010990 00000 n 
-0000011126 00000 n 
-0000011254 00000 n 
-0000011381 00000 n 
-0000011510 00000 n 
-0000011643 00000 n 
-0000011745 00000 n 
-0000012089 00000 n 
-0000012175 00000 n 
+0000009961 00000 n 
+0000010086 00000 n 
+0000010216 00000 n 
+0000010349 00000 n 
+0000010486 00000 n 
+0000010609 00000 n 
+0000010738 00000 n 
+0000010870 00000 n 
+0000011006 00000 n 
+0000011134 00000 n 
+0000011261 00000 n 
+0000011390 00000 n 
+0000011523 00000 n 
+0000011625 00000 n 
+0000011969 00000 n 
+0000012055 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <50860015F2B1034F56D35981E1186C69> <50860015F2B1034F56D35981E1186C69> ]
+/ID [ <7E275898FD14701E394E6279D1AA7317> <7E275898FD14701E394E6279D1AA7317> ]
 >>
 startxref
-12279
+12159
 %%EOF

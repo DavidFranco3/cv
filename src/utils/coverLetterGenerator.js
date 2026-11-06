@@ -31,8 +31,8 @@ export const generateCoverLetter = async (rawData, filename = 'Cover_Letter_Davi
   const CONTENT_W = PAGE_W - MARGIN_L - MARGIN_R;
 
   const BLACK = [0, 0, 0];
-  const DARK_GRAY = [40, 40, 40];
-  const MID_GRAY = [80, 80, 80];
+  const DARK_GRAY = [0, 0, 0];
+  const MID_GRAY = [0, 0, 0];
 
   const setColor = ([r, g, b]) => doc.setTextColor(r, g, b);
 

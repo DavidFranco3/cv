@@ -32,9 +32,9 @@ function createCvPdf(rawData, outputPath) {
   const CONTENT_W = PAGE_W - (MARGIN_X * 2);
 
   const BLACK = [0, 0, 0];
-  const DARK_GRAY = [40, 40, 40];
-  const MID_GRAY = [80, 80, 80];
-  const LIGHT_GRAY = [120, 120, 120];
+  const DARK_GRAY = [0, 0, 0];
+  const MID_GRAY = [0, 0, 0];
+  const LIGHT_GRAY = [0, 0, 0];
   const BORDER_GRAY = [200, 200, 200];
 
   const setColor = ([r, g, b]) => doc.setTextColor(r, g, b);
@@ -323,7 +323,7 @@ function createCvPdf(rawData, outputPath) {
         const prefixW = doc.getTextWidth(prefixText);
 
         const cleanUrl = certUrl.replace(/^https?:\/\//, '');
-        setColor([2, 132, 199]);
+        setColor(DARK_GRAY);
         doc.text(cleanUrl, MARGIN_X + prefixW, y);
         const urlW = doc.getTextWidth(cleanUrl);
         doc.link(MARGIN_X + prefixW, y - 3, urlW, 4, { url: certUrl });
@@ -363,7 +363,7 @@ function createCoverLetterPdf(rawData, lang, outputPath) {
   const CONTENT_W = PAGE_W - MARGIN_L - MARGIN_R;
 
   const BLACK = [0, 0, 0];
-  const DARK_GRAY = [40, 40, 40];
+  const DARK_GRAY = [0, 0, 0];
 
   const setColor = ([r, g, b]) => doc.setTextColor(r, g, b);
   const wrap = (text, w = CONTENT_W) => doc.splitTextToSize(text, w);
