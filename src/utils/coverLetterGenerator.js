@@ -1,6 +1,28 @@
 import { jsPDF } from 'jspdf';
 
-export const generateCoverLetter = async (data, filename = 'Cover_Letter_David_Franco.pdf') => {
+function sanitizeForPdf(obj) {
+  if (typeof obj === 'string') {
+    return obj
+      .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015]/g, '-')
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[\u201C\u201D]/g, '"')
+      .replace(/[\u00A0\u202F]/g, ' ');
+  }
+  if (Array.isArray(obj)) {
+    return obj.map(sanitizeForPdf);
+  }
+  if (obj && typeof obj === 'object') {
+    const res = {};
+    for (const k of Object.keys(obj)) {
+      res[k] = sanitizeForPdf(obj[k]);
+    }
+    return res;
+  }
+  return obj;
+}
+
+export const generateCoverLetter = async (rawData, filename = 'Cover_Letter_David_Franco.pdf') => {
+  const data = sanitizeForPdf(rawData);
   const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
 
   const PAGE_W = 210;

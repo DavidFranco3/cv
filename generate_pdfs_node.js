@@ -2,7 +2,29 @@ import { jsPDF } from 'jspdf';
 import fs from 'fs';
 import { translations } from './src/utils/translations.js';
 
-function createCvPdf(data, outputPath) {
+function sanitizeForPdf(obj) {
+  if (typeof obj === 'string') {
+    return obj
+      .replace(/[\u2010\u2011\u2012\u2013\u2014\u2015]/g, '-')
+      .replace(/[\u2018\u2019]/g, "'")
+      .replace(/[\u201C\u201D]/g, '"')
+      .replace(/[\u00A0\u202F]/g, ' ');
+  }
+  if (Array.isArray(obj)) {
+    return obj.map(sanitizeForPdf);
+  }
+  if (obj && typeof obj === 'object') {
+    const res = {};
+    for (const k of Object.keys(obj)) {
+      res[k] = sanitizeForPdf(obj[k]);
+    }
+    return res;
+  }
+  return obj;
+}
+
+function createCvPdf(rawData, outputPath) {
+  const data = sanitizeForPdf(rawData);
   const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
   const PAGE_W = 210;
   const PAGE_H = 297;
@@ -25,11 +47,11 @@ function createCvPdf(data, outputPath) {
 
   const sectionTitle = (title, yPos) => {
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(11);
+    doc.setFontSize(11.5);
     setColor(BLACK);
     doc.text(title.toUpperCase(), MARGIN_X, yPos);
-    hline(yPos + 0.8);
-    return yPos + 4.8;
+    hline(yPos + 1.2);
+    return yPos + 5.5;
   };
 
   const wrapM = (text, w = CONTENT_W) => doc.splitTextToSize(text, w);
@@ -44,26 +66,35 @@ function createCvPdf(data, outputPath) {
     present: 'Presente'
   };
 
-  let y = 12;
+  let y = 17;
 
   // Header
   doc.setFont('helvetica', 'bold');
-  doc.setFontSize(21);
+  doc.setFontSize(23);
   setColor(BLACK);
   doc.text(data.name.toUpperCase(), PAGE_W / 2, y, { align: 'center' });
-  y += 6.8;
+  y += 7.2;
+
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(10.5);
+  setColor(DARK_GRAY);
+  const roleSubtitle = data.role 
+    ? (data.role.includes('|') ? data.role.toUpperCase() : `${data.role.toUpperCase()}  |  FULL STACK & BACKEND`)
+    : 'SOFTWARE DEVELOPER  |  FULL STACK & BACKEND';
+  doc.text(roleSubtitle, PAGE_W / 2, y, { align: 'center' });
+  y += 5.5;
 
   doc.setFont('helvetica', 'normal');
-  doc.setFontSize(9.5);
+  doc.setFontSize(9.6);
   setColor(DARK_GRAY);
 
   const contactInfo = [
     data.contact.location,
     data.contact.phone,
     data.contact.email
-  ].join('  •  ');
+  ].join('   •   ');
   doc.text(contactInfo, PAGE_W / 2, y, { align: 'center' });
-  y += 4.5;
+  y += 5.2;
 
   const links = [
     { label: 'Github', name: data.contact.github, url: `https://github.com/${data.contact.github}` },
@@ -71,8 +102,8 @@ function createCvPdf(data, outputPath) {
     { label: 'NPM', name: data.contact.npm, url: `https://www.npmjs.com/~${data.contact.npm}` }
   ];
 
-  doc.setFontSize(9.5);
-  const bullet = '   •   ';
+  doc.setFontSize(9.6);
+  const bullet = '     •     ';
   const linkItems = links.map(l => `${l.label}: ${l.name}`);
   const totalW = doc.getTextWidth(linkItems.join(bullet));
 
@@ -94,11 +125,11 @@ function createCvPdf(data, outputPath) {
   // Summary
   y = sectionTitle(pdfLabels.professionalProfile, y);
   doc.setFont('helvetica', 'normal');
-  doc.setFontSize(9.5);
+  doc.setFontSize(9.8);
   setColor(DARK_GRAY);
   const summaryLines = wrapM(data.summary);
   doc.text(summaryLines, MARGIN_X, y);
-  y += summaryLines.length * 4.1 + 3.5;
+  y += summaryLines.length * 4.4 + 5.0;
 
   // Skills
   y = sectionTitle(pdfLabels.techStack, y);
@@ -116,7 +147,7 @@ function createCvPdf(data, outputPath) {
     const fullText = `${labelText}${skill.techs.join('  |  ')}`;
 
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(9.3);
+    doc.setFontSize(9.5);
     const lines = wrapM(fullText, CONTENT_W - 2);
 
     lines.forEach((line, lineIdx) => {
@@ -134,19 +165,19 @@ function createCvPdf(data, outputPath) {
         setColor(DARK_GRAY);
         doc.text(line, MARGIN_X + 4, y);
       }
-      y += 4.0;
+      y += 4.3;
     });
-    y += 0.8;
+    y += 1.2;
   });
 
-  y += 2.5;
+  y += 4.5;
 
   // Experience
   y = sectionTitle(pdfLabels.experience, y);
 
   data.experience.forEach((exp) => {
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(11);
+    doc.setFontSize(11.5);
     setColor(BLACK);
     doc.text(exp.company.toUpperCase(), MARGIN_X, y);
 
@@ -157,28 +188,28 @@ function createCvPdf(data, outputPath) {
 
     const dateW = doc.getTextWidth(dateStr);
     doc.text(dateStr, PAGE_W - MARGIN_X - dateW, y);
-    y += 4.2;
+    y += 4.6;
 
     doc.setFont('helvetica', 'bolditalic');
-    doc.setFontSize(10);
+    doc.setFontSize(10.2);
     setColor(DARK_GRAY);
     doc.text(exp.role, MARGIN_X, y);
-    y += 4.0;
+    y += 4.2;
 
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(9.3);
+    doc.setFontSize(9.6);
     setColor(DARK_GRAY);
     const descLines = wrapM(exp.desc);
     doc.text(descLines, MARGIN_X, y);
-    y += descLines.length * 4.0 + 1.8;
+    y += descLines.length * 4.3 + 2.5;
 
     exp.bullets.forEach(bullet => {
       const bLines = wrapM(`•  ${bullet}`, CONTENT_W - 5);
       doc.text(bLines, MARGIN_X + 2, y);
-      y += bLines.length * 3.9;
+      y += bLines.length * 4.15 + 0.8;
     });
 
-    y += 3.5;
+    y += 4.0;
   });
 
   // Projects
@@ -204,7 +235,8 @@ function createCvPdf(data, outputPath) {
       doc.setFont('helvetica', 'normal');
       doc.setFontSize(9.3);
       setColor(DARK_GRAY);
-      const descText = `${project.desc} Logro: ${project.achievement}`;
+      const achievementLabel = pdfLabels.projects?.toLowerCase().includes('featured') ? 'Achievement:' : 'Logro:';
+      const descText = project.achievement ? `${project.desc} ${achievementLabel} ${project.achievement}` : project.desc;
       const descLines = wrapM(descText, CONTENT_W);
       doc.text(descLines, MARGIN_X, y);
       y += descLines.length * 4.0 + 2.8;
@@ -226,11 +258,11 @@ function createCvPdf(data, outputPath) {
   }
 
   // Education
-  if (y > PAGE_H - 40) { doc.addPage(); y = 15; }
+  if (y > PAGE_H - 40) { doc.addPage(); y = 16; }
   y = sectionTitle(pdfLabels.education, y);
 
   doc.setFont('helvetica', 'bold');
-  doc.setFontSize(11);
+  doc.setFontSize(11.5);
   setColor(BLACK);
   doc.text(data.education.school.toUpperCase(), MARGIN_X, y);
 
@@ -238,66 +270,67 @@ function createCvPdf(data, outputPath) {
   doc.setFont('helvetica', 'italic');
   const eduDateW = doc.getTextWidth(data.education.period);
   doc.text(data.education.period, PAGE_W - MARGIN_X - eduDateW, y);
-  y += 4.2;
+  y += 4.5;
 
   doc.setFont('helvetica', 'normal');
-  doc.setFontSize(10);
+  doc.setFontSize(10.2);
   setColor(DARK_GRAY);
   doc.text(data.education.degree, MARGIN_X, y);
-  y += 4.0;
+  y += 4.2;
 
   doc.setFont('helvetica', 'italic');
-  doc.setFontSize(9);
+  doc.setFontSize(9.3);
   setColor(MID_GRAY);
   const eduDescLines = wrapM(data.education.desc);
   doc.text(eduDescLines, MARGIN_X, y);
-  y += eduDescLines.length * 3.9;
+  y += eduDescLines.length * 4.2 + 4.0;
 
   // Certifications
   if (data.certifications && data.certifications.length > 0) {
-    y += 3.0;
-    if (y > PAGE_H - 32) { doc.addPage(); y = 15; }
+    if (y > PAGE_H - 32) { doc.addPage(); y = 16; }
     y = sectionTitle(pdfLabels.certifications || 'CERTIFICACIONES', y);
 
     data.certifications.forEach((cert) => {
-      if (y > PAGE_H - 18) { doc.addPage(); y = 15; }
+      if (y > PAGE_H - 18) { doc.addPage(); y = 16; }
 
       doc.setFont('helvetica', 'bold');
-      doc.setFontSize(10);
+      doc.setFontSize(10.2);
       setColor(BLACK);
       doc.text(cert.title, MARGIN_X, y);
 
       setColor(MID_GRAY);
       doc.setFont('helvetica', 'italic');
-      doc.setFontSize(8.8);
-      const certDateStr = `${cert.date} (${cert.hours})`;
+      doc.setFontSize(9.0);
+      const certDateStr = cert.hours ? `${cert.date} (${cert.hours})` : cert.date;
       const certDateW = doc.getTextWidth(certDateStr);
       doc.text(certDateStr, PAGE_W - MARGIN_X - certDateW, y);
-      y += 3.8;
+      y += 4.2;
 
       doc.setFont('helvetica', 'normal');
-      doc.setFontSize(9);
+      doc.setFontSize(9.3);
       setColor(DARK_GRAY);
 
       let prefixText = cert.issuer;
-      if (cert.credentialId) {
-        prefixText += `  •  ID: ${cert.credentialId}`;
+      const credId = cert.credentialId || cert.id;
+      if (credId) {
+        prefixText += `  •  ID: ${credId}`;
       }
 
-      if (cert.url) {
+      const certUrl = cert.url || cert.link;
+      if (certUrl) {
         prefixText += '  •  ';
         doc.text(prefixText, MARGIN_X, y);
         const prefixW = doc.getTextWidth(prefixText);
 
-        const cleanUrl = cert.url.replace(/^https?:\/\//, '');
+        const cleanUrl = certUrl.replace(/^https?:\/\//, '');
         setColor([2, 132, 199]);
         doc.text(cleanUrl, MARGIN_X + prefixW, y);
         const urlW = doc.getTextWidth(cleanUrl);
-        doc.link(MARGIN_X + prefixW, y - 3, urlW, 4, { url: cert.url });
+        doc.link(MARGIN_X + prefixW, y - 3, urlW, 4, { url: certUrl });
       } else {
         doc.text(prefixText, MARGIN_X, y);
       }
-      y += 4.2;
+      y += 5.2;
     });
   }
 
@@ -321,7 +354,8 @@ function createCvPdf(data, outputPath) {
   console.log('CV PDF generated successfully:', outputPath);
 }
 
-function createCoverLetterPdf(data, lang, outputPath) {
+function createCoverLetterPdf(rawData, lang, outputPath) {
+  const data = sanitizeForPdf(rawData);
   const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
   const PAGE_W = 210;
   const MARGIN_L = 22;

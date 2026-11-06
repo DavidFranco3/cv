@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "generate-pdfs": "node generate_pdfs_node.js"
   },
   "dependencies": {
     "jspdf": "^4.2.1",
