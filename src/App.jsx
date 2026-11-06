@@ -93,7 +93,7 @@ const Icons = {
 
 // Partículas de código flotantes en el espacio
 const CODE_PARTICLES = [
-  { text: '{ React 19 }', top: '15%', left: '3%', duration: '9s', delay: '0s' },
+  { text: '{ React }', top: '15%', left: '3%', duration: '9s', delay: '0s' },
   { text: 'type SaaS = 24/7;', top: '35%', right: '2%', duration: '12s', delay: '1.5s' },
   { text: '<TypeScript />', top: '60%', left: '2%', duration: '11s', delay: '3s' },
   { text: 'const ecosystem = "NPM";', top: '78%', right: '3%', duration: '10s', delay: '2s' },
@@ -351,7 +351,7 @@ function App() {
                     cvData.role,
                     'Full Stack & Backend Architect',
                     'NPM Open Source Maintainer',
-                    'Node.js, Express & React 19',
+                    'Node.js, Express & React',
                     'Bilingual English C1-C2'
                   ]}
                   defaultRole={cvData.role}
@@ -364,7 +364,7 @@ function App() {
               </div>
               <div className="code-kv">
                 <span className="prop-name">stack:</span>
-                <span className="prop-array">[<span className="prop-string">"Node.js"</span>, <span className="prop-string">"Express.js"</span>, <span className="prop-string">"React 19"</span>, <span className="prop-string">"TypeScript"</span>]</span>,
+                <span className="prop-array">[<span className="prop-string">"Node.js"</span>, <span className="prop-string">"Express.js"</span>, <span className="prop-string">"React"</span>, <span className="prop-string">"TypeScript"</span>]</span>,
               </div>
               <div className="code-kv">
                 <span className="prop-name">culture:</span>
@@ -536,7 +536,7 @@ function App() {
 
                 {testStage >= 1 && (
                   <div className="test-subline pass-pop">
-                    ✓ Core Stack: React 19 (Hooks & Class), TypeScript, Node.js <span className="time-tag">[0.4ms]</span>
+                    ✓ Core Stack: React (Hooks), TypeScript, Node.js <span className="time-tag">[0.4ms]</span>
                   </div>
                 )}
                 {testStage >= 2 && (
@@ -596,9 +596,9 @@ function App() {
                 <pre style={{ color: 'var(--syntax-string)', fontSize: '0.82rem', lineHeight: 1.5, background: 'rgba(0,0,0,0.4)', padding: '14px', borderRadius: '4px', border: '1px solid #21262d' }}>
 {`{
   "backend": ["Node.js", "Express.js", "Laravel", "PHP", "RESTful APIs", "Microservicios"],
-  "frontend": ["React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "HTML5/CSS3"],
+  "frontend": ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5/CSS3"],
   "mobile": ["Flutter", "Dart", "Kotlin"],
-  "databases": ["MongoDB", "MySQL", "PostgreSQL"],
+  "databases": ["MongoDB", "MySQL", "SQLite"],
   "devops": ["Docker", "CI/CD", "AWS", "Git", "Vite", "Postman", "Linux"],
   "open_source": ["NPM Utility Libraries"],
   "english": "C1-C2 Certified"

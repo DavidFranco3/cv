@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3183
+/Length 3179
 >>
 stream
 0.5670000000000001 w
@@ -80,7 +80,7 @@ BT
 (Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React,) Tj
 T* (Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into) Tj
 T* (microservices \(reducing response times by 85% from 800ms to 120ms\), optimizing complex) Tj
-T* (MySQL/PostgreSQL queries \(cutting report generation times from 45s to 3s\), and developing geolocation) Tj
+T* (MySQL/SQLite queries \(cutting report generation times from 45s to 3s\), and developing geolocation) Tj
 T* (platforms that improved logistical efficiency by 25%.) Tj
 ET
 BT
@@ -295,7 +295,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261106170132-06'00')
+/CreationDate (D:20261106170606-06'00')
 >>
 endobj
 20 0 obj
@@ -309,33 +309,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003387 00000 n 
-0000005204 00000 n 
+0000003383 00000 n 
+0000005200 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003444 00000 n 
-0000003569 00000 n 
-0000003699 00000 n 
-0000003832 00000 n 
-0000003969 00000 n 
-0000004092 00000 n 
-0000004221 00000 n 
-0000004353 00000 n 
-0000004489 00000 n 
-0000004617 00000 n 
-0000004744 00000 n 
-0000004873 00000 n 
-0000005006 00000 n 
-0000005108 00000 n 
-0000005452 00000 n 
-0000005538 00000 n 
+0000003440 00000 n 
+0000003565 00000 n 
+0000003695 00000 n 
+0000003828 00000 n 
+0000003965 00000 n 
+0000004088 00000 n 
+0000004217 00000 n 
+0000004349 00000 n 
+0000004485 00000 n 
+0000004613 00000 n 
+0000004740 00000 n 
+0000004869 00000 n 
+0000005002 00000 n 
+0000005104 00000 n 
+0000005448 00000 n 
+0000005534 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <E953370FFE5FB3597ED0C4940E3D5B04> <E953370FFE5FB3597ED0C4940E3D5B04> ]
+/ID [ <E54B21B4A5CD60E2B55FE86CD2DA26E6> <E54B21B4A5CD60E2B55FE86CD2DA26E6> ]
 >>
 startxref
-5642
+5638
 %%EOF

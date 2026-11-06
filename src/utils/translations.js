@@ -28,9 +28,9 @@ export const translations = {
       },
       skills: [
         { category: "Backend (Enfoque)", techs: ["Node.js", "Express.js", "Laravel", "PHP", "RESTful APIs", "JWT / OAuth", "Microservicios"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
+        { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
         { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Bases de Datos", techs: ["MongoDB", "MySQL", "PostgreSQL"], color: "#10b981" },
+        { category: "Bases de Datos", techs: ["MongoDB", "MySQL", "SQLite"], color: "#10b981" },
         { category: "DevOps & Herramientas", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
         { category: "Metodologías & IA", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
       ],
@@ -99,7 +99,7 @@ export const translations = {
         subject: "Solicitud de Empleo — Desarrollador Full Stack / Ingeniero de Software",
         recipient: "Atención: Equipo de Selección / Departamento de Reclutamiento",
         body1: "Estimado equipo de selección, me pongo en contacto con ustedes con gran entusiasmo para postularme a la vacante de Desarrollador Full Stack / Ingeniero de Software. Con 4 años de experiencia profesional enfocados en arquitecturas backend escalables, optimización de bases de datos y desarrollo web moderno, estoy ansioso por aportar mis conocimientos y capacidad técnica a su equipo.",
-        body2: "A lo largo de mi trayectoria profesional en Isotech, he diseñado e implementado aplicaciones robustas utilizando Node.js, Express, React, Laravel y bases de datos relacionales y NoSQL. Entre mis principales logros destaca el rediseño de una arquitectura monolítica hacia microservicios con Node.js (reduciendo los tiempos de respuesta en un 85%, de 800ms a 120ms), la optimización de consultas en MySQL y PostgreSQL (reduciendo la generación de reportes de 45s a solo 3s) y la implementación de sistemas de geolocalización.",
+        body2: "A lo largo de mi trayectoria profesional en Isotech, he diseñado e implementado aplicaciones robustas utilizando Node.js, Express, React, Laravel y bases de datos relacionales y NoSQL. Entre mis principales logros destaca el rediseño de una arquitectura monolítica hacia microservicios con Node.js (reduciendo los tiempos de respuesta en un 85%, de 800ms a 120ms), la optimización de consultas en MySQL y SQLite (reduciendo la generación de reportes de 45s a solo 3s) y la implementación de sistemas de geolocalización.",
         body3: "Además del desarrollo empresarial, mantengo activamente librerías de utilidad de código abierto publicadas en NPM (como fluent-rest-client y react-apextable-pro) para Node.js y React. Destaco por escribir código limpio y mantenible, implementar pruebas automatizadas (Jest, Postman) y mentorizar a desarrolladores junior para acelerar el flujo de trabajo del equipo.",
         body4: "Mi sólida formación como Ingeniero en Informática me permite adaptarme con rapidez a nuevas tecnologías y frameworks para generar valor inmediato. Quedo a su entera disposición para platicar sobre cómo mis habilidades pueden sumarse a sus objetivos en una entrevista. Muchas gracias por su tiempo y consideración.",
         closing: "Atentamente,"
@@ -135,9 +135,9 @@ export const translations = {
       },
       skills: [
         { category: "Backend (Focus)", techs: ["Node.js", "Express.js", "Laravel", "PHP", "RESTful APIs", "JWT / OAuth", "Microservices"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React 19", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
+        { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "SASS", "HTML5/CSS3"], color: "#f59e0b" },
         { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Databases", techs: ["MongoDB", "MySQL", "PostgreSQL"], color: "#10b981" },
+        { category: "Databases", techs: ["MongoDB", "MySQL", "SQLite"], color: "#10b981" },
         { category: "DevOps & Tools", techs: ["Docker", "CI/CD", "AWS (EC2/S3)", "Git", "Vite", "Postman", "Linux"], color: "#6366f1" },
         { category: "Methodologies & AI", techs: ["Scrum / Agile", "Kanban", "TDD / Testing (Jest)", "MVC", "Prompt Engineering"], color: "#8b5cf6" }
       ],
@@ -206,7 +206,7 @@ export const translations = {
         subject: "Application for Full Stack Developer / Software Engineer",
         recipient: "To: Hiring Manager / Selection Team",
         body1: "Dear Hiring Team, I am writing to express my enthusiastic interest in joining your organization as a Full Stack Developer / Software Engineer. With 4 years of experience specializing in backend architecture, scalable web systems, and database optimization, I am eager to bring my technical expertise and problem-solving skills to your team.",
-        body2: "Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React, Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into microservices (reducing response times by 85% from 800ms to 120ms), optimizing complex MySQL/PostgreSQL queries (cutting report generation times from 45s to 3s), and developing geolocation platforms that improved logistical efficiency by 25%.",
+        body2: "Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React, Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into microservices (reducing response times by 85% from 800ms to 120ms), optimizing complex MySQL/SQLite queries (cutting report generation times from 45s to 3s), and developing geolocation platforms that improved logistical efficiency by 25%.",
         body3: "In addition to enterprise solutions, I actively maintain open-source utility libraries published on NPM (such as fluent-rest-client and react-apextable-pro) for Node.js and React. I am deeply committed to writing clean, maintainable code, implementing rigorous automated testing (Jest, Postman), and mentoring junior developers to accelerate team productivity.",
         body4: "My strong foundation in computer engineering and software design principles allows me to master new technologies quickly and deliver immediate value. I welcome the opportunity to discuss how my experience and passion for engineering excellence align with your goals. Thank you for your time and consideration.",
         closing: "Sincerely,"

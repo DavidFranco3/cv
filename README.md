@@ -17,7 +17,7 @@ CV digital interactivo con estética de terminal, soporte bilingüe español/ing
 
 | Categoría | Tecnología |
 |---|---|
-| **Framework** | React 19 |
+| **Framework** | React |
 | **Build** | Vite 8 (Rolldown) con chunk splitting |
 | **Estilos** | CSS3 Vanilla con custom properties |
 | **PDF** | jsPDF con canvas para iconos SVG |
