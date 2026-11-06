@@ -39,9 +39,9 @@ export const translations = {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Presente",
-          desc: "Responsable del diseño, evolución y escalabilidad de ecosistemas de software empresarial (MERN, Laravel, Flutter y microservicios), abarcando desde la concepción arquitectónica y modelado de datos hasta el despliegue continuo y alta disponibilidad en producción.",
+          desc: "Responsable del diseño, arquitectura y entrega de plataformas web y software a medida (MERN, Laravel, Flutter y microservicios) comercializados para empresas cliente de diversos sectores.",
           bullets: [
-            "Dirigí el ciclo de vida completo de 6 plataformas web empresariales (MERN & Laravel) críticas para la operación continua de la compañía, garantizando alta disponibilidad y consistencia transaccional.",
+            "Dirigí el ciclo de vida completo de múltiples plataformas web empresariales (MERN & Laravel) comercializadas a clientes corporativos, asegurando alta disponibilidad y consistencia transaccional.",
             "Lideré la transición arquitectónica de un monolito legado hacia servicios distribuidos en Node.js, desacoplando módulos de alta concurrencia y reduciendo la latencia en un 85% (800ms a 120ms).",
             "Diseñé un motor de geolocalización y optimización de rutas en tiempo real (Google Maps & Mapbox), automatizando despachos y reduciendo tiempos y costos de logística en un 25%.",
             "Arquitecté y publiqué aplicaciones móviles multiplataforma de producción en Flutter/Dart (iOS & Android), implementando sincronización en segundo plano y arquitectura offline-first.",
@@ -146,9 +146,9 @@ export const translations = {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Present",
-          desc: "Technical lead for the design, evolution, and scalability of enterprise software ecosystems (MERN, Laravel, Flutter, and microservices), spanning from architectural conception and data modeling to continuous delivery and high availability in production.",
+          desc: "Technical lead for the architecture, development, and delivery of custom web platforms and software products (MERN, Laravel, Flutter, and microservices) commercialized for corporate clients across diverse sectors.",
           bullets: [
-            "Directed the end-to-end lifecycle of 6 enterprise web platforms (MERN & Laravel) critical to continuous operations, ensuring high availability and transactional data integrity.",
+            "Directed the end-to-end lifecycle of multiple enterprise web platforms (MERN & Laravel) delivered to corporate clients, ensuring high availability and transactional data integrity in production.",
             "Led the architectural transition from a legacy monolith to distributed services in Node.js, decoupling high-concurrency modules and reducing latency by 85% (800ms to 120ms).",
             "Engineered a real-time geolocation and route optimization engine (Google Maps & Mapbox), automating dispatching and reducing operational logistics times by 25%.",
             "Architected and published cross-platform production mobile apps with Flutter/Dart (iOS & Android), implementing background synchronization and offline-first architecture.",

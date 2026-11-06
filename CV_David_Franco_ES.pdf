@@ -9,14 +9,14 @@
 <</Type /Annot /Subtype /Link /Rect [131.6537952755905962 751.4648031496062686 224.4857952755905899 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://github.com/DavidFranco3) >> >>
 <</Type /Annot /Subtype /Link /Rect [254.725795275590599 751.4648031496062686 352.2617952755906572 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.linkedin.com/in/david-franco-247701220/) >> >>
 <</Type /Annot /Subtype /Link /Rect [382.5017952755906663 751.4648031496062686 463.6217952755906708 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.npmjs.com/~davidfranco3) >> >>
-<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 81.071102362204897 323.9376850393701943 69.7325196850395059] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
+<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 93.2600787401576099 323.9376850393701943 81.9214960629923326] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
 ]
 /Contents 4 0 R
 >>
 endobj
 4 0 obj
 <<
-/Length 9440
+/Length 9353
 >>
 stream
 0.5670000000000001 w
@@ -248,23 +248,22 @@ BT
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Responsable del diseño, evolución y escalabilidad de ecosistemas de software empresarial \(MERN, Laravel, Flutter y) Tj
-T* (microservicios\), abarcando desde la concepción arquitectónica y modelado de datos hasta el despliegue continuo y alta) Tj
-T* (disponibilidad en producción.) Tj
+(Responsable del diseño, arquitectura y entrega de plataformas web y software a medida \(MERN, Laravel, Flutter y) Tj
+T* (microservicios\) comercializados para empresas cliente de diversos sectores.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 407.9057480314960458 Td
-(•  Dirigí el ciclo de vida completo de 6 plataformas web empresariales \(MERN & Laravel\) críticas para la operación) Tj
-T* (continua de la compañía, garantizando alta disponibilidad y consistencia transaccional.) Tj
+48.1889763779527627 420.0947244094488155 Td
+(•  Dirigí el ciclo de vida completo de múltiples plataformas web empresariales \(MERN & Laravel\) comercializadas a) Tj
+T* (clientes corporativos, asegurando alta disponibilidad y consistencia transaccional.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 382.110472440944875 Td
+48.1889763779527627 394.2994488188976447 Td
 (•  Lideré la transición arquitectónica de un monolito legado hacia servicios distribuidos en Node.js, desacoplando) Tj
 T* (módulos de alta concurrencia y reduciendo la latencia en un 85% \(800ms a 120ms\).) Tj
 ET
@@ -272,7 +271,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 356.3151968503937042 Td
+48.1889763779527627 368.5041732283464739 Td
 (•  Diseñé un motor de geolocalización y optimización de rutas en tiempo real \(Google Maps & Mapbox\),) Tj
 T* (automatizando despachos y reduciendo tiempos y costos de logística en un 25%.) Tj
 ET
@@ -280,7 +279,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 330.5199212598425333 Td
+48.1889763779527627 342.7088976377953031 Td
 (•  Arquitecté y publiqué aplicaciones móviles multiplataforma de producción en Flutter/Dart \(iOS & Android\),) Tj
 T* (implementando sincronización en segundo plano y arquitectura offline-first.) Tj
 ET
@@ -288,7 +287,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 304.7246456692913625 Td
+48.1889763779527627 316.9136220472441892 Td
 (•  Estructuré planes de indexación y optimización de consultas complejas en MySQL, recortando el tiempo de) Tj
 T* (procesamiento de reportes analíticos de 45s a 3s \(mejora del 93%\).) Tj
 ET
@@ -296,7 +295,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 278.9293700787401349 Td
+48.1889763779527627 291.1183464566929615 Td
 (•  Estandaricé directrices de Clean Code, revisiones de PRs y mentoricé a ingenieros junior, logrando su autonomía) Tj
 T* (operativa e integración a producción en menos de 2 meses.) Tj
 ET
@@ -304,7 +303,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 253.1340944881890209 Td
+48.1889763779527627 265.3230708661418475 Td
 (•  Implementé suites de pruebas automatizadas \(Jest, Postman\) integradas al pipeline de CI/CD, reduciendo la tasa) Tj
 T* (de regresiones y errores en producción en un 40%.) Tj
 ET
@@ -312,7 +311,7 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 227.3388188976377933 Td
+48.1889763779527627 239.5277952755906199 Td
 (•  Integré flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas) Tj
 T* (unitarias y documentación técnica, ahorrando ~8 horas semanales al equipo.) Tj
 ET
@@ -320,122 +319,122 @@ BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 190.2049606299212883 Td
+42.5196850393700814 202.3939370078741149 Td
 (FORMACIÓN ACADÉMICA) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 186.8033858267717449 m
-552.7559055118110791 186.8033858267717449 l
+42.5196850393700814 198.9923622047245146 m
+552.7559055118110791 198.9923622047245146 l
 S
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 174.6144094488189467 Td
+42.5196850393700814 186.8033858267717733 Td
 (INSTITUTO TECNOLÓGICO SUPERIOR DE APATZINGÁN) Tj
 ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
 0. g
-491.9209055118110996 174.6144094488189467 Td
+491.9209055118110996 186.8033858267717733 Td
 (2018 - 2023) Tj
 ET
 BT
 /F1 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 161.8585039370079812 Td
+42.5196850393700814 174.0474803149606942 Td
 (Ingeniería en Informática) Tj
 ET
 BT
 /F3 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 149.9529921259843377 Td
+42.5196850393700814 162.1419685039371643 Td
 (Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software.) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 126.7088976377954168 Td
+42.5196850393700814 138.8978740157482434 Td
 (CERTIFICACIONES) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 123.3073228346458166 m
-552.7559055118110791 123.3073228346458166 l
+42.5196850393700814 135.4962992125985863 m
+552.7559055118110791 135.4962992125985863 l
 S
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 111.1183464566929615 Td
+42.5196850393700814 123.3073228346457881 Td
 (Iniciación al Desarrollo con IA) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-470.2259055118111064 111.1183464566929615 Td
+470.2259055118111064 123.3073228346457881 Td
 (Octubre 2026 \(4 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 99.212834645669318 Td
+42.5196850393700814 111.4018110236221446 Td
 (mouredev & BIG school) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 84.472677165354412 Td
+42.5196850393700814 96.6616535433072386 Td
 (Inglés Nivel C1-C2) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-464.3759055118111405 84.472677165354412 Td
+464.3759055118111405 96.6616535433072386 Td
 (Agosto 2026 \(177 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 72.5671653543308821 Td
+42.5196850393700814 84.756141732283595 Td
 (Edutin Academy  •  ID: 18696518  •  ) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-192.5286850393701457 72.5671653543308821 Td
+192.5286850393701457 84.756141732283595 Td
 (app.edutin.com/verify/18696518) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 57.8270078740158624 Td
+42.5196850393700814 70.015984251968689 Td
 (Curso Aplicaciones Móviles) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-474.2759055118110609 57.8270078740158624 Td
+474.2759055118110609 70.015984251968689 Td
 (Agosto 2026 \(7 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 45.9214960629923326 Td
+42.5196850393700814 58.1104724409451592 Td
 (BSG Institute  •  ID: 10971648A31172D0P1) Tj
 ET
 endstream
@@ -610,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261106165403-06'00')
+/CreationDate (D:20261106165734-06'00')
 >>
 endobj
 20 0 obj
@@ -624,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010467 00000 n 
-0000012284 00000 n 
+0000010381 00000 n 
+0000012198 00000 n 
 0000000015 00000 n 
-0000000975 00000 n 
-0000010524 00000 n 
-0000010649 00000 n 
-0000010779 00000 n 
-0000010912 00000 n 
-0000011049 00000 n 
-0000011172 00000 n 
-0000011301 00000 n 
-0000011433 00000 n 
-0000011569 00000 n 
-0000011697 00000 n 
-0000011824 00000 n 
-0000011953 00000 n 
-0000012086 00000 n 
-0000012188 00000 n 
+0000000976 00000 n 
+0000010438 00000 n 
+0000010563 00000 n 
+0000010693 00000 n 
+0000010826 00000 n 
+0000010963 00000 n 
+0000011086 00000 n 
+0000011215 00000 n 
+0000011347 00000 n 
+0000011483 00000 n 
+0000011611 00000 n 
+0000011738 00000 n 
+0000011867 00000 n 
+0000012000 00000 n 
+0000012102 00000 n 
+0000012446 00000 n 
 0000012532 00000 n 
-0000012618 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <AB7704A3FE084E68CF65CCF9ED65311D> <AB7704A3FE084E68CF65CCF9ED65311D> ]
+/ID [ <85B45C36CD4E6F8C7774ED6D6F1A35A3> <85B45C36CD4E6F8C7774ED6D6F1A35A3> ]
 >>
 startxref
-12722
+12636
 %%EOF
