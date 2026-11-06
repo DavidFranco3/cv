@@ -17,7 +17,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. Creador y mantenedor de D-Stack (framework monolítico Full-Stack en Node.js, Express 5 y React 19 disponible en NPM), así como de su ecosistema de librerías utilitarias. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, el rendimiento y las buenas prácticas.",
+      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. Creador y mantenedor activo de librerías utilitarias de código abierto publicadas en NPM para el ecosistema Node.js y React. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, el rendimiento y las buenas prácticas.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -84,7 +84,7 @@ export const translations = {
       ],
       languages: [
         { name: "Español", level: "Nativo" },
-        { name: "Inglés", level: "Técnico (Lectura avanzada)" }
+        { name: "Inglés", level: "C1-C2" }
       ],
       pdfLabels: {
         professionalProfile: "Perfil Profesional",
@@ -100,7 +100,7 @@ export const translations = {
         recipient: "Atención: Equipo de Selección / Departamento de Reclutamiento",
         body1: "Estimado equipo de selección, me pongo en contacto con ustedes con gran entusiasmo para postularme a la vacante de Desarrollador Full Stack / Ingeniero de Software. Con 4 años de experiencia profesional enfocados en arquitecturas backend escalables, optimización de bases de datos y desarrollo web moderno, estoy ansioso por aportar mis conocimientos y capacidad técnica a su equipo.",
         body2: "A lo largo de mi trayectoria profesional en Isotech, he diseñado e implementado aplicaciones robustas utilizando Node.js, Express, React, Laravel y bases de datos relacionales y NoSQL. Entre mis principales logros destaca el rediseño de una arquitectura monolítica hacia microservicios con Node.js (reduciendo los tiempos de respuesta en un 85%, de 800ms a 120ms), la optimización de consultas en MySQL y PostgreSQL (reduciendo la generación de reportes de 45s a solo 3s) y la implementación de sistemas de geolocalización.",
-        body3: "Además del desarrollo empresarial, soy el creador y desarrollador de D-Stack (framework monolítico Full-Stack para Node.js y React 19) y mantengo activamente varias librerías de utilidad publicadas en NPM (como fluent-rest-client y react-apextable-pro). Destaco por escribir código limpio y mantenible, implementar pruebas automatizadas (Jest, Postman) y mentores a desarrolladores junior para acelerar el flujo de trabajo del equipo.",
+        body3: "Además del desarrollo empresarial, mantengo activamente librerías de utilidad de código abierto publicadas en NPM (como fluent-rest-client y react-apextable-pro) para Node.js y React. Destaco por escribir código limpio y mantenible, implementar pruebas automatizadas (Jest, Postman) y mentorizar a desarrolladores junior para acelerar el flujo de trabajo del equipo.",
         body4: "Mi sólida formación como Ingeniero en Informática me permite adaptarme con rapidez a nuevas tecnologías y frameworks para generar valor inmediato. Quedo a su entera disposición para platicar sobre cómo mis habilidades pueden sumarse a sus objetivos en una entrevista. Muchas gracias por su tiempo y consideración.",
         closing: "Atentamente,"
       }
@@ -124,7 +124,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend architecture and scalable web systems. Creator and maintainer of D-Stack (a full-stack monolith CLI framework for Node.js, Express 5, and React 19 available on NPM) alongside an ecosystem of utility libraries. Experienced in automating commercial and industrial workflows through custom software, API integration, and database query optimization. Passionate about clean code, performance, and best practices.",
+      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend architecture and scalable web systems. Creator and active maintainer of open-source utility libraries published on NPM for the Node.js and React ecosystem. Experienced in automating commercial and industrial workflows through custom software, API integration, and database query optimization. Passionate about clean code, performance, and best practices.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -191,7 +191,7 @@ export const translations = {
       ],
       languages: [
         { name: "Spanish", level: "Native" },
-        { name: "English", level: "Technical (Advanced reading)" }
+        { name: "English", level: "C1-C2" }
       ],
       pdfLabels: {
         professionalProfile: "Professional Profile",
@@ -207,7 +207,7 @@ export const translations = {
         recipient: "To: Hiring Manager / Selection Team",
         body1: "Dear Hiring Team, I am writing to express my enthusiastic interest in joining your organization as a Full Stack Developer / Software Engineer. With 4 years of experience specializing in backend architecture, scalable web systems, and database optimization, I am eager to bring my technical expertise and problem-solving skills to your team.",
         body2: "Throughout my career at Isotech, I have engineered robust systems using Node.js, Express, React, Laravel, and SQL/NoSQL databases. My core accomplishments include redesigning a monolithic API into microservices (reducing response times by 85% from 800ms to 120ms), optimizing complex MySQL/PostgreSQL queries (cutting report generation times from 45s to 3s), and developing geolocation platforms that improved logistical efficiency by 25%.",
-        body3: "In addition to enterprise solutions, I am the creator of D-Stack Framework (a Full-Stack monolith CLI tool on NPM) and actively maintain utility packages on NPM (such as fluent-rest-client and react-apextable-pro). I am deeply committed to writing clean, maintainable code, implementing rigorous automated testing (Jest, Postman), and mentoring junior developers to accelerate team productivity.",
+        body3: "In addition to enterprise solutions, I actively maintain open-source utility libraries published on NPM (such as fluent-rest-client and react-apextable-pro) for Node.js and React. I am deeply committed to writing clean, maintainable code, implementing rigorous automated testing (Jest, Postman), and mentoring junior developers to accelerate team productivity.",
         body4: "My strong foundation in computer engineering and software design principles allows me to master new technologies quickly and deliver immediate value. I welcome the opportunity to discuss how my experience and passion for engineering excellence align with your goals. Thank you for your time and consideration.",
         closing: "Sincerely,"
       }

@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3491
+/Length 3413
 >>
 stream
 0.5670000000000001 w
@@ -89,17 +89,16 @@ BT
 11.5 TL
 0.157 g
 62.3622047244094517 490.9608661417322537 Td
-(Además del desarrollo empresarial, soy el creador y desarrollador de D-Stack \(framework monolítico) Tj
-T* (Full-Stack para Node.js y React 19\) y mantengo activamente varias librerías de utilidad publicadas en) Tj
-T* (NPM \(como fluent-rest-client y react-apextable-pro\). Destaco por escribir código limpio y mantenible,) Tj
-T* (implementar pruebas automatizadas \(Jest, Postman\) y mentores a desarrolladores junior para acelerar el) Tj
-T* (flujo de trabajo del equipo.) Tj
+(Además del desarrollo empresarial, mantengo activamente librerías de utilidad de código abierto) Tj
+T* (publicadas en NPM \(como fluent-rest-client y react-apextable-pro\) para Node.js y React. Destaco por) Tj
+T* (escribir código limpio y mantenible, implementar pruebas automatizadas \(Jest, Postman\) y mentorizar a) Tj
+T* (desarrolladores junior para acelerar el flujo de trabajo del equipo.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0.157 g
-62.3622047244094517 417.2600787401573825 Td
+62.3622047244094517 430.0159842519684048 Td
 (Mi sólida formación como Ingeniero en Informática me permite adaptarme con rapidez a nuevas) Tj
 T* (tecnologías y frameworks para generar valor inmediato. Quedo a su entera disposición para platicar sobre) Tj
 T* (cómo mis habilidades pueden sumarse a sus objetivos en una entrevista. Muchas gracias por su tiempo y) Tj
@@ -109,21 +108,21 @@ BT
 /F1 10 Tf
 11.5 TL
 0.157 g
-62.3622047244094517 347.8112598425195756 Td
+62.3622047244094517 360.5671653543305979 Td
 (Atentamente,) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-62.3622047244094517 327.9687401574801697 Td
+62.3622047244094517 340.7246456692912489 Td
 (José David Ayala Franco) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.157 g
-62.3622047244094517 315.2128346456692043 Td
+62.3622047244094517 327.9687401574801697 Td
 (Software Developer) Tj
 ET
 endstream
@@ -298,7 +297,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261106163038-06'00')
+/CreationDate (D:20261106163923-06'00')
 >>
 endobj
 20 0 obj
@@ -312,33 +311,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003695 00000 n 
-0000005512 00000 n 
+0000003617 00000 n 
+0000005434 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003752 00000 n 
-0000003877 00000 n 
-0000004007 00000 n 
-0000004140 00000 n 
-0000004277 00000 n 
-0000004400 00000 n 
-0000004529 00000 n 
-0000004661 00000 n 
-0000004797 00000 n 
-0000004925 00000 n 
-0000005052 00000 n 
-0000005181 00000 n 
-0000005314 00000 n 
-0000005416 00000 n 
-0000005760 00000 n 
-0000005846 00000 n 
+0000003674 00000 n 
+0000003799 00000 n 
+0000003929 00000 n 
+0000004062 00000 n 
+0000004199 00000 n 
+0000004322 00000 n 
+0000004451 00000 n 
+0000004583 00000 n 
+0000004719 00000 n 
+0000004847 00000 n 
+0000004974 00000 n 
+0000005103 00000 n 
+0000005236 00000 n 
+0000005338 00000 n 
+0000005682 00000 n 
+0000005768 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <69A80AFD76C7121DC7EF4A3395B180DA> <69A80AFD76C7121DC7EF4A3395B180DA> ]
+/ID [ <577272E0611405FAC6F8E6C42A811745> <577272E0611405FAC6F8E6C42A811745> ]
 >>
 startxref
-5950
+5872
 %%EOF

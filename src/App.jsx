@@ -96,7 +96,7 @@ const CODE_PARTICLES = [
   { text: '{ React 19 }', top: '15%', left: '3%', duration: '9s', delay: '0s' },
   { text: 'type SaaS = 24/7;', top: '35%', right: '2%', duration: '12s', delay: '1.5s' },
   { text: '<TypeScript />', top: '60%', left: '2%', duration: '11s', delay: '3s' },
-  { text: 'const framework = "D-Stack";', top: '78%', right: '3%', duration: '10s', delay: '2s' },
+  { text: 'const ecosystem = "NPM";', top: '78%', right: '3%', duration: '10s', delay: '2s' },
   { text: '01000011 01101111', top: '92%', left: '4%', duration: '14s', delay: '0.5s' }
 ];
 
@@ -350,7 +350,7 @@ function App() {
                   words={[
                     cvData.role,
                     'Full Stack & Backend Architect',
-                    'Creator of D-Stack Framework',
+                    'NPM Open Source Maintainer',
                     'Node.js, Express & React 19',
                     'Bilingual English C1-C2'
                   ]}
@@ -364,7 +364,7 @@ function App() {
               </div>
               <div className="code-kv">
                 <span className="prop-name">stack:</span>
-                <span className="prop-array">[<span className="prop-string">"Node.js"</span>, <span className="prop-string">"Express.js"</span>, <span className="prop-string">"React 19"</span>, <span className="prop-string">"D-Stack"</span>]</span>,
+                <span className="prop-array">[<span className="prop-string">"Node.js"</span>, <span className="prop-string">"Express.js"</span>, <span className="prop-string">"React 19"</span>, <span className="prop-string">"TypeScript"</span>]</span>,
               </div>
               <div className="code-kv">
                 <span className="prop-name">culture:</span>
@@ -600,7 +600,7 @@ function App() {
   "mobile": ["Flutter", "Dart", "Kotlin"],
   "databases": ["MongoDB", "MySQL", "PostgreSQL"],
   "devops": ["Docker", "CI/CD", "AWS", "Git", "Vite", "Postman", "Linux"],
-  "projects": ["D-Stack Framework (NPM)"],
+  "open_source": ["NPM Utility Libraries"],
   "english": "C1-C2 Certified"
 }`}
                 </pre>

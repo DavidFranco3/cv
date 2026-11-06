@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3247
+/Length 3210
 >>
 stream
 0.5670000000000001 w
@@ -88,10 +88,10 @@ BT
 11.5 TL
 0.157 g
 62.3622047244094517 503.716771653543276 Td
-(In addition to enterprise solutions, I am the creator of D-Stack Framework \(a Full-Stack monolith CLI tool) Tj
-T* (on NPM\) and actively maintain utility packages on NPM \(such as fluent-rest-client and) Tj
-T* (react-apextable-pro\). I am deeply committed to writing clean, maintainable code, implementing rigorous) Tj
-T* (automated testing \(Jest, Postman\), and mentoring junior developers to accelerate team productivity.) Tj
+(In addition to enterprise solutions, I actively maintain open-source utility libraries published on NPM \(such) Tj
+T* (as fluent-rest-client and react-apextable-pro\) for Node.js and React. I am deeply committed to writing) Tj
+T* (clean, maintainable code, implementing rigorous automated testing \(Jest, Postman\), and mentoring junior) Tj
+T* (developers to accelerate team productivity.) Tj
 ET
 BT
 /F1 10 Tf
@@ -295,7 +295,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261106163038-06'00')
+/CreationDate (D:20261106163923-06'00')
 >>
 endobj
 20 0 obj
@@ -309,33 +309,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003451 00000 n 
-0000005268 00000 n 
+0000003414 00000 n 
+0000005231 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003508 00000 n 
-0000003633 00000 n 
-0000003763 00000 n 
-0000003896 00000 n 
-0000004033 00000 n 
-0000004156 00000 n 
-0000004285 00000 n 
-0000004417 00000 n 
-0000004553 00000 n 
-0000004681 00000 n 
-0000004808 00000 n 
-0000004937 00000 n 
-0000005070 00000 n 
-0000005172 00000 n 
-0000005516 00000 n 
-0000005602 00000 n 
+0000003471 00000 n 
+0000003596 00000 n 
+0000003726 00000 n 
+0000003859 00000 n 
+0000003996 00000 n 
+0000004119 00000 n 
+0000004248 00000 n 
+0000004380 00000 n 
+0000004516 00000 n 
+0000004644 00000 n 
+0000004771 00000 n 
+0000004900 00000 n 
+0000005033 00000 n 
+0000005135 00000 n 
+0000005479 00000 n 
+0000005565 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <B5BF0C1D7EEAA658B31BE7241628DD81> <B5BF0C1D7EEAA658B31BE7241628DD81> ]
+/ID [ <5C5704245A38CEF9C42E1833CA041490> <5C5704245A38CEF9C42E1833CA041490> ]
 >>
 startxref
-5706
+5669
 %%EOF
