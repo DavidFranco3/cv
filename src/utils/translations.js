@@ -17,7 +17,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en Backend y arquitecturas web escalables. Creador y mantenedor activo de librerías utilitarias de código abierto publicadas en NPM para el ecosistema Node.js y React. He automatizado flujos comerciales e industriales mediante software a medida, integración de APIs y optimización de bases de datos. Apasionado por el código limpio, el rendimiento y las buenas prácticas.",
+      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en arquitectura backend, microservicios y plataformas web de alta concurrencia. Trayectoria liderando el diseño y entrega de software empresarial a medida para clientes corporativos de diversos sectores industriales y comerciales. Creador y mantenedor de librerías open source en NPM para los ecosistemas Node.js y React. Enfocado en código limpio, optimización de rendimiento en bases de datos y adopción de flujos de ingeniería modernos asistidos por IA.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -124,7 +124,7 @@ export const translations = {
     cv: {
       name: "José David Ayala Franco",
       role: "Software Developer",
-      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in Backend architecture and scalable web systems. Creator and active maintainer of open-source utility libraries published on NPM for the Node.js and React ecosystem. Experienced in automating commercial and industrial workflows through custom software, API integration, and database query optimization. Passionate about clean code, performance, and best practices.",
+      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in backend architecture, microservices, and high-concurrency web platforms. Proven track record leading the design and delivery of custom enterprise software for corporate clients across diverse industrial and commercial sectors. Creator and maintainer of open-source libraries on NPM for the Node.js and React ecosystems. Dedicated to clean code, database performance optimization, and the adoption of modern AI-assisted engineering workflows.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
