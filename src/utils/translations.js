@@ -48,7 +48,7 @@ export const translations = {
             "Optimicé consultas SQL complejas en MySQL, reduciendo el tiempo de generación de reportes de 45 segundos a 3 segundos.",
             "Mentoricé a 4 practicantes en Laravel y React, acelerando su curva de aprendizaje y logrando que se integraran a producción en menos de 2 meses.",
             "Implementé pruebas manuales y automatizadas (Postman, Jest) reduciendo bugs en producción en un 40%.",
-            "Utilicé herramientas de IA (Gemini, OpenCode) para automatizar tareas repetitivas, ahorrando ~8 horas semanales al equipo."
+            "Implementé flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas unitarias y documentación técnica, ahorrando ~8 horas semanales al equipo."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -155,7 +155,7 @@ export const translations = {
             "Optimized complex SQL queries in MySQL, reducing report generation time from 45 seconds to 3 seconds.",
             "Mentored 4 interns in Laravel and React, accelerating their learning curve and integrating them into production in under 2 months.",
             "Implemented manual and automated tests (Postman, Jest), reducing production bugs by 40%.",
-            "Utilized AI tools (Gemini, OpenCode) to automate repetitive tasks, saving the team ~8 hours per week."
+            "Integrated AI-assisted engineering workflows to accelerate complex refactoring, unit test generation, and technical documentation, saving ~8 engineering hours weekly."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
