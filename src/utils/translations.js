@@ -39,16 +39,16 @@ export const translations = {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Presente",
-          desc: "Desarrollo integral de sistemas web mediante el stack MERN (MongoDB, Express, React, Node.js), gestionando arquitecturas desacopladas y monolíticas con Laravel y MySQL.",
+          desc: "Responsable del diseño, evolución y escalabilidad de ecosistemas de software empresarial (MERN, Laravel, Flutter y microservicios), abarcando desde la concepción arquitectónica y modelado de datos hasta el despliegue continuo y alta disponibilidad en producción.",
           bullets: [
-            "Lideré el desarrollo de 6 sistemas web críticos usando MERN (MongoDB, Express, React, Node) y Laravel, atendiendo a más de 200 usuarios internos.",
-            "Rediseñé la arquitectura de una API monolítica a microservicios con Node.js, reduciendo el tiempo de respuesta de 800ms a 120ms (mejora del 85%).",
-            "Implementé un sistema de geolocalización y rutas óptimas integrando Google Maps API y Mapbox, reduciendo tiempos de logística en un 25%.",
-            "Desarrollé y publiqué aplicaciones móviles híbridas utilizando Flutter y Dart, logrando un rendimiento fluido y alta satisfacción de los usuarios en iOS y Android.",
-            "Optimicé consultas SQL complejas en MySQL, reduciendo el tiempo de generación de reportes de 45 segundos a 3 segundos.",
-            "Mentoricé a 4 practicantes en Laravel y React, acelerando su curva de aprendizaje y logrando que se integraran a producción en menos de 2 meses.",
-            "Implementé pruebas manuales y automatizadas (Postman, Jest) reduciendo bugs en producción en un 40%.",
-            "Implementé flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas unitarias y documentación técnica, ahorrando ~8 horas semanales al equipo."
+            "Dirigí el ciclo de vida completo de 6 plataformas web empresariales (MERN & Laravel) críticas para la operación continua de la compañía, garantizando alta disponibilidad y consistencia transaccional.",
+            "Lideré la transición arquitectónica de un monolito legado hacia servicios distribuidos en Node.js, desacoplando módulos de alta concurrencia y reduciendo la latencia en un 85% (800ms a 120ms).",
+            "Diseñé un motor de geolocalización y optimización de rutas en tiempo real (Google Maps & Mapbox), automatizando despachos y reduciendo tiempos y costos de logística en un 25%.",
+            "Arquitecté y publiqué aplicaciones móviles multiplataforma de producción en Flutter/Dart (iOS & Android), implementando sincronización en segundo plano y arquitectura offline-first.",
+            "Estructuré planes de indexación y optimización de consultas complejas en MySQL, recortando el tiempo de procesamiento de reportes analíticos de 45s a 3s (mejora del 93%).",
+            "Estandaricé directrices de Clean Code, revisiones de PRs y mentoricé a ingenieros junior, logrando su autonomía operativa e integración a producción en menos de 2 meses.",
+            "Implementé suites de pruebas automatizadas (Jest, Postman) integradas al pipeline de CI/CD, reduciendo la tasa de regresiones y errores en producción en un 40%.",
+            "Integré flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas unitarias y documentación técnica, ahorrando ~8 horas semanales al equipo."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -146,16 +146,16 @@ export const translations = {
           company: "Isotech",
           role: "Full Stack Developer",
           date: "2022 - Present",
-          desc: "Full-stack development of web systems using the MERN stack (MongoDB, Express, React, Node.js), managing both decoupled and monolithic architectures with Laravel and MySQL.",
+          desc: "Technical lead for the design, evolution, and scalability of enterprise software ecosystems (MERN, Laravel, Flutter, and microservices), spanning from architectural conception and data modeling to continuous delivery and high availability in production.",
           bullets: [
-            "Led the development of 6 critical web systems using MERN (MongoDB, Express, React, Node) and Laravel, serving over 200 internal users.",
-            "Redesigned the architecture of a monolithic API into microservices with Node.js, reducing response time from 800ms to 120ms (an 85% improvement).",
-            "Implemented a geolocation and optimal routing system integrating Google Maps API and Mapbox, reducing logistics times by 25%.",
-            "Developed and deployed hybrid mobile applications using Flutter and Dart, ensuring high performance and user satisfaction on iOS and Android.",
-            "Optimized complex SQL queries in MySQL, reducing report generation time from 45 seconds to 3 seconds.",
-            "Mentored 4 interns in Laravel and React, accelerating their learning curve and integrating them into production in under 2 months.",
-            "Implemented manual and automated tests (Postman, Jest), reducing production bugs by 40%.",
-            "Integrated AI-assisted engineering workflows to accelerate complex refactoring, unit test generation, and technical documentation, saving ~8 engineering hours weekly."
+            "Directed the end-to-end lifecycle of 6 enterprise web platforms (MERN & Laravel) critical to continuous operations, ensuring high availability and transactional data integrity.",
+            "Led the architectural transition from a legacy monolith to distributed services in Node.js, decoupling high-concurrency modules and reducing latency by 85% (800ms to 120ms).",
+            "Engineered a real-time geolocation and route optimization engine (Google Maps & Mapbox), automating dispatching and reducing operational logistics times by 25%.",
+            "Architected and published cross-platform production mobile apps with Flutter/Dart (iOS & Android), implementing background synchronization and offline-first architecture.",
+            "Structured index tuning and query optimization strategies in MySQL, cutting analytical report processing time from 45s to 3s (a 93% improvement).",
+            "Standardized Clean Code guidelines, PR reviews, and mentored junior engineers, driving their technical autonomy and production onboarding in under 2 months.",
+            "Implemented automated test suites (Jest, Postman) integrated into CI/CD pipelines, reducing regression rates and production defects by 40%.",
+            "Integrated AI-assisted engineering workflows to accelerate complex refactorings, unit test generation, and technical documentation, saving ~8 hours of team capacity weekly."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
