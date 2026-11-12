@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Developer",
-      summary: "Ingeniero en Informática con 4 años de experiencia en desarrollo Full Stack, especializado en arquitectura backend, microservicios y plataformas web de alta concurrencia. Trayectoria liderando el diseño y entrega de software empresarial a medida para clientes corporativos de diversos sectores industriales y comerciales. Creador y mantenedor de librerías open source en NPM para los ecosistemas Node.js y React. Enfocado en código limpio, optimización de rendimiento en bases de datos y adopción de flujos de ingeniería modernos asistidos por IA.",
+      role: "Software Engineer",
+      summary: "Software Engineer con 4 años de experiencia en desarrollo Full Stack, especializado en arquitecturas de microservicios, diseño de APIs RESTful y plataformas comerciales empresariales (TypeScript, Node.js, React, SQL). Trayectoria demostrada en el ciclo completo de entrega bajo metodologías Agile, integrando despliegues con Docker y pipelines de CI/CD para garantizar alta disponibilidad en producción. Adoptante activo de flujos de desarrollo asistidos por IA para maximizar la calidad del código, refactorización y cobertura de pruebas automatizadas. Bilingüe (Inglés C1-C2) y enfocado en la resolución de problemas técnicos complejos y entrega continua de valor de negocio.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -37,18 +37,18 @@ export const translations = {
       experience: [
         {
           company: "Isotech",
-          role: "Full Stack Developer",
+          role: "Software Engineer | Full Stack & Backend",
           date: "2022 - Presente",
-          desc: "Responsable del diseño, arquitectura y entrega de plataformas web y software a medida (MERN, Laravel, Flutter y microservicios) comercializados para empresas cliente de diversos sectores.",
+          desc: "Responsable del diseño, arquitectura y entrega de plataformas web y soluciones de software comercial a medida (MERN, Laravel, Flutter y microservicios) para empresas clientes de diversos sectores industriales y comerciales.",
           bullets: [
-            "Dirigí el ciclo de vida completo de múltiples plataformas web empresariales (MERN & Laravel) comercializadas a clientes corporativos, asegurando alta disponibilidad y consistencia transaccional.",
-            "Lideré la transición arquitectónica de un monolito legado hacia servicios distribuidos en Node.js, desacoplando módulos de alta concurrencia y reduciendo la latencia en un 85% (800ms a 120ms).",
-            "Diseñé un motor de geolocalización y optimización de rutas en tiempo real (Google Maps & Mapbox), automatizando despachos y reduciendo tiempos y costos de logística en un 25%.",
-            "Arquitecté y publiqué aplicaciones móviles multiplataforma de producción en Flutter/Dart (iOS & Android), implementando sincronización en segundo plano y arquitectura offline-first.",
-            "Estructuré planes de indexación y optimización de consultas complejas en MySQL, recortando el tiempo de procesamiento de reportes analíticos de 45s a 3s (mejora del 93%).",
-            "Estandaricé directrices de Clean Code, revisiones de PRs y mentoricé a ingenieros junior, logrando su autonomía operativa e integración a producción en menos de 2 meses.",
-            "Implementé suites de pruebas automatizadas (Jest, Postman) integradas al pipeline de CI/CD, reduciendo la tasa de regresiones y errores en producción en un 40%.",
-            "Integré flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas unitarias y documentación técnica, ahorrando ~8 horas semanales al equipo."
+            "Lideré el ciclo de vida de desarrollo de múltiples plataformas web empresariales y comerciales (MERN, Laravel) bajo metodología Agile (Scrum), asegurando alta disponibilidad, soporte en producción y consistencia transaccional.",
+            "Arquitecté y migré una solución monolítica heredada hacia una arquitectura distribuida de microservicios con Node.js, Express y TypeScript, reduciendo la latencia de respuesta en un 85% (800ms a 120ms).",
+            "Optimicé planes de indexación y consultas complejas en MySQL para módulos transaccionales y analíticos, recortando el tiempo de procesamiento de reportes de 45s a 3s (93% de mejora).",
+            "Integré flujos de desarrollo asistidos por IA para acelerar refactorizaciones complejas, generación de pruebas unitarias y documentación de APIs, optimizando la capacidad de entrega en ~8 horas semanales.",
+            "Implementé suites de pruebas automatizadas (Jest, Postman) integradas a pipelines de CI/CD y contenedores Docker, disminuyendo la tasa de regresiones y defectos en producción en un 40%.",
+            "Diseñé e integré un motor de geolocalización y optimización de rutas en tiempo real con Google Maps API y Mapbox para clientes corporativos, reduciendo tiempos y costos de logística en un 25%.",
+            "Desarrollé y publiqué aplicaciones móviles multiplataforma en Flutter y Dart (iOS y Android), implementando sincronización en segundo plano y arquitectura offline-first para operaciones en campo.",
+            "Estandaricé directrices de Clean Code, revisiones de código (PR reviews) y documentación técnica de APIs, mentorizando a 4 practicantes para integrarse a producción en menos de 2 meses."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Developer",
-      summary: "Computer Engineer with 4 years of experience in Full Stack development, specializing in backend architecture, microservices, and high-concurrency web platforms. Proven track record leading the design and delivery of custom enterprise software for corporate clients across diverse industrial and commercial sectors. Creator and maintainer of open-source libraries on NPM for the Node.js and React ecosystems. Dedicated to clean code, database performance optimization, and the adoption of modern AI-assisted engineering workflows.",
+      role: "Software Engineer",
+      summary: "Software Engineer with 4 years of experience in Full Stack development, specializing in microservices architecture, RESTful APIs, and enterprise commercial platforms (TypeScript, Node.js, React, SQL). Proven track record delivering production-grade systems in Agile teams with Docker and CI/CD pipelines. Active adopter of AI-assisted development workflows to accelerate refactoring, test generation, and code quality. Bilingual (English C1-C2) with a strong focus on technical ownership and business value.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -144,18 +144,18 @@ export const translations = {
       experience: [
         {
           company: "Isotech",
-          role: "Full Stack Developer",
+          role: "Software Engineer | Full Stack & Backend",
           date: "2022 - Present",
-          desc: "Technical lead for the architecture, development, and delivery of custom web platforms and software products (MERN, Laravel, Flutter, and microservices) commercialized for corporate clients across diverse sectors.",
+          desc: "Technical lead responsible for the design, architecture, and delivery of custom web platforms and commercial enterprise software (MERN, Laravel, Flutter, and microservices) for client companies across diverse industrial and commercial sectors.",
           bullets: [
-            "Directed the end-to-end lifecycle of multiple enterprise web platforms (MERN & Laravel) delivered to corporate clients, ensuring high availability and transactional data integrity in production.",
-            "Led the architectural transition from a legacy monolith to distributed services in Node.js, decoupling high-concurrency modules and reducing latency by 85% (800ms to 120ms).",
-            "Engineered a real-time geolocation and route optimization engine (Google Maps & Mapbox), automating dispatching and reducing operational logistics times by 25%.",
-            "Architected and published cross-platform production mobile apps with Flutter/Dart (iOS & Android), implementing background synchronization and offline-first architecture.",
-            "Structured index tuning and query optimization strategies in MySQL, cutting analytical report processing time from 45s to 3s (a 93% improvement).",
-            "Standardized Clean Code guidelines, PR reviews, and mentored junior engineers, driving their technical autonomy and production onboarding in under 2 months.",
-            "Implemented automated test suites (Jest, Postman) integrated into CI/CD pipelines, reducing regression rates and production defects by 40%.",
-            "Integrated AI-assisted engineering workflows to accelerate complex refactorings, unit test generation, and technical documentation, saving ~8 hours of team capacity weekly."
+            "Directed the end-to-end development lifecycle of multiple enterprise web platforms (MERN, Laravel) in Agile (Scrum) teams, ensuring high availability, production support, and data consistency.",
+            "Architected and migrated a legacy monolithic API to distributed microservices with Node.js, Express, and TypeScript, slashing response latency by 85% (from 800ms to 120ms).",
+            "Optimized index tuning and complex queries in MySQL for transactional and analytics modules, cutting report generation times from 45s to 3s (a 93% performance improvement).",
+            "Integrated AI-assisted engineering workflows (unit test generation, refactoring, API specs), boosting team delivery capacity by ~8 hours weekly while reducing technical debt.",
+            "Implemented automated test suites (Jest, Postman) coupled with CI/CD pipelines and Docker, driving a 40% reduction in regression rates and production defects.",
+            "Designed and engineered a real-time geolocation and route optimization engine (Google Maps & Mapbox APIs), automating dispatching and cutting logistics costs by 25%.",
+            "Developed and deployed production cross-platform mobile apps in Flutter/Dart (iOS/Android), implementing background sync and offline-first architecture for field operations.",
+            "Standardized Clean Code guidelines, PR reviews, and technical documentation, mentoring 4 junior engineers to achieve autonomous production onboarding in under 2 months."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
