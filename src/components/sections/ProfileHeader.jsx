@@ -126,3 +126,4 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
     </section>
   );
 }
+

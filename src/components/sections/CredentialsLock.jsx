@@ -82,3 +82,4 @@ export default function CredentialsLock({ education, languages, certifications }
     </section>
   );
 }
+
