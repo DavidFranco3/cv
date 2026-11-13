@@ -39,3 +39,4 @@ export const saveTheme = (themeId) => {
     localStorage.setItem('ide_theme', themeId);
   }
 };
+
