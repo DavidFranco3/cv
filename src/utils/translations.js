@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Mobile & Android Developer",
-      summary: "Mobile & Software Engineer con 4 años de experiencia especializado en diseño, arquitectura y publicación de apps Android (Kotlin, Java, Flutter). Experiencia implementando arquitecturas Clean/MVVM, persistencia en SQLite y consumo seguro de APIs REST bajo estándares Agile (Scrum). Destacado por optimizar rendimiento, latencia y sincronización offline-first con manejo seguro de tokens. Certificado en Aplicaciones Móviles y bilingüe en inglés (C1-C2).",
+      role: "Full-Stack Software Engineer — Cloud & Infrastructure",
+      summary: "Full-Stack Software Engineer con 4 años de experiencia construyendo y desplegando aplicaciones web y servicios cloud-native (TypeScript, React, Node.js, SQL). Especialista en arquitectura de APIs RESTful, contenerización con Docker, administración Linux y pipelines de CI/CD en AWS. Enfocado en alta disponibilidad, observabilidad y gestión segura de entornos en producción. Bilingüe (Inglés C1-C2) con enfoque de propiedad integral (End-to-End Ownership).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Móvil & Android (Enfoque)", techs: ["Android Studio", "Kotlin", "Java", "Flutter", "Dart", "Clean Architecture / MVVM"], color: "#ec4899" },
-        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservicios", "Laravel"], color: "#3b82f6" },
-        { category: "Bases de Datos", techs: ["SQLite", "MySQL", "MongoDB"], color: "#10b981" },
+        { category: "Cloud & DevOps (Enfoque)", techs: ["Docker", "CI/CD Pipelines", "AWS (EC2/S3)", "Linux Administration", "Git", "Postman"], color: "#6366f1" },
+        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservicios", "Laravel", "PHP"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5/CSS3"], color: "#f59e0b" },
-        { category: "DevOps & Herramientas", techs: ["Git", "Postman", "CI/CD", "Docker", "AWS (EC2/S3)", "Linux"], color: "#6366f1" },
-        { category: "Metodologías & Testing", techs: ["Scrum / Agile", "Kanban", "Testing (Jest/Postman)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "Bases de Datos", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
+        { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
+        { category: "Metodologías & Testing", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Mobile & Android Developer | Software Engineer",
+          role: "Full-Stack & Cloud Infrastructure Engineer",
           date: "2022 - Presente",
-          desc: "Responsable del ciclo de vida de desarrollo de aplicaciones móviles y soluciones de software empresarial comercializadas a terceros, asegurando alto rendimiento, consumo eficiente de APIs y seguridad transaccional en plataformas Android.",
+          desc: "Responsable del ciclo completo de entrega de plataformas web empresariales y servicios en la nube (TypeScript, Node.js, React, Laravel y Docker), abarcando desde la arquitectura de software y modelado de datos hasta el aprovisionamiento de infraestructura Linux, despliegue continuo y soporte en producción.",
           bullets: [
-            "Arquitecté y publiqué aplicaciones móviles de producción para Android e iOS con Kotlin, Java y Flutter/Dart, implementando persistencia local en SQLite y sincronización offline-first.",
-            "Diseñé e integré la capa de red y consumo de APIs RESTful con autenticación segura (JWT / OAuth), garantizando integridad de datos y reduciendo fallos en un 40%.",
-            "Optimicé el rendimiento de aplicaciones móviles (gestión de memoria, latencia en peticiones asíncronas y renderizado de vistas), reduciendo tiempos de carga e interfaces críticas en un 85%.",
-            "Implementé un motor móvil de geolocalización y cálculo de rutas en tiempo real con Google Maps API y Mapbox, reduciendo tiempos y costos logísticos en un 25%.",
-            "Estructuré modelos de persistencia local y consultas optimizadas sobre SQLite, recortando tiempos de procesamiento y reportes en el dispositivo de 45s a 3s (mejora del 93%).",
-            "Implementé suites de pruebas automatizadas y validación de endpoints utilizando Postman y herramientas de testing, reduciendo fallos en producción en un 40%.",
-            "Estandaricé directrices de Clean Architecture, revisiones de código exhaustivas (Code Reviews) y documentación de APIs, mentorizando a practicantes para integrarse a producción en menos de 2 meses.",
-            "Integré herramientas y flujos asistidos por IA para acelerar la refactorización de código legado, generación de casos de prueba y documentación técnica, optimizando la productividad en ~8 horas semanales."
+            "Arquitecté y migré un monolito a microservicios con Node.js, Express y TypeScript, reduciendo la latencia de respuesta en un 85% (de 800ms a 120ms).",
+            "Diseñé y desplegué aplicaciones web modernas con React y TypeScript, implementando arquitectura basada en componentes reutilizables, hooks y gestión eficiente de estado.",
+            "Automaticé el flujo de entrega continua mediante el diseño de pipelines de CI/CD y contenerización con Docker, reduciendo la tasa de regresiones en producción en un 40%.",
+            "Administré y configuré servidores Linux y servicios cloud de AWS (EC2, S3), implementando políticas de seguridad, variables de entorno y gestión segura de secretos (JWT / OAuth).",
+            "Optimicé planes de indexación, particionado y consultas SQL complejas en MySQL, recortando el tiempo de procesamiento de reportes analíticos de 45s a 3s (mejora del 93%).",
+            "Implementé suites de pruebas unitarias automatizadas (Jest) y validación de endpoints REST con Postman, asegurando la resiliencia del software antes de cada pase a producción.",
+            "Monitoreé y resolví incidentes operativos mediante diagnóstico de causa raíz en código, infraestructura, base de datos y redes (HTTP/HTTPS, DNS), manteniendo alta disponibilidad 24/7.",
+            "Estandaricé directrices de Clean Code, revisiones de código (PR reviews) y documentación técnica de arquitectura y despliegue, mentorizando a practicantes para integrarse a producción en menos de 2 meses."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Especialista Android / Mobile Software Engineer",
-        recipient: "Atención: Equipo de Selección y Atracción de Talento | Bradescard México",
-        body1: "Estimado equipo de selección de Bradescard México, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Especialista Android / Mobile Software Engineer. Con 4 años de experiencia profesional en ingeniería de software, arquitectura modular (Clean Architecture / MVVM), desarrollo para Android (Kotlin, Java, Flutter) y consumo seguro de APIs, estoy convencido de que mi perfil técnico puede aportar valor inmediato y robustez a sus soluciones móviles financieras.",
-        body2: "En mi trayectoria en Isotech, he sido responsable de diseñar y publicar aplicaciones móviles multiplataforma y sistemas empresariales de misión crítica. Entre mis principales logros destacan la implementación de persistencia local en SQLite con sincronización offline-first, la integración segura de APIs con autenticación por tokens (JWT / OAuth), la optimización de rendimiento y memoria reduciendo tiempos de latencia en un 85%, y la reducción en tiempos de consulta local de 45s a solo 3s.",
-        body3: "Cuento con certificación en Desarrollo de Aplicaciones Móviles, así como un firme compromiso con las buenas prácticas de ingeniería: revisiones de código exhaustivas (Code Reviews), pruebas automatizadas con Postman y adopción de flujos asistidos por IA para elevar la calidad del software. Además, domino el idioma inglés a nivel C1-C2 certificado.",
-        body4: "Mi formación como Ingeniero en Informática y mi sólida base Full Stack me permiten entender integralmente tanto el cliente móvil como la infraestructura y seguridad de los servicios con los que interactúa. Agradezco de antemano su atención y quedo a su entera disposición para conversar en una entrevista. Muchas gracias por su tiempo y consideración.",
+        subject: "Solicitud de Empleo — Full-Stack Software Engineer (Cloud & Infrastructure)",
+        recipient: "Atención: Equipo de Selección y Desarrollo de Software | Enroute",
+        body1: "Estimado equipo de selección de Enroute, les escribo con gran entusiasmo para presentar mi candidatura a la posición de Full-Stack Software Engineer - Cloud & Infrastructure. Con 4 años de experiencia profesional construyendo aplicaciones web modernas (TypeScript, React, Node.js), gestionando infraestructura en la nube (AWS), administrando servidores Linux y automatizando entregas mediante Docker y CI/CD, considero que mi perfil técnico se alinea de forma ideal con sus necesidades operativas y de desarrollo.",
+        body2: "A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad de soluciones de software desde la concepción del código hasta su despliegue y monitoreo en producción. Entre mis principales logros destacan la migración de un monolito hacia microservicios con Node.js y TypeScript (reduciendo la latencia en un 85%), la automatización de entregas con Docker y CI/CD disminuyendo errores en un 40%, y la optimización de consultas SQL en MySQL acelerando la ejecución de reportes de 45s a solo 3s.",
+        body3: "Cuento con experiencia administrando servidores Linux, configurando seguridad y variables de entorno, y manteniendo observabilidad sobre la salud de la infraestructura y protocolos de red (HTTP/HTTPS, DNS). Adicionalmente, cuento con certificación de inglés nivel C1-C2, facilitando la colaboración en equipos técnicos de alto rendimiento.",
+        body4: "Mi formación como Ingeniero en Informática y mi compromiso con las buenas prácticas de ingeniería me permiten abordar retos complejos con autonomía y visión integral de producto. Agradezco de antemano su atención y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Mobile & Android Developer",
-      summary: "Mobile & Software Engineer with 4 years of experience in software development, specializing in the design, architecture, and deployment of Android applications (Kotlin, Java, Flutter). Proven track record implementing modular architectures (Clean Architecture / MVVM), local persistence with SQLite, and secure RESTful API consumption in Agile (Scrum) teams. Skilled in optimizing performance, memory, and offline-first data synchronization while ensuring secure token handling in production. Certified in Mobile Application Development and bilingual in English (C1-C2).",
+      role: "Full-Stack Software Engineer — Cloud & Infrastructure",
+      summary: "Full-Stack Software Engineer with 4 years of experience building and deploying scalable web applications and cloud-native services (TypeScript, React, Node.js, SQL). Specialist in RESTful API architecture, Docker containerization, Linux environment administration, and automated delivery pipelines with CI/CD on AWS. Focused on high availability, system observability, secure environment configuration, and agile production troubleshooting. Bilingual (English C1-C2) with a strong commitment to end-to-end software delivery ownership.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Mobile & Android (Focus)", techs: ["Android Studio", "Kotlin", "Java", "Flutter", "Dart", "Clean Architecture / MVVM"], color: "#ec4899" },
-        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservices", "Laravel"], color: "#3b82f6" },
-        { category: "Databases", techs: ["SQLite", "MySQL", "MongoDB"], color: "#10b981" },
+        { category: "Cloud & DevOps (Focus)", techs: ["Docker", "CI/CD Pipelines", "AWS (EC2/S3)", "Linux Administration", "Git", "Postman"], color: "#6366f1" },
+        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservices", "Laravel", "PHP"], color: "#3b82f6" },
         { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5/CSS3"], color: "#f59e0b" },
-        { category: "DevOps & Tools", techs: ["Git", "Postman", "CI/CD", "Docker", "AWS (EC2/S3)", "Linux"], color: "#6366f1" },
-        { category: "Methodologies & Testing", techs: ["Scrum / Agile", "Kanban", "Testing (Jest/Postman)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "Databases", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
+        { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
+        { category: "Methodologies & Testing", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Mobile & Android Developer | Software Engineer",
+          role: "Full-Stack & Cloud Infrastructure Engineer",
           date: "2022 - Present",
-          desc: "Technical owner for the development lifecycle of mobile applications and commercial enterprise software, ensuring high performance, efficient API communication, and transactional security on Android platforms.",
+          desc: "Technical owner for the full delivery lifecycle of enterprise web platforms and cloud-based services (TypeScript, Node.js, React, Laravel, and Docker), spanning software architecture, Linux server provisioning, continuous deployment, and production support.",
           bullets: [
-            "Architected and published production mobile applications for Android and iOS using Kotlin, Java, and Flutter/Dart, implementing local SQLite persistence and offline-first background synchronization.",
-            "Engineered the network layer and secure RESTful API consumption with token authentication (JWT / OAuth), ensuring data integrity in transit and cutting client-server failures by 40%.",
-            "Optimized mobile application performance (memory profiling, async request latency, and UI rendering), slashing load times across mission-critical screens by 85%.",
-            "Integrated a real-time geolocation, tracking, and route calculation mobile engine with Google Maps and Mapbox APIs, automating dispatching and reducing logistics costs by 25%.",
-            "Structured local data models and query optimization plans on SQLite, reducing analytical data processing and in-app report generation from 45s to 3s (a 93% performance gain).",
-            "Implemented automated testing suites and endpoint validation using Postman and testing frameworks, driving a 40% reduction in regression rates and production release defects.",
-            "Standardized Clean Architecture guidelines, rigorous Code Reviews, and API documentation, mentoring junior engineers to achieve autonomous production onboarding in under 2 months.",
-            "Integrated AI-assisted engineering workflows to accelerate legacy refactoring, test case generation, and technical documentation, boosting weekly team productivity by ~8 hours."
+            "Architected and migrated a monolithic system into a distributed microservices architecture using Node.js, Express, and TypeScript, slashing response latency by 85% (from 800ms to 120ms).",
+            "Designed and deployed modern web applications using React and TypeScript, implementing modular component architecture, hooks, and efficient state management.",
+            "Automated continuous delivery workflows by engineering CI/CD pipelines and Docker containerization, accelerating deployment speed and cutting production regression rates by 40%.",
+            "Configured and maintained Linux application servers and AWS cloud resources (EC2, S3), enforcing security best practices, environment variables, and secure secrets management (JWT / OAuth).",
+            "Optimized index tuning, table partitioning, and complex SQL queries in MySQL, cutting analytical report processing times from 45s to 3s (a 93% performance gain).",
+            "Implemented automated unit testing suites (Jest) and REST endpoint verification with Postman, ensuring software resilience and zero-defect releases prior to production.",
+            "Monitored and resolved production incidents through root-cause analysis across code, infrastructure, databases, and network layers (HTTP/HTTPS, DNS), sustaining 24/7 availability.",
+            "Standardized Clean Code guidelines, PR reviews, and technical deployment documentation, mentoring junior engineers to achieve autonomous production onboarding in under 2 months."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Android Specialist / Mobile Software Engineer",
-        recipient: "To: Talent Acquisition Team | Bradescard México",
-        body1: "Dear Talent Acquisition Team at Bradescard México, I am writing to express my strong interest in joining your team as an Android Specialist / Mobile Software Engineer. With 4 years of software engineering experience specializing in Android development (Kotlin, Java, Flutter), modular design (Clean Architecture / MVVM), and secure API integration, I am confident in my ability to deliver resilient, high-performance mobile solutions for your financial platforms.",
-        body2: "Throughout my career at Isotech, I have engineered and published cross-platform mobile applications and enterprise systems. Key achievements include implementing local SQLite persistence with offline-first synchronization, securing API communications via token authentication (JWT / OAuth), optimizing memory usage to reduce latency by 85%, and slashing local data query times from 45s to 3s.",
-        body3: "I hold a professional certification in Mobile Application Development, along with a deep dedication to clean code craftsmanship, comprehensive code reviews, automated testing with Postman, and AI-assisted workflows that optimize delivery speed. Furthermore, I possess certified English proficiency at the C1-C2 level.",
-        body4: "My degree in Computer Engineering combined with my full-stack foundation enables me to understand both the mobile client and the backend services it integrates with. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications in an interview.",
+        subject: "Application for Full-Stack Software Engineer - Cloud & Infrastructure",
+        recipient: "To: Hiring Team & Software Engineering Department | Enroute",
+        body1: "Dear Hiring Team at Enroute, I am writing to express my strong interest in joining your team as a Mid-Senior Full-Stack Software Engineer (Cloud & Infrastructure). With 4 years of hands-on experience building modern web applications (TypeScript, React.js, Node.js), provisioning cloud infrastructure on AWS, administering Linux servers, and automating deployments through Docker and CI/CD pipelines, I am confident in my ability to deliver immediate value to your internal development operations.",
+        body2: "Throughout my career at Isotech, I have embraced complete ownership of software solutions across their development, deployment, and operational lifecycles. Notable achievements include migrating a legacy monolith to distributed microservices with Node.js and TypeScript (slashing response latency by 85%), establishing automated CI/CD and Docker pipelines that cut production bugs by 40%, and tuning complex MySQL queries to accelerate report generation from 45s to 3s.",
+        body3: "I bring solid experience in configuring Linux application environments, managing secrets and access controls (JWT/OAuth), and conducting root-cause troubleshooting across application code, infrastructure, and networking layers (HTTP/HTTPS, DNS). Additionally, I hold certified bilingual proficiency in English (C1-C2), ensuring seamless technical communication.",
+        body4: "My degree in Computer Engineering reinforces my commitment to architectural excellence and continuous improvement. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }
