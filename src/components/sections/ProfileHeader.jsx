@@ -23,7 +23,7 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
         <h1 className="dev-name">
           <span className="code-kw">const</span>{' '}
           <span className="glitch-name-wrap" title="Cyberpunk Dev Identity">
-            <span className="dev-identifier glitch-text">{cvData.name.replace(/\s+/g, '')}</span>
+            <span className="dev-identifier glitch-text">{cvData.name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '')}</span>
           </span>: <span className="code-type">SoftwareDeveloper</span> = &#123;
         </h1>
 
@@ -34,8 +34,7 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
           </div>
           <div className="code-kv">
             <span className="prop-name">role:</span>
-            <span className="prop-string">"</span>
-            <TypewriterRole 
+            <span className="prop-string">"</span><TypewriterRole 
               words={[
                 cvData.role,
                 'Full Stack & Cloud Developer',
@@ -44,8 +43,7 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
                 'Bilingual English C1-C2'
               ]}
               defaultRole={cvData.role}
-            />
-            <span className="prop-string">"</span>,
+            /><span className="prop-string">"</span>,
           </div>
           <div className="code-kv">
             <span className="prop-name">location:</span>
