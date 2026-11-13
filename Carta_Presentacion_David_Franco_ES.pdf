@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3478
+/Length 3325
 >>
 stream
 0.5670000000000001 w
@@ -46,84 +46,82 @@ BT
 10.9249999999999989 TL
 0. g
 62.3622047244094517 706.3939370078740012 Td
-(Fecha: 12 de noviembre de 2026) Tj
+(Fecha: 13 de noviembre de 2026) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 683.7167716535432191 Td
-(Atención: Equipo de Selección y Desarrollo de Software | Enroute) Tj
+(Atención: Equipo de Selección de Talento IT | Azkait) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
 62.3622047244094517 661.0396062992125508 Td
-(Solicitud de Empleo - Full-Stack Software Engineer \(Cloud & Infrastructure\)) Tj
+(Solicitud de Empleo - Senior Developer \(TypeScript, AWS & Frontend\)) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 638.3624409448818824 Td
-(Estimado equipo de selección de Enroute, les escribo con gran entusiasmo para presentar mi candidatura) Tj
-T* (a la posición de Full-Stack Software Engineer - Cloud & Infrastructure. Con 4 años de experiencia) Tj
-T* (profesional construyendo aplicaciones web modernas \(TypeScript, React, Node.js\), gestionando) Tj
-T* (infraestructura en la nube \(AWS\), administrando servidores Linux y automatizando entregas mediante) Tj
-T* (Docker y CI/CD, considero que mi perfil técnico se alinea de forma ideal con sus necesidades operativas y) Tj
-T* (de desarrollo.) Tj
+(Estimado equipo de selección de Azkait, me dirijo a ustedes con gran entusiasmo para presentar mi) Tj
+T* (postulación a la posición de Senior Developer \(TypeScript, AWS & Frontend\). Con 4 años de experiencia) Tj
+T* (profesional en ingeniería de software, arquitectura frontend basada en componentes con TypeScript,) Tj
+T* (maquetación avanzada \(HTML5, SCSS/CSS3\) y consumo de servicios en la nube con AWS y Docker,) Tj
+T* (considero que mi perfil técnico puede integrarse con éxito y rapidez a sus proyectos de alto nivel.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 551.9057480314960458 Td
-(A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad de soluciones de software desde la) Tj
-T* (concepción del código hasta su despliegue y monitoreo en producción. Entre mis principales logros) Tj
-T* (destacan la migración de un monolito hacia microservicios con Node.js y TypeScript \(reduciendo la) Tj
-T* (latencia en un 85%\), la automatización de entregas con Docker y CI/CD disminuyendo errores en un 40%,) Tj
-T* (y la optimización de consultas SQL en MySQL acelerando la ejecución de reportes de 45s a solo 3s.) Tj
+62.3622047244094517 564.6616535433070112 Td
+(A lo largo de mi trayectoria en Isotech, he diseñado y entregado plataformas web empresariales) Tj
+T* (transaccionales y de misión crítica. Mis principales logros incluyen la construcción de arquitecturas) Tj
+T* (frontend modulares y tipadas con TypeScript, la integración de servicios cloud en AWS \(S3, APIs) Tj
+T* (RESTful\), la automatización de entregas con Docker y CI/CD reduciendo incidencias en un 40%, y la) Tj
+T* (optimización de latencia de servicios en un 85%.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 478.2049606299211746 Td
-(Cuento con experiencia administrando servidores Linux, configurando seguridad y variables de entorno, y) Tj
-T* (manteniendo observabilidad sobre la salud de la infraestructura y protocolos de red \(HTTP/HTTPS, DNS\).) Tj
-T* (Adicionalmente, cuento con certificación de inglés nivel C1-C2, facilitando la colaboración en equipos) Tj
-T* (técnicos de alto rendimiento.) Tj
+62.3622047244094517 490.9608661417322537 Td
+(Cuento con un sólido dominio de estándares de maquetación responsive, accesibilidad web, revisiones de) Tj
+T* (código en Git y metodologías ágiles \(Scrum\). Asimismo, cuento con nivel de inglés avanzado certificado) Tj
+T* (\(C1-C2\), permitiéndome colaborar fluidamente en entornos internacionales y equipos distribuidos.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 417.2600787401573825 Td
-(Mi formación como Ingeniero en Informática y mi compromiso con las buenas prácticas de ingeniería me) Tj
-T* (permiten abordar retos complejos con autonomía y visión integral de producto. Agradezco de antemano su) Tj
-T* (atención y quedo a su entera disposición para conversar en una entrevista.) Tj
+62.3622047244094517 442.7718897637794271 Td
+(Mi formación formal como Ingeniero en Informática y mi dominio riguroso de TypeScript me otorgan una) Tj
+T* (curva de adopción y aprendizaje sumamente ágil ante cualquier framework o servicio cloud. Agradezco de) Tj
+T* (antemano su atención y quedo a su entera disposición para conversar en una entrevista.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 360.5671653543305979 Td
+62.3622047244094517 386.0789763779526425 Td
 (Atentamente,) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-62.3622047244094517 340.7246456692912489 Td
+62.3622047244094517 366.2364566929132934 Td
 (José David Ayala Franco) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-62.3622047244094517 327.9687401574801697 Td
-(Full-Stack Software Engineer - Cloud & Infrastructure) Tj
+62.3622047244094517 353.4805511811022711 Td
+(Senior TypeScript / AWS & Frontend Developer) Tj
 ET
 endstream
 endobj
@@ -297,7 +295,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261112181402-06'00')
+/CreationDate (D:20261113122350-06'00')
 >>
 endobj
 20 0 obj
@@ -311,33 +309,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003682 00000 n 
-0000005499 00000 n 
+0000003529 00000 n 
+0000005346 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003739 00000 n 
-0000003864 00000 n 
-0000003994 00000 n 
-0000004127 00000 n 
-0000004264 00000 n 
-0000004387 00000 n 
-0000004516 00000 n 
-0000004648 00000 n 
-0000004784 00000 n 
-0000004912 00000 n 
-0000005039 00000 n 
-0000005168 00000 n 
-0000005301 00000 n 
-0000005403 00000 n 
-0000005747 00000 n 
-0000005833 00000 n 
+0000003586 00000 n 
+0000003711 00000 n 
+0000003841 00000 n 
+0000003974 00000 n 
+0000004111 00000 n 
+0000004234 00000 n 
+0000004363 00000 n 
+0000004495 00000 n 
+0000004631 00000 n 
+0000004759 00000 n 
+0000004886 00000 n 
+0000005015 00000 n 
+0000005148 00000 n 
+0000005250 00000 n 
+0000005594 00000 n 
+0000005680 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <A6A65B19F38D75A406297A726D564CC3> <A6A65B19F38D75A406297A726D564CC3> ]
+/ID [ <270A7DDCDCD2FEBCC2F32526DBF1BCFA> <270A7DDCDCD2FEBCC2F32526DBF1BCFA> ]
 >>
 startxref
-5937
+5784
 %%EOF

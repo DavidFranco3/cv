@@ -9,14 +9,14 @@
 <</Type /Annot /Subtype /Link /Rect [131.6537952755905962 751.4648031496062686 224.4857952755905899 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://github.com/DavidFranco3) >> >>
 <</Type /Annot /Subtype /Link /Rect [254.725795275590599 751.4648031496062686 352.2617952755906572 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.linkedin.com/in/david-franco-247701220/) >> >>
 <</Type /Annot /Subtype /Link /Rect [382.5017952755906663 751.4648031496062686 463.6217952755906708 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.npmjs.com/~davidfranco3) >> >>
-<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 81.071102362204897 323.9376850393701943 69.7325196850395059] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
+<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 93.2600787401576099 323.9376850393701943 81.9214960629923326] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
 ]
 /Contents 4 0 R
 >>
 endobj
 4 0 obj
 <<
-/Length 9508
+/Length 9369
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-52.987795275590706 773.291574803149615 Td
-(FULL-STACK SOFTWARE ENGINEER - CLOUD & INFRASTRUCTURE  |  FULL STACK & BACKEND) Tj
+84.2252952755906392 773.291574803149615 Td
+(SENIOR TYPESCRIPT / AWS & FRONTEND DEVELOPER  |  FULL STACK & BACKEND) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Full-Stack Software Engineer con 4 años de experiencia construyendo y desplegando aplicaciones web y servicios) Tj
-T* (cloud-native \(TypeScript, React, Node.js, SQL\). Especialista en arquitectura de APIs RESTful, contenerización con) Tj
-T* (Docker, administración Linux y pipelines de CI/CD en AWS. Enfocado en alta disponibilidad, observabilidad y gestión) Tj
-T* (segura de entornos en producción. Bilingüe \(Inglés C1-C2\) con enfoque de propiedad integral \(End-to-End) Tj
-T* (Ownership\).) Tj
+(Senior Software Engineer con 4 años de experiencia especializándose en desarrollo frontend y cloud con TypeScript,) Tj
+T* (JavaScript y arquitecturas basadas en componentes. Sólida experiencia consumiendo e integrando servicios en AWS) Tj
+T* (\(S3, APIs\), administrando contenedores con Docker y automatizando flujos de despliegue continuo mediante) Tj
+T* (pipelines de CI/CD. Dominio avanzado de maquetación responsive \(HTML5, SCSS/CSS3\), programación modular y) Tj
+T* (optimización de rendimiento web. Bilingüe \(Inglés C1-C2 certificado\) con formación como Ingeniero en Informática.) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,42 +117,42 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  Cloud & DevOps \(Enfoque\): ) Tj
+(•  Frontend & TypeScript \(Enfoque\): ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-178.464685039370039 613.9844881889763428 Td
-(Docker  |  CI/CD Pipelines  |  AWS \(EC2/S3\)  |  Linux Administration  |  Git  |  Postman) Tj
+204.7796850393700083 613.9844881889763428 Td
+(TypeScript  |  JavaScript  |  HTML5  |  SCSS / CSS3  |  React  |  Responsive Design) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 598.3939370078740012 Td
-(•  Backend & APIs: ) Tj
+(•  Cloud & DevOps: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-129.4446850393700572 598.3939370078740012 Td
-(Node.js  |  Express.js  |  RESTful APIs  |  JWT / OAuth  |  Microservicios  |  Laravel  |  PHP) Tj
+131.7246850393700583 598.3939370078740012 Td
+(AWS \(S3/EC2\)  |  Docker  |  CI/CD Pipelines  |  Git  |  Postman  |  Linux) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 582.8033858267715459 Td
-(•  Frontend & UI/UX: ) Tj
+(•  Backend & APIs: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-135.4296850393700993 582.8033858267715459 Td
-(React  |  JavaScript  |  TypeScript  |  Tailwind CSS  |  HTML5/CSS3) Tj
+129.4446850393700572 582.8033858267715459 Td
+(Node.js  |  Express.js  |  RESTful APIs  |  JWT / OAuth  |  Microservicios  |  Laravel  |  PHP) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -187,14 +187,14 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 536.0317322834645211 Td
-(•  Metodologías & Testing: ) Tj
+(•  Metodologías & Calidad: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-162.7896850393700845 536.0317322834645211 Td
-(Scrum / Agile  |  Kanban  |  Unit Testing \(Jest\)  |  Clean Code  |  Prompt Engineering) Tj
+164.3096850393700663 536.0317322834645211 Td
+(Scrum / Agile  |  Kanban  |  Unit Testing \(Jest\)  |  Clean Code  |  Web Accessibility) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -241,201 +241,200 @@ BT
 11.7299999999999986 TL
 0. g
 42.5196850393700814 463.4648031496062686 Td
-(Full-Stack & Cloud Infrastructure Engineer) Tj
+(Senior Full-Stack & Cloud Developer) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Responsable del ciclo completo de entrega de plataformas web empresariales y servicios en la nube \(TypeScript,) Tj
-T* (Node.js, React, Laravel y Docker\), abarcando desde la arquitectura de software y modelado de datos hasta el) Tj
-T* (aprovisionamiento de infraestructura Linux, despliegue continuo y soporte en producción.) Tj
+(Responsable de la arquitectura frontend, integración de servicios en la nube \(AWS\) y entrega continua de plataformas) Tj
+T* (web y software empresarial con TypeScript, garantizando alta disponibilidad y accesibilidad.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 407.9057480314960458 Td
-(•  Arquitecté y migré un monolito a microservicios con Node.js, Express y TypeScript, reduciendo la latencia de) Tj
-T* (respuesta en un 85% \(de 800ms a 120ms\).) Tj
+48.1889763779527627 420.0947244094488155 Td
+(•  Diseñé e implementé arquitecturas web basadas en componentes con TypeScript, optimizando el renderizado de) Tj
+T* (interfaces y la gestión reactiva del estado.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 382.110472440944875 Td
-(•  Diseñé y desplegué aplicaciones web modernas con React y TypeScript, implementando arquitectura basada en) Tj
-T* (componentes reutilizables, hooks y gestión eficiente de estado.) Tj
+48.1889763779527627 394.2994488188976447 Td
+(•  Integré y consumí servicios cloud de AWS \(S3 para almacenamiento y APIs en la nube\), garantizando) Tj
+T* (transferencia segura y políticas de control de acceso.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 356.3151968503937042 Td
-(•  Automaticé el flujo de entrega continua mediante el diseño de pipelines de CI/CD y contenerización con Docker,) Tj
-T* (reduciendo la tasa de regresiones en producción en un 40%.) Tj
+48.1889763779527627 368.5041732283464739 Td
+(•  Maqueté interfaces de usuario avanzadas con HTML5 semántico, SCSS/CSS3 y diseño responsive, asegurando) Tj
+T* (accesibilidad web y compatibilidad cross-browser.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 330.5199212598425333 Td
-(•  Administré y configuré servidores Linux y servicios cloud de AWS \(EC2, S3\), implementando políticas de) Tj
-T* (seguridad, variables de entorno y gestión segura de secretos \(JWT / OAuth\).) Tj
+48.1889763779527627 342.7088976377953031 Td
+(•  Automaticé el ciclo de despliegue mediante el diseño de pipelines de CI/CD integrados con Git y contenerización) Tj
+T* (en Docker, reduciendo fallos en producción en un 40%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 304.7246456692913625 Td
-(•  Optimicé planes de indexación, particionado y consultas SQL complejas en MySQL, recortando el tiempo de) Tj
-T* (procesamiento de reportes analíticos de 45s a 3s \(mejora del 93%\).) Tj
+48.1889763779527627 316.9136220472441892 Td
+(•  Arquitecté y migré módulos legados hacia microservicios y APIs RESTful distribuidas con Node.js y TypeScript,) Tj
+T* (reduciendo la latencia de respuesta en un 85%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 278.9293700787401349 Td
-(•  Implementé suites de pruebas unitarias automatizadas \(Jest\) y validación de endpoints REST con Postman,) Tj
-T* (asegurando la resiliencia del software antes de cada pase a producción.) Tj
+48.1889763779527627 291.1183464566929615 Td
+(•  Optimicé planes de indexación y consultas complejas en bases de datos SQL \(MySQL/SQLite\), recortando el) Tj
+T* (tiempo de procesamiento de reportes de 45s a 3s \(mejora del 93%\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 253.1340944881890209 Td
-(•  Monitoreé y resolví incidentes operativos mediante diagnóstico de causa raíz en código, infraestructura, base de) Tj
-T* (datos y redes \(HTTP/HTTPS, DNS\), manteniendo alta disponibilidad 24/7.) Tj
+48.1889763779527627 265.3230708661418475 Td
+(•  Implementé pruebas automatizadas y validación de endpoints REST con Postman y Jest, asegurando la resiliencia) Tj
+T* (del software antes de cada pase a producción.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 227.3388188976377933 Td
-(•  Estandaricé directrices de Clean Code, revisiones de código \(PR reviews\) y documentación técnica de arquitectura) Tj
-T* (y despliegue, mentorizando a practicantes para integrarse a producción en menos de 2 meses.) Tj
+48.1889763779527627 239.5277952755906199 Td
+(•  Estandaricé directrices de Clean Code, revisiones de código \(PR reviews en Git\) y documentación técnica,) Tj
+T* (mentorizando a practicantes para integrarse a producción en menos de 2 meses.) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 190.2049606299212883 Td
+42.5196850393700814 202.3939370078741149 Td
 (FORMACIÓN ACADÉMICA) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 186.8033858267717449 m
-552.7559055118110791 186.8033858267717449 l
+42.5196850393700814 198.9923622047245146 m
+552.7559055118110791 198.9923622047245146 l
 S
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 174.6144094488189467 Td
+42.5196850393700814 186.8033858267717733 Td
 (INSTITUTO TECNOLÓGICO SUPERIOR DE APATZINGÁN) Tj
 ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
 0. g
-491.9209055118110996 174.6144094488189467 Td
+491.9209055118110996 186.8033858267717733 Td
 (2018 - 2023) Tj
 ET
 BT
 /F1 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 161.8585039370079812 Td
+42.5196850393700814 174.0474803149606942 Td
 (Ingeniería en Informática) Tj
 ET
 BT
 /F3 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 149.9529921259843377 Td
+42.5196850393700814 162.1419685039371643 Td
 (Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software.) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 126.7088976377954168 Td
+42.5196850393700814 138.8978740157482434 Td
 (CERTIFICACIONES) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 123.3073228346458166 m
-552.7559055118110791 123.3073228346458166 l
+42.5196850393700814 135.4962992125985863 m
+552.7559055118110791 135.4962992125985863 l
 S
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 111.1183464566929615 Td
+42.5196850393700814 123.3073228346457881 Td
 (Iniciación al Desarrollo con IA) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-470.2259055118111064 111.1183464566929615 Td
+470.2259055118111064 123.3073228346457881 Td
 (Octubre 2026 \(4 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 99.212834645669318 Td
+42.5196850393700814 111.4018110236221446 Td
 (mouredev & BIG school) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 84.472677165354412 Td
+42.5196850393700814 96.6616535433072386 Td
 (Inglés Nivel C1-C2) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-464.3759055118111405 84.472677165354412 Td
+464.3759055118111405 96.6616535433072386 Td
 (Agosto 2026 \(177 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 72.5671653543308821 Td
+42.5196850393700814 84.756141732283595 Td
 (Edutin Academy  •  ID: 18696518  •  ) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-192.5286850393701457 72.5671653543308821 Td
+192.5286850393701457 84.756141732283595 Td
 (app.edutin.com/verify/18696518) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 57.8270078740158624 Td
+42.5196850393700814 70.015984251968689 Td
 (Curso Aplicaciones Móviles) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-474.2759055118110609 57.8270078740158624 Td
+474.2759055118110609 70.015984251968689 Td
 (Agosto 2026 \(7 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 45.9214960629923326 Td
+42.5196850393700814 58.1104724409451592 Td
 (BSG Institute  •  ID: 10971648A31172D0P1) Tj
 ET
 endstream
@@ -610,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261112181402-06'00')
+/CreationDate (D:20261113122350-06'00')
 >>
 endobj
 20 0 obj
@@ -624,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010535 00000 n 
-0000012352 00000 n 
+0000010397 00000 n 
+0000012214 00000 n 
 0000000015 00000 n 
-0000000975 00000 n 
-0000010592 00000 n 
-0000010717 00000 n 
-0000010847 00000 n 
-0000010980 00000 n 
-0000011117 00000 n 
-0000011240 00000 n 
-0000011369 00000 n 
-0000011501 00000 n 
-0000011637 00000 n 
-0000011765 00000 n 
-0000011892 00000 n 
-0000012021 00000 n 
-0000012154 00000 n 
-0000012256 00000 n 
-0000012600 00000 n 
-0000012686 00000 n 
+0000000976 00000 n 
+0000010454 00000 n 
+0000010579 00000 n 
+0000010709 00000 n 
+0000010842 00000 n 
+0000010979 00000 n 
+0000011102 00000 n 
+0000011231 00000 n 
+0000011363 00000 n 
+0000011499 00000 n 
+0000011627 00000 n 
+0000011754 00000 n 
+0000011883 00000 n 
+0000012016 00000 n 
+0000012118 00000 n 
+0000012462 00000 n 
+0000012548 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <1248E8D2E04C4965A4692218BA4929D2> <1248E8D2E04C4965A4692218BA4929D2> ]
+/ID [ <380C605307D28E5B7D1C28BB94121ACB> <380C605307D28E5B7D1C28BB94121ACB> ]
 >>
 startxref
-12790
+12652
 %%EOF

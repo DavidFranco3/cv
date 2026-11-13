@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Full-Stack Software Engineer — Cloud & Infrastructure",
-      summary: "Full-Stack Software Engineer con 4 años de experiencia construyendo y desplegando aplicaciones web y servicios cloud-native (TypeScript, React, Node.js, SQL). Especialista en arquitectura de APIs RESTful, contenerización con Docker, administración Linux y pipelines de CI/CD en AWS. Enfocado en alta disponibilidad, observabilidad y gestión segura de entornos en producción. Bilingüe (Inglés C1-C2) con enfoque de propiedad integral (End-to-End Ownership).",
+      role: "Senior TypeScript / AWS & Frontend Developer",
+      summary: "Senior Software Engineer con 4 años de experiencia especializándose en desarrollo frontend y cloud con TypeScript, JavaScript y arquitecturas basadas en componentes. Sólida experiencia consumiendo e integrando servicios en AWS (S3, APIs), administrando contenedores con Docker y automatizando flujos de despliegue continuo mediante pipelines de CI/CD. Dominio avanzado de maquetación responsive (HTML5, SCSS/CSS3), programación modular y optimización de rendimiento web. Bilingüe (Inglés C1-C2 certificado) con formación como Ingeniero en Informática.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Cloud & DevOps (Enfoque)", techs: ["Docker", "CI/CD Pipelines", "AWS (EC2/S3)", "Linux Administration", "Git", "Postman"], color: "#6366f1" },
+        { category: "Frontend & TypeScript (Enfoque)", techs: ["TypeScript", "JavaScript", "HTML5", "SCSS / CSS3", "React", "Responsive Design"], color: "#f59e0b" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git", "Postman", "Linux"], color: "#6366f1" },
         { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservicios", "Laravel", "PHP"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5/CSS3"], color: "#f59e0b" },
         { category: "Bases de Datos", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
         { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Metodologías & Testing", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "Metodologías & Calidad", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Web Accessibility"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Full-Stack & Cloud Infrastructure Engineer",
+          role: "Senior Full-Stack & Cloud Developer",
           date: "2022 - Presente",
-          desc: "Responsable del ciclo completo de entrega de plataformas web empresariales y servicios en la nube (TypeScript, Node.js, React, Laravel y Docker), abarcando desde la arquitectura de software y modelado de datos hasta el aprovisionamiento de infraestructura Linux, despliegue continuo y soporte en producción.",
+          desc: "Responsable de la arquitectura frontend, integración de servicios en la nube (AWS) y entrega continua de plataformas web y software empresarial con TypeScript, garantizando alta disponibilidad y accesibilidad.",
           bullets: [
-            "Arquitecté y migré un monolito a microservicios con Node.js, Express y TypeScript, reduciendo la latencia de respuesta en un 85% (de 800ms a 120ms).",
-            "Diseñé y desplegué aplicaciones web modernas con React y TypeScript, implementando arquitectura basada en componentes reutilizables, hooks y gestión eficiente de estado.",
-            "Automaticé el flujo de entrega continua mediante el diseño de pipelines de CI/CD y contenerización con Docker, reduciendo la tasa de regresiones en producción en un 40%.",
-            "Administré y configuré servidores Linux y servicios cloud de AWS (EC2, S3), implementando políticas de seguridad, variables de entorno y gestión segura de secretos (JWT / OAuth).",
-            "Optimicé planes de indexación, particionado y consultas SQL complejas en MySQL, recortando el tiempo de procesamiento de reportes analíticos de 45s a 3s (mejora del 93%).",
-            "Implementé suites de pruebas unitarias automatizadas (Jest) y validación de endpoints REST con Postman, asegurando la resiliencia del software antes de cada pase a producción.",
-            "Monitoreé y resolví incidentes operativos mediante diagnóstico de causa raíz en código, infraestructura, base de datos y redes (HTTP/HTTPS, DNS), manteniendo alta disponibilidad 24/7.",
-            "Estandaricé directrices de Clean Code, revisiones de código (PR reviews) y documentación técnica de arquitectura y despliegue, mentorizando a practicantes para integrarse a producción en menos de 2 meses."
+            "Diseñé e implementé arquitecturas web basadas en componentes con TypeScript, optimizando el renderizado de interfaces y la gestión reactiva del estado.",
+            "Integré y consumí servicios cloud de AWS (S3 para almacenamiento y APIs en la nube), garantizando transferencia segura y políticas de control de acceso.",
+            "Maqueté interfaces de usuario avanzadas con HTML5 semántico, SCSS/CSS3 y diseño responsive, asegurando accesibilidad web y compatibilidad cross-browser.",
+            "Automaticé el ciclo de despliegue mediante el diseño de pipelines de CI/CD integrados con Git y contenerización en Docker, reduciendo fallos en producción en un 40%.",
+            "Arquitecté y migré módulos legados hacia microservicios y APIs RESTful distribuidas con Node.js y TypeScript, reduciendo la latencia de respuesta en un 85%.",
+            "Optimicé planes de indexación y consultas complejas en bases de datos SQL (MySQL/SQLite), recortando el tiempo de procesamiento de reportes de 45s a 3s (mejora del 93%).",
+            "Implementé pruebas automatizadas y validación de endpoints REST con Postman y Jest, asegurando la resiliencia del software antes de cada pase a producción.",
+            "Estandaricé directrices de Clean Code, revisiones de código (PR reviews en Git) y documentación técnica, mentorizando a practicantes para integrarse a producción en menos de 2 meses."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Full-Stack Software Engineer (Cloud & Infrastructure)",
-        recipient: "Atención: Equipo de Selección y Desarrollo de Software | Enroute",
-        body1: "Estimado equipo de selección de Enroute, les escribo con gran entusiasmo para presentar mi candidatura a la posición de Full-Stack Software Engineer - Cloud & Infrastructure. Con 4 años de experiencia profesional construyendo aplicaciones web modernas (TypeScript, React, Node.js), gestionando infraestructura en la nube (AWS), administrando servidores Linux y automatizando entregas mediante Docker y CI/CD, considero que mi perfil técnico se alinea de forma ideal con sus necesidades operativas y de desarrollo.",
-        body2: "A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad de soluciones de software desde la concepción del código hasta su despliegue y monitoreo en producción. Entre mis principales logros destacan la migración de un monolito hacia microservicios con Node.js y TypeScript (reduciendo la latencia en un 85%), la automatización de entregas con Docker y CI/CD disminuyendo errores en un 40%, y la optimización de consultas SQL en MySQL acelerando la ejecución de reportes de 45s a solo 3s.",
-        body3: "Cuento con experiencia administrando servidores Linux, configurando seguridad y variables de entorno, y manteniendo observabilidad sobre la salud de la infraestructura y protocolos de red (HTTP/HTTPS, DNS). Adicionalmente, cuento con certificación de inglés nivel C1-C2, facilitando la colaboración en equipos técnicos de alto rendimiento.",
-        body4: "Mi formación como Ingeniero en Informática y mi compromiso con las buenas prácticas de ingeniería me permiten abordar retos complejos con autonomía y visión integral de producto. Agradezco de antemano su atención y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Senior Developer (TypeScript, AWS & Frontend)",
+        recipient: "Atención: Equipo de Selección de Talento IT | Azkait",
+        body1: "Estimado equipo de selección de Azkait, me dirijo a ustedes con gran entusiasmo para presentar mi postulación a la posición de Senior Developer (TypeScript, AWS & Frontend). Con 4 años de experiencia profesional en ingeniería de software, arquitectura frontend basada en componentes con TypeScript, maquetación avanzada (HTML5, SCSS/CSS3) y consumo de servicios en la nube con AWS y Docker, considero que mi perfil técnico puede integrarse con éxito y rapidez a sus proyectos de alto nivel.",
+        body2: "A lo largo de mi trayectoria en Isotech, he diseñado y entregado plataformas web empresariales transaccionales y de misión crítica. Mis principales logros incluyen la construcción de arquitecturas frontend modulares y tipadas con TypeScript, la integración de servicios cloud en AWS (S3, APIs RESTful), la automatización de entregas con Docker y CI/CD reduciendo incidencias en un 40%, y la optimización de latencia de servicios en un 85%.",
+        body3: "Cuento con un sólido dominio de estándares de maquetación responsive, accesibilidad web, revisiones de código en Git y metodologías ágiles (Scrum). Asimismo, cuento con nivel de inglés avanzado certificado (C1-C2), permitiéndome colaborar fluidamente en entornos internacionales y equipos distribuidos.",
+        body4: "Mi formación formal como Ingeniero en Informática y mi dominio riguroso de TypeScript me otorgan una curva de adopción y aprendizaje sumamente ágil ante cualquier framework o servicio cloud. Agradezco de antemano su atención y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Full-Stack Software Engineer — Cloud & Infrastructure",
-      summary: "Full-Stack Software Engineer with 4 years of experience building and deploying scalable web applications and cloud-native services (TypeScript, React, Node.js, SQL). Specialist in RESTful API architecture, Docker containerization, Linux environment administration, and automated delivery pipelines with CI/CD on AWS. Focused on high availability, system observability, secure environment configuration, and agile production troubleshooting. Bilingual (English C1-C2) with a strong commitment to end-to-end software delivery ownership.",
+      role: "Senior TypeScript / AWS & Frontend Developer",
+      summary: "Senior Software Engineer with 4 years of experience specializing in frontend and cloud development with TypeScript, JavaScript, and component-based architectures. Strong track record integrating AWS services (S3, APIs), managing Docker containerization, and automating continuous delivery through CI/CD pipelines. Advanced expertise in responsive styling (HTML5, SCSS/CSS3), modular state management, and web performance optimization. Bilingual (English C1-C2 certified) with a Computer Engineering degree.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Cloud & DevOps (Focus)", techs: ["Docker", "CI/CD Pipelines", "AWS (EC2/S3)", "Linux Administration", "Git", "Postman"], color: "#6366f1" },
+        { category: "Frontend & TypeScript (Focus)", techs: ["TypeScript", "JavaScript", "HTML5", "SCSS / CSS3", "React", "Responsive Design"], color: "#f59e0b" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git", "Postman", "Linux"], color: "#6366f1" },
         { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservices", "Laravel", "PHP"], color: "#3b82f6" },
-        { category: "Frontend & UI/UX", techs: ["React", "JavaScript", "TypeScript", "Tailwind CSS", "HTML5/CSS3"], color: "#f59e0b" },
         { category: "Databases", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
         { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Methodologies & Testing", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Prompt Engineering"], color: "#8b5cf6" }
+        { category: "Methodologies & Quality", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Web Accessibility"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Full-Stack & Cloud Infrastructure Engineer",
+          role: "Senior Full-Stack & Cloud Developer",
           date: "2022 - Present",
-          desc: "Technical owner for the full delivery lifecycle of enterprise web platforms and cloud-based services (TypeScript, Node.js, React, Laravel, and Docker), spanning software architecture, Linux server provisioning, continuous deployment, and production support.",
+          desc: "Technical owner for frontend architecture, AWS cloud service integration, and continuous delivery of enterprise web platforms with TypeScript, ensuring high performance, scalability, and web accessibility.",
           bullets: [
-            "Architected and migrated a monolithic system into a distributed microservices architecture using Node.js, Express, and TypeScript, slashing response latency by 85% (from 800ms to 120ms).",
-            "Designed and deployed modern web applications using React and TypeScript, implementing modular component architecture, hooks, and efficient state management.",
-            "Automated continuous delivery workflows by engineering CI/CD pipelines and Docker containerization, accelerating deployment speed and cutting production regression rates by 40%.",
-            "Configured and maintained Linux application servers and AWS cloud resources (EC2, S3), enforcing security best practices, environment variables, and secure secrets management (JWT / OAuth).",
-            "Optimized index tuning, table partitioning, and complex SQL queries in MySQL, cutting analytical report processing times from 45s to 3s (a 93% performance gain).",
-            "Implemented automated unit testing suites (Jest) and REST endpoint verification with Postman, ensuring software resilience and zero-defect releases prior to production.",
-            "Monitored and resolved production incidents through root-cause analysis across code, infrastructure, databases, and network layers (HTTP/HTTPS, DNS), sustaining 24/7 availability.",
-            "Standardized Clean Code guidelines, PR reviews, and technical deployment documentation, mentoring junior engineers to achieve autonomous production onboarding in under 2 months."
+            "Designed and implemented modern component-based web architectures using TypeScript, optimizing UI rendering and reactive state management for transactional systems.",
+            "Integrated and consumed cloud services on AWS (S3 for asset storage and RESTful cloud APIs), ensuring secure data transfer and access policies.",
+            "Crafted advanced UI layouts using semantic HTML5, SCSS/CSS3, and responsive design, ensuring web accessibility standards and cross-browser consistency.",
+            "Automated the deployment lifecycle by engineering CI/CD pipelines integrated with Git and Docker containerization, reducing production release bugs by 40%.",
+            "Architected and migrated legacy modules into distributed microservices and RESTful APIs with Node.js and TypeScript, slashing response latency by 85%.",
+            "Optimized index tuning and complex queries in SQL databases (MySQL/SQLite), cutting analytical report processing times from 45s to 3s (a 93% performance gain).",
+            "Implemented automated unit testing suites and REST endpoint validation using Postman and Jest, ensuring software resilience prior to production releases.",
+            "Standardized Clean Code guidelines, PR review processes in Git, and technical documentation, mentoring junior engineers to achieve production autonomy in under 2 months."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Full-Stack Software Engineer - Cloud & Infrastructure",
-        recipient: "To: Hiring Team & Software Engineering Department | Enroute",
-        body1: "Dear Hiring Team at Enroute, I am writing to express my strong interest in joining your team as a Mid-Senior Full-Stack Software Engineer (Cloud & Infrastructure). With 4 years of hands-on experience building modern web applications (TypeScript, React.js, Node.js), provisioning cloud infrastructure on AWS, administering Linux servers, and automating deployments through Docker and CI/CD pipelines, I am confident in my ability to deliver immediate value to your internal development operations.",
-        body2: "Throughout my career at Isotech, I have embraced complete ownership of software solutions across their development, deployment, and operational lifecycles. Notable achievements include migrating a legacy monolith to distributed microservices with Node.js and TypeScript (slashing response latency by 85%), establishing automated CI/CD and Docker pipelines that cut production bugs by 40%, and tuning complex MySQL queries to accelerate report generation from 45s to 3s.",
-        body3: "I bring solid experience in configuring Linux application environments, managing secrets and access controls (JWT/OAuth), and conducting root-cause troubleshooting across application code, infrastructure, and networking layers (HTTP/HTTPS, DNS). Additionally, I hold certified bilingual proficiency in English (C1-C2), ensuring seamless technical communication.",
-        body4: "My degree in Computer Engineering reinforces my commitment to architectural excellence and continuous improvement. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
+        subject: "Application for Senior Developer (TypeScript, AWS & Frontend)",
+        recipient: "To: IT Talent Acquisition Team | Azkait",
+        body1: "Dear Talent Acquisition Team at Azkait, I am writing to express my strong interest in joining your team as a Senior Developer (TypeScript, AWS & Frontend). With 4 years of software engineering experience specializing in component-driven frontend architecture with TypeScript, advanced UI styling (HTML5, SCSS/CSS3), and cloud service integration with AWS and Docker, I am confident in my ability to quickly add value to your high-performance client projects.",
+        body2: "Throughout my career at Isotech, I have designed and delivered mission-critical web platforms. Key achievements include building scalable, strictly-typed frontend architectures in TypeScript, consuming cloud services in AWS (S3, REST APIs), containerizing applications with Docker, and setting up automated CI/CD pipelines that reduced release defects by 40%.",
+        body3: "I bring solid expertise in responsive layout design, web accessibility standards, Git-based code reviews, and Agile methodologies. Furthermore, I hold certified bilingual proficiency in English (C1-C2), enabling seamless collaboration in distributed global engineering environments.",
+        body4: "My degree in Computer Engineering and deep command of TypeScript give me an exceptionally fast learning curve across frontend frameworks and cloud ecosystems. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }
