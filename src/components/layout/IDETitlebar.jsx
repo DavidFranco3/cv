@@ -58,13 +58,13 @@ export default function IDETitlebar({
           <kbd className="cmd-palette-kbd">⌘K</kbd>
         </button>
 
-        <div className="live-status-chip">
+        <div className="live-status-chip" title="Disponible para vacantes On-Site (Presencial), Híbridas o Remotas">
           <div className="sonar-wrapper">
             <span className="sonar-ring ring-1"></span>
             <span className="sonar-ring ring-2"></span>
             <span className="green-pulse"></span>
           </div>
-          <code>status: 24/7_remote_available</code>
+          <code>status: open_to_work (onsite/hybrid/remote)</code>
           <div className="eq-bars" title="Real-time Execution Activity">
             <span className="eq-bar"></span>
             <span className="eq-bar"></span>

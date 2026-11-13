@@ -271,8 +271,8 @@ export default function TerminalPanel({ cvData }) {
 
             <div className="sysinfo-item glow-hover-item">
               <span className="sysinfo-key">uptime.availability:</span>
-              <strong className="sysinfo-val">24/7 Remote</strong>
-              <span className="sysinfo-note">Microservices & APIs</span>
+              <strong className="sysinfo-val">Onsite • Hybrid • Remote</strong>
+              <span className="sysinfo-note">Full Availability</span>
             </div>
 
             <div className="sysinfo-item glow-hover-item">
@@ -319,6 +319,7 @@ export default function TerminalPanel({ cvData }) {
               ✓ [SUCCESS]: Candidate David Franco ready for onboarding!
             </div>
             <div>⚡ Specialization: Senior TypeScript / AWS & Frontend Developer</div>
+            <div>📍 Modality: Open to On-site, Hybrid & Remote</div>
             <div>📧 Direct Contact: {cvData.contact.email}</div>
             <div>📱 Phone: {cvData.contact.phone}</div>
           </div>
@@ -370,8 +371,8 @@ export default function TerminalPanel({ cvData }) {
 
             <div className="sysinfo-item glow-hover-item">
               <span className="sysinfo-key">uptime.availability:</span>
-              <strong className="sysinfo-val">24/7 Web</strong>
-              <span className="sysinfo-note">Microservices & APIs</span>
+              <strong className="sysinfo-val">Onsite • Hybrid • Remote</strong>
+              <span className="sysinfo-note">Full Availability</span>
             </div>
 
             <div className="sysinfo-item glow-hover-item">
