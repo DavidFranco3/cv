@@ -16,7 +16,22 @@ const PACKAGES = [
 const res = await client('https://api.domain.com')
   .bearer(token)
   .retry(3)
-  .get('/data');`
+  .get('/data');`,
+    simulatedOutput: {
+      status: 200,
+      statusText: 'OK',
+      latency: '34ms',
+      headers: {
+        'content-type': 'application/json; charset=utf-8',
+        'x-powered-by': 'fluent-rest-client'
+      },
+      data: {
+        authenticated: true,
+        user: 'DavidFranco',
+        role: 'Senior TypeScript & Cloud Dev',
+        rateLimit: '999/1000'
+      }
+    }
   },
   {
     name: 'react-apextable-pro',
@@ -33,7 +48,16 @@ const res = await client('https://api.domain.com')
   columns={columns} 
   virtualize 
   theme="cyber" 
-/>`
+/>`,
+    simulatedOutput: {
+      gridStatus: 'MOUNTED',
+      totalRecords: 150000,
+      visibleWindow: 14,
+      renderTime: '1.2ms',
+      memoryDelta: '+0.2MB',
+      virtualization: 'ENABLED',
+      sorting: { column: 'performance', order: 'desc' }
+    }
   },
   {
     name: 'intl-currency-helper',
@@ -48,13 +72,25 @@ const res = await client('https://api.domain.com')
 const price = formatCurrency(1499.50, { 
   currency: 'USD', 
   locale: 'en-US' 
-}); // $1,499.50`
+}); // $1,499.50`,
+    simulatedOutput: {
+      inputAmount: 1499.5,
+      benchmark: '0.015ms (Zero External Dependencies)',
+      formattedOutputs: {
+        'en-US (USD)': '$1,499.50',
+        'es-MX (MXN)': '$1,499.50 MXN',
+        'de-DE (EUR)': '1.499,50 €',
+        'en-GB (GBP)': '£1,499.50'
+      }
+    }
   }
 ];
 
 export default function NpmPackages({ language = 'es' }) {
   const [copiedPkg, setCopiedPkg] = useState(null);
   const [activeTab, setActiveTab] = useState(0);
+  const [executing, setExecuting] = useState(false);
+  const [hasExecuted, setHasExecuted] = useState({});
 
   const handleCopyCmd = (cmd, pkgName) => {
     soundManager.playBeep();
@@ -64,6 +100,19 @@ export default function NpmPackages({ language = 'es' }) {
     setCopiedPkg(pkgName);
     setTimeout(() => setCopiedPkg(null), 2000);
   };
+
+  const handleRunExample = (pkgName) => {
+    soundManager.playClick();
+    setExecuting(true);
+    setTimeout(() => {
+      setExecuting(false);
+      setHasExecuted((prev) => ({ ...prev, [pkgName]: true }));
+      soundManager.playBeep();
+    }, 380);
+  };
+
+  const activePackage = PACKAGES[activeTab];
+  const isOutputVisible = hasExecuted[activePackage.name];
 
   return (
     <section id="npm-packages-section" className="code-module-section animate-slide-up" style={{ animationDelay: '0.2s' }}>
@@ -123,23 +172,23 @@ export default function NpmPackages({ language = 'es' }) {
         <div className="npm-active-card">
           <div className="npm-card-details">
             <div className="npm-card-headline">
-              <h4 className="npm-card-title">{PACKAGES[activeTab].name}</h4>
-              <span className="npm-feature-badge glow-badge">{PACKAGES[activeTab].badge}</span>
+              <h4 className="npm-card-title">{activePackage.name}</h4>
+              <span className="npm-feature-badge glow-badge">{activePackage.badge}</span>
             </div>
             
-            <p className="npm-card-tagline">{PACKAGES[activeTab].tagline}</p>
-            <p className="npm-card-desc">{PACKAGES[activeTab].description}</p>
+            <p className="npm-card-tagline">{activePackage.tagline}</p>
+            <p className="npm-card-desc">{activePackage.description}</p>
 
             <div className="npm-install-box">
               <span className="npm-prompt">$</span>
-              <code>{PACKAGES[activeTab].installCmd}</code>
+              <code>{activePackage.installCmd}</code>
               <button
                 type="button"
                 className="npm-copy-btn hover-shine"
-                onClick={() => handleCopyCmd(PACKAGES[activeTab].installCmd, PACKAGES[activeTab].name)}
+                onClick={() => handleCopyCmd(activePackage.installCmd, activePackage.name)}
                 title="Copiar comando de instalación"
               >
-                {copiedPkg === PACKAGES[activeTab].name ? (
+                {copiedPkg === activePackage.name ? (
                   <>
                     <Icons.Check />
                     <span>{language === 'es' ? '¡Copiado!' : 'Copied!'}</span>
@@ -155,7 +204,7 @@ export default function NpmPackages({ language = 'es' }) {
 
             <div className="npm-links-row">
               <a
-                href={PACKAGES[activeTab].link}
+                href={activePackage.link}
                 target="_blank"
                 rel="noreferrer"
                 className="npm-external-btn"
@@ -167,19 +216,49 @@ export default function NpmPackages({ language = 'es' }) {
             </div>
           </div>
 
-          {/* Quickstart Code Preview */}
+          {/* Quickstart Code Preview with Interactive REPL Runner */}
           <div className="npm-code-preview">
-            <div className="npm-code-header">
-              <Icons.FileCode />
-              <span>quickstart.ts</span>
+            <div className="npm-code-header" style={{ justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <Icons.FileCode />
+                <span>quickstart.ts</span>
+              </div>
+              <div className="npm-repl-header-actions">
+                <button
+                  type="button"
+                  className="npm-run-btn"
+                  onClick={() => handleRunExample(activePackage.name)}
+                  disabled={executing}
+                  title="Simular ejecución en vivo del paquete"
+                >
+                  <Icons.Play size={10} />
+                  <span>{executing ? 'Executing...' : '▶ Run Code'}</span>
+                </button>
+              </div>
             </div>
             <pre className="npm-code-body">
-              <code>{PACKAGES[activeTab].example}</code>
+              <code>{activePackage.example}</code>
             </pre>
+
+            {/* Live REPL Execution Output Drawer */}
+            {isOutputVisible && (
+              <div className="npm-execution-output animate-slide-up">
+                <div className="npm-output-meta">
+                  <span className="npm-output-status">
+                    ✓ EXECUTION SUCCESS [200 OK]
+                  </span>
+                  <span className="npm-output-time">
+                    runtime: {activePackage.simulatedOutput.latency || activePackage.simulatedOutput.renderTime || '0.02ms'}
+                  </span>
+                </div>
+                <pre className="npm-output-json">
+                  <code>{JSON.stringify(activePackage.simulatedOutput, null, 2)}</code>
+                </pre>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </section>
   );
 }
-

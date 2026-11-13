@@ -4,11 +4,12 @@ import { useEffect, useRef } from 'react';
  * MatrixRain - Componente de lluvia digital y flujo de código binario en Canvas
  * Ofrece un fondo animado de alto impacto visual para la estética de desarrollador.
  */
-export default function MatrixRain({ enabled = true, opacity = 0.16 }) {
+export default function MatrixRain({ enabled = true, isActive, opacity = 0.16 }) {
   const canvasRef = useRef(null);
+  const isCanvasActive = isActive !== undefined ? isActive : enabled;
 
   useEffect(() => {
-    if (!enabled) return;
+    if (!isCanvasActive) return;
 
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -117,9 +118,9 @@ export default function MatrixRain({ enabled = true, opacity = 0.16 }) {
       window.removeEventListener('resize', resizeCanvas);
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, [enabled]);
+  }, [isCanvasActive]);
 
-  if (!enabled) return null;
+  if (!isCanvasActive) return null;
 
   return (
     <canvas

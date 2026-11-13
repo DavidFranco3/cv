@@ -3,6 +3,7 @@ import { generatePdf } from './utils/pdfGenerator';
 import { generateCoverLetter } from './utils/coverLetterGenerator';
 import { translations } from './utils/translations';
 import { soundManager } from './utils/soundEffects';
+import { getSavedTheme, saveTheme } from './utils/themeManager';
 
 import MatrixRain from './components/MatrixRain';
 import ClickParticles from './components/ClickParticles';
@@ -11,11 +12,13 @@ import IDETitlebar from './components/layout/IDETitlebar';
 import IDEStatusbar from './components/layout/IDEStatusbar';
 import CommandPalette from './components/ui/CommandPalette';
 import PdfPreviewModal from './components/ui/PdfPreviewModal';
+import RecruiterModal from './components/ui/RecruiterModal';
 
 import ProfileHeader from './components/sections/ProfileHeader';
 import TerminalPanel from './components/terminal/TerminalPanel';
 import SkillsGrid from './components/sections/SkillsGrid';
 import NpmPackages from './components/sections/NpmPackages';
+import ArchitectureExplorer from './components/sections/ArchitectureExplorer';
 import ExperienceLog from './components/sections/ExperienceLog';
 import CredentialsLock from './components/sections/CredentialsLock';
 
@@ -29,19 +32,36 @@ const CODE_PARTICLES = [
   { text: 'export type TS_AWS_Dev = true;', top: '82%', left: '5%', duration: '20s', delay: '2s' },
 ];
 
+const KONAMI_CODE = [
+  'ArrowUp', 'ArrowUp',
+  'ArrowDown', 'ArrowDown',
+  'ArrowLeft', 'ArrowRight',
+  'ArrowLeft', 'ArrowRight',
+  'b', 'a'
+];
+
 function App() {
   const [language, setLanguage] = useState('es');
+  const [currentTheme, setCurrentTheme] = useState(getSavedTheme);
   const [copiedKey, setCopiedKey] = useState(null);
   const [isDownloading, setIsDownloading] = useState(false);
   const [isMatrixActive, setIsMatrixActive] = useState(true);
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [isPdfModalOpen, setIsPdfModalOpen] = useState(false);
+  const [isRecruiterModalOpen, setIsRecruiterModalOpen] = useState(false);
+  const [isOverdriveActive, setIsOverdriveActive] = useState(false);
 
   const [uptimeSeconds, setUptimeSeconds] = useState(138);
   const [cpuLoad, setCpuLoad] = useState(14.2);
 
   const { ui, cv: cvData } = translations[language];
+
+  // Theme change handler
+  const handleThemeChange = (newTheme) => {
+    setCurrentTheme(newTheme);
+    saveTheme(newTheme);
+  };
 
   // Uptime timer
   useEffect(() => {
@@ -51,23 +71,45 @@ function App() {
     return () => clearInterval(timer);
   }, []);
 
-  // CPU Load simulation
+  // CPU Load simulation (higher when overdrive is active)
   useEffect(() => {
     const cpuTimer = setInterval(() => {
-      setCpuLoad(12 + Math.random() * 8);
+      if (isOverdriveActive) {
+        setCpuLoad(85 + Math.random() * 14);
+      } else {
+        setCpuLoad(12 + Math.random() * 8);
+      }
     }, 2500);
     return () => clearInterval(cpuTimer);
-  }, []);
+  }, [isOverdriveActive]);
 
-  // Global keyboard shortcuts (Cmd+K / Ctrl+K)
+  // Global keyboard shortcuts (Cmd+K / Ctrl+K & Konami Code)
   useEffect(() => {
+    let konamiIndex = 0;
+
     const handleKeyDown = (e) => {
+      // Command Palette
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
         soundManager.playClick();
         setIsCommandPaletteOpen((prev) => !prev);
+        return;
+      }
+
+      // Konami Code sequence tracker
+      const requiredKey = KONAMI_CODE[konamiIndex];
+      if (e.key === requiredKey || e.key.toLowerCase() === requiredKey) {
+        konamiIndex += 1;
+        if (konamiIndex === KONAMI_CODE.length) {
+          konamiIndex = 0;
+          soundManager.playBeep();
+          setIsOverdriveActive((prev) => !prev);
+        }
+      } else {
+        konamiIndex = 0;
       }
     };
+
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
@@ -106,9 +148,28 @@ function App() {
   };
 
   return (
-    <div className="ide-shell">
+    <div className="ide-shell" data-theme={currentTheme}>
+      {/* Overdrive HUD Banner when Easter Egg is active */}
+      {isOverdriveActive && (
+        <div 
+          className="overdrive-hud-banner"
+          onClick={() => {
+            soundManager.playClick();
+            setIsOverdriveActive(false);
+          }}
+          title="Click para desactivar modo sobrecarga"
+        >
+          <span>⚡</span>
+          <span>SYSTEM OVERDRIVE ENGAGED [MAX CLOCK SPEED]</span>
+          <span>✕</span>
+        </div>
+      )}
+
       {/* Matrix Canvas FX */}
-      <MatrixRain isActive={isMatrixActive} />
+      <MatrixRain 
+        isActive={isMatrixActive} 
+        opacity={isOverdriveActive ? 0.38 : 0.16} 
+      />
 
       {/* Interactive Cursor Particle Bursts */}
       <ClickParticles />
@@ -145,6 +206,9 @@ function App() {
         isDownloading={isDownloading}
         onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         onOpenPdfModal={() => setIsPdfModalOpen(true)}
+        onOpenRecruiterModal={() => setIsRecruiterModalOpen(true)}
+        currentTheme={currentTheme}
+        onThemeChange={handleThemeChange}
         ui={ui}
       />
 
@@ -168,7 +232,10 @@ function App() {
         />
 
         <TerminalPanel 
-          cvData={cvData} 
+          cvData={cvData}
+          onOpenRecruiterModal={() => setIsRecruiterModalOpen(true)}
+          onToggleOverdrive={() => setIsOverdriveActive((prev) => !prev)}
+          onThemeChange={handleThemeChange}
         />
 
         <SkillsGrid 
@@ -176,6 +243,10 @@ function App() {
         />
 
         <NpmPackages 
+          language={language} 
+        />
+
+        <ArchitectureExplorer 
           language={language} 
         />
 
@@ -224,6 +295,8 @@ function App() {
         }}
         onCopyText={handleCopy}
         contactInfo={cvData.contact}
+        onOpenRecruiterModal={() => setIsRecruiterModalOpen(true)}
+        onThemeChange={handleThemeChange}
       />
 
       {/* In-App PDF Preview Modal */}
@@ -233,6 +306,14 @@ function App() {
         language={language}
         onDownloadCv={handleDownloadCv}
         onDownloadCoverLetter={handleDownloadCoverLetter}
+      />
+
+      {/* Recruiter Fast-Track Contact & vCard Modal */}
+      <RecruiterModal
+        isOpen={isRecruiterModalOpen}
+        onClose={() => setIsRecruiterModalOpen(false)}
+        contactInfo={cvData.contact}
+        language={language}
       />
     </div>
   );

@@ -2,9 +2,28 @@ import { useState, useRef } from 'react';
 import { Icons } from '../common/Icons';
 import { soundManager } from '../../utils/soundEffects';
 
-const AVAILABLE_COMMANDS = ['whoami', 'test', 'metrics', 'skills', 'hire', 'clear', 'help', 'cat profile.json'];
+const AVAILABLE_COMMANDS = [
+  'whoami',
+  'test',
+  'metrics',
+  'skills',
+  'architecture',
+  'hire',
+  'overdrive',
+  'theme matrix',
+  'theme cyberpunk',
+  'theme synthwave',
+  'theme tokyonight',
+  'clear',
+  'help'
+];
 
-export default function TerminalPanel({ cvData }) {
+export default function TerminalPanel({
+  cvData,
+  onOpenRecruiterModal,
+  onToggleOverdrive,
+  onThemeChange
+}) {
   const [terminalCmd, setTerminalCmd] = useState('whoami');
   const [cliInput, setCliInput] = useState('');
   const [isExecuting, setIsExecuting] = useState(false);
@@ -66,9 +85,24 @@ export default function TerminalPanel({ cvData }) {
       switchTerminalCmd('metrics');
     } else if (cleanCmd.includes('skill')) {
       switchTerminalCmd('skills');
+    } else if (cleanCmd.includes('arch')) {
+      const el = document.getElementById('architecture-section');
+      el?.scrollIntoView({ behavior: 'smooth' });
+      soundManager.playClick();
     } else if (cleanCmd.includes('hire') || cleanCmd.includes('contact')) {
       switchTerminalCmd('hire');
       soundManager.playBeep();
+      if (onOpenRecruiterModal) onOpenRecruiterModal();
+    } else if (cleanCmd.includes('overdrive') || cleanCmd.includes('hack')) {
+      if (onToggleOverdrive) onToggleOverdrive();
+    } else if (cleanCmd.startsWith('theme')) {
+      if (onThemeChange) {
+        if (cleanCmd.includes('matrix')) onThemeChange('matrix');
+        else if (cleanCmd.includes('synth')) onThemeChange('synthwave');
+        else if (cleanCmd.includes('tokyo')) onThemeChange('tokyonight');
+        else onThemeChange('cyberpunk');
+        soundManager.playBeep();
+      }
     } else if (cleanCmd.includes('clear')) {
       switchTerminalCmd('clear');
     } else if (cleanCmd.includes('cat') || cleanCmd.includes('profile')) {
@@ -177,7 +211,10 @@ export default function TerminalPanel({ cvData }) {
           <button 
             type="button"
             className={`cmd-pill ${terminalCmd === 'hire' ? 'active' : ''}`}
-            onClick={() => switchTerminalCmd('hire')}
+            onClick={() => {
+              switchTerminalCmd('hire');
+              if (onOpenRecruiterModal) onOpenRecruiterModal();
+            }}
           >
             <Icons.Sparkles /> $ sudo hire
           </button>
@@ -210,7 +247,7 @@ export default function TerminalPanel({ cvData }) {
             value={cliInput}
             onChange={(e) => setCliInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="escribe 'test', 'whoami', 'skills', 'hire', 'clear' (Tab para autocompletar)..."
+            placeholder="escribe 'test', 'whoami', 'skills', 'hire', 'arch', 'overdrive' (Tab para autocompletar)..."
           />
         </form>
         <span className="terminal-run-hint">↵ ENTER</span>
@@ -299,7 +336,8 @@ export default function TerminalPanel({ cvData }) {
   "databases": ["MongoDB", "MySQL", "SQLite"],
   "methodologies": ["Agile / Scrum", "Unit Testing (Jest)", "Clean Architecture"],
   "open_source": ["fluent-rest-client", "react-apextable-pro", "intl-currency-helper"],
-  "english": "C1-C2 Certified (177h)"
+  "english": "C1-C2 Certified (177h)",
+  "work_modality": "On-site / Hybrid / Remote"
 }`}
             </pre>
           </div>
@@ -322,6 +360,19 @@ export default function TerminalPanel({ cvData }) {
             <div>📍 Modality: Open to On-site, Hybrid & Remote</div>
             <div>📧 Direct Contact: {cvData.contact.email}</div>
             <div>📱 Phone: {cvData.contact.phone}</div>
+            <div style={{ marginTop: '10px' }}>
+              <button
+                type="button"
+                className="npm-run-btn"
+                onClick={() => {
+                  soundManager.playBeep();
+                  if (onOpenRecruiterModal) onOpenRecruiterModal();
+                }}
+              >
+                <Icons.Sparkles size={12} />
+                <span>Abrir Centro de Contacto & vCard</span>
+              </button>
+            </div>
           </div>
         )}
 
@@ -344,8 +395,20 @@ export default function TerminalPanel({ cvData }) {
               <span className="help-cmd-desc">Imprime el objeto JSON de competencias técnicas.</span>
             </div>
             <div className="terminal-help-row">
+              <span className="help-cmd-name">$ arch</span>
+              <span className="help-cmd-desc">Navega a la arquitectura cloud y microservicios.</span>
+            </div>
+            <div className="terminal-help-row">
               <span className="help-cmd-name">$ sudo hire</span>
-              <span className="help-cmd-desc">Inicia el proceso de contacto y contratación.</span>
+              <span className="help-cmd-desc">Inicia el proceso de contacto y contratación directa.</span>
+            </div>
+            <div className="terminal-help-row">
+              <span className="help-cmd-name">$ theme [matrix|synthwave|tokyo|cyberpunk]</span>
+              <span className="help-cmd-desc">Cambia la paleta de colores del IDE.</span>
+            </div>
+            <div className="terminal-help-row">
+              <span className="help-cmd-name">$ overdrive</span>
+              <span className="help-cmd-desc">⚡ Activa o desactiva el modo de sobrecarga cibernética.</span>
             </div>
             <div className="terminal-help-row">
               <span className="help-cmd-name">$ clear</span>

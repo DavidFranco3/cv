@@ -1,5 +1,7 @@
+import { useState, useRef, useEffect } from 'react';
 import { Icons } from '../common/Icons';
 import { soundManager } from '../../utils/soundEffects';
+import { THEMES } from '../../utils/themeManager';
 
 export default function IDETitlebar({
   language,
@@ -8,8 +10,26 @@ export default function IDETitlebar({
   isDownloading,
   onOpenCommandPalette,
   onOpenPdfModal,
+  onOpenRecruiterModal,
+  currentTheme,
+  onThemeChange,
   ui
 }) {
+  const [isThemeOpen, setIsThemeOpen] = useState(false);
+  const themeRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (themeRef.current && !themeRef.current.contains(e.target)) {
+        setIsThemeOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const activeThemeObj = THEMES.find((t) => t.id === currentTheme) || THEMES[0];
+
   return (
     <header className="ide-titlebar">
       <div className="titlebar-left">
@@ -58,7 +78,16 @@ export default function IDETitlebar({
           <kbd className="cmd-palette-kbd">⌘K</kbd>
         </button>
 
-        <div className="live-status-chip" title="Disponible para vacantes On-Site (Presencial), Híbridas o Remotas">
+        {/* Live Status Chip - Clickable to open Recruiter Fast-Track Hub */}
+        <div 
+          className="live-status-chip hover-shine" 
+          title="Click para ver opciones de contratación directa (Presencial / Híbrido / Remoto)"
+          onClick={() => {
+            soundManager.playClick();
+            onOpenRecruiterModal();
+          }}
+          style={{ cursor: 'pointer' }}
+        >
           <div className="sonar-wrapper">
             <span className="sonar-ring ring-1"></span>
             <span className="sonar-ring ring-2"></span>
@@ -75,6 +104,42 @@ export default function IDETitlebar({
       </div>
 
       <div className="titlebar-right">
+        {/* Theme Picker Dropdown */}
+        <div className="theme-picker-wrapper" ref={themeRef} style={{ position: 'relative' }}>
+          <button
+            type="button"
+            className="theme-picker-btn"
+            onClick={() => {
+              soundManager.playClick();
+              setIsThemeOpen(!isThemeOpen);
+            }}
+            title="Cambiar tema de color del IDE"
+          >
+            <span>{activeThemeObj.icon}</span>
+            <span>{activeThemeObj.name.split(' ')[0]}</span>
+          </button>
+
+          {isThemeOpen && (
+            <div className="theme-picker-dropdown animate-slide-up">
+              {THEMES.map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  className={`theme-option-btn ${currentTheme === t.id ? 'active' : ''}`}
+                  onClick={() => {
+                    soundManager.playBeep();
+                    onThemeChange(t.id);
+                    setIsThemeOpen(false);
+                  }}
+                >
+                  <span className="theme-dot" style={{ backgroundColor: t.accentColor }}></span>
+                  <span>{t.icon} {t.name}</span>
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
+
         {/* PDF Preview Button */}
         <button
           type="button"
@@ -131,4 +196,3 @@ export default function IDETitlebar({
     </header>
   );
 }
-

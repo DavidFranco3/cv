@@ -12,7 +12,9 @@ export default function CommandPalette({
   onPreviewPdf,
   onRunTest,
   onCopyText,
-  contactInfo
+  contactInfo,
+  onOpenRecruiterModal,
+  onThemeChange
 }) {
   const [search, setSearch] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -102,12 +104,55 @@ export default function CommandPalette({
       action: () => onLanguageChange('en')
     },
     {
-      id: 'nav-skills',
+      id: 'hire-hub',
+      group: 'Quick Actions',
+      title: currentLanguage === 'es' ? 'Contratación Rápida • vCard & WhatsApp' : 'Hire Fast-Track • vCard & WhatsApp',
+      subtitle: 'On-site / Hybrid / Remote',
+      icon: <Icons.Sparkles />,
+      action: () => {
+        onClose();
+        if (onOpenRecruiterModal) onOpenRecruiterModal();
+      }
+    },
+    {
+      id: 'theme-cyber',
+      group: 'Themes',
+      title: 'Theme: Cyberpunk Neon',
+      subtitle: 'Cyan & Violet Accent',
+      icon: <Icons.Sparkles />,
+      action: () => onThemeChange && onThemeChange('cyberpunk')
+    },
+    {
+      id: 'theme-matrix',
+      group: 'Themes',
+      title: 'Theme: Matrix Hacker',
+      subtitle: 'Green Terminal Phosphor',
+      icon: <Icons.Sparkles />,
+      action: () => onThemeChange && onThemeChange('matrix')
+    },
+    {
+      id: 'theme-synth',
+      group: 'Themes',
+      title: 'Theme: Synthwave 84',
+      subtitle: 'Neon Magenta & Amber Glow',
+      icon: <Icons.Sparkles />,
+      action: () => onThemeChange && onThemeChange('synthwave')
+    },
+    {
+      id: 'theme-tokyo',
+      group: 'Themes',
+      title: 'Theme: Tokyo Night',
+      subtitle: 'Deep Indigo & Soft Lilac',
+      icon: <Icons.Sparkles />,
+      action: () => onThemeChange && onThemeChange('tokyonight')
+    },
+    {
+      id: 'nav-arch',
       group: 'Navigation',
-      title: currentLanguage === 'es' ? 'Ir a Competencias Técnicas' : 'Jump to Technical Skills',
-      subtitle: 'skills.config.ts',
+      title: currentLanguage === 'es' ? 'Ir a Arquitectura Cloud & Microservicios' : 'Jump to Cloud Architecture',
+      subtitle: 'system.topology',
       icon: <Icons.Cpu />,
-      action: () => scrollTo('skills-section')
+      action: () => scrollTo('architecture-section')
     },
     {
       id: 'nav-npm',
