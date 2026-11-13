@@ -32,6 +32,7 @@ export default function IDEStatusbar({
         <span className="status-item">TypeScript React</span>
         <span className="status-item online-status">ESLint: 0 errors</span>
         <button 
+          type="button"
           className="statusbar-quick-cmd"
           onClick={() => {
             soundManager.playClick();
@@ -61,6 +62,7 @@ export default function IDEStatusbar({
 
         {/* Audio Toggle */}
         <button
+          type="button"
           className={`sound-toggle-btn ${!soundEnabled ? 'off' : ''}`}
           onClick={toggleSound}
           title={soundEnabled ? 'Desactivar efectos de sonido SFX' : 'Activar efectos de sonido SFX'}
@@ -70,6 +72,7 @@ export default function IDEStatusbar({
 
         {/* Matrix FX Toggle */}
         <button 
+          type="button"
           className={`matrix-toggle-btn ${!isMatrixActive ? 'off' : ''}`}
           onClick={() => {
             soundManager.playClick();
@@ -84,6 +87,7 @@ export default function IDEStatusbar({
       {/* Acciones directas de documentos */}
       <div className="statusbar-right">
         <button
+          type="button"
           className="statusbar-btn"
           onClick={() => {
             soundManager.playClick();
@@ -96,6 +100,7 @@ export default function IDEStatusbar({
         </button>
         <span className="status-sep">|</span>
         <button 
+          type="button"
           className="statusbar-btn"
           onClick={() => {
             soundManager.playBeep();
@@ -107,6 +112,7 @@ export default function IDEStatusbar({
         </button>
         <span className="status-sep">|</span>
         <button 
+          type="button"
           className="statusbar-btn highlight"
           onClick={() => {
             soundManager.playBeep();

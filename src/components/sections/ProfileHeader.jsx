@@ -67,6 +67,7 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
       {/* Contact Interactive Terminal Flags */}
       <div className="cli-contact-strip">
         <button 
+          type="button"
           className="cli-tag interactive-tag hover-shine" 
           onClick={() => onCopy(cvData.contact.email, 'email')}
           title="Copiar email"
@@ -79,6 +80,7 @@ export default function ProfileHeader({ cvData, handleCopy, copiedKey }) {
         </button>
 
         <button 
+          type="button"
           className="cli-tag interactive-tag hover-shine" 
           onClick={() => onCopy(cvData.contact.phone, 'phone')}
           title="Copiar teléfono"

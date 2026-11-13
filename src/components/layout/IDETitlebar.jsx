@@ -45,6 +45,7 @@ export default function IDETitlebar({
       <div className="titlebar-center">
         {/* Command Palette Trigger Button */}
         <button 
+          type="button"
           className="titlebar-cmd-palette-btn"
           onClick={() => {
             soundManager.playClick();
@@ -76,6 +77,7 @@ export default function IDETitlebar({
       <div className="titlebar-right">
         {/* PDF Preview Button */}
         <button
+          type="button"
           className="ide-btn-preview"
           onClick={() => {
             soundManager.playClick();
@@ -90,6 +92,7 @@ export default function IDETitlebar({
         {/* Language selector */}
         <div className="ide-lang-selector">
           <button 
+            type="button"
             className={`ide-lang-btn ${language === 'es' ? 'active' : ''}`}
             onClick={() => {
               soundManager.playClick();
@@ -99,6 +102,7 @@ export default function IDETitlebar({
             ES
           </button>
           <button 
+            type="button"
             className={`ide-lang-btn ${language === 'en' ? 'active' : ''}`}
             onClick={() => {
               soundManager.playClick();
@@ -111,6 +115,7 @@ export default function IDETitlebar({
 
         {/* Download CV CTA */}
         <button 
+          type="button"
           className="ide-btn-build shine-button"
           onClick={() => {
             soundManager.playBeep();

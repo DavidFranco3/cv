@@ -79,7 +79,9 @@ function App() {
   };
 
   const handleCopy = (text, key) => {
-    navigator.clipboard?.writeText(text);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(() => {});
+    }
     setCopiedKey(key);
     setTimeout(() => setCopiedKey(null), 2000);
   };

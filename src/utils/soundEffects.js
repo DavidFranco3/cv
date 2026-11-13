@@ -6,18 +6,29 @@
 class SoundManager {
   constructor() {
     this.audioCtx = null;
-    this.enabled = false;
+    this.enabled = true; // Enabled by default
   }
 
   init() {
-    if (!this.audioCtx && typeof window !== 'undefined') {
-      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-      if (AudioContextClass) {
-        this.audioCtx = new AudioContextClass();
+    try {
+      if (!this.audioCtx && typeof window !== 'undefined') {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) {
+          this.audioCtx = new AudioContextClass();
+        }
       }
+      if (this.audioCtx && this.audioCtx.state === 'suspended') {
+        this.audioCtx.resume().catch(() => {});
+      }
+    } catch {
+      // AudioContext policy safe fallback
     }
-    if (this.audioCtx && this.audioCtx.state === 'suspended') {
-      this.audioCtx.resume();
+  }
+
+  setEnabled(val) {
+    this.enabled = Boolean(val);
+    if (this.enabled) {
+      this.init();
     }
   }
 
@@ -25,9 +36,17 @@ class SoundManager {
     this.enabled = !this.enabled;
     if (this.enabled) {
       this.init();
-      this.playMechanicalClick(800, 0.03);
+      this.playClick(800, 0.03);
     }
     return this.enabled;
+  }
+
+  playClick(freq = 600, duration = 0.02) {
+    this.playMechanicalClick(freq, duration);
+  }
+
+  playBeep() {
+    this.playBeepSuccess();
   }
 
   playMechanicalClick(freq = 600, duration = 0.02) {
@@ -52,7 +71,7 @@ class SoundManager {
       osc.start();
       osc.stop(this.audioCtx.currentTime + duration);
     } catch {
-      // AudioContext policy fallback
+      // AudioContext policy fallback - fail silently without blocking UI
     }
   }
 
@@ -78,10 +97,9 @@ class SoundManager {
       osc.start();
       osc.stop(this.audioCtx.currentTime + 0.12);
     } catch {
-      // ignore
+      // fail silently without blocking UI
     }
   }
 }
 
 export const soundManager = new SoundManager();
-

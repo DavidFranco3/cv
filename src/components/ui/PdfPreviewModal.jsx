@@ -79,6 +79,7 @@ export default function PdfPreviewModal({
           {/* Doc Switcher */}
           <div className="pdf-switcher-tabs">
             <button
+              type="button"
               className={`pdf-switch-btn ${activeDoc === 'cv' ? 'active' : ''}`}
               onClick={() => {
                 soundManager.playClick();
@@ -88,6 +89,7 @@ export default function PdfPreviewModal({
               Curriculum (CV)
             </button>
             <button
+              type="button"
               className={`pdf-switch-btn ${activeDoc === 'cover' ? 'active' : ''}`}
               onClick={() => {
                 soundManager.playClick();
@@ -101,6 +103,7 @@ export default function PdfPreviewModal({
           {/* Actions */}
           <div className="pdf-modal-actions">
             <button 
+              type="button"
               className="pdf-action-btn"
               onClick={handlePrint}
               title={language === 'es' ? 'Imprimir documento' : 'Print document'}
@@ -110,6 +113,7 @@ export default function PdfPreviewModal({
             </button>
 
             <button 
+              type="button"
               className="pdf-action-btn highlight"
               onClick={handleDownload}
               title={language === 'es' ? 'Descargar archivo PDF' : 'Download PDF file'}
@@ -119,6 +123,7 @@ export default function PdfPreviewModal({
             </button>
 
             <button 
+              type="button"
               className="pdf-close-btn"
               onClick={() => {
                 soundManager.playClick();

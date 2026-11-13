@@ -147,36 +147,42 @@ export default function TerminalPanel({ cvData }) {
         {/* Selector de comandos interactivos */}
         <div className="terminal-quick-cmds">
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'whoami' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('whoami')}
           >
             $ whoami
           </button>
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'test' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('test')}
           >
             <Icons.Play /> $ npm test
           </button>
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'metrics' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('metrics')}
           >
             <Icons.Cpu /> $ sysinfo
           </button>
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'skills' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('skills')}
           >
             $ skills
           </button>
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'hire' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('hire')}
           >
             <Icons.Sparkles /> $ sudo hire
           </button>
           <button 
+            type="button"
             className={`cmd-pill ${terminalCmd === 'clear' ? 'active' : ''}`}
             onClick={() => switchTerminalCmd('clear')}
           >

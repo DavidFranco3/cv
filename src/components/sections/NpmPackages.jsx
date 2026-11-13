@@ -58,7 +58,9 @@ export default function NpmPackages({ language = 'es' }) {
 
   const handleCopyCmd = (cmd, pkgName) => {
     soundManager.playBeep();
-    navigator.clipboard?.writeText(cmd);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(cmd).catch(() => {});
+    }
     setCopiedPkg(pkgName);
     setTimeout(() => setCopiedPkg(null), 2000);
   };
@@ -103,6 +105,7 @@ export default function NpmPackages({ language = 'es' }) {
           {PACKAGES.map((pkg, idx) => (
             <button
               key={pkg.name}
+              type="button"
               className={`npm-tab-btn ${activeTab === idx ? 'active' : ''}`}
               onClick={() => {
                 soundManager.playClick();
@@ -131,6 +134,7 @@ export default function NpmPackages({ language = 'es' }) {
               <span className="npm-prompt">$</span>
               <code>{PACKAGES[activeTab].installCmd}</code>
               <button
+                type="button"
                 className="npm-copy-btn hover-shine"
                 onClick={() => handleCopyCmd(PACKAGES[activeTab].installCmd, PACKAGES[activeTab].name)}
                 title="Copiar comando de instalación"
