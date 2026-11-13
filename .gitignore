@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignore root PDF files (keep public/*.pdf tracked for web serving)
+/*.pdf

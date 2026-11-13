@@ -1,6 +1,16 @@
 import { jsPDF } from 'jspdf';
 import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { translations } from './src/utils/translations.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const PUBLIC_DIR = path.resolve(__dirname, 'public');
+
+if (!fs.existsSync(PUBLIC_DIR)) {
+  fs.mkdirSync(PUBLIC_DIR, { recursive: true });
+}
 
 function sanitizeForPdf(obj) {
   if (typeof obj === 'string') {
@@ -451,8 +461,8 @@ function createCoverLetterPdf(rawData, lang, outputPath) {
   console.log('Cover Letter PDF generated successfully:', outputPath);
 }
 
-// Generate ES & EN PDFs
-createCvPdf(translations.es.cv, '/home/david/development/cv/CV_David_Franco_ES.pdf');
-createCvPdf(translations.en.cv, '/home/david/development/cv/CV_David_Franco_EN.pdf');
-createCoverLetterPdf(translations.es.cv, 'es', '/home/david/development/cv/Carta_Presentacion_David_Franco_ES.pdf');
-createCoverLetterPdf(translations.en.cv, 'en', '/home/david/development/cv/Cover_Letter_David_Franco_EN.pdf');
+// Generate ES & EN PDFs directly to public directory
+createCvPdf(translations.es.cv, path.join(PUBLIC_DIR, 'CV_David_Franco_ES.pdf'));
+createCvPdf(translations.en.cv, path.join(PUBLIC_DIR, 'CV_David_Franco_EN.pdf'));
+createCoverLetterPdf(translations.es.cv, 'es', path.join(PUBLIC_DIR, 'Carta_Presentacion_David_Franco_ES.pdf'));
+createCoverLetterPdf(translations.en.cv, 'en', path.join(PUBLIC_DIR, 'Cover_Letter_David_Franco_EN.pdf'));
