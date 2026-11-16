@@ -24,7 +24,7 @@ export default function RecruiterModal({
   if (!isOpen) return null;
 
   const atsSummaryText = `Candidato: José David Ayala Franco
-Rol: Full Stack Engineer (TypeScript, React, Node.js)
+Rol: Senior Full Stack Developer (.NET Core 8, React & Node.js)
 Ubicación: Parácuaro, Michoacán, México
 Disponibilidad: Inmediata
 Modalidad de Trabajo: 100% Home Office (Remoto México)
@@ -51,7 +51,7 @@ VERSION:3.0
 N:Ayala Franco;José David;;;
 FN:José David Ayala Franco
 ORG:Senior Software Developer
-TITLE:Full Stack Engineer
+TITLE:Senior Full Stack Developer
 TEL;TYPE=CELL,VOICE:+524531527363
 EMAIL;TYPE=INTERNET,PREF:josedavidayalafranco3@gmail.com
 URL:https://linkedin.com/in/david-franco-247701220
@@ -71,7 +71,7 @@ END:VCARD`;
   };
 
   const whatsappUrl = `https://wa.me/524531527363?text=${encodeURIComponent(
-    'Hola David, revisé tu portafolio y tu CV para la vacante de Full Stack Engineer. Me gustaría agendar una breve conversación contigo.'
+    'Hola David, revisé tu portafolio y tu CV para la vacante de Senior Full Stack Developer (.NET & React). Me gustaría agendar una breve conversación contigo.'
   )}`;
 
   return (

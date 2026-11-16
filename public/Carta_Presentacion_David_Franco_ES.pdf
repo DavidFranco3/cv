@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3597
+/Length 3732
 >>
 stream
 0.5670000000000001 w
@@ -53,58 +53,58 @@ BT
 11.5 TL
 0. g
 62.3622047244094517 683.7167716535432191 Td
-(Atención: Equipo de Atracción de Talento | EQUALS TRUE) Tj
+(Atención: María Esther Mejía | Reclutamiento & Talento Qualtop) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
 62.3622047244094517 661.0396062992125508 Td
-(Solicitud de Empleo - Full Stack Engineer \(TypeScript, React, Node.js\)) Tj
+(Solicitud de Empleo - Desarrollador/a Full Stack Senior \(.NET Core 8, React & Node.js\)) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 638.3624409448818824 Td
-(Estimado equipo de selección de EQUALS TRUE, me dirijo a ustedes con gran entusiasmo para presentar) Tj
-T* (mi candidatura a la posición de Full Stack Engineer \(TypeScript, React, Node.js\). Me inspira) Tj
-T* (profundamente la misión de EQUALS TRUE como talent partner auténtico comprometido con la igualdad) Tj
-T* (salarial, la inclusión genuina y una cultura remota transparente para el mejor talento de las Américas.) Tj
+(Estimada María Esther Mejía, me dirijo a usted con gran entusiasmo tras revisar su publicación en) Tj
+T* (LinkedIn para presentar mi postulación a la posición de Desarrollador/a Full Stack Senior en Qualtop. Con) Tj
+T* (4 años de experiencia profesional en ingeniería de software, arquitectura de sistemas transaccionales y) Tj
+T* (desarrollo full-stack con .NET Core 8, React \(v18+\) y Node.js, me motiva enormemente sumarme a su) Tj
+T* (equipo para liderar soluciones de alto impacto en el sector financiero.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 577.4175590551180903 Td
-(Cuento con 4 años de experiencia profesional construyendo y desplegando aplicaciones completas en) Tj
-T* (producción con TypeScript de extremo a extremo: en frontend con React, traduciendo diseños de Figma) Tj
-T* (en componentes reutilizables y documentados con Storybook; y en backend con Node.js y NestJS,) Tj
-T* (estructurando APIs RESTful limpias, microservicios y colas asíncronas. En bases de datos relacionales,) Tj
-T* (modelo esquemas eficientes y empleo ORMs \(TypeORM y Prisma\), logrando optimizar consultas críticas) Tj
-T* (con una reducción del 93% en tiempos de respuesta.) Tj
+62.3622047244094517 564.6616535433070112 Td
+(A lo largo de mi trayectoria en Isotech, he diseñado y operado aplicaciones críticas de alta concurrencia.) Tj
+T* (Cuento con sólida experiencia construyendo microservicios y APIs RESTful seguras con .NET Core y) Tj
+T* (Node.js, integrando autenticación robusta \(JWT, RBAC\) e implementando conexiones directas con) Tj
+T* (proveedores de servicios financieros y pasarelas de pago \(incluyendo flujos de transferencias SPEI y) Tj
+T* (conciliación automatizada\). En el frontend, desarrollo interfaces modernas y reactivas con React \(v18+\),) Tj
+T* (TypeScript y gestión de estado avanzada.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 490.9608661417322537 Td
-(Tengo experiencia operando en entornos cloud en AWS \(S3, CloudWatch, gestión de configuraciones y) Tj
-T* (resolución de incidentes vía logs\), orquestación con Docker y pipelines de CI/CD con GitHub Actions.) Tj
-T* (Integro pruebas automatizadas con Jest como estándar de calidad y trabajo con total autonomía: priorizo) Tj
-T* (la comunicación temprana de bloqueos, tomo ownership de las funcionalidades de punta a punta y) Tj
-T* (colaboro fluidamente en inglés gracias a mi certificación C1-C2 \(177 horas acreditadas por Edutin) Tj
-T* (Academy\).) Tj
+62.3622047244094517 478.2049606299211746 Td
+(En capa de persistencia e infraestructura, modelo y optimizo bases de datos relacionales en MySQL) Tj
+T* (\(v8.0\), habiendo logrado una reducción del 93% en la latencia de procesamiento de transacciones \(de 45s) Tj
+T* (a 3s\). Asimismo, opero entornos cloud en AWS \(S3, EC2, CloudWatch\), contenerización con Docker y) Tj
+T* (automatización de pipelines de CI/CD con GitHub Actions, garantizando una entrega continua con cero) Tj
+T* (fricciones bajo metodologías ágiles Scrum y Kanban.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 404.5041732283463602 Td
-(Mi formación en Ingeniería en Informática y mi pasión por crear software bien diseñado y confiable se) Tj
-T* (alinean perfectamente con su cultura 'remote-first' e inclusiva. Agradezco sinceramente su tiempo y) Tj
-T* (consideración, y espero con entusiasmo la oportunidad de conversar sobre cómo puedo sumar valor a su) Tj
-T* (equipo.) Tj
+(Graduado como Ingeniero en Informática y con nivel de inglés bilingüe certificado \(C1-C2 por Edutin) Tj
+T* (Academy con 177 horas\), poseo una sólida capacidad analítica, comunicación transparente y enfoque en) Tj
+T* (la calidad de código con pruebas unitarias en Jest. Agradezco sinceramente su tiempo y consideración, y) Tj
+T* (quedo a su entera disposición para conversar en una entrevista técnica.) Tj
 ET
 BT
 /F1 10 Tf
@@ -125,7 +125,7 @@ BT
 10.9249999999999989 TL
 0. g
 62.3622047244094517 302.4569291338581252 Td
-(Full Stack Engineer | TypeScript, React & Node.js) Tj
+(Senior Full Stack Developer | .NET Core 8, React & Node.js) Tj
 ET
 endstream
 endobj
@@ -299,7 +299,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116143758-06'00')
+/CreationDate (D:20261116144602-06'00')
 >>
 endobj
 20 0 obj
@@ -313,33 +313,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003801 00000 n 
-0000005618 00000 n 
+0000003936 00000 n 
+0000005753 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003858 00000 n 
-0000003983 00000 n 
-0000004113 00000 n 
-0000004246 00000 n 
-0000004383 00000 n 
-0000004506 00000 n 
-0000004635 00000 n 
-0000004767 00000 n 
-0000004903 00000 n 
-0000005031 00000 n 
-0000005158 00000 n 
-0000005287 00000 n 
-0000005420 00000 n 
-0000005522 00000 n 
-0000005866 00000 n 
-0000005952 00000 n 
+0000003993 00000 n 
+0000004118 00000 n 
+0000004248 00000 n 
+0000004381 00000 n 
+0000004518 00000 n 
+0000004641 00000 n 
+0000004770 00000 n 
+0000004902 00000 n 
+0000005038 00000 n 
+0000005166 00000 n 
+0000005293 00000 n 
+0000005422 00000 n 
+0000005555 00000 n 
+0000005657 00000 n 
+0000006001 00000 n 
+0000006087 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <9A81CA3F97C761B431438BDFFEDC0C44> <9A81CA3F97C761B431438BDFFEDC0C44> ]
+/ID [ <0937897A294996DB4D2B96357B079FAD> <0937897A294996DB4D2B96357B079FAD> ]
 >>
 startxref
-6056
+6191
 %%EOF

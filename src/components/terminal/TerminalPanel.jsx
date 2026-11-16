@@ -271,7 +271,7 @@ export default function TerminalPanel({
 
             {testStage >= 1 && (
               <div className="test-subline pass-pop">
-                ✓ Core Stack: TypeScript, React, Node.js, Express <span className="time-tag">[0.4ms]</span>
+                ✓ Core Stack: React (v18+), .NET Core 8, Node.js, MySQL <span className="time-tag">[0.4ms]</span>
               </div>
             )}
             {testStage >= 2 && (
