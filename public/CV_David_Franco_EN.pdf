@@ -16,7 +16,7 @@
 endobj
 4 0 obj
 <<
-/Length 9262
+/Length 9123
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-124.9652952755906341 773.291574803149615 Td
-(SENIOR FRONTEND SOFTWARE ENGINEER | REACT & TYPESCRIPT) Tj
+122.655295275590575 773.291574803149615 Td
+(SENIOR FULL STACK WEB DEVELOPER | REACT, NODE.JS & REDUX) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Senior Frontend Engineer with 4 years of experience specializing in scalable SPA architectures with React,) Tj
-T* (TypeScript, and reusable component ecosystems \(Design Systems\). Proficient in server state management via React) Tj
-T* (Query \(TanStack Query\) and global client state \(Redux/Context API\), automated testing with Jest and Cypress, and) Tj
-T* (high-fidelity Figma translation. Hands-on experience with AI engineering tools and Model Context Protocol \(MCP\).) Tj
-T* (Bilingual \(English C1-C2\).) Tj
+(Senior Full Stack Web Developer with 4 years of experience building complex SPAs and scalable backend services) Tj
+T* (using React, Redux \(Redux Toolkit\), TypeScript, and Node.js \(Express/NestJS\). Proven track record in global state) Tj
+T* (architecture, designing and consuming RESTful APIs, relational/NoSQL persistence \(MySQL/MongoDB\), and) Tj
+T* (database performance tuning \(93% latency reduction\). Automated testing with Jest and cloud deployments on AWS) Tj
+T* (with CI/CD. Bilingual \(English C1-C2\).) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,84 +117,84 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  Frontend & React: ) Tj
+(•  Frontend & Redux: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-135.8096850393700947 613.9844881889763428 Td
-(React  |  TypeScript  |  JavaScript \(ES6+\)  |  SPA Architecture  |  HTML5/CSS3  |  Hooks) Tj
+139.0396850393700845 613.9844881889763428 Td
+(React  |  Redux Toolkit  |  TypeScript  |  JavaScript \(ES6+\)  |  SPAs  |  Custom Hooks) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 598.3939370078740012 Td
-(•  State & Integration: ) Tj
+(•  Backend & Node.js: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-141.0346850393700606 598.3939370078740012 Td
-(React Query \(TanStack\)  |  Redux  |  Context API  |  RESTful APIs  |  Client/Server State) Tj
+142.6496850393700981 598.3939370078740012 Td
+(Node.js  |  Express.js  |  NestJS  |  RESTful APIs  |  Microservices  |  JWT/RBAC) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 582.8033858267715459 Td
-(•  Design Systems & UI: ) Tj
+(•  Databases & Cache: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-151.5796850393700765 582.8033858267715459 Td
-(Design Systems  |  Figma Inspection  |  Reusable Components  |  Responsive \(WCAG\)) Tj
+144.5496850393700754 582.8033858267715459 Td
+(SQL \(PostgreSQL/MySQL\)  |  MongoDB  |  Redis Cache  |  Query Optimization) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 567.212834645669318 Td
-(•  Testing & Quality: ) Tj
+(•  Cloud & DevOps: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-133.909685039370089 567.212834645669318 Td
-(Jest  |  Cypress  |  Unit & E2E Testing  |  Code Reviews  |  Clean Code) Tj
+131.7246850393700583 567.212834645669318 Td
+(AWS \(S3/EC2/Lambda\)  |  Docker  |  GitHub Actions  |  CI/CD Pipelines  |  Git) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 551.6222834645668627 Td
-(•  AI & Modern Tooling: ) Tj
+(•  Testing & Quality: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-148.0646850393700618 551.6222834645668627 Td
-(Model Context Protocol \(MCP\)  |  AI Tooling \(Cursor/Copilot\)  |  Git  |  CI/CD Pipelines) Tj
+133.909685039370089 551.6222834645668627 Td
+(Jest  |  Cypress  |  Unit & Integration Testing  |  Clean Code  |  Reviews) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 536.0317322834645211 Td
-(•  Methodology & Backend: ) Tj
+(•  Architecture & Agile: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-167.3496850393701152 536.0317322834645211 Td
-(Agile / Scrum  |  Jira  |  Full-Stack Collaboration  |  API Integration  |  Mentoring) Tj
+147.9696850393700629 536.0317322834645211 Td
+(Clean Architecture  |  Large-Scale SPAs  |  Agile / Scrum  |  Performance Tuning) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -241,79 +241,79 @@ BT
 11.7299999999999986 TL
 0. g
 42.5196850393700814 463.4648031496062686 Td
-(Senior Frontend Software Engineer) Tj
+(Senior Full Stack Web Developer) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Technical leadership in complex SPA frontend engineering using React and TypeScript, architecting modular Design) Tj
-T* (Systems, server-state management, and AI-assisted workflows.) Tj
+(Technical leadership in full-stack large-scale SPA engineering and microservices with React, Redux Toolkit, and) Tj
+T* (Node.js/NestJS, designing RESTful APIs and CI/CD pipelines.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 420.0947244094488155 Td
-(•  Architected and developed high-performance, modular SPAs using React and TypeScript, establishing reusable) Tj
-T* (component libraries and robust custom hooks.) Tj
+(•  Architected and developed high-traffic, modular SPAs using React and TypeScript, handling complex state flows via) Tj
+T* (Redux and Redux Toolkit.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 394.2994488188976447 Td
-(•  Implemented an enterprise Design System translated from Figma specifications, ensuring visual consistency,) Tj
-T* (WCAG accessibility, and maintainable UI code.) Tj
+(•  Engineered scalable backend microservices and RESTful APIs using Node.js, Express.js, and NestJS, enforcing) Tj
+T* (secure authentication with JWT and RBAC.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 368.5041732283464739 Td
-(•  Managed asynchronous server state using React Query \(TanStack Query\) alongside global client state) Tj
-T* (\(Redux/Context API\), boosting application reactivity.) Tj
+(•  Tuned relational SQL schemas \(MySQL/PostgreSQL\) and MongoDB queries, slashing complex analytical reporting) Tj
+T* (latency by 93% \(from 45s down to 3s\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 342.7088976377953031 Td
-(•  Authored comprehensive automated testing suites with Jest and Cypress \(unit and E2E\), safeguarding production) Tj
-T* (stability and preventing regressions.) Tj
+(•  Configured automated CI/CD deployment pipelines using GitHub Actions and Git version control, cutting release) Tj
+T* (defect rates by 40%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 316.9136220472441892 Td
-(•  Adopted AI-assisted development tooling and Model Context Protocol \(MCP\) integrations, significantly accelerating) Tj
-T* (context analysis and feature delivery.) Tj
+(•  Integrated AWS cloud infrastructure \(S3 asset storage, EC2, REST APIs\) and containerized applications with) Tj
+T* (Docker, ensuring high availability.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 291.1183464566929615 Td
-(•  Collaborated seamlessly with backend teams to integrate secure RESTful APIs, streamlining full-stack) Tj
-T* (communication and cutting integration cycles by 40%.) Tj
+(•  Authored automated unit and integration testing suites with Jest and Cypress, safeguarding production reliability) Tj
+T* (and code stability.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 265.3230708661418475 Td
-(•  Spearheaded root-cause investigations for complex frontend production bugs, transforming post-incident findings) Tj
-T* (into architectural system improvements.) Tj
+(•  Optimized frontend rendering performance by implementing memoized Redux selectors, state normalization, and) Tj
+T* (component-level code splitting.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 239.5277952755906199 Td
-(•  Led technical and constructive code reviews, authored detailed technical specs, and mentored teammates in) Tj
-T* (international bilingual Agile/Scrum settings.) Tj
+(•  Led technical code reviews, contributed to architectural system design, and participated actively in Agile/Scrum) Tj
+T* (ceremonies in fluent English.) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -609,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116141448-06'00')
+/CreationDate (D:20261116142458-06'00')
 >>
 endobj
 20 0 obj
@@ -623,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010290 00000 n 
-0000012107 00000 n 
+0000010151 00000 n 
+0000011968 00000 n 
 0000000015 00000 n 
 0000000976 00000 n 
-0000010347 00000 n 
-0000010472 00000 n 
-0000010602 00000 n 
-0000010735 00000 n 
-0000010872 00000 n 
-0000010995 00000 n 
-0000011124 00000 n 
-0000011256 00000 n 
-0000011392 00000 n 
-0000011520 00000 n 
-0000011647 00000 n 
-0000011776 00000 n 
-0000011909 00000 n 
-0000012011 00000 n 
-0000012355 00000 n 
-0000012441 00000 n 
+0000010208 00000 n 
+0000010333 00000 n 
+0000010463 00000 n 
+0000010596 00000 n 
+0000010733 00000 n 
+0000010856 00000 n 
+0000010985 00000 n 
+0000011117 00000 n 
+0000011253 00000 n 
+0000011381 00000 n 
+0000011508 00000 n 
+0000011637 00000 n 
+0000011770 00000 n 
+0000011872 00000 n 
+0000012216 00000 n 
+0000012302 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <627E9C96496FD4B6DE4A402CC1F83CC4> <627E9C96496FD4B6DE4A402CC1F83CC4> ]
+/ID [ <DBD3039B1589D09FAACD6C602F5C9037> <DBD3039B1589D09FAACD6C602F5C9037> ]
 >>
 startxref
-12545
+12406
 %%EOF

@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Frontend Software Engineer | React & TypeScript",
-      summary: "Senior Frontend Engineer con 4 años de experiencia especializándose en arquitecturas SPA escalables con React, TypeScript y ecosistemas de componentes modulares (Design Systems). Dominio en gestión de estado servidor con React Query (TanStack Query) y estado global con Redux/Context API, pruebas con Jest y Cypress, e inspección en Figma. Experiencia práctica en herramientas asistidas por IA y protocolos MCP (Model Context Protocol). Bilingüe (Inglés C1-C2).",
+      role: "Senior Full Stack Web Developer | React, Node.js & Redux",
+      summary: "Senior Full Stack Web Developer con 4 años de experiencia construyendo SPAs complejas y servicios backend escalables con React, Redux (Redux Toolkit), TypeScript y Node.js (Express/NestJS). Especialista en gestión de estado global, diseño y consumo de APIs RESTful, persistencia en bases de datos relacionales y NoSQL (MySQL/MongoDB), y optimización de rendimiento (93% de reducción en latencia). Pruebas automatizadas con Jest y despliegues cloud en AWS con CI/CD. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & React", techs: ["React", "TypeScript", "JavaScript (ES6+)", "SPA Architecture", "HTML5/CSS3", "Hooks"], color: "#f59e0b" },
-        { category: "Estado & Integración", techs: ["React Query (TanStack)", "Redux", "Context API", "RESTful APIs", "Client/Server State"], color: "#3b82f6" },
-        { category: "Design Systems & UI", techs: ["Design Systems", "Figma Inspection", "Componentes Reutilizables", "Responsive (WCAG)"], color: "#10b981" },
-        { category: "Testing & Calidad", techs: ["Jest", "Cypress", "Pruebas Unitarias & E2E", "Code Reviews", "Clean Code"], color: "#ec4899" },
-        { category: "IA & Herramientas", techs: ["Model Context Protocol (MCP)", "AI Tooling (Cursor/Copilot)", "Git", "CI/CD Pipelines"], color: "#8b5cf6" },
-        { category: "Metodología & Backend", techs: ["Agile / Scrum", "Jira", "Full-Stack Collaboration", "API Integration", "Mentoring"], color: "#6366f1" }
+        { category: "Frontend & Redux", techs: ["React", "Redux Toolkit", "TypeScript", "JavaScript (ES6+)", "SPAs", "Custom Hooks"], color: "#f59e0b" },
+        { category: "Backend & Node.js", techs: ["Node.js", "Express.js", "NestJS", "RESTful APIs", "Microservicios", "JWT/RBAC"], color: "#3b82f6" },
+        { category: "Bases de Datos & Caché", techs: ["SQL (PostgreSQL/MySQL)", "MongoDB", "Redis Cache", "Query Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/Lambda)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#6366f1" },
+        { category: "Testing & Calidad", techs: ["Jest", "Cypress", "Pruebas Unitarias & Integración", "Clean Code", "Reviews"], color: "#ec4899" },
+        { category: "Arquitectura & Ágil", techs: ["Clean Architecture", "SPAs a Gran Escala", "Agile / Scrum", "Performance Tuning"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Frontend Software Engineer",
+          role: "Senior Full Stack Web Developer",
           date: "2022 - Presente",
-          desc: "Liderazgo técnico en desarrollo frontend de SPAs complejas con React y TypeScript, arquitectando sistemas de diseño modulares, gestión de estado servidor y flujos asistidos por IA.",
+          desc: "Liderazgo técnico en desarrollo full-stack de SPAs a gran escala y microservicios con React, Redux Toolkit y Node.js/NestJS, diseñando APIs RESTful y pipelines de CI/CD.",
           bullets: [
-            "Arquitecté y desarrollé SPAs modulares de alto rendimiento con React y TypeScript, implementando componentes reutilizables y custom hooks optimizados.",
-            "Construí e implementé un Design System unificado a partir de diseños en Figma, garantizando consistencia visual, accesibilidad (WCAG) y código limpio.",
-            "Gestioné el estado del servidor con React Query (TanStack Query) y el estado global con Redux y Context API, optimizando la sincronización y el renderizado.",
-            "Diseñé y ejecuté suites de pruebas automatizadas unitarias y de extremo a extremo con Jest y Cypress, asegurando la estabilidad continua en producción.",
-            "Integré herramientas asistidas por IA y flujos con Model Context Protocol (MCP), incrementando la velocidad de ingeniería y el análisis de contexto de código.",
-            "Colaboré estrechamente con equipos backend en el consumo de APIs RESTful seguras, validando esquemas de datos y reduciendo tiempos de integración en un 40%.",
-            "Lideré la resolución de incidencias complejas y análisis de causa raíz en producción, transformando diagnósticos técnicos en mejoras sistémicas de la plataforma.",
-            "Conduje revisiones de código técnicas y constructivas, redacté especificaciones y facilité ceremonias Scrum en equipos internacionales bilingües."
+            "Arquitecté y desarrollé SPAs modulares de alto tráfico con React y TypeScript, gestionando flujos de datos complejos mediante Redux y Redux Toolkit.",
+            "Diseñé y mantuve microservicios backend y APIs RESTful escalables con Node.js, Express.js y NestJS, implementando autenticación segura con JWT y RBAC.",
+            "Optimizé consultas e indexación en bases de datos relacionales MySQL/PostgreSQL y MongoDB, reduciendo los tiempos de respuesta de 45s a 3s (mejora del 93%).",
+            "Automaticé flujos de integración y despliegue continuo (CI/CD) con GitHub Actions y control en Git, acelerando entregas y reduciendo fallos en un 40%.",
+            "Integré servicios cloud en AWS (S3 para almacenamiento y APIs en la nube) y orquesté contenedores con Docker, asegurando alta disponibilidad y resiliencia.",
+            "Escribí suites completas de pruebas unitarias y de integración con Jest y Cypress, garantizando estabilidad en producción y prevención de regresiones.",
+            "Optimizé el rendimiento de renderizado en el cliente mediante selectores memoizados en Redux, normalización de estado y lazy loading de componentes.",
+            "Colaboré activamente en revisiones de código, planificación de arquitectura y ceremonias ágiles Scrum en equipos internacionales bilingües en inglés."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Senior Frontend Software Engineer (React, TypeScript & Design Systems)",
-        recipient: "Atención: Equipo de Selección de Talento | MedTrainer, Inc.",
-        body1: "Estimado equipo de selección de MedTrainer, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Senior Frontend Software Engineer en modalidad 100% remota. Con 4 años de experiencia profesional en desarrollo de software, especializándome en la arquitectura de SPAs escalables con React y TypeScript, la construcción de Design Systems robustos y la integración de flujos modernos asistidos por IA y protocolos MCP, me entusiasma la misión de MedTrainer de empoderar a organizaciones de salud con tecnología regulatoria y de cumplimiento de primer nivel.",
-        body2: "A lo largo de mi trayectoria en Isotech, he liderado decisiones de arquitectura frontend de alto impacto. Mis logros clave incluyen el diseño de arquitecturas modulares en React y TypeScript, la gestión eficiente del estado del servidor mediante React Query (TanStack Query) y estado global con Redux y Context API, y la implementación de componentes reutilizables a partir de especificaciones de alta fidelidad en Figma. Asimismo, implementé suites de pruebas automatizadas con Jest y Cypress para blindar la estabilidad del producto y acelerar los ciclos de entrega.",
-        body3: "Cuento con experiencia práctica integrando herramientas asistidas por IA y aprovechando el protocolo MCP (Model Context Protocol) para maximizar la velocidad de ingeniería y el análisis de contexto de código. Poseo sólida comprensión de la comunicación con APIs backend (REST/JSON) para colaborar fluidamente en equipos full-stack, y cuento con nivel de inglés bilingüe certificado (C1-C2 por Edutin Academy con 177 horas), lo que me permite colaborar de forma natural y autónoma en entornos ágiles (Scrum) distribuidos internacionalmente.",
-        body4: "Mi formación como Ingeniero en Informática, mi capacidad para transformar requerimientos complejos en especificaciones técnicas claras y mi pasión por el código limpio y la excelencia de usuario se alinean perfectamente con los estándares de MedTrainer. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Senior Full Stack Web Developer (React, Node.js & Redux)",
+        recipient: "Atención: Equipo de Atracción de Talento | Empleos8",
+        body1: "Estimado equipo de selección de Empleos8, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Senior Full Stack Web Developer (React, Node.js & Redux) en modalidad 100% remota. Con 4 años de experiencia profesional en ingeniería de software, arquitectura de SPAs a gran escala y servicios backend escalables, me entusiasma la oportunidad de colaborar con su cliente internacional líder en la industria del entretenimiento y el deporte.",
+        body2: "A lo largo de mi trayectoria en Isotech, he asumido el liderazgo de aplicaciones web críticas y flujos de datos complejos. Mis logros clave incluyen el diseño de arquitecturas modulares en React y TypeScript, la gestión avanzada del estado global mediante Redux y Redux Toolkit (manejando caché de datos, sincronización asíncrona y normalización de entidades), y el desarrollo de APIs RESTful robustas en Node.js, Express y NestJS. Asimismo, optimicé consultas SQL y NoSQL reduciendo tiempos de latencia en un 93%, y automaticé pipelines de CI/CD que disminuyeron incidencias en un 40%.",
+        body3: "Cuento con amplia experiencia en pruebas unitarias y de integración con Jest y Cypress, despliegues contenerizados en Docker y consumo de servicios cloud en AWS. Además, cuento con nivel de inglés bilingüe certificado (C1-C2 por Edutin Academy con 177 horas acreditadas), lo que me permite explicar decisiones técnicas complejas con total fluidez, participar en sesiones de live coding en inglés y colaborar de forma autónoma con equipos globales multidisciplinarios.",
+        body4: "Mi formación como Ingeniero en Informática, mi capacidad de resolución analítica y mi enfoque pragmático orientado a resultados me preparan para integrarme de forma inmediata y generar valor duradero. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Frontend Software Engineer | React & TypeScript",
-      summary: "Senior Frontend Engineer with 4 years of experience specializing in scalable SPA architectures with React, TypeScript, and reusable component ecosystems (Design Systems). Proficient in server state management via React Query (TanStack Query) and global client state (Redux/Context API), automated testing with Jest and Cypress, and high-fidelity Figma translation. Hands-on experience with AI engineering tools and Model Context Protocol (MCP). Bilingual (English C1-C2).",
+      role: "Senior Full Stack Web Developer | React, Node.js & Redux",
+      summary: "Senior Full Stack Web Developer with 4 years of experience building complex SPAs and scalable backend services using React, Redux (Redux Toolkit), TypeScript, and Node.js (Express/NestJS). Proven track record in global state architecture, designing and consuming RESTful APIs, relational/NoSQL persistence (MySQL/MongoDB), and database performance tuning (93% latency reduction). Automated testing with Jest and cloud deployments on AWS with CI/CD. Bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & React", techs: ["React", "TypeScript", "JavaScript (ES6+)", "SPA Architecture", "HTML5/CSS3", "Hooks"], color: "#f59e0b" },
-        { category: "State & Integration", techs: ["React Query (TanStack)", "Redux", "Context API", "RESTful APIs", "Client/Server State"], color: "#3b82f6" },
-        { category: "Design Systems & UI", techs: ["Design Systems", "Figma Inspection", "Reusable Components", "Responsive (WCAG)"], color: "#10b981" },
-        { category: "Testing & Quality", techs: ["Jest", "Cypress", "Unit & E2E Testing", "Code Reviews", "Clean Code"], color: "#ec4899" },
-        { category: "AI & Modern Tooling", techs: ["Model Context Protocol (MCP)", "AI Tooling (Cursor/Copilot)", "Git", "CI/CD Pipelines"], color: "#8b5cf6" },
-        { category: "Methodology & Backend", techs: ["Agile / Scrum", "Jira", "Full-Stack Collaboration", "API Integration", "Mentoring"], color: "#6366f1" }
+        { category: "Frontend & Redux", techs: ["React", "Redux Toolkit", "TypeScript", "JavaScript (ES6+)", "SPAs", "Custom Hooks"], color: "#f59e0b" },
+        { category: "Backend & Node.js", techs: ["Node.js", "Express.js", "NestJS", "RESTful APIs", "Microservices", "JWT/RBAC"], color: "#3b82f6" },
+        { category: "Databases & Cache", techs: ["SQL (PostgreSQL/MySQL)", "MongoDB", "Redis Cache", "Query Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/Lambda)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#6366f1" },
+        { category: "Testing & Quality", techs: ["Jest", "Cypress", "Unit & Integration Testing", "Clean Code", "Reviews"], color: "#ec4899" },
+        { category: "Architecture & Agile", techs: ["Clean Architecture", "Large-Scale SPAs", "Agile / Scrum", "Performance Tuning"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Frontend Software Engineer",
+          role: "Senior Full Stack Web Developer",
           date: "2022 - Present",
-          desc: "Technical leadership in complex SPA frontend engineering using React and TypeScript, architecting modular Design Systems, server-state management, and AI-assisted workflows.",
+          desc: "Technical leadership in full-stack large-scale SPA engineering and microservices with React, Redux Toolkit, and Node.js/NestJS, designing RESTful APIs and CI/CD pipelines.",
           bullets: [
-            "Architected and developed high-performance, modular SPAs using React and TypeScript, establishing reusable component libraries and robust custom hooks.",
-            "Implemented an enterprise Design System translated from Figma specifications, ensuring visual consistency, WCAG accessibility, and maintainable UI code.",
-            "Managed asynchronous server state using React Query (TanStack Query) alongside global client state (Redux/Context API), boosting application reactivity.",
-            "Authored comprehensive automated testing suites with Jest and Cypress (unit and E2E), safeguarding production stability and preventing regressions.",
-            "Adopted AI-assisted development tooling and Model Context Protocol (MCP) integrations, significantly accelerating context analysis and feature delivery.",
-            "Collaborated seamlessly with backend teams to integrate secure RESTful APIs, streamlining full-stack communication and cutting integration cycles by 40%.",
-            "Spearheaded root-cause investigations for complex frontend production bugs, transforming post-incident findings into architectural system improvements.",
-            "Led technical and constructive code reviews, authored detailed technical specs, and mentored teammates in international bilingual Agile/Scrum settings."
+            "Architected and developed high-traffic, modular SPAs using React and TypeScript, handling complex state flows via Redux and Redux Toolkit.",
+            "Engineered scalable backend microservices and RESTful APIs using Node.js, Express.js, and NestJS, enforcing secure authentication with JWT and RBAC.",
+            "Tuned relational SQL schemas (MySQL/PostgreSQL) and MongoDB queries, slashing complex analytical reporting latency by 93% (from 45s down to 3s).",
+            "Configured automated CI/CD deployment pipelines using GitHub Actions and Git version control, cutting release defect rates by 40%.",
+            "Integrated AWS cloud infrastructure (S3 asset storage, EC2, REST APIs) and containerized applications with Docker, ensuring high availability.",
+            "Authored automated unit and integration testing suites with Jest and Cypress, safeguarding production reliability and code stability.",
+            "Optimized frontend rendering performance by implementing memoized Redux selectors, state normalization, and component-level code splitting.",
+            "Led technical code reviews, contributed to architectural system design, and participated actively in Agile/Scrum ceremonies in fluent English."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Senior Frontend Software Engineer (React, TypeScript & Design Systems)",
-        recipient: "To: Talent Acquisition Team | MedTrainer, Inc.",
-        body1: "Dear Talent Acquisition Team at MedTrainer, I am writing to express my strong enthusiasm for the Senior Frontend Software Engineer role in the 100% remote modality from Mexico. With 4 years of software engineering experience specializing in scalable React and TypeScript SPA architectures, robust Design System implementations, and modern AI/MCP workflows, I am eager to contribute to MedTrainer's mission of delivering intuitive, mission-critical compliance technology for healthcare organizations.",
-        body2: "Throughout my career at Isotech, I have spearheaded frontend architectural initiatives from concept to production. Key milestones include designing modular React and TypeScript applications, managing asynchronous server state via React Query (TanStack Query) alongside global client state (Redux/Context API), and translating complex Figma designs into reusable, accessible (WCAG) component libraries. Furthermore, I authored automated unit and E2E testing suites using Jest and Cypress, preventing regressions and ensuring platform reliability.",
-        body3: "I bring hands-on experience adopting AI-assisted development tools and Model Context Protocol (MCP) integrations to streamline context analysis and sprint velocity. With a strong foundational awareness of backend API integrations, I collaborate seamlessly across full-stack teams. Additionally, I hold certified bilingual English proficiency (C1-C2 with 177 verified hours), enabling fluent communication and self-driven execution in fast-paced international Agile/Scrum settings.",
-        body4: "Holding a Bachelor's Degree in Computer Engineering, I combine analytical rigor with an ownership mindset dedicated to code quality, constructive mentorship, and exceptional user experiences. Thank you for your time and consideration; I look forward to discussing how my frontend qualifications can drive business value for MedTrainer during an interview.",
+        subject: "Application for Senior Full Stack Web Developer (React, Node.js & Redux)",
+        recipient: "To: Talent Acquisition Team | Empleos8",
+        body1: "Dear Talent Acquisition Team at Empleos8, I am writing to express my strong enthusiasm for the Senior Full Stack Web Developer position (React, Node.js & Redux) in the 100% remote modality. With 4 years of professional software engineering experience specializing in large-scale React SPAs, complex Redux state architectures, and scalable Node.js backend services, I am eager to contribute to your international team supporting modern applications in the entertainment and sports industry.",
+        body2: "Throughout my career at Isotech, I have taken ownership of mission-critical web platforms and microservices. Key milestones include architecting modular React and TypeScript applications, managing complex global client states with Redux and Redux Toolkit (entity normalization, asynchronous thunks, and cache invalidation), and engineering secure RESTful APIs using Node.js, Express.js, and NestJS. Additionally, I optimized relational SQL schemas and MongoDB queries to achieve a 93% latency reduction, while automating CI/CD pipelines that cut release defects by 40%.",
+        body3: "I bring hands-on experience authoring automated test suites with Jest and Cypress, containerizing services with Docker, and integrating AWS cloud infrastructure. Furthermore, I hold certified bilingual English proficiency (C1-C2 with 177 verified hours), enabling me to clearly articulate architectural decisions, perform screen-share live coding reviews, and collaborate seamlessly across distributed global engineering teams.",
+        body4: "Holding a Bachelor's Degree in Computer Engineering, I combine analytical rigor with an independent problem-solving mindset committed to software reliability and clean architecture. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }

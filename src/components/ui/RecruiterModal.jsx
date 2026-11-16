@@ -24,10 +24,10 @@ export default function RecruiterModal({
   if (!isOpen) return null;
 
   const atsSummaryText = `Candidato: José David Ayala Franco
-Rol: Senior Frontend Software Engineer (React, TypeScript & Design Systems)
+Rol: Senior Full Stack Web Developer (React, Node.js & Redux)
 Ubicación: Parácuaro, Michoacán, México
 Disponibilidad: Inmediata
-Modalidad de Trabajo: 100% Remote (Home Office México)
+Modalidad de Trabajo: 100% Home Office (Remoto México)
 Teléfono: +52 453-152-7363
 Email: josedavidayalafranco3@gmail.com
 LinkedIn: https://linkedin.com/in/david-franco-247701220
@@ -51,7 +51,7 @@ VERSION:3.0
 N:Ayala Franco;José David;;;
 FN:José David Ayala Franco
 ORG:Senior Software Developer
-TITLE:Senior Frontend Software Engineer
+TITLE:Senior Full Stack Web Developer
 TEL;TYPE=CELL,VOICE:+524531527363
 EMAIL;TYPE=INTERNET,PREF:josedavidayalafranco3@gmail.com
 URL:https://linkedin.com/in/david-franco-247701220
