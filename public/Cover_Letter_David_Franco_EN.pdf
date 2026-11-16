@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3736
+/Length 3715
 >>
 stream
 0.5670000000000001 w
@@ -53,79 +53,80 @@ BT
 11.5 TL
 0. g
 62.3622047244094517 683.7167716535432191 Td
-(To: IT Talent Acquisition Team | Cummins Latin America) Tj
+(To: Talent Acquisition Team | Bradescard México) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
 62.3622047244094517 661.0396062992125508 Td
-(Application for Software Engineer - Senior - ITSM \(ServiceNow, Web Technologies & APIs\)) Tj
+(Application for Senior Backend Developer \(Java, Spring Boot & Microservices\)) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 638.3624409448818824 Td
-(Dear Talent Acquisition Team at Cummins, I am writing to express my strong interest in the Software) Tj
-T* (Engineer - Senior - ITSM position. With 4 years of software engineering experience specializing in) Tj
-T* (ServiceNow platform development \(Incident, Problem, Change Management\), web technologies) Tj
-T* (\(JavaScript, HTML5, CSS3\), and secure RESTful API integrations, I am eager to contribute to Cummins') Tj
-T* (world-class information technology operations and digital transformation initiatives in Guadalajara.) Tj
+(Dear Talent Acquisition Team at Bradescard México, I am writing to express my strong enthusiasm for the) Tj
+T* (Senior Backend Developer position at your Guadalajara / Tlaquepaque campus \(Camino al ITESO\). With 4) Tj
+T* (years of software engineering experience specializing in scalable Java and Spring Boot microservices) Tj
+T* (architectures, enterprise RESTful APIs, and mission-critical cloud backends, I am excited by the) Tj
+T* (opportunity to contribute to Bradescard's financial technology innovation backed by Banco Bradesco's) Tj
+T* (international prestige.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 564.6616535433070112 Td
-(Throughout my career at Isotech, I have spearheaded the design, implementation, and Level 3 support of) Tj
-T* (critical enterprise solutions. Key accomplishments include configuring Business Rules, Script Includes,) Tj
-T* (Client Scripts, and Flow Designer automations, building custom Catalog Items and Record Producers, and) Tj
-T* (enforcing security governance through ACLs and UI Policies. Additionally, I built automated test suites) Tj
-T* (using ServiceNow's Automated Test Framework \(ATF\) that cut release defects by 40%, while tuning) Tj
-T* (relational SQL queries and analytics dashboards to achieve a 93% latency reduction.) Tj
+62.3622047244094517 551.9057480314960458 Td
+(Throughout my career at Isotech, I have led backend systems design, development, and production) Tj
+T* (stability. Key accomplishments include implementing resilient microservices adhering to Domain-Driven) Tj
+T* (Design \(DDD\), Clean Architecture, and 12-Factor App principles, integrating enterprise security protocols) Tj
+T* (using OAuth2 and JWT, and tuning SQL databases and Redis Cache layers to achieve a 93% query) Tj
+T* (latency reduction. Furthermore, I built automated CI/CD pipelines with GitHub Actions and Docker,) Tj
+T* (reducing deployment defects by 40%.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 478.2049606299211746 Td
-(I bring hands-on experience integrating ServiceNow with external third-party software and systems via) Tj
-T* (RESTful APIs and managing release deployments using Update Sets and Git version control. Furthermore,) Tj
-T* (I hold certified bilingual English proficiency \(C1-C2 with 177 hours\), enabling seamless collaboration) Tj
-T* (across international engineering teams in Agile/Scrum environments, with full commitment to the hybrid) Tj
-T* (schedule in Guadalajara.) Tj
+62.3622047244094517 465.4490551181101523 Td
+(I bring hands-on experience establishing secure, encrypted communications between backend) Tj
+T* (microservices and mobile applications \(Android/Kotlin and Flutter\), implementing cloud observability and) Tj
+T* (structured logging with AWS CloudWatch, and writing rigorous unit and integration tests with JUnit and) Tj
+T* (Mockito. Additionally, I hold certified bilingual English proficiency \(C1-C2 with 177 hours\), enabling) Tj
+T* (seamless Agile collaboration, with full commitment to your hybrid work schedule in Tlaquepaque.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 404.5041732283463602 Td
-(Holding a degree in Computer Engineering and a solid foundation in ITIL principles, I combine analytical) Tj
-T* (rigor with a problem-solving mindset committed to software reliability and business continuity. Thank you) Tj
-T* (for your time and consideration; I welcome the opportunity to discuss how my technical qualifications align) Tj
-T* (with Cummins' mission during an interview.) Tj
+62.3622047244094517 391.748267716535338 Td
+(Holding a degree in Computer Engineering, I combine analytical rigor with a disciplined focus on) Tj
+T* (transaction security, software maintainability, and business reliability. Thank you for your time and) Tj
+T* (consideration; I welcome the opportunity to discuss how my qualifications align with Bradescard's goals) Tj
+T* (during an interview.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 335.0553543307085533 Td
+62.3622047244094517 322.2994488188975311 Td
 (Sincerely,) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-62.3622047244094517 315.2128346456692043 Td
+62.3622047244094517 302.4569291338581252 Td
 (José David Ayala Franco) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-62.3622047244094517 302.4569291338581252 Td
-(Software Engineer - Senior - ITSM | ServiceNow & Systems) Tj
+62.3622047244094517 289.7010236220471597 Td
+(Senior Backend Developer | Java & Microservices) Tj
 ET
 endstream
 endobj
@@ -299,7 +300,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116115555-06'00')
+/CreationDate (D:20261116120946-06'00')
 >>
 endobj
 20 0 obj
@@ -313,33 +314,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000003940 00000 n 
-0000005757 00000 n 
+0000003919 00000 n 
+0000005736 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000003997 00000 n 
-0000004122 00000 n 
-0000004252 00000 n 
-0000004385 00000 n 
-0000004522 00000 n 
-0000004645 00000 n 
-0000004774 00000 n 
-0000004906 00000 n 
-0000005042 00000 n 
-0000005170 00000 n 
-0000005297 00000 n 
-0000005426 00000 n 
-0000005559 00000 n 
-0000005661 00000 n 
-0000006005 00000 n 
-0000006091 00000 n 
+0000003976 00000 n 
+0000004101 00000 n 
+0000004231 00000 n 
+0000004364 00000 n 
+0000004501 00000 n 
+0000004624 00000 n 
+0000004753 00000 n 
+0000004885 00000 n 
+0000005021 00000 n 
+0000005149 00000 n 
+0000005276 00000 n 
+0000005405 00000 n 
+0000005538 00000 n 
+0000005640 00000 n 
+0000005984 00000 n 
+0000006070 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <D228EF6D3DDAF0639192CC48254A3B63> <D228EF6D3DDAF0639192CC48254A3B63> ]
+/ID [ <127E9F307A2EA048956BDF90A9FA0D5D> <127E9F307A2EA048956BDF90A9FA0D5D> ]
 >>
 startxref
-6195
+6174
 %%EOF

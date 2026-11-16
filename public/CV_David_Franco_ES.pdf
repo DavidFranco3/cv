@@ -16,7 +16,7 @@
 endobj
 4 0 obj
 <<
-/Length 9296
+/Length 9283
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-125.3327952755905841 773.291574803149615 Td
-(SOFTWARE ENGINEER - SENIOR - ITSM | SERVICENOW & SYSTEMS) Tj
+134.7302952755905778 773.291574803149615 Td
+(PROGRAMADOR SENIOR BACKEND | JAVA & MICROSERVICIOS) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Senior Software Engineer con 4 años de experiencia especializándose en desarrollo de software, diseño de) Tj
-T* (soluciones en plataforma ServiceNow y gestión de servicios de TI \(ITSM\). Amplia experiencia en creación de) Tj
-T* (Business Rules, Script Includes, Client Scripts, ACLs y automatización con Flow Designer, así como integración con) Tj
-T* (APIs REST y tecnologías web \(JavaScript, HTML5, CSS3\). Experiencia en pruebas automatizadas con ATF,) Tj
-T* (optimización de consultas SQL y soporte L3. Bilingüe \(Inglés C1-C2\).) Tj
+(Programador Senior Backend con 4 años de experiencia diseñando e implementando microservicios escalables y) Tj
+T* (resilientes con Java, Spring Boot y APIs REST empresariales. Sólida trayectoria aplicando principios de) Tj
+T* (Domain-Driven Design \(DDD\), Clean Architecture y 12-Factor App, con autenticación segura vía OAuth2/JWT y) Tj
+T* (persistencia en SQL \(PostgreSQL/SQL Server\) y Redis Cache. Experiencia en observabilidad en AWS \(CloudWatch\),) Tj
+T* (contenedores Docker y CI/CD con GitHub Actions. Bilingüe \(Inglés C1-C2\).) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,84 +117,84 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  ServiceNow & ITSM: ) Tj
+(•  Backend & Java: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-145.3096850393700947 613.9844881889763428 Td
-(ServiceNow  |  ITSM \(Incident/Change\)  |  Business Rules  |  Script Includes  |  Flow Designer) Tj
+129.3496850393700583 613.9844881889763428 Td
+(Java 11+  |  Spring Boot  |  Spring Security  |  Microservicios  |  REST APIs  |  Spring Cloud) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 598.3939370078740012 Td
-(•  Desarrollo Web & APIs: ) Tj
+(•  Arquitectura & Patrones: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-158.7996850393700754 598.3939370078740012 Td
-(JavaScript \(ES6+\)  |  RESTful APIs  |  HTML5/CSS3  |  System Integrations  |  Studio IDE) Tj
+165.7346850393701061 598.3939370078740012 Td
+(Clean Architecture  |  Domain-Driven Design \(DDD\)  |  Hexagonal  |  Event-Driven) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 582.8033858267715459 Td
-(•  Seguridad & Plataforma: ) Tj
+(•  Seguridad & Auth: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-164.2146850393700959 582.8033858267715459 Td
-(Access Control Lists \(ACLs\)  |  UI Policies & Actions  |  Update Sets  |  Secure Coding) Tj
+136.9496850393700811 582.8033858267715459 Td
+(OAuth2  |  JWT  |  OpenID Connect  |  TLS / Crypto  |  RBAC  |  Secure Coding) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 567.212834645669318 Td
-(•  Testing & Calidad: ) Tj
+(•  Bases de Datos & Caché: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-135.9996850393700925 567.212834645669318 Td
-(Automated Test Framework \(ATF\)  |  Unit Testing  |  CI/CD  |  Git  |  Soporte Nivel 3) Tj
+167.7296850393700822 567.212834645669318 Td
+(SQL \(PostgreSQL/MS SQL\)  |  Redis Cache  |  MongoDB  |  Query Optimization) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 551.6222834645668627 Td
-(•  Datos & Analytics: ) Tj
+(•  Cloud & DevOps: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-137.329685039370105 551.6222834645668627 Td
-(SQL \(MySQL/SQL Server\)  |  Platform Analytics  |  Dashboards  |  Query Optimization) Tj
+131.7246850393700583 551.6222834645668627 Td
+(AWS \(CloudWatch/Fargate\)  |  Docker  |  GitHub Actions  |  CI/CD Pipelines  |  Linux) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 536.0317322834645211 Td
-(•  Metodología & IA: ) Tj
+(•  Testing & Móvil / Calidad: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-134.3846850393700834 536.0317322834645211 Td
-(ITIL Best Practices  |  Agile / Scrum  |  Virtual Agent  |  Herramientas IA) Tj
+168.2046850393700481 536.0317322834645211 Td
+(JUnit  |  Mockito  |  Unit Testing  |  Kotlin / Android  |  Code Reviews) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -241,79 +241,79 @@ BT
 11.7299999999999986 TL
 0. g
 42.5196850393700814 463.4648031496062686 Td
-(Software Engineer - Senior - ITSM) Tj
+(Programador Senior Backend) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Liderazgo técnico en desarrollo de aplicaciones empresariales y soluciones ITSM en ServiceNow, arquitectando flujos) Tj
-T* (de trabajo, integraciones de APIs REST seguras y pipelines de CI/CD.) Tj
+(Liderazgo técnico en desarrollo backend de microservicios con Java/Spring Boot, diseñando APIs REST de alta) Tj
+T* (resiliencia, autenticación OAuth2/JWT y despliegues en AWS.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 420.0947244094488155 Td
-(•  Diseñé y desarrollé soluciones en ServiceNow \(Incident, Problem y Change\), configurando Business Rules, Script) Tj
-T* (Includes, Client Scripts y Flow Designer.) Tj
+(•  Diseñé e implementé microservicios escalables con Java y Spring Boot, aplicando principios de Clean Architecture,) Tj
+T* (Domain-Driven Design \(DDD\) y 12-Factor App.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 394.2994488188976447 Td
-(•  Implementé esquemas de seguridad y control de acceso mediante ACLs, UI Policies y UI Actions, garantizando) Tj
-T* (cumplimiento normativo y código seguro.) Tj
+(•  Desarrollé APIs RESTful empresariales con Spring Security, implementando autenticación y autorización robusta) Tj
+T* (mediante OAuth2, JWT y OpenID Connect.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 368.5041732283464739 Td
-(•  Construí integraciones bidireccionales entre ServiceNow y sistemas externos vía APIs RESTful y JSON, utilizando) Tj
-T* (JavaScript moderno y Studio IDE.) Tj
+(•  Optimizé esquemas y consultas complejas en bases de datos SQL \(PostgreSQL/SQL Server\) y Redis Cache,) Tj
+T* (reduciendo tiempos de respuesta de 45s a 3s \(93%\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 342.7088976377953031 Td
-(•  Automaticé procesos de TI creando Catalog Items y Record Producers personalizados, agilizando la gestión de) Tj
-T* (solicitudes y autoservicio para usuarios.) Tj
+(•  Automaticé pipelines de CI/CD con GitHub Actions y gestión de versiones en Git, agilizando el ciclo de entrega y) Tj
+T* (reduciendo incidencias en un 40%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 316.9136220472441892 Td
-(•  Diseñé y ejecuté suites de pruebas con Automated Test Framework \(ATF\) y pruebas unitarias, reduciendo defectos) Tj
-T* (de regresión en producción en un 40%.) Tj
+(•  Orquesté microservicios contenerizados en Docker y despliegues en la nube de AWS, configurando) Tj
+T* (observabilidad, logs estructurados y métricas en CloudWatch.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 291.1183464566929615 Td
-(•  Optimizé consultas de base de datos SQL y dashboards analíticos de la plataforma, disminuyendo los tiempos de) Tj
-T* (carga en reportes críticos en un 93%.) Tj
+(•  Implementé comunicación segura con aplicaciones móviles nativas \(Android/Kotlin y Flutter\), aplicando cifrado,) Tj
+T* (validación de certificados y tokens JWT.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 265.3230708661418475 Td
-(•  Gestioné despliegues mediante Update Sets y control de versiones en Git, participando en revisiones de código) Tj
-T* (seguro y resolución de incidencias Nivel 3.) Tj
+(•  Escribí suites de pruebas unitarias y de integración con JUnit y Mockito, asegurando alta cobertura de código y) Tj
+T* (cumplimiento de estándares de seguridad.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 239.5277952755906199 Td
-(•  Promoví mejores prácticas de ITIL y marcos ágiles Scrum en equipos multidisciplinarios globales, elaborando) Tj
-T* (documentación técnica para soporte.) Tj
+(•  Participé activamente en revisiones de código seguro, decisiones de diseño de arquitectura de software y) Tj
+T* (ceremonias ágiles Scrum en equipos multidisciplinarios.) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -609,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116115555-06'00')
+/CreationDate (D:20261116120946-06'00')
 >>
 endobj
 20 0 obj
@@ -623,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010324 00000 n 
-0000012141 00000 n 
+0000010311 00000 n 
+0000012128 00000 n 
 0000000015 00000 n 
 0000000976 00000 n 
-0000010381 00000 n 
-0000010506 00000 n 
-0000010636 00000 n 
-0000010769 00000 n 
-0000010906 00000 n 
-0000011029 00000 n 
-0000011158 00000 n 
-0000011290 00000 n 
-0000011426 00000 n 
-0000011554 00000 n 
-0000011681 00000 n 
-0000011810 00000 n 
-0000011943 00000 n 
-0000012045 00000 n 
-0000012389 00000 n 
-0000012475 00000 n 
+0000010368 00000 n 
+0000010493 00000 n 
+0000010623 00000 n 
+0000010756 00000 n 
+0000010893 00000 n 
+0000011016 00000 n 
+0000011145 00000 n 
+0000011277 00000 n 
+0000011413 00000 n 
+0000011541 00000 n 
+0000011668 00000 n 
+0000011797 00000 n 
+0000011930 00000 n 
+0000012032 00000 n 
+0000012376 00000 n 
+0000012462 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <C0B651099FD529AA6BA8EEC2CD8CEB51> <C0B651099FD529AA6BA8EEC2CD8CEB51> ]
+/ID [ <786A3E509C3C2600DC38A5788EC8F179> <786A3E509C3C2600DC38A5788EC8F179> ]
 >>
 startxref
-12579
+12566
 %%EOF

@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Engineer - Senior - ITSM | ServiceNow & Systems",
-      summary: "Senior Software Engineer con 4 años de experiencia especializándose en desarrollo de software, diseño de soluciones en plataforma ServiceNow y gestión de servicios de TI (ITSM). Amplia experiencia en creación de Business Rules, Script Includes, Client Scripts, ACLs y automatización con Flow Designer, así como integración con APIs REST y tecnologías web (JavaScript, HTML5, CSS3). Experiencia en pruebas automatizadas con ATF, optimización de consultas SQL y soporte L3. Bilingüe (Inglés C1-C2).",
+      role: "Programador Senior Backend | Java & Microservicios",
+      summary: "Programador Senior Backend con 4 años de experiencia diseñando e implementando microservicios escalables y resilientes con Java, Spring Boot y APIs REST empresariales. Sólida trayectoria aplicando principios de Domain-Driven Design (DDD), Clean Architecture y 12-Factor App, con autenticación segura vía OAuth2/JWT y persistencia en SQL (PostgreSQL/SQL Server) y Redis Cache. Experiencia en observabilidad en AWS (CloudWatch), contenedores Docker y CI/CD con GitHub Actions. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "ServiceNow & ITSM", techs: ["ServiceNow", "ITSM (Incident/Change)", "Business Rules", "Script Includes", "Flow Designer"], color: "#3b82f6" },
-        { category: "Desarrollo Web & APIs", techs: ["JavaScript (ES6+)", "RESTful APIs", "HTML5/CSS3", "System Integrations", "Studio IDE"], color: "#f59e0b" },
-        { category: "Seguridad & Plataforma", techs: ["Access Control Lists (ACLs)", "UI Policies & Actions", "Update Sets", "Secure Coding"], color: "#6366f1" },
-        { category: "Testing & Calidad", techs: ["Automated Test Framework (ATF)", "Unit Testing", "CI/CD", "Git", "Soporte Nivel 3"], color: "#10b981" },
-        { category: "Datos & Analytics", techs: ["SQL (MySQL/SQL Server)", "Platform Analytics", "Dashboards", "Query Optimization"], color: "#8b5cf6" },
-        { category: "Metodología & IA", techs: ["ITIL Best Practices", "Agile / Scrum", "Virtual Agent", "Herramientas IA"], color: "#ec4899" }
+        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Security", "Microservicios", "REST APIs", "Spring Cloud"], color: "#3b82f6" },
+        { category: "Arquitectura & Patrones", techs: ["Clean Architecture", "Domain-Driven Design (DDD)", "Hexagonal", "Event-Driven"], color: "#f59e0b" },
+        { category: "Seguridad & Auth", techs: ["OAuth2", "JWT", "OpenID Connect", "TLS / Crypto", "RBAC", "Secure Coding"], color: "#6366f1" },
+        { category: "Bases de Datos & Caché", techs: ["SQL (PostgreSQL/MS SQL)", "Redis Cache", "MongoDB", "Query Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (CloudWatch/Fargate)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#8b5cf6" },
+        { category: "Testing & Móvil / Calidad", techs: ["JUnit", "Mockito", "Unit Testing", "Kotlin / Android", "Code Reviews"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Software Engineer - Senior - ITSM",
+          role: "Programador Senior Backend",
           date: "2022 - Presente",
-          desc: "Liderazgo técnico en desarrollo de aplicaciones empresariales y soluciones ITSM en ServiceNow, arquitectando flujos de trabajo, integraciones de APIs REST seguras y pipelines de CI/CD.",
+          desc: "Liderazgo técnico en desarrollo backend de microservicios con Java/Spring Boot, diseñando APIs REST de alta resiliencia, autenticación OAuth2/JWT y despliegues en AWS.",
           bullets: [
-            "Diseñé y desarrollé soluciones en ServiceNow (Incident, Problem y Change), configurando Business Rules, Script Includes, Client Scripts y Flow Designer.",
-            "Implementé esquemas de seguridad y control de acceso mediante ACLs, UI Policies y UI Actions, garantizando cumplimiento normativo y código seguro.",
-            "Construí integraciones bidireccionales entre ServiceNow y sistemas externos vía APIs RESTful y JSON, utilizando JavaScript moderno y Studio IDE.",
-            "Automaticé procesos de TI creando Catalog Items y Record Producers personalizados, agilizando la gestión de solicitudes y autoservicio para usuarios.",
-            "Diseñé y ejecuté suites de pruebas con Automated Test Framework (ATF) y pruebas unitarias, reduciendo defectos de regresión en producción en un 40%.",
-            "Optimizé consultas de base de datos SQL y dashboards analíticos de la plataforma, disminuyendo los tiempos de carga en reportes críticos en un 93%.",
-            "Gestioné despliegues mediante Update Sets y control de versiones en Git, participando en revisiones de código seguro y resolución de incidencias Nivel 3.",
-            "Promoví mejores prácticas de ITIL y marcos ágiles Scrum en equipos multidisciplinarios globales, elaborando documentación técnica para soporte."
+            "Diseñé e implementé microservicios escalables con Java y Spring Boot, aplicando principios de Clean Architecture, Domain-Driven Design (DDD) y 12-Factor App.",
+            "Desarrollé APIs RESTful empresariales con Spring Security, implementando autenticación y autorización robusta mediante OAuth2, JWT y OpenID Connect.",
+            "Optimizé esquemas y consultas complejas en bases de datos SQL (PostgreSQL/SQL Server) y Redis Cache, reduciendo tiempos de respuesta de 45s a 3s (93%).",
+            "Automaticé pipelines de CI/CD con GitHub Actions y gestión de versiones en Git, agilizando el ciclo de entrega y reduciendo incidencias en un 40%.",
+            "Orquesté microservicios contenerizados en Docker y despliegues en la nube de AWS, configurando observabilidad, logs estructurados y métricas en CloudWatch.",
+            "Implementé comunicación segura con aplicaciones móviles nativas (Android/Kotlin y Flutter), aplicando cifrado, validación de certificados y tokens JWT.",
+            "Escribí suites de pruebas unitarias y de integración con JUnit y Mockito, asegurando alta cobertura de código y cumplimiento de estándares de seguridad.",
+            "Participé activamente en revisiones de código seguro, decisiones de diseño de arquitectura de software y ceremonias ágiles Scrum en equipos multidisciplinarios."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Software Engineer - Senior - ITSM (ServiceNow, Web Technologies & APIs)",
-        recipient: "Atención: Equipo de Selección de Talento IT | Cummins Latin America",
-        body1: "Estimado equipo de selección de Cummins, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Software Engineer - Senior - ITSM. Con 4 años de experiencia profesional diseñando y desarrollando software empresarial, implementando soluciones en plataforma ServiceNow (Incident, Problem, Change Management), e integrando tecnologías web y APIs RESTful seguras, considero que mi trayectoria técnica y enfoque en calidad y resiliencia aportarán valor tangible a las operaciones de TI de Cummins en Guadalajara.",
-        body2: "A lo largo de mi trayectoria en Isotech, he liderado desarrollos críticos y soporte de nivel 3. Mis logros clave incluyen la configuración de Business Rules, Script Includes, Client Scripts y flujos con Flow Designer, la creación de Catalog Items y Record Producers, y la implementación de controles de seguridad mediante ACLs y UI Policies. Asimismo, desarrollé suites de pruebas con Automated Test Framework (ATF) y pruebas unitarias que redujeron las incidencias en un 40%, optimizando simultáneamente consultas SQL y dashboards analíticos para lograr una mejora de rendimiento del 93%.",
-        body3: "Cuento con sólida experiencia integrando ServiceNow con aplicaciones de terceros mediante servicios web (REST/JSON) y administrando ciclos de vida de código con Update Sets y Git bajo estándares de codificación segura. Además, cuento con certificación bilingüe en inglés (C1-C2 por Edutin Academy con 177 horas acreditadas), lo que me permite colaborar con total naturalidad en ceremonias ágiles (Scrum) y equipos globales multidisciplinarios, con total disposición para el esquema híbrido en Guadalajara.",
-        body4: "Mi formación como Ingeniero en Informática y mi compromiso con las mejores prácticas de ITIL y la mejora continua me preparan para integrarme con éxito a la cultura de excelencia e innovación de Cummins. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Programador Senior Backend (Java, Spring Boot & Microservicios)",
+        recipient: "Atención: Equipo de Atracción de Talento | Bradescard México",
+        body1: "Estimado equipo de selección de Bradescard México, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Programador Senior Backend en su sede de Guadalajara / Tlaquepaque (Camino al ITESO). Con 4 años de experiencia profesional en ingeniería de software, arquitectura de microservicios con Java y Spring Boot, diseño de APIs RESTful y aplicaciones de misión crítica, me identifico profundamente con el liderazgo de Bradescard en el sector financiero y el respaldo global de Banco Bradesco.",
+        body2: "A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad de diseñar y mantener soluciones backend escalables y resilientes. Mis logros clave incluyen la implementación de microservicios bajo principios de Domain-Driven Design (DDD), Clean Architecture y 12-Factor App, la integración de esquemas de autenticación con OAuth2 y JWT, y la optimización de bases de datos SQL y capas de caché en Redis, reduciendo los tiempos de respuesta en un 93%. Asimismo, automaticé flujos de CI/CD con GitHub Actions y Docker, reduciendo incidencias en producción en un 40%.",
+        body3: "Poseo experiencia comprobada asegurando la comunicación confiable y cifrada entre servicios backend y aplicaciones móviles (Android/Kotlin y Flutter), aplicando estándares de observabilidad y trazabilidad en AWS (CloudWatch) y suites de pruebas automatizadas con JUnit y Mockito. Adicionalmente, cuento con certificación bilingüe en inglés (C1-C2 por Edutin Academy con 177 horas), lo que me permite colaborar con agilidad en equipos técnicos multidisciplinarios, con total disponibilidad para su esquema de trabajo híbrido.",
+        body4: "Mi formación como Ingeniero en Informática y mi compromiso con el código limpio, la seguridad transaccional y el alto rendimiento me preparan para generar valor inmediato a las iniciativas digitales de Bradescard México. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Software Engineer - Senior - ITSM | ServiceNow & Systems",
-      summary: "Senior Software Engineer with 4 years of experience specializing in software design, ServiceNow platform solutions, and enterprise IT Service Management (ITSM). Proven track record developing Business Rules, Script Includes, Client Scripts, ACLs, and automated workflows using Flow Designer, integrated via RESTful APIs and web technologies (JavaScript, HTML5, CSS3). Strong experience in automated testing with ATF, SQL tuning, and Level 3 production support. Bilingual (English C1-C2).",
+      role: "Senior Backend Developer | Java & Microservices",
+      summary: "Senior Backend Developer with 4 years of experience architecting and deploying scalable, resilient microservices using Java, Spring Boot, and enterprise REST APIs. Proven track record applying Domain-Driven Design (DDD), Clean Architecture, and 12-Factor App principles, with robust OAuth2/JWT security and database persistence across SQL (PostgreSQL/SQL Server) and Redis Cache. Hands-on experience with AWS cloud observability (CloudWatch), Docker, and CI/CD via GitHub Actions. Bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "ServiceNow & ITSM", techs: ["ServiceNow", "ITSM (Incident/Change)", "Business Rules", "Script Includes", "Flow Designer"], color: "#3b82f6" },
-        { category: "Web Development & APIs", techs: ["JavaScript (ES6+)", "RESTful APIs", "HTML5/CSS3", "System Integrations", "Studio IDE"], color: "#f59e0b" },
-        { category: "Security & Governance", techs: ["Access Control Lists (ACLs)", "UI Policies & Actions", "Update Sets", "Secure Coding"], color: "#6366f1" },
-        { category: "Testing & Quality", techs: ["Automated Test Framework (ATF)", "Unit Testing", "CI/CD", "Git", "Level 3 Support"], color: "#10b981" },
-        { category: "Data & Analytics", techs: ["SQL (MySQL/SQL Server)", "Platform Analytics", "Dashboards", "Query Optimization"], color: "#8b5cf6" },
-        { category: "Methodology & AI", techs: ["ITIL Best Practices", "Agile / Scrum", "Virtual Agent", "AI Productivity Tools"], color: "#ec4899" }
+        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Security", "Microservices", "REST APIs", "Spring Cloud"], color: "#3b82f6" },
+        { category: "Architecture & Patterns", techs: ["Clean Architecture", "Domain-Driven Design (DDD)", "Hexagonal", "Event-Driven"], color: "#f59e0b" },
+        { category: "Security & Auth", techs: ["OAuth2", "JWT", "OpenID Connect", "TLS / Crypto", "RBAC", "Secure Coding"], color: "#6366f1" },
+        { category: "Databases & Cache", techs: ["SQL (PostgreSQL/MS SQL)", "Redis Cache", "MongoDB", "Query Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (CloudWatch/Fargate)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#8b5cf6" },
+        { category: "Testing & Mobile / Quality", techs: ["JUnit", "Mockito", "Unit Testing", "Kotlin / Android", "Code Reviews"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Software Engineer - Senior - ITSM",
+          role: "Senior Backend Developer",
           date: "2022 - Present",
-          desc: "Technical leadership in enterprise application development and ServiceNow ITSM solutions, architecting automated workflows, secure REST API integrations, and CI/CD deployment pipelines.",
+          desc: "Technical leadership in Java/Spring Boot backend microservices development, designing resilient RESTful APIs, OAuth2/JWT authentication, and cloud CI/CD deployments.",
           bullets: [
-            "Designed and developed ServiceNow solutions (Incident, Problem, Change), configuring Business Rules, Script Includes, Client Scripts, and Flow Designer.",
-            "Enforced enterprise platform security and governance by implementing ACLs, UI Policies, and UI Actions, adhering to strict secure coding principles.",
-            "Built bi-directional integrations between ServiceNow and third-party systems using RESTful APIs and JSON with modern JavaScript in Studio IDE.",
-            "Automated IT processes by creating custom Catalog Items and Record Producers, streamlining service request handling and employee self-service.",
-            "Authored automated test suites with Automated Test Framework (ATF) and unit tests, reducing regression defects in production releases by 40%.",
-            "Optimized underlying SQL queries and platform analytical dashboards, slashing data processing and reporting latency by 93% (from 45s to 3s).",
-            "Managed release packaging via Update Sets and Git version control, participating in secure peer code reviews and delivering Level 3 technical support.",
-            "Championed ITIL standards and Agile/Scrum delivery across cross-functional global teams, generating comprehensive technical documentation."
+            "Designed and implemented scalable backend microservices using Java and Spring Boot, applying Clean Architecture, Domain-Driven Design (DDD), and 12-Factor App.",
+            "Engineered secure enterprise RESTful APIs with Spring Security, enforcing robust authentication and authorization via OAuth2, JWT, and OpenID Connect.",
+            "Tuned SQL schemas (PostgreSQL/MS SQL) and leveraged Redis Cache, slashing complex query and analytical reporting latency by 93% (from 45s down to 3s).",
+            "Configured automated CI/CD deployment pipelines using GitHub Actions and Git, accelerating release frequency and cutting production defect rates by 40%.",
+            "Orchestrated containerized microservices deployments with Docker across AWS cloud infrastructure, enabling structured logging and metrics in CloudWatch.",
+            "Established secure communications with mobile applications (Android/Kotlin and Flutter), enforcing TLS encryption, payload integrity, and token auth.",
+            "Authored automated unit and integration testing suites with JUnit and Mockito, ensuring rigorous test coverage and compliance with secure coding standards.",
+            "Actively led secure peer code reviews, software architectural decision-making, and bilingual Agile/Scrum delivery ceremonies in high-performing teams."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Software Engineer - Senior - ITSM (ServiceNow, Web Technologies & APIs)",
-        recipient: "To: IT Talent Acquisition Team | Cummins Latin America",
-        body1: "Dear Talent Acquisition Team at Cummins, I am writing to express my strong interest in the Software Engineer - Senior - ITSM position. With 4 years of software engineering experience specializing in ServiceNow platform development (Incident, Problem, Change Management), web technologies (JavaScript, HTML5, CSS3), and secure RESTful API integrations, I am eager to contribute to Cummins' world-class information technology operations and digital transformation initiatives in Guadalajara.",
-        body2: "Throughout my career at Isotech, I have spearheaded the design, implementation, and Level 3 support of critical enterprise solutions. Key accomplishments include configuring Business Rules, Script Includes, Client Scripts, and Flow Designer automations, building custom Catalog Items and Record Producers, and enforcing security governance through ACLs and UI Policies. Additionally, I built automated test suites using ServiceNow's Automated Test Framework (ATF) that cut release defects by 40%, while tuning relational SQL queries and analytics dashboards to achieve a 93% latency reduction.",
-        body3: "I bring hands-on experience integrating ServiceNow with external third-party software and systems via RESTful APIs and managing release deployments using Update Sets and Git version control. Furthermore, I hold certified bilingual English proficiency (C1-C2 with 177 hours), enabling seamless collaboration across international engineering teams in Agile/Scrum environments, with full commitment to the hybrid schedule in Guadalajara.",
-        body4: "Holding a degree in Computer Engineering and a solid foundation in ITIL principles, I combine analytical rigor with a problem-solving mindset committed to software reliability and business continuity. Thank you for your time and consideration; I welcome the opportunity to discuss how my technical qualifications align with Cummins' mission during an interview.",
+        subject: "Application for Senior Backend Developer (Java, Spring Boot & Microservices)",
+        recipient: "To: Talent Acquisition Team | Bradescard México",
+        body1: "Dear Talent Acquisition Team at Bradescard México, I am writing to express my strong enthusiasm for the Senior Backend Developer position at your Guadalajara / Tlaquepaque campus (Camino al ITESO). With 4 years of software engineering experience specializing in scalable Java and Spring Boot microservices architectures, enterprise RESTful APIs, and mission-critical cloud backends, I am excited by the opportunity to contribute to Bradescard's financial technology innovation backed by Banco Bradesco's international prestige.",
+        body2: "Throughout my career at Isotech, I have led backend systems design, development, and production stability. Key accomplishments include implementing resilient microservices adhering to Domain-Driven Design (DDD), Clean Architecture, and 12-Factor App principles, integrating enterprise security protocols using OAuth2 and JWT, and tuning SQL databases and Redis Cache layers to achieve a 93% query latency reduction. Furthermore, I built automated CI/CD pipelines with GitHub Actions and Docker, reducing deployment defects by 40%.",
+        body3: "I bring hands-on experience establishing secure, encrypted communications between backend microservices and mobile applications (Android/Kotlin and Flutter), implementing cloud observability and structured logging with AWS CloudWatch, and writing rigorous unit and integration tests with JUnit and Mockito. Additionally, I hold certified bilingual English proficiency (C1-C2 with 177 hours), enabling seamless Agile collaboration, with full commitment to your hybrid work schedule in Tlaquepaque.",
+        body4: "Holding a degree in Computer Engineering, I combine analytical rigor with a disciplined focus on transaction security, software maintainability, and business reliability. Thank you for your time and consideration; I welcome the opportunity to discuss how my qualifications align with Bradescard's goals during an interview.",
         closing: "Sincerely,"
       }
     }
