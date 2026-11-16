@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior TypeScript / AWS & Frontend Developer",
-      summary: "Senior Software Engineer con 4 años de experiencia especializándose en desarrollo frontend y cloud con TypeScript, JavaScript y arquitecturas basadas en componentes. Sólida experiencia consumiendo e integrando servicios en AWS (S3, APIs), administrando contenedores con Docker y automatizando flujos de despliegue continuo mediante pipelines de CI/CD. Dominio avanzado de maquetación responsive (HTML5, SCSS/CSS3), programación modular y optimización de rendimiento web. Bilingüe (Inglés C1-C2 certificado) con formación como Ingeniero en Informática.",
+      role: "Senior Fullstack Software Engineer",
+      summary: "Senior Fullstack Engineer con 4 años de experiencia especializándose en desarrollo web moderno y arquitecturas escalables con React, TypeScript, Node.js y NestJS. Sólida experiencia en construcción de SPAs modulares, componentes reutilizables, consumo de servicios cloud (AWS/Docker) y diseño de APIs RESTful con autenticación RBAC. Práctica activa integrando APIs de LLMs, flujos asistidos por IA (Cursor, Claude Code) y testing con Jest. Bilingüe (Inglés C1-C2) con título en Ingeniería en Informática.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & TypeScript (Enfoque)", techs: ["TypeScript", "JavaScript", "HTML5", "SCSS / CSS3", "React", "Responsive Design"], color: "#f59e0b" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git", "Postman", "Linux"], color: "#6366f1" },
-        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservicios", "Laravel", "PHP"], color: "#3b82f6" },
-        { category: "Bases de Datos", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
-        { category: "Móvil", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Metodologías & Calidad", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Web Accessibility"], color: "#8b5cf6" }
+        { category: "Frontend & TypeScript", techs: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5 / CSS3", "Custom Hooks", "Responsive (WCAG)"], color: "#f59e0b" },
+        { category: "Backend & APIs", techs: ["Node.js", "NestJS", "Express.js", "RESTful APIs", "RBAC / Auth", "Microservicios"], color: "#3b82f6" },
+        { category: "AI & Modern Tooling", techs: ["LLM APIs Integration", "Claude Code", "Cursor", "GitHub Copilot", "Agentic Workflows"], color: "#8b5cf6" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git / GitHub", "Postman", "Linux"], color: "#6366f1" },
+        { category: "Bases de Datos & Calidad", techs: ["MySQL", "MongoDB", "Unit Testing (Jest)", "Clean Code", "Code Reviews"], color: "#10b981" },
+        { category: "Móvil & Otros", techs: ["Flutter", "Dart", "Kotlin", "Python", "SQLite"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Full-Stack & Cloud Developer",
+          role: "Senior Fullstack Software Engineer",
           date: "2022 - Presente",
-          desc: "Responsable de la arquitectura frontend, integración de servicios en la nube (AWS) y entrega continua de plataformas web y software empresarial con TypeScript, garantizando alta disponibilidad y accesibilidad.",
+          desc: "Liderazgo técnico en desarrollo fullstack con React, TypeScript y Node.js/NestJS, diseñando SPAs de alta disponibilidad, APIs RESTful con control de acceso RBAC e integraciones cloud continuas.",
           bullets: [
-            "Diseñé e implementé arquitecturas web basadas en componentes con TypeScript, optimizando el renderizado de interfaces y la gestión reactiva del estado.",
-            "Integré y consumí servicios cloud de AWS (S3 para almacenamiento y APIs en la nube), garantizando transferencia segura y políticas de control de acceso.",
-            "Maqueté interfaces de usuario avanzadas con HTML5 semántico, SCSS/CSS3 y diseño responsive, asegurando accesibilidad web y compatibilidad cross-browser.",
-            "Automaticé el ciclo de despliegue mediante el diseño de pipelines de CI/CD integrados con Git y contenerización en Docker, reduciendo fallos en producción en un 40%.",
-            "Arquitecté y migré módulos legados hacia microservicios y APIs RESTful distribuidas con Node.js y TypeScript, reduciendo la latencia de respuesta en un 85%.",
-            "Optimicé planes de indexación y consultas complejas en bases de datos SQL (MySQL/SQLite), recortando el tiempo de procesamiento de reportes de 45s a 3s (mejora del 93%).",
-            "Implementé pruebas automatizadas y validación de endpoints REST con Postman y Jest, asegurando la resiliencia del software antes de cada pase a producción.",
-            "Estandaricé directrices de Clean Code, revisiones de código (PR reviews en Git) y documentación técnica, mentorizando a practicantes para integrarse a producción en menos de 2 meses."
+            "Diseñé e implementé SPAs modulares con React y TypeScript, creando componentes reutilizables y custom hooks que optimizaron el renderizado y la reactividad.",
+            "Arquitecté y desarrollé servicios backend y APIs RESTful con Node.js, NestJS y TypeScript, implementando autenticación y control de acceso RBAC seguro.",
+            "Integré servicios cloud en AWS (S3 para almacenamiento y APIs en la nube) y orquesté contenedores Docker, garantizando alta resiliencia y transferencia segura.",
+            "Automaticé flujos de despliegue continuo (CI/CD) en GitHub y revisiones de código, reduciendo en un 40% las incidencias y acelerando los ciclos de entrega.",
+            "Incorporé herramientas de desarrollo asistidas por IA (Claude Code, Cursor) e integración de APIs de LLMs, incrementando la productividad y calidad de entrega.",
+            "Optimicé consultas e indexación en bases de datos MySQL y MongoDB, reduciendo los tiempos de respuesta en reportes de 45s a 3s (mejora del 93%).",
+            "Escribí y mantuve suites de pruebas unitarias con Jest y validación rigurosa de endpoints, asegurando interfaces accesibles bajo pautas WCAG.",
+            "Fomenté estándares de Clean Code, documentación técnica de APIs y colaboración ágil bajo Scrum en equipos multidisciplinarios bilingües."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Senior Developer (TypeScript, AWS & Frontend)",
-        recipient: "Atención: Equipo de Selección de Talento IT | Azkait",
-        body1: "Estimado equipo de selección de Azkait, me dirijo a ustedes con gran entusiasmo para presentar mi postulación a la posición de Senior Developer (TypeScript, AWS & Frontend). Con 4 años de experiencia profesional en ingeniería de software, arquitectura frontend basada en componentes con TypeScript, maquetación avanzada (HTML5, SCSS/CSS3) y consumo de servicios en la nube con AWS y Docker, considero que mi perfil técnico puede integrarse con éxito y rapidez a sus proyectos de alto nivel.",
-        body2: "A lo largo de mi trayectoria en Isotech, he diseñado y entregado plataformas web empresariales transaccionales y de misión crítica. Mis principales logros incluyen la construcción de arquitecturas frontend modulares y tipadas con TypeScript, la integración de servicios cloud en AWS (S3, APIs RESTful), la automatización de entregas con Docker y CI/CD reduciendo incidencias en un 40%, y la optimización de latencia de servicios en un 85%.",
-        body3: "Cuento con un sólido dominio de estándares de maquetación responsive, accesibilidad web, revisiones de código en Git y metodologías ágiles (Scrum). Asimismo, cuento con nivel de inglés avanzado certificado (C1-C2), permitiéndome colaborar fluidamente en entornos internacionales y equipos distribuidos.",
-        body4: "Mi formación formal como Ingeniero en Informática y mi dominio riguroso de TypeScript me otorgan una curva de adopción y aprendizaje sumamente ágil ante cualquier framework o servicio cloud. Agradezco de antemano su atención y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Senior Fullstack Software Engineer (React, TypeScript & Node.js/NestJS)",
+        recipient: "Atención: Equipo de Selección de Talento IT | KMS Technology, Inc.",
+        body1: "Estimado equipo de selección de KMS Technology, me dirijo a ustedes con gran entusiasmo para presentar mi postulación a la posición de Senior Fullstack Software Engineer. Con 4 años de experiencia profesional en ingeniería de software, arquitectura frontend en React y TypeScript, servicios backend escalables con Node.js y NestJS, e integración de flujos modernos asistidos por IA, considero que mi perfil técnico y pasión por soluciones de alta calidad aportarán valor inmediato a sus proyectos de desarrollo de software.",
+        body2: "A lo largo de mi trayectoria en Isotech, he liderado el ciclo de vida completo de aplicaciones web y microservicios. Mis logros clave incluyen la creación de SPAs modulares con React y TypeScript, la construcción de APIs RESTful seguras con autenticación RBAC en Node.js/NestJS, la contenerización de entornos con Docker y la implementación de pipelines de CI/CD que redujeron las incidencias en producción en un 40%. Asimismo, he optimizado la persistencia en MySQL y MongoDB reduciendo tiempos de procesamiento en un 93%.",
+        body3: "Poseo experiencia práctica integrando APIs de modelos de lenguaje (LLMs) y utilizando herramientas avanzadas asistidas por IA (Claude Code, Cursor, Copilot) para acelerar la entrega de software con estándares estrictos de Clean Code. Además, cuento con certificación bilingüe en inglés (C1-C2 por Edutin Academy con 177 horas), lo que me permite colaborar con total naturalidad en equipos internacionales y ceremonias ágiles (Scrum).",
+        body4: "Mi formación como Ingeniero en Informática, mi capacidad de resolución analítica y mi compromiso con el manejo seguro y confiable de la información me preparan para adaptarme ágilmente a los entornos de KMS Technology. Agradezco sinceramente su tiempo y consideración, y quedo a su disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior TypeScript / AWS & Frontend Developer",
-      summary: "Senior Software Engineer with 4 years of experience specializing in frontend and cloud development with TypeScript, JavaScript, and component-based architectures. Strong track record integrating AWS services (S3, APIs), managing Docker containerization, and automating continuous delivery through CI/CD pipelines. Advanced expertise in responsive styling (HTML5, SCSS/CSS3), modular state management, and web performance optimization. Bilingual (English C1-C2 certified) with a Computer Engineering degree.",
+      role: "Senior Fullstack Software Engineer",
+      summary: "Senior Fullstack Engineer with 4 years of experience specializing in modern web development and scalable architectures with React, TypeScript, Node.js, and NestJS. Proven track record building modular SPAs, reusable component systems, cloud services (AWS/Docker), and secure RESTful APIs with RBAC authorization. Hands-on experience integrating LLM APIs, AI-assisted development workflows (Cursor, Claude Code), and automated testing with Jest. Bilingual (English C1-C2) with a Computer Engineering degree.",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & TypeScript (Focus)", techs: ["TypeScript", "JavaScript", "HTML5", "SCSS / CSS3", "React", "Responsive Design"], color: "#f59e0b" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git", "Postman", "Linux"], color: "#6366f1" },
-        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "RESTful APIs", "JWT / OAuth", "Microservices", "Laravel", "PHP"], color: "#3b82f6" },
-        { category: "Databases", techs: ["MySQL", "SQLite", "MongoDB"], color: "#10b981" },
-        { category: "Mobile", techs: ["Flutter", "Dart", "Kotlin", "Java"], color: "#ec4899" },
-        { category: "Methodologies & Quality", techs: ["Scrum / Agile", "Kanban", "Unit Testing (Jest)", "Clean Code", "Web Accessibility"], color: "#8b5cf6" }
+        { category: "Frontend & TypeScript", techs: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5 / CSS3", "Custom Hooks", "Responsive (WCAG)"], color: "#f59e0b" },
+        { category: "Backend & APIs", techs: ["Node.js", "NestJS", "Express.js", "RESTful APIs", "RBAC / Auth", "Microservices"], color: "#3b82f6" },
+        { category: "AI & Modern Tooling", techs: ["LLM APIs Integration", "Claude Code", "Cursor", "GitHub Copilot", "Agentic Workflows"], color: "#8b5cf6" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "CI/CD Pipelines", "Git / GitHub", "Postman", "Linux"], color: "#6366f1" },
+        { category: "Databases & Quality", techs: ["MySQL", "MongoDB", "Unit Testing (Jest)", "Clean Code", "Code Reviews"], color: "#10b981" },
+        { category: "Mobile & Other", techs: ["Flutter", "Dart", "Kotlin", "Python", "SQLite"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Full-Stack & Cloud Developer",
+          role: "Senior Fullstack Software Engineer",
           date: "2022 - Present",
-          desc: "Technical owner for frontend architecture, AWS cloud service integration, and continuous delivery of enterprise web platforms with TypeScript, ensuring high performance, scalability, and web accessibility.",
+          desc: "Technical owner for fullstack application development using React, TypeScript, and Node.js/NestJS, delivering high-availability SPAs, secure RBAC REST APIs, and CI/CD cloud workflows.",
           bullets: [
-            "Designed and implemented modern component-based web architectures using TypeScript, optimizing UI rendering and reactive state management for transactional systems.",
-            "Integrated and consumed cloud services on AWS (S3 for asset storage and RESTful cloud APIs), ensuring secure data transfer and access policies.",
-            "Crafted advanced UI layouts using semantic HTML5, SCSS/CSS3, and responsive design, ensuring web accessibility standards and cross-browser consistency.",
-            "Automated the deployment lifecycle by engineering CI/CD pipelines integrated with Git and Docker containerization, reducing production release bugs by 40%.",
-            "Architected and migrated legacy modules into distributed microservices and RESTful APIs with Node.js and TypeScript, slashing response latency by 85%.",
-            "Optimized index tuning and complex queries in SQL databases (MySQL/SQLite), cutting analytical report processing times from 45s to 3s (a 93% performance gain).",
-            "Implemented automated unit testing suites and REST endpoint validation using Postman and Jest, ensuring software resilience prior to production releases.",
-            "Standardized Clean Code guidelines, PR review processes in Git, and technical documentation, mentoring junior engineers to achieve production autonomy in under 2 months."
+            "Designed and implemented scalable SPAs using React and TypeScript, developing reusable component libraries and custom hooks that boosted rendering efficiency.",
+            "Architected and maintained backend services and RESTful APIs using Node.js, NestJS, and TypeScript, establishing secure authentication and RBAC authorization.",
+            "Integrated and consumed cloud services on AWS (S3 asset storage and REST APIs) with Docker containerization, ensuring security and data integrity.",
+            "Automated release cycles by building CI/CD pipelines in GitHub and driving code reviews, reducing production defects by 40% and shortening deployment lead time.",
+            "Leveraged AI-assisted development tools (Claude Code, Cursor) and integrated LLM APIs, significantly enhancing engineering velocity and test coverage.",
+            "Tuned SQL and NoSQL queries across MySQL and MongoDB, cutting analytical reporting processing latency from 45s down to 3s (a 93% performance gain).",
+            "Authored comprehensive automated unit testing suites with Jest and enforced web accessibility compliance following WCAG guidelines.",
+            "Standardized Clean Code conventions, API technical documentation, and Agile/Scrum ceremonies, collaborating seamlessly in international bilingual teams."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Senior Developer (TypeScript, AWS & Frontend)",
-        recipient: "To: IT Talent Acquisition Team | Azkait",
-        body1: "Dear Talent Acquisition Team at Azkait, I am writing to express my strong interest in joining your team as a Senior Developer (TypeScript, AWS & Frontend). With 4 years of software engineering experience specializing in component-driven frontend architecture with TypeScript, advanced UI styling (HTML5, SCSS/CSS3), and cloud service integration with AWS and Docker, I am confident in my ability to quickly add value to your high-performance client projects.",
-        body2: "Throughout my career at Isotech, I have designed and delivered mission-critical web platforms. Key achievements include building scalable, strictly-typed frontend architectures in TypeScript, consuming cloud services in AWS (S3, REST APIs), containerizing applications with Docker, and setting up automated CI/CD pipelines that reduced release defects by 40%.",
-        body3: "I bring solid expertise in responsive layout design, web accessibility standards, Git-based code reviews, and Agile methodologies. Furthermore, I hold certified bilingual proficiency in English (C1-C2), enabling seamless collaboration in distributed global engineering environments.",
-        body4: "My degree in Computer Engineering and deep command of TypeScript give me an exceptionally fast learning curve across frontend frameworks and cloud ecosystems. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
+        subject: "Application for Senior Fullstack Software Engineer (React, TypeScript & Node.js/NestJS)",
+        recipient: "To: IT Talent Acquisition Team | KMS Technology, Inc.",
+        body1: "Dear Talent Acquisition Team at KMS Technology, I am writing to express my strong interest in the Senior Fullstack Software Engineer role. With 4 years of software engineering experience specializing in modern React and TypeScript frontend architectures, scalable backend services with Node.js and NestJS, and AI-driven development workflows, I am confident in my ability to make an immediate, impactful contribution to your client-facing applications and digital solutions.",
+        body2: "Throughout my career at Isotech, I have taken ownership of critical web platforms and microservices. Key accomplishments include designing modular SPAs with reusable component systems and custom hooks, developing secure RESTful APIs with Role-Based Access Control (RBAC), containerizing applications with Docker, and establishing CI/CD automation that cut release defects by 40%. Additionally, I optimized relational and NoSQL database queries in MySQL and MongoDB, achieving a 93% performance gain in report processing.",
+        body3: "I bring hands-on experience integrating LLM APIs and leveraging AI-assisted engineering tools (Claude Code, Cursor, GitHub Copilot) to accelerate delivery cycles while enforcing strict Clean Code and automated testing (Jest) standards. Furthermore, I hold certified bilingual proficiency in English (C1-C2 with 177 hours), enabling fluent communication across international, cross-functional teams in fast-paced Agile/Scrum settings.",
+        body4: "Holding a B.S. in Computer Engineering, I combine strong analytical problem-solving with a disciplined approach to application security and data privacy. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications and how I can support KMS Technology's mission during an interview.",
         closing: "Sincerely,"
       }
     }

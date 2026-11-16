@@ -356,7 +356,7 @@ export default function TerminalPanel({
             <div style={{ color: 'var(--green-online)', fontWeight: 700, marginBottom: '6px' }}>
               ✓ [SUCCESS]: Candidate David Franco ready for onboarding!
             </div>
-            <div>⚡ Specialization: Senior TypeScript / AWS & Frontend Developer</div>
+            <div>⚡ Specialization: Senior Fullstack Software Engineer (React, TypeScript & Node.js/NestJS)</div>
             <div>📍 Modality: Open to On-site, Hybrid & Remote</div>
             <div>📧 Direct Contact: {cvData.contact.email}</div>
             <div>📱 Phone: {cvData.contact.phone}</div>
