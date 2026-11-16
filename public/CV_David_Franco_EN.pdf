@@ -16,7 +16,7 @@
 endobj
 4 0 obj
 <<
-/Length 9123
+/Length 9132
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-122.655295275590575 773.291574803149615 Td
-(SENIOR FULL STACK WEB DEVELOPER | REACT, NODE.JS & REDUX) Tj
+148.2227952755905847 773.291574803149615 Td
+(FULL STACK ENGINEER | TYPESCRIPT, REACT & NODE.JS) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Senior Full Stack Web Developer with 4 years of experience building complex SPAs and scalable backend services) Tj
-T* (using React, Redux \(Redux Toolkit\), TypeScript, and Node.js \(Express/NestJS\). Proven track record in global state) Tj
-T* (architecture, designing and consuming RESTful APIs, relational/NoSQL persistence \(MySQL/MongoDB\), and) Tj
-T* (database performance tuning \(93% latency reduction\). Automated testing with Jest and cloud deployments on AWS) Tj
-T* (with CI/CD. Bilingual \(English C1-C2\).) Tj
+(Full Stack Engineer with 4 years of experience architecting and shipping production applications with end-to-end) Tj
+T* (TypeScript: React on the frontend and Node.js/NestJS on the backend. Proven track record translating Figma designs) Tj
+T* (into reusable component ecosystems with Storybook, relational database modeling using ORMs \(TypeORM/Prisma\),) Tj
+T* (and working within AWS cloud environments. Autonomous technical owner focused on Clean Architecture, RESTful) Tj
+T* (APIs, and Jest testing. Bilingual \(English C1-C2\).) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,14 +117,14 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  Frontend & Redux: ) Tj
+(•  Frontend & TypeScript: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-139.0396850393700845 613.9844881889763428 Td
-(React  |  Redux Toolkit  |  TypeScript  |  JavaScript \(ES6+\)  |  SPAs  |  Custom Hooks) Tj
+158.0396850393700845 613.9844881889763428 Td
+(React  |  TypeScript  |  SPA Architecture  |  Storybook  |  Design Systems  |  Figma) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -138,21 +138,21 @@ BT
 10.9249999999999989 TL
 0. g
 142.6496850393700981 598.3939370078740012 Td
-(Node.js  |  Express.js  |  NestJS  |  RESTful APIs  |  Microservices  |  JWT/RBAC) Tj
+(Node.js  |  NestJS  |  Express.js  |  RESTful APIs  |  TypeScript  |  Microservices) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 582.8033858267715459 Td
-(•  Databases & Cache: ) Tj
+(•  Databases & ORMs: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-144.5496850393700754 582.8033858267715459 Td
-(SQL \(PostgreSQL/MySQL\)  |  MongoDB  |  Redis Cache  |  Query Optimization) Tj
+143.5996850393700868 582.8033858267715459 Td
+(SQL \(PostgreSQL/MySQL\)  |  TypeORM  |  Prisma  |  Data Modeling  |  Optimization) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -166,7 +166,7 @@ BT
 10.9249999999999989 TL
 0. g
 131.7246850393700583 567.212834645669318 Td
-(AWS \(S3/EC2/Lambda\)  |  Docker  |  GitHub Actions  |  CI/CD Pipelines  |  Git) Tj
+(AWS \(S3/EC2/CloudWatch\)  |  Docker  |  GitHub Actions  |  CI/CD Pipelines  |  Linux) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -180,7 +180,7 @@ BT
 10.9249999999999989 TL
 0. g
 133.909685039370089 551.6222834645668627 Td
-(Jest  |  Cypress  |  Unit & Integration Testing  |  Clean Code  |  Reviews) Tj
+(Jest  |  Cypress  |  Unit Testing  |  Clean Code  |  Code Reviews) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -194,7 +194,7 @@ BT
 10.9249999999999989 TL
 0. g
 147.9696850393700629 536.0317322834645211 Td
-(Clean Architecture  |  Large-Scale SPAs  |  Agile / Scrum  |  Performance Tuning) Tj
+(Clean Architecture  |  B2B SaaS  |  Async Queues  |  Agile / Scrum  |  End-to-End Ownership) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -241,45 +241,61 @@ BT
 11.7299999999999986 TL
 0. g
 42.5196850393700814 463.4648031496062686 Td
-(Senior Full Stack Web Developer) Tj
+(Full Stack Engineer) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Technical leadership in full-stack large-scale SPA engineering and microservices with React, Redux Toolkit, and) Tj
-T* (Node.js/NestJS, designing RESTful APIs and CI/CD pipelines.) Tj
+(Full-stack development of production applications using end-to-end TypeScript, building UIs with React and Storybook,) Tj
+T* (APIs with Node.js/NestJS, and AWS cloud.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 420.0947244094488155 Td
-(•  Architected and developed high-traffic, modular SPAs using React and TypeScript, handling complex state flows via) Tj
-T* (Redux and Redux Toolkit.) Tj
+(•  Took end-to-end ownership of product features across full-stack TypeScript, driving requirements and designs) Tj
+T* (through testing and production.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 394.2994488188976447 Td
-(•  Engineered scalable backend microservices and RESTful APIs using Node.js, Express.js, and NestJS, enforcing) Tj
-T* (secure authentication with JWT and RBAC.) Tj
+(•  Translated Figma designs into reusable, polished UI experiences using React, TypeScript, and modern component) Tj
+T* (development with Storybook.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 368.5041732283464739 Td
-(•  Tuned relational SQL schemas \(MySQL/PostgreSQL\) and MongoDB queries, slashing complex analytical reporting) Tj
-T* (latency by 93% \(from 45s down to 3s\).) Tj
+(•  Engineered application logic, scalable RESTful APIs, and integrations using Node.js and NestJS, enforcing secure) Tj
+T* (JWT and RBAC authorization.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 342.7088976377953031 Td
+(•  Designed relational data models and optimized queries using ORMs \(TypeORM/Prisma and SQL\), slashing report) Tj
+T* (processing latency by 93% \(from 45s to 3s\).) Tj
+ET
+BT
+/F1 9.6 Tf
+11.0399999999999991 TL
+0. g
+48.1889763779527627 316.9136220472441892 Td
+(•  Operated within AWS cloud environments \(managing configurations, S3 assets, CloudWatch logs\) and) Tj
+T* (containerized microservices with Docker.) Tj
+ET
+BT
+/F1 9.6 Tf
+11.0399999999999991 TL
+0. g
+48.1889763779527627 291.1183464566929615 Td
 (•  Configured automated CI/CD deployment pipelines using GitHub Actions and Git version control, cutting release) Tj
 T* (defect rates by 40%.) Tj
 ET
@@ -287,33 +303,17 @@ BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 316.9136220472441892 Td
-(•  Integrated AWS cloud infrastructure \(S3 asset storage, EC2, REST APIs\) and containerized applications with) Tj
-T* (Docker, ensuring high availability.) Tj
-ET
-BT
-/F1 9.6 Tf
-11.0399999999999991 TL
-0. g
-48.1889763779527627 291.1183464566929615 Td
-(•  Authored automated unit and integration testing suites with Jest and Cypress, safeguarding production reliability) Tj
-T* (and code stability.) Tj
-ET
-BT
-/F1 9.6 Tf
-11.0399999999999991 TL
-0. g
 48.1889763779527627 265.3230708661418475 Td
-(•  Optimized frontend rendering performance by implementing memoized Redux selectors, state normalization, and) Tj
-T* (component-level code splitting.) Tj
+(•  Authored comprehensive automated unit and integration testing suites with Jest, safeguarding application health) Tj
+T* (and long-term platform stability.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 239.5277952755906199 Td
-(•  Led technical code reviews, contributed to architectural system design, and participated actively in Agile/Scrum) Tj
-T* (ceremonies in fluent English.) Tj
+(•  Collaborated closely with product and design peers, proactively flagging blockers, and delivering features) Tj
+T* (independently in Agile/Scrum settings.) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -609,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116142458-06'00')
+/CreationDate (D:20261116143758-06'00')
 >>
 endobj
 20 0 obj
@@ -623,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010151 00000 n 
-0000011968 00000 n 
+0000010160 00000 n 
+0000011977 00000 n 
 0000000015 00000 n 
 0000000976 00000 n 
-0000010208 00000 n 
-0000010333 00000 n 
-0000010463 00000 n 
-0000010596 00000 n 
-0000010733 00000 n 
-0000010856 00000 n 
-0000010985 00000 n 
-0000011117 00000 n 
-0000011253 00000 n 
-0000011381 00000 n 
-0000011508 00000 n 
-0000011637 00000 n 
-0000011770 00000 n 
-0000011872 00000 n 
-0000012216 00000 n 
-0000012302 00000 n 
+0000010217 00000 n 
+0000010342 00000 n 
+0000010472 00000 n 
+0000010605 00000 n 
+0000010742 00000 n 
+0000010865 00000 n 
+0000010994 00000 n 
+0000011126 00000 n 
+0000011262 00000 n 
+0000011390 00000 n 
+0000011517 00000 n 
+0000011646 00000 n 
+0000011779 00000 n 
+0000011881 00000 n 
+0000012225 00000 n 
+0000012311 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <DBD3039B1589D09FAACD6C602F5C9037> <DBD3039B1589D09FAACD6C602F5C9037> ]
+/ID [ <F3410546DC247D0F1CBA4C86E864A926> <F3410546DC247D0F1CBA4C86E864A926> ]
 >>
 startxref
-12406
+12415
 %%EOF

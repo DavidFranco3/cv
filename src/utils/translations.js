@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Full Stack Web Developer | React, Node.js & Redux",
-      summary: "Senior Full Stack Web Developer con 4 años de experiencia construyendo SPAs complejas y servicios backend escalables con React, Redux (Redux Toolkit), TypeScript y Node.js (Express/NestJS). Especialista en gestión de estado global, diseño y consumo de APIs RESTful, persistencia en bases de datos relacionales y NoSQL (MySQL/MongoDB), y optimización de rendimiento (93% de reducción en latencia). Pruebas automatizadas con Jest y despliegues cloud en AWS con CI/CD. Bilingüe (Inglés C1-C2).",
+      role: "Full Stack Engineer | TypeScript, React & Node.js",
+      summary: "Full Stack Engineer con 4 años de experiencia construyendo y desplegando aplicaciones de producción con TypeScript de extremo a extremo: React en frontend y Node.js/NestJS en backend. Amplia experiencia traduciendo diseños de Figma en componentes reutilizables con Storybook, modelado de bases de datos relacionales con ORMs (TypeORM/Prisma) y trabajo en entornos cloud de AWS. Propietario técnico autónomo enfocado en Clean Architecture, APIs RESTful y testing con Jest. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & Redux", techs: ["React", "Redux Toolkit", "TypeScript", "JavaScript (ES6+)", "SPAs", "Custom Hooks"], color: "#f59e0b" },
-        { category: "Backend & Node.js", techs: ["Node.js", "Express.js", "NestJS", "RESTful APIs", "Microservicios", "JWT/RBAC"], color: "#3b82f6" },
-        { category: "Bases de Datos & Caché", techs: ["SQL (PostgreSQL/MySQL)", "MongoDB", "Redis Cache", "Query Optimization"], color: "#10b981" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/Lambda)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#6366f1" },
-        { category: "Testing & Calidad", techs: ["Jest", "Cypress", "Pruebas Unitarias & Integración", "Clean Code", "Reviews"], color: "#ec4899" },
-        { category: "Arquitectura & Ágil", techs: ["Clean Architecture", "SPAs a Gran Escala", "Agile / Scrum", "Performance Tuning"], color: "#8b5cf6" }
+        { category: "Frontend & TypeScript", techs: ["React", "TypeScript", "SPA Architecture", "Storybook", "Design Systems", "Figma"], color: "#f59e0b" },
+        { category: "Backend & Node.js", techs: ["Node.js", "NestJS", "Express.js", "RESTful APIs", "TypeScript", "Microservicios"], color: "#3b82f6" },
+        { category: "Bases de Datos & ORMs", techs: ["SQL (PostgreSQL/MySQL)", "TypeORM", "Prisma", "Data Modeling", "Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/CloudWatch)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#6366f1" },
+        { category: "Testing & Calidad", techs: ["Jest", "Cypress", "Pruebas Unitarias", "Clean Code", "Code Reviews"], color: "#ec4899" },
+        { category: "Arquitectura & Ágil", techs: ["Clean Architecture", "B2B SaaS", "Async Queues", "Agile / Scrum", "End-to-End Ownership"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Full Stack Web Developer",
+          role: "Full Stack Engineer",
           date: "2022 - Presente",
-          desc: "Liderazgo técnico en desarrollo full-stack de SPAs a gran escala y microservicios con React, Redux Toolkit y Node.js/NestJS, diseñando APIs RESTful y pipelines de CI/CD.",
+          desc: "Desarrollo full-stack de aplicaciones de producción con TypeScript de extremo a extremo, implementando UIs con React y Storybook, APIs con Node.js/NestJS y cloud en AWS.",
           bullets: [
-            "Arquitecté y desarrollé SPAs modulares de alto tráfico con React y TypeScript, gestionando flujos de datos complejos mediante Redux y Redux Toolkit.",
-            "Diseñé y mantuve microservicios backend y APIs RESTful escalables con Node.js, Express.js y NestJS, implementando autenticación segura con JWT y RBAC.",
-            "Optimizé consultas e indexación en bases de datos relacionales MySQL/PostgreSQL y MongoDB, reduciendo los tiempos de respuesta de 45s a 3s (mejora del 93%).",
-            "Automaticé flujos de integración y despliegue continuo (CI/CD) con GitHub Actions y control en Git, acelerando entregas y reduciendo fallos en un 40%.",
-            "Integré servicios cloud en AWS (S3 para almacenamiento y APIs en la nube) y orquesté contenedores con Docker, asegurando alta disponibilidad y resiliencia.",
-            "Escribí suites completas de pruebas unitarias y de integración con Jest y Cypress, garantizando estabilidad en producción y prevención de regresiones.",
-            "Optimizé el rendimiento de renderizado en el cliente mediante selectores memoizados en Redux, normalización de estado y lazy loading de componentes.",
-            "Colaboré activamente en revisiones de código, planificación de arquitectura y ceremonias ágiles Scrum en equipos internacionales bilingües en inglés."
+            "Asumí la responsabilidad integral (end-to-end) de funcionalidades clave en TypeScript, desde requerimientos y diseño hasta pruebas y producción.",
+            "Traduje diseños de Figma en experiencias de producto reutilizables con React y TypeScript, implementando flujos con Storybook y Design Systems.",
+            "Desarrollé la lógica de negocio, APIs RESTful e integraciones escalables en backend utilizando Node.js, NestJS y control de acceso seguro (JWT/RBAC).",
+            "Diseñé modelos de datos relacionales y optimicé consultas con ORMs (TypeORM/Prisma y SQL), reduciendo los tiempos de respuesta en un 93% (de 45s a 3s).",
+            "Operé dentro de entornos cloud en AWS (S3, CloudWatch, configuración y logs) y orquesté contenedores Docker para garantizar alta resiliencia.",
+            "Automaticé flujos de integración y despliegue continuo (CI/CD) con GitHub Actions y control en Git, reduciendo incidencias en producción en un 40%.",
+            "Escribí suites completas de pruebas unitarias y de integración con Jest, blindando la estabilidad de la plataforma y previniendo regresiones.",
+            "Colaboré estrechamente con equipos de producto y diseño, comunicando bloqueos a tiempo y entregando valor de forma autónoma bajo Scrum en inglés."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Senior Full Stack Web Developer (React, Node.js & Redux)",
-        recipient: "Atención: Equipo de Atracción de Talento | Empleos8",
-        body1: "Estimado equipo de selección de Empleos8, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Senior Full Stack Web Developer (React, Node.js & Redux) en modalidad 100% remota. Con 4 años de experiencia profesional en ingeniería de software, arquitectura de SPAs a gran escala y servicios backend escalables, me entusiasma la oportunidad de colaborar con su cliente internacional líder en la industria del entretenimiento y el deporte.",
-        body2: "A lo largo de mi trayectoria en Isotech, he asumido el liderazgo de aplicaciones web críticas y flujos de datos complejos. Mis logros clave incluyen el diseño de arquitecturas modulares en React y TypeScript, la gestión avanzada del estado global mediante Redux y Redux Toolkit (manejando caché de datos, sincronización asíncrona y normalización de entidades), y el desarrollo de APIs RESTful robustas en Node.js, Express y NestJS. Asimismo, optimicé consultas SQL y NoSQL reduciendo tiempos de latencia en un 93%, y automaticé pipelines de CI/CD que disminuyeron incidencias en un 40%.",
-        body3: "Cuento con amplia experiencia en pruebas unitarias y de integración con Jest y Cypress, despliegues contenerizados en Docker y consumo de servicios cloud en AWS. Además, cuento con nivel de inglés bilingüe certificado (C1-C2 por Edutin Academy con 177 horas acreditadas), lo que me permite explicar decisiones técnicas complejas con total fluidez, participar en sesiones de live coding en inglés y colaborar de forma autónoma con equipos globales multidisciplinarios.",
-        body4: "Mi formación como Ingeniero en Informática, mi capacidad de resolución analítica y mi enfoque pragmático orientado a resultados me preparan para integrarme de forma inmediata y generar valor duradero. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Full Stack Engineer (TypeScript, React, Node.js)",
+        recipient: "Atención: Equipo de Atracción de Talento | EQUALS TRUE",
+        body1: "Estimado equipo de selección de EQUALS TRUE, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Full Stack Engineer (TypeScript, React, Node.js). Me inspira profundamente la misión de EQUALS TRUE como talent partner auténtico comprometido con la igualdad salarial, la inclusión genuina y una cultura remota transparente para el mejor talento de las Américas.",
+        body2: "Cuento con 4 años de experiencia profesional construyendo y desplegando aplicaciones completas en producción con TypeScript de extremo a extremo: en frontend con React, traduciendo diseños de Figma en componentes reutilizables y documentados con Storybook; y en backend con Node.js y NestJS, estructurando APIs RESTful limpias, microservicios y colas asíncronas. En bases de datos relacionales, modelo esquemas eficientes y empleo ORMs (TypeORM y Prisma), logrando optimizar consultas críticas con una reducción del 93% en tiempos de respuesta.",
+        body3: "Tengo experiencia operando en entornos cloud en AWS (S3, CloudWatch, gestión de configuraciones y resolución de incidentes vía logs), orquestación con Docker y pipelines de CI/CD con GitHub Actions. Integro pruebas automatizadas con Jest como estándar de calidad y trabajo con total autonomía: priorizo la comunicación temprana de bloqueos, tomo ownership de las funcionalidades de punta a punta y colaboro fluidamente en inglés gracias a mi certificación C1-C2 (177 horas acreditadas por Edutin Academy).",
+        body4: "Mi formación en Ingeniería en Informática y mi pasión por crear software bien diseñado y confiable se alinean perfectamente con su cultura 'remote-first' e inclusiva. Agradezco sinceramente su tiempo y consideración, y espero con entusiasmo la oportunidad de conversar sobre cómo puedo sumar valor a su equipo.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Full Stack Web Developer | React, Node.js & Redux",
-      summary: "Senior Full Stack Web Developer with 4 years of experience building complex SPAs and scalable backend services using React, Redux (Redux Toolkit), TypeScript, and Node.js (Express/NestJS). Proven track record in global state architecture, designing and consuming RESTful APIs, relational/NoSQL persistence (MySQL/MongoDB), and database performance tuning (93% latency reduction). Automated testing with Jest and cloud deployments on AWS with CI/CD. Bilingual (English C1-C2).",
+      role: "Full Stack Engineer | TypeScript, React & Node.js",
+      summary: "Full Stack Engineer with 4 years of experience architecting and shipping production applications with end-to-end TypeScript: React on the frontend and Node.js/NestJS on the backend. Proven track record translating Figma designs into reusable component ecosystems with Storybook, relational database modeling using ORMs (TypeORM/Prisma), and working within AWS cloud environments. Autonomous technical owner focused on Clean Architecture, RESTful APIs, and Jest testing. Bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Frontend & Redux", techs: ["React", "Redux Toolkit", "TypeScript", "JavaScript (ES6+)", "SPAs", "Custom Hooks"], color: "#f59e0b" },
-        { category: "Backend & Node.js", techs: ["Node.js", "Express.js", "NestJS", "RESTful APIs", "Microservices", "JWT/RBAC"], color: "#3b82f6" },
-        { category: "Databases & Cache", techs: ["SQL (PostgreSQL/MySQL)", "MongoDB", "Redis Cache", "Query Optimization"], color: "#10b981" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/Lambda)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#6366f1" },
-        { category: "Testing & Quality", techs: ["Jest", "Cypress", "Unit & Integration Testing", "Clean Code", "Reviews"], color: "#ec4899" },
-        { category: "Architecture & Agile", techs: ["Clean Architecture", "Large-Scale SPAs", "Agile / Scrum", "Performance Tuning"], color: "#8b5cf6" }
+        { category: "Frontend & TypeScript", techs: ["React", "TypeScript", "SPA Architecture", "Storybook", "Design Systems", "Figma"], color: "#f59e0b" },
+        { category: "Backend & Node.js", techs: ["Node.js", "NestJS", "Express.js", "RESTful APIs", "TypeScript", "Microservices"], color: "#3b82f6" },
+        { category: "Databases & ORMs", techs: ["SQL (PostgreSQL/MySQL)", "TypeORM", "Prisma", "Data Modeling", "Optimization"], color: "#10b981" },
+        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2/CloudWatch)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#6366f1" },
+        { category: "Testing & Quality", techs: ["Jest", "Cypress", "Unit Testing", "Clean Code", "Code Reviews"], color: "#ec4899" },
+        { category: "Architecture & Agile", techs: ["Clean Architecture", "B2B SaaS", "Async Queues", "Agile / Scrum", "End-to-End Ownership"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Full Stack Web Developer",
+          role: "Full Stack Engineer",
           date: "2022 - Present",
-          desc: "Technical leadership in full-stack large-scale SPA engineering and microservices with React, Redux Toolkit, and Node.js/NestJS, designing RESTful APIs and CI/CD pipelines.",
+          desc: "Full-stack development of production applications using end-to-end TypeScript, building UIs with React and Storybook, APIs with Node.js/NestJS, and AWS cloud.",
           bullets: [
-            "Architected and developed high-traffic, modular SPAs using React and TypeScript, handling complex state flows via Redux and Redux Toolkit.",
-            "Engineered scalable backend microservices and RESTful APIs using Node.js, Express.js, and NestJS, enforcing secure authentication with JWT and RBAC.",
-            "Tuned relational SQL schemas (MySQL/PostgreSQL) and MongoDB queries, slashing complex analytical reporting latency by 93% (from 45s down to 3s).",
+            "Took end-to-end ownership of product features across full-stack TypeScript, driving requirements and designs through testing and production.",
+            "Translated Figma designs into reusable, polished UI experiences using React, TypeScript, and modern component development with Storybook.",
+            "Engineered application logic, scalable RESTful APIs, and integrations using Node.js and NestJS, enforcing secure JWT and RBAC authorization.",
+            "Designed relational data models and optimized queries using ORMs (TypeORM/Prisma and SQL), slashing report processing latency by 93% (from 45s to 3s).",
+            "Operated within AWS cloud environments (managing configurations, S3 assets, CloudWatch logs) and containerized microservices with Docker.",
             "Configured automated CI/CD deployment pipelines using GitHub Actions and Git version control, cutting release defect rates by 40%.",
-            "Integrated AWS cloud infrastructure (S3 asset storage, EC2, REST APIs) and containerized applications with Docker, ensuring high availability.",
-            "Authored automated unit and integration testing suites with Jest and Cypress, safeguarding production reliability and code stability.",
-            "Optimized frontend rendering performance by implementing memoized Redux selectors, state normalization, and component-level code splitting.",
-            "Led technical code reviews, contributed to architectural system design, and participated actively in Agile/Scrum ceremonies in fluent English."
+            "Authored comprehensive automated unit and integration testing suites with Jest, safeguarding application health and long-term platform stability.",
+            "Collaborated closely with product and design peers, proactively flagging blockers, and delivering features independently in Agile/Scrum settings."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Senior Full Stack Web Developer (React, Node.js & Redux)",
-        recipient: "To: Talent Acquisition Team | Empleos8",
-        body1: "Dear Talent Acquisition Team at Empleos8, I am writing to express my strong enthusiasm for the Senior Full Stack Web Developer position (React, Node.js & Redux) in the 100% remote modality. With 4 years of professional software engineering experience specializing in large-scale React SPAs, complex Redux state architectures, and scalable Node.js backend services, I am eager to contribute to your international team supporting modern applications in the entertainment and sports industry.",
-        body2: "Throughout my career at Isotech, I have taken ownership of mission-critical web platforms and microservices. Key milestones include architecting modular React and TypeScript applications, managing complex global client states with Redux and Redux Toolkit (entity normalization, asynchronous thunks, and cache invalidation), and engineering secure RESTful APIs using Node.js, Express.js, and NestJS. Additionally, I optimized relational SQL schemas and MongoDB queries to achieve a 93% latency reduction, while automating CI/CD pipelines that cut release defects by 40%.",
-        body3: "I bring hands-on experience authoring automated test suites with Jest and Cypress, containerizing services with Docker, and integrating AWS cloud infrastructure. Furthermore, I hold certified bilingual English proficiency (C1-C2 with 177 verified hours), enabling me to clearly articulate architectural decisions, perform screen-share live coding reviews, and collaborate seamlessly across distributed global engineering teams.",
-        body4: "Holding a Bachelor's Degree in Computer Engineering, I combine analytical rigor with an independent problem-solving mindset committed to software reliability and clean architecture. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
+        subject: "Application for Full Stack Engineer (TypeScript, React, Node.js)",
+        recipient: "To: Talent Acquisition Team | EQUALS TRUE",
+        body1: "Dear Talent Acquisition Team at EQUALS TRUE, I am writing to express my strong enthusiasm for the Full Stack Engineer (TypeScript, React, Node.js) position. I am deeply inspired by EQUALS TRUE's mission as an authentic, remote-first talent partner committed to wage equality, genuine inclusion, and creating exceptional workplace experiences for top talent across the Americas.",
+        body2: "I bring 4 years of professional software engineering experience architecting and shipping production applications with end-to-end TypeScript. On the frontend, I build modular React applications, turning Figma designs into reusable, production-ready experiences using Storybook workflows and Design Systems. On the backend, I engineer scalable RESTful APIs, business logic, and asynchronous flows with Node.js and NestJS, coupled with relational database modeling and ORMs (TypeORM, Prisma, SQL) where I reduced complex query execution times by 93%.",
+        body3: "My background includes managing AWS cloud environments (configurations, S3 assets, CloudWatch logs, troubleshooting), containerizing services with Docker, and setting up automated CI/CD pipelines with GitHub Actions. I maintain high engineering standards with comprehensive Jest test suites and pride myself on taking end-to-end ownership of features—communicating proactively and unblocking dependencies. Additionally, I hold certified bilingual English proficiency (C1-C2 with 177 verified hours), enabling effortless daily collaboration in remote international environments.",
+        body4: "Holding a Bachelor's Degree in Computer Engineering, I am excited about the prospect of bringing my technical expertise and collaborative spirit to EQUALS TRUE. Thank you very much for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }

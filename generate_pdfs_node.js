@@ -458,7 +458,7 @@ function createCoverLetterPdf(rawData, lang, outputPath) {
 
   const pdfBuffer = Buffer.from(doc.output('arraybuffer'));
   fs.writeFileSync(outputPath, pdfBuffer);
-  console.log('Cover Letter PDF generated successfully:', outputPath);
+  console.log(`Cover Letter PDF generated successfully: ${outputPath} (pages: ${doc.internal.getNumberOfPages()})`);
 }
 
 // Generate ES & EN PDFs directly to public directory
