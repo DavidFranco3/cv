@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Staff Engineer - Dotnet Fullstack",
-      summary: "Staff Engineer / Fullstack Developer con 4 años de experiencia construyendo arquitecturas escalables, servicios backend robustos con .NET Core, C# y APIs RESTful/GraphQL, e interfaces reactivas y modulares con React y TypeScript. Experiencia integral en optimización SQL, Entity Framework, gestión de identidad con Okta (SSO/RBAC), flujos de CI/CD con GitHub Actions y despliegues en Azure/AWS. Práctica avanzada implementando flujos de IA/RAG y herramientas productivas (Copilot, Cursor). Bilingüe (Inglés C1-C2).",
+      role: "Software Engineer - Senior - ITSM | ServiceNow & Systems",
+      summary: "Senior Software Engineer con 4 años de experiencia especializándose en desarrollo de software, diseño de soluciones en plataforma ServiceNow y gestión de servicios de TI (ITSM). Amplia experiencia en creación de Business Rules, Script Includes, Client Scripts, ACLs y automatización con Flow Designer, así como integración con APIs REST y tecnologías web (JavaScript, HTML5, CSS3). Experiencia en pruebas automatizadas con ATF, optimización de consultas SQL y soporte L3. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & .NET", techs: [".NET Core", "C#", "RESTful APIs", "Entity Framework", "GraphQL", "Microservicios"], color: "#3b82f6" },
-        { category: "Frontend & React", techs: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5/CSS3", "Componentes UI", "Responsive"], color: "#f59e0b" },
-        { category: "Cloud & CI/CD", techs: ["Azure", "AWS", "GitHub Actions", "Docker", "CI/CD Pipelines", "Git"], color: "#6366f1" },
-        { category: "Bases de Datos", techs: ["SQL (MySQL/SQL Server)", "Elasticsearch", "MongoDB", "Query Optimization"], color: "#10b981" },
-        { category: "AI & Herramientas", techs: ["AI / RAG Workflows", "LLM APIs Integration", "Cursor", "GitHub Copilot", "Replit"], color: "#8b5cf6" },
-        { category: "Seguridad & Calidad", techs: ["Okta (SSO/RBAC)", "Unit Testing (Jest)", "Clean Architecture", "Code Reviews", "Scrum"], color: "#ec4899" }
+        { category: "ServiceNow & ITSM", techs: ["ServiceNow", "ITSM (Incident/Change)", "Business Rules", "Script Includes", "Flow Designer"], color: "#3b82f6" },
+        { category: "Desarrollo Web & APIs", techs: ["JavaScript (ES6+)", "RESTful APIs", "HTML5/CSS3", "System Integrations", "Studio IDE"], color: "#f59e0b" },
+        { category: "Seguridad & Plataforma", techs: ["Access Control Lists (ACLs)", "UI Policies & Actions", "Update Sets", "Secure Coding"], color: "#6366f1" },
+        { category: "Testing & Calidad", techs: ["Automated Test Framework (ATF)", "Unit Testing", "CI/CD", "Git", "Soporte Nivel 3"], color: "#10b981" },
+        { category: "Datos & Analytics", techs: ["SQL (MySQL/SQL Server)", "Platform Analytics", "Dashboards", "Query Optimization"], color: "#8b5cf6" },
+        { category: "Metodología & IA", techs: ["ITIL Best Practices", "Agile / Scrum", "Virtual Agent", "Herramientas IA"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Staff Engineer - Dotnet Fullstack",
+          role: "Software Engineer - Senior - ITSM",
           date: "2022 - Presente",
-          desc: "Liderazgo técnico en desarrollo fullstack con .NET Core y React, arquitectando servicios escalables, APIs RESTful con autenticación Okta (SSO/RBAC), optimización de bases de datos y pipelines de CI/CD.",
+          desc: "Liderazgo técnico en desarrollo de aplicaciones empresariales y soluciones ITSM en ServiceNow, arquitectando flujos de trabajo, integraciones de APIs REST seguras y pipelines de CI/CD.",
           bullets: [
-            "Diseñé e implementé interfaces de usuario reactivas y componentes modulares con React y TypeScript, garantizando alto rendimiento y diseño responsivo accesible.",
-            "Arquitecté y desarrollé servicios backend y APIs RESTful/GraphQL de alto desempeño con .NET Core y C#, integrando Entity Framework para acceso eficiente a datos.",
-            "Implementé esquemas seguros de autenticación y autorización mediante Okta (SSO y control RBAC), protegiendo servicios críticos bajo estándares empresariales.",
-            "Automaticé flujos de integración y entrega continua (CI/CD) con GitHub Actions y gestión de versiones en Git, reduciendo en un 40% las incidencias en producción.",
-            "Optimizé consultas complejas, indexación y esquemas relacionales en SQL y Elasticsearch, logrando una reducción de tiempos de respuesta del 93% (de 45s a 3s).",
-            "Orquesté despliegues de microservicios contenerizados en Docker e integración de infraestructura cloud en Azure y AWS con alta disponibilidad y resiliencia.",
-            "Integré flujos de trabajo con IA (RAG y APIs de LLMs) y herramientas productivas avanzadas (GitHub Copilot, Cursor), acelerando la velocidad de entrega técnica.",
-            "Escribí suites de pruebas unitarias y de integración, fomentando Clean Architecture, revisiones de código y colaboración ágil bajo Scrum en equipos globales."
+            "Diseñé y desarrollé soluciones en ServiceNow (Incident, Problem y Change), configurando Business Rules, Script Includes, Client Scripts y Flow Designer.",
+            "Implementé esquemas de seguridad y control de acceso mediante ACLs, UI Policies y UI Actions, garantizando cumplimiento normativo y código seguro.",
+            "Construí integraciones bidireccionales entre ServiceNow y sistemas externos vía APIs RESTful y JSON, utilizando JavaScript moderno y Studio IDE.",
+            "Automaticé procesos de TI creando Catalog Items y Record Producers personalizados, agilizando la gestión de solicitudes y autoservicio para usuarios.",
+            "Diseñé y ejecuté suites de pruebas con Automated Test Framework (ATF) y pruebas unitarias, reduciendo defectos de regresión en producción en un 40%.",
+            "Optimizé consultas de base de datos SQL y dashboards analíticos de la plataforma, disminuyendo los tiempos de carga en reportes críticos en un 93%.",
+            "Gestioné despliegues mediante Update Sets y control de versiones en Git, participando en revisiones de código seguro y resolución de incidencias Nivel 3.",
+            "Promoví mejores prácticas de ITIL y marcos ágiles Scrum en equipos multidisciplinarios globales, elaborando documentación técnica para soporte."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Staff Engineer - Dotnet Fullstack (.NET Core, React, Azure & AI)",
-        recipient: "Atención: Equipo de Selección de Talento | Nagarro",
-        body1: "Estimado equipo de selección de Nagarro, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Staff Engineer - Dotnet Fullstack. Con 4 años de experiencia profesional construyendo arquitecturas escalables de software, servicios backend de alto rendimiento con .NET Core, desarrollo frontend moderno con React, e integración de capacidades emergentes de IA y flujos RAG, me identifico profundamente con el modelo de excelencia en ingeniería de producto digital de Nagarro y su cultura dinámica y no jerárquica.",
-        body2: "A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad integral de aplicaciones de misión crítica y microservicios. Mis logros incluyen el diseño de servicios backend y APIs RESTful/GraphQL con .NET Core, la implementación de interfaces modulares y accesibles con React, la gestión de identidad corporativa con Okta (SSO y RBAC), y la optimización de bases de datos SQL y motores de búsqueda reduciendo tiempos de latencia en un 93%. Asimismo, automaticé pipelines de CI/CD mediante GitHub Actions y contenedores Docker, disminuyendo las incidencias en producción en un 40%.",
-        body3: "Cuento con experiencia práctica implementando soluciones de Inteligencia Artificial (flujos RAG, integración de APIs de LLMs) y maximizando la velocidad y calidad del desarrollo mediante herramientas avanzadas (GitHub Copilot, Cursor). Adicionalmente, cuento con certificación bilingüe en inglés (C1-C2 con 177 horas acreditadas), lo que me permite colaborar de forma natural, proactiva y fluida en equipos multiculturales distribuidos a escala global.",
-        body4: "Mi formación como Ingeniero en Informática y mi pasión por los principios de Clean Architecture y entrega continua me permiten aportar visión técnica, buenas prácticas y valor medible desde el primer día. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Software Engineer - Senior - ITSM (ServiceNow, Web Technologies & APIs)",
+        recipient: "Atención: Equipo de Selección de Talento IT | Cummins Latin America",
+        body1: "Estimado equipo de selección de Cummins, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Software Engineer - Senior - ITSM. Con 4 años de experiencia profesional diseñando y desarrollando software empresarial, implementando soluciones en plataforma ServiceNow (Incident, Problem, Change Management), e integrando tecnologías web y APIs RESTful seguras, considero que mi trayectoria técnica y enfoque en calidad y resiliencia aportarán valor tangible a las operaciones de TI de Cummins en Guadalajara.",
+        body2: "A lo largo de mi trayectoria en Isotech, he liderado desarrollos críticos y soporte de nivel 3. Mis logros clave incluyen la configuración de Business Rules, Script Includes, Client Scripts y flujos con Flow Designer, la creación de Catalog Items y Record Producers, y la implementación de controles de seguridad mediante ACLs y UI Policies. Asimismo, desarrollé suites de pruebas con Automated Test Framework (ATF) y pruebas unitarias que redujeron las incidencias en un 40%, optimizando simultáneamente consultas SQL y dashboards analíticos para lograr una mejora de rendimiento del 93%.",
+        body3: "Cuento con sólida experiencia integrando ServiceNow con aplicaciones de terceros mediante servicios web (REST/JSON) y administrando ciclos de vida de código con Update Sets y Git bajo estándares de codificación segura. Además, cuento con certificación bilingüe en inglés (C1-C2 por Edutin Academy con 177 horas acreditadas), lo que me permite colaborar con total naturalidad en ceremonias ágiles (Scrum) y equipos globales multidisciplinarios, con total disposición para el esquema híbrido en Guadalajara.",
+        body4: "Mi formación como Ingeniero en Informática y mi compromiso con las mejores prácticas de ITIL y la mejora continua me preparan para integrarme con éxito a la cultura de excelencia e innovación de Cummins. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Staff Engineer - Dotnet Fullstack",
-      summary: "Staff Engineer / Fullstack Developer with 4 years of experience building scalable enterprise architectures, resilient backend services with .NET Core, C#, and RESTful/GraphQL APIs, alongside modular, responsive UIs with React and TypeScript. Hands-on expertise in SQL query optimization, Entity Framework, enterprise identity management with Okta (SSO/RBAC), CI/CD pipelines via GitHub Actions, and Azure/AWS cloud environments. Proven track record deploying AI/RAG workflows and modern tooling (Copilot, Cursor). Bilingual (English C1-C2).",
+      role: "Software Engineer - Senior - ITSM | ServiceNow & Systems",
+      summary: "Senior Software Engineer with 4 years of experience specializing in software design, ServiceNow platform solutions, and enterprise IT Service Management (ITSM). Proven track record developing Business Rules, Script Includes, Client Scripts, ACLs, and automated workflows using Flow Designer, integrated via RESTful APIs and web technologies (JavaScript, HTML5, CSS3). Strong experience in automated testing with ATF, SQL tuning, and Level 3 production support. Bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & .NET", techs: [".NET Core", "C#", "RESTful APIs", "Entity Framework", "GraphQL", "Microservices"], color: "#3b82f6" },
-        { category: "Frontend & React", techs: ["React", "TypeScript", "JavaScript (ES6+)", "HTML5/CSS3", "Reusable UI", "Responsive"], color: "#f59e0b" },
-        { category: "Cloud & CI/CD", techs: ["Azure", "AWS", "GitHub Actions", "Docker", "CI/CD Pipelines", "Git"], color: "#6366f1" },
-        { category: "Databases & Search", techs: ["SQL (MySQL/SQL Server)", "Elasticsearch", "MongoDB", "Query Optimization"], color: "#10b981" },
-        { category: "AI & Modern Tooling", techs: ["AI / RAG Workflows", "LLM APIs Integration", "Cursor", "GitHub Copilot", "Replit"], color: "#8b5cf6" },
-        { category: "Security & Quality", techs: ["Okta (SSO/RBAC)", "Unit Testing (Jest)", "Clean Architecture", "Code Reviews", "Scrum"], color: "#ec4899" }
+        { category: "ServiceNow & ITSM", techs: ["ServiceNow", "ITSM (Incident/Change)", "Business Rules", "Script Includes", "Flow Designer"], color: "#3b82f6" },
+        { category: "Web Development & APIs", techs: ["JavaScript (ES6+)", "RESTful APIs", "HTML5/CSS3", "System Integrations", "Studio IDE"], color: "#f59e0b" },
+        { category: "Security & Governance", techs: ["Access Control Lists (ACLs)", "UI Policies & Actions", "Update Sets", "Secure Coding"], color: "#6366f1" },
+        { category: "Testing & Quality", techs: ["Automated Test Framework (ATF)", "Unit Testing", "CI/CD", "Git", "Level 3 Support"], color: "#10b981" },
+        { category: "Data & Analytics", techs: ["SQL (MySQL/SQL Server)", "Platform Analytics", "Dashboards", "Query Optimization"], color: "#8b5cf6" },
+        { category: "Methodology & AI", techs: ["ITIL Best Practices", "Agile / Scrum", "Virtual Agent", "AI Productivity Tools"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Staff Engineer - Dotnet Fullstack",
+          role: "Software Engineer - Senior - ITSM",
           date: "2022 - Present",
-          desc: "Technical leadership in fullstack engineering with .NET Core and React, architecting scalable services, RESTful APIs with Okta SSO/RBAC authentication, database tuning, and automated CI/CD pipelines.",
+          desc: "Technical leadership in enterprise application development and ServiceNow ITSM solutions, architecting automated workflows, secure REST API integrations, and CI/CD deployment pipelines.",
           bullets: [
-            "Designed and built responsive, modular UI component architectures using React and TypeScript, optimizing render efficiency and cross-browser responsiveness.",
-            "Architected and developed high-throughput backend services and RESTful/GraphQL APIs using .NET Core and C#, leveraging Entity Framework for data persistence.",
-            "Implemented enterprise-grade authentication and authorization with Okta (SSO and RBAC), enforcing strict access controls across distributed microservices.",
-            "Configured and maintained automated CI/CD deployment pipelines using GitHub Actions and Git, accelerating release cycles and reducing defect rates by 40%.",
-            "Optimized relational SQL schemas, complex queries, and Elasticsearch indexes, slashing data reporting response times by 93% (from 45 seconds down to 3 seconds).",
-            "Orchestrated containerized microservices deployments with Docker and integrated cloud services across Azure and AWS, ensuring high availability and reliability.",
-            "Integrated modern AI capabilities (RAG workflows, LLM APIs) and adopted AI engineering tools (GitHub Copilot, Cursor), significantly boosting sprint throughput.",
-            "Authored automated unit and integration tests, championing Clean Architecture, rigorous code reviews, and bilingual Agile/Scrum cross-functional collaboration."
+            "Designed and developed ServiceNow solutions (Incident, Problem, Change), configuring Business Rules, Script Includes, Client Scripts, and Flow Designer.",
+            "Enforced enterprise platform security and governance by implementing ACLs, UI Policies, and UI Actions, adhering to strict secure coding principles.",
+            "Built bi-directional integrations between ServiceNow and third-party systems using RESTful APIs and JSON with modern JavaScript in Studio IDE.",
+            "Automated IT processes by creating custom Catalog Items and Record Producers, streamlining service request handling and employee self-service.",
+            "Authored automated test suites with Automated Test Framework (ATF) and unit tests, reducing regression defects in production releases by 40%.",
+            "Optimized underlying SQL queries and platform analytical dashboards, slashing data processing and reporting latency by 93% (from 45s to 3s).",
+            "Managed release packaging via Update Sets and Git version control, participating in secure peer code reviews and delivering Level 3 technical support.",
+            "Championed ITIL standards and Agile/Scrum delivery across cross-functional global teams, generating comprehensive technical documentation."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Staff Engineer - Dotnet Fullstack (.NET Core, React, Azure & AI)",
-        recipient: "To: Talent Acquisition Team | Nagarro",
-        body1: "Dear Talent Acquisition Team at Nagarro, I am writing to express my strong enthusiasm for the Staff Engineer - Dotnet Fullstack position. With 4 years of software engineering experience delivering scalable digital products, high-throughput backend services with .NET Core, modern responsive frontend architectures with React, and practical AI/RAG integrations, I am eager to contribute to Nagarro's culture of digital product engineering excellence and human-centric innovation.",
-        body2: "Throughout my work at Isotech, I have led technical implementations across the complete software lifecycle. Key milestones include architecting backend services and RESTful/GraphQL APIs with .NET Core, designing reusable UI component systems with React and TypeScript, integrating enterprise identity management via Okta (SSO/RBAC), and optimizing relational SQL schemas and search queries to achieve a 93% latency reduction. Furthermore, I automated CI/CD workflows using GitHub Actions and Docker, cutting deployment defects by 40%.",
-        body3: "I bring hands-on experience deploying AI-driven solutions—including Retrieval-Augmented Generation (RAG) and LLM API integrations—and leveraging cutting-edge engineering tooling (GitHub Copilot, Cursor) while enforcing strict Clean Architecture standards. In addition, I hold certified bilingual proficiency in English (C1-C2 with 177 verified hours), enabling seamless collaboration with global, distributed, and cross-functional Agile engineering teams.",
-        body4: "Holding a degree in Computer Engineering, I combine rigorous problem-solving with a continuous delivery mindset that translates technical excellence into measurable business value. Thank you for your time and consideration; I look forward to the opportunity of discussing how my experience aligns with Nagarro's goals during an interview.",
+        subject: "Application for Software Engineer - Senior - ITSM (ServiceNow, Web Technologies & APIs)",
+        recipient: "To: IT Talent Acquisition Team | Cummins Latin America",
+        body1: "Dear Talent Acquisition Team at Cummins, I am writing to express my strong interest in the Software Engineer - Senior - ITSM position. With 4 years of software engineering experience specializing in ServiceNow platform development (Incident, Problem, Change Management), web technologies (JavaScript, HTML5, CSS3), and secure RESTful API integrations, I am eager to contribute to Cummins' world-class information technology operations and digital transformation initiatives in Guadalajara.",
+        body2: "Throughout my career at Isotech, I have spearheaded the design, implementation, and Level 3 support of critical enterprise solutions. Key accomplishments include configuring Business Rules, Script Includes, Client Scripts, and Flow Designer automations, building custom Catalog Items and Record Producers, and enforcing security governance through ACLs and UI Policies. Additionally, I built automated test suites using ServiceNow's Automated Test Framework (ATF) that cut release defects by 40%, while tuning relational SQL queries and analytics dashboards to achieve a 93% latency reduction.",
+        body3: "I bring hands-on experience integrating ServiceNow with external third-party software and systems via RESTful APIs and managing release deployments using Update Sets and Git version control. Furthermore, I hold certified bilingual English proficiency (C1-C2 with 177 hours), enabling seamless collaboration across international engineering teams in Agile/Scrum environments, with full commitment to the hybrid schedule in Guadalajara.",
+        body4: "Holding a degree in Computer Engineering and a solid foundation in ITIL principles, I combine analytical rigor with a problem-solving mindset committed to software reliability and business continuity. Thank you for your time and consideration; I welcome the opportunity to discuss how my technical qualifications align with Cummins' mission during an interview.",
         closing: "Sincerely,"
       }
     }

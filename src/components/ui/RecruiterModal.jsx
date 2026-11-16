@@ -24,10 +24,10 @@ export default function RecruiterModal({
   if (!isOpen) return null;
 
   const atsSummaryText = `Candidato: José David Ayala Franco
-Rol: Staff Engineer - Dotnet Fullstack (.NET Core, React, Azure & AI)
+Rol: Software Engineer - Senior - ITSM (ServiceNow, Web Tech & APIs)
 Ubicación: Parácuaro, Michoacán, México
 Disponibilidad: Inmediata
-Modalidad de Trabajo: Presencial (On-Site), Híbrido o Remoto
+Modalidad de Trabajo: Presencial (On-Site), Híbrido o Remoto (Apertura Guadalajara)
 Teléfono: +52 453-152-7363
 Email: josedavidayalafranco3@gmail.com
 LinkedIn: https://linkedin.com/in/david-franco-247701220
@@ -51,7 +51,7 @@ VERSION:3.0
 N:Ayala Franco;José David;;;
 FN:José David Ayala Franco
 ORG:Senior Software Developer
-TITLE:Staff Engineer - Dotnet Fullstack
+TITLE:Software Engineer - Senior - ITSM
 TEL;TYPE=CELL,VOICE:+524531527363
 EMAIL;TYPE=INTERNET,PREF:josedavidayalafranco3@gmail.com
 URL:https://linkedin.com/in/david-franco-247701220
