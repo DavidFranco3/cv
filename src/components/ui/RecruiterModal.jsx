@@ -24,7 +24,7 @@ export default function RecruiterModal({
   if (!isOpen) return null;
 
   const atsSummaryText = `Candidato: José David Ayala Franco
-Rol: Senior Fullstack Software Engineer (React, TypeScript & Node.js/NestJS)
+Rol: Staff Engineer - Dotnet Fullstack (.NET Core, React, Azure & AI)
 Ubicación: Parácuaro, Michoacán, México
 Disponibilidad: Inmediata
 Modalidad de Trabajo: Presencial (On-Site), Híbrido o Remoto
@@ -51,7 +51,7 @@ VERSION:3.0
 N:Ayala Franco;José David;;;
 FN:José David Ayala Franco
 ORG:Senior Software Developer
-TITLE:Senior Fullstack Software Engineer
+TITLE:Staff Engineer - Dotnet Fullstack
 TEL;TYPE=CELL,VOICE:+524531527363
 EMAIL;TYPE=INTERNET,PREF:josedavidayalafranco3@gmail.com
 URL:https://linkedin.com/in/david-franco-247701220

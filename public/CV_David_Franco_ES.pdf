@@ -9,14 +9,14 @@
 <</Type /Annot /Subtype /Link /Rect [131.6537952755905962 751.4648031496062686 224.4857952755905899 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://github.com/DavidFranco3) >> >>
 <</Type /Annot /Subtype /Link /Rect [254.725795275590599 751.4648031496062686 352.2617952755906572 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.linkedin.com/in/david-franco-247701220/) >> >>
 <</Type /Annot /Subtype /Link /Rect [382.5017952755906663 751.4648031496062686 463.6217952755906708 740.1262204724408775] /Border [0 0 0] /A <</S /URI /URI (https://www.npmjs.com/~davidfranco3) >> >>
-<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 81.0711023622050106 323.9376850393701943 69.7325196850396196] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
+<</Type /Annot /Subtype /Link /Rect [192.5286850393701457 93.2600787401576099 323.9376850393701943 81.9214960629923326] /Border [0 0 0] /A <</S /URI /URI (https://app.edutin.com/verify/18696518) >> >>
 ]
 /Contents 4 0 R
 >>
 endobj
 4 0 obj
 <<
-/Length 9391
+/Length 9393
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-111.4727952755905989 773.291574803149615 Td
-(SENIOR FULLSTACK SOFTWARE ENGINEER  |  FULL STACK & BACKEND) Tj
+119.8727952755906614 773.291574803149615 Td
+(STAFF ENGINEER - DOTNET FULLSTACK  |  FULL STACK & BACKEND) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Senior Fullstack Engineer con 4 años de experiencia especializándose en desarrollo web moderno y arquitecturas) Tj
-T* (escalables con React, TypeScript, Node.js y NestJS. Sólida experiencia en construcción de SPAs modulares,) Tj
-T* (componentes reutilizables, consumo de servicios cloud \(AWS/Docker\) y diseño de APIs RESTful con autenticación) Tj
-T* (RBAC. Práctica activa integrando APIs de LLMs, flujos asistidos por IA \(Cursor, Claude Code\) y testing con Jest.) Tj
-T* (Bilingüe \(Inglés C1-C2\) con título en Ingeniería en Informática.) Tj
+(Staff Engineer / Fullstack Developer con 4 años de experiencia construyendo arquitecturas escalables, servicios) Tj
+T* (backend robustos con .NET Core, C# y APIs RESTful/GraphQL, e interfaces reactivas y modulares con React y) Tj
+T* (TypeScript. Experiencia integral en optimización SQL, Entity Framework, gestión de identidad con Okta \(SSO/RBAC\),) Tj
+T* (flujos de CI/CD con GitHub Actions y despliegues en Azure/AWS. Práctica avanzada implementando flujos de) Tj
+T* (IA/RAG y herramientas productivas \(Copilot, Cursor\). Bilingüe \(Inglés C1-C2\).) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,331 +117,324 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  Frontend & TypeScript: ) Tj
+(•  Backend & .NET: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-158.0396850393700845 613.9844881889763428 Td
-(React  |  TypeScript  |  JavaScript \(ES6+\)  |  HTML5 / CSS3  |  Custom Hooks  |  Responsive) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0. g
-53.8582677165354369 601.7955118110235162 Td
-(\(WCAG\)) Tj
+130.0146850393700788 613.9844881889763428 Td
+(.NET Core  |  C#  |  RESTful APIs  |  Entity Framework  |  GraphQL  |  Microservicios) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 586.2049606299211746 Td
-(•  Backend & APIs: ) Tj
+42.5196850393700814 598.3939370078740012 Td
+(•  Frontend & React: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-129.4446850393700572 586.2049606299211746 Td
-(Node.js  |  NestJS  |  Express.js  |  RESTful APIs  |  RBAC / Auth  |  Microservicios) Tj
+135.8096850393700947 598.3939370078740012 Td
+(React  |  TypeScript  |  JavaScript \(ES6+\)  |  HTML5/CSS3  |  Componentes UI  |  Responsive) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 570.614409448818833 Td
-(•  AI & Modern Tooling: ) Tj
+42.5196850393700814 582.8033858267715459 Td
+(•  Cloud & CI/CD: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-148.0646850393700618 570.614409448818833 Td
-(LLM APIs Integration  |  Claude Code  |  Cursor  |  GitHub Copilot  |  Agentic Workflows) Tj
+121.8446850393700629 582.8033858267715459 Td
+(Azure  |  AWS  |  GitHub Actions  |  Docker  |  CI/CD Pipelines  |  Git) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 555.0238582677164914 Td
-(•  Cloud & DevOps: ) Tj
+42.5196850393700814 567.212834645669318 Td
+(•  Bases de Datos: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-131.7246850393700583 555.0238582677164914 Td
-(AWS \(S3/EC2\)  |  Docker  |  CI/CD Pipelines  |  Git / GitHub  |  Postman  |  Linux) Tj
+127.2596850393700834 567.212834645669318 Td
+(SQL \(MySQL/SQL Server\)  |  Elasticsearch  |  MongoDB  |  Query Optimization) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 539.4333070866141497 Td
-(•  Bases de Datos & Calidad: ) Tj
+42.5196850393700814 551.6222834645668627 Td
+(•  AI & Herramientas: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-173.6196850393700686 539.4333070866141497 Td
-(MySQL  |  MongoDB  |  Unit Testing \(Jest\)  |  Clean Code  |  Code Reviews) Tj
+139.0396850393700845 551.6222834645668627 Td
+(AI / RAG Workflows  |  LLM APIs Integration  |  Cursor  |  GitHub Copilot  |  Replit) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 523.8427559055116944 Td
-(•  Móvil & Otros: ) Tj
+42.5196850393700814 536.0317322834645211 Td
+(•  Seguridad & Calidad: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-118.6146850393700873 523.8427559055116944 Td
-(Flutter  |  Dart  |  Kotlin  |  Python  |  SQLite) Tj
+149.584685039370072 536.0317322834645211 Td
+(Okta \(SSO/RBAC\)  |  Unit Testing \(Jest\)  |  Clean Architecture  |  Code Reviews  |  Scrum) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
-42.5196850393700814 508.2522047244094097 Td
+42.5196850393700814 520.4411811023621794 Td
 (•  Idiomas: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-92.7746850393700839 508.2522047244094097 Td
+92.7746850393700839 520.4411811023621794 Td
 (Español: Nativo  |  Inglés: C1-C2) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 479.9057480314959889 Td
+42.5196850393700814 492.0947244094487587 Td
 (EXPERIENCIA PROFESIONAL) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 476.5041732283463602 m
-552.7559055118110791 476.5041732283463602 l
+42.5196850393700814 488.6931496062990732 m
+552.7559055118110791 488.6931496062990732 l
 S
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 464.3151968503937042 Td
+42.5196850393700814 476.5041732283464171 Td
 (ISOTECH) Tj
 ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
 0. g
-463.9759055118111064 464.3151968503937042 Td
+463.9759055118111064 476.5041732283464171 Td
 (2022 - Actualidad) Tj
 ET
 BT
 /F4 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 451.2758267716535556 Td
-(Senior Fullstack Software Engineer) Tj
+42.5196850393700814 463.4648031496062686 Td
+(Staff Engineer - Dotnet Fullstack) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-42.5196850393700814 439.3703149606299689 Td
-(Liderazgo técnico en desarrollo fullstack con React, TypeScript y Node.js/NestJS, diseñando SPAs de alta disponibilidad,) Tj
-T* (APIs RESTful con control de acceso RBAC e integraciones cloud continuas.) Tj
+42.5196850393700814 451.5592913385826819 Td
+(Liderazgo técnico en desarrollo fullstack con .NET Core y React, arquitectando servicios escalables, APIs RESTful con) Tj
+T* (autenticación Okta \(SSO/RBAC\), optimización de bases de datos y pipelines de CI/CD.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 407.9057480314961026 Td
-(•  Diseñé e implementé SPAs modulares con React y TypeScript, creando componentes reutilizables y custom hooks) Tj
-T* (que optimizaron el renderizado y la reactividad.) Tj
+48.1889763779527627 420.0947244094488155 Td
+(•  Diseñé e implementé interfaces de usuario reactivas y componentes modulares con React y TypeScript,) Tj
+T* (garantizando alto rendimiento y diseño responsivo accesible.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 382.1104724409449318 Td
-(•  Arquitecté y desarrollé servicios backend y APIs RESTful con Node.js, NestJS y TypeScript, implementando) Tj
-T* (autenticación y control de acceso RBAC seguro.) Tj
+48.1889763779527627 394.2994488188976447 Td
+(•  Arquitecté y desarrollé servicios backend y APIs RESTful/GraphQL de alto desempeño con .NET Core y C#,) Tj
+T* (integrando Entity Framework para acceso eficiente a datos.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 356.315196850393761 Td
-(•  Integré servicios cloud en AWS \(S3 para almacenamiento y APIs en la nube\) y orquesté contenedores Docker,) Tj
-T* (garantizando alta resiliencia y transferencia segura.) Tj
+48.1889763779527627 368.5041732283464739 Td
+(•  Implementé esquemas seguros de autenticación y autorización mediante Okta \(SSO y control RBAC\), protegiendo) Tj
+T* (servicios críticos bajo estándares empresariales.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 330.5199212598425902 Td
-(•  Automaticé flujos de despliegue continuo \(CI/CD\) en GitHub y revisiones de código, reduciendo en un 40% las) Tj
-T* (incidencias y acelerando los ciclos de entrega.) Tj
+48.1889763779527627 342.7088976377953031 Td
+(•  Automaticé flujos de integración y entrega continua \(CI/CD\) con GitHub Actions y gestión de versiones en Git,) Tj
+T* (reduciendo en un 40% las incidencias en producción.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 304.7246456692914762 Td
-(•  Incorporé herramientas de desarrollo asistidas por IA \(Claude Code, Cursor\) e integración de APIs de LLMs,) Tj
-T* (incrementando la productividad y calidad de entrega.) Tj
+48.1889763779527627 316.9136220472441892 Td
+(•  Optimizé consultas complejas, indexación y esquemas relacionales en SQL y Elasticsearch, logrando una) Tj
+T* (reducción de tiempos de respuesta del 93% \(de 45s a 3s\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 278.9293700787402486 Td
-(•  Optimicé consultas e indexación en bases de datos MySQL y MongoDB, reduciendo los tiempos de respuesta en) Tj
-T* (reportes de 45s a 3s \(mejora del 93%\).) Tj
+48.1889763779527627 291.1183464566929615 Td
+(•  Orquesté despliegues de microservicios contenerizados en Docker e integración de infraestructura cloud en Azure) Tj
+T* (y AWS con alta disponibilidad y resiliencia.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 253.1340944881891346 Td
-(•  Escribí y mantuve suites de pruebas unitarias con Jest y validación rigurosa de endpoints, asegurando interfaces) Tj
-T* (accesibles bajo pautas WCAG.) Tj
+48.1889763779527627 265.3230708661418475 Td
+(•  Integré flujos de trabajo con IA \(RAG y APIs de LLMs\) y herramientas productivas avanzadas \(GitHub Copilot,) Tj
+T* (Cursor\), acelerando la velocidad de entrega técnica.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
-48.1889763779527627 227.338818897637907 Td
-(•  Fomenté estándares de Clean Code, documentación técnica de APIs y colaboración ágil bajo Scrum en equipos) Tj
-T* (multidisciplinarios bilingües.) Tj
+48.1889763779527627 239.5277952755906199 Td
+(•  Escribí suites de pruebas unitarias y de integración, fomentando Clean Architecture, revisiones de código y) Tj
+T* (colaboración ágil bajo Scrum en equipos globales.) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 190.204960629921402 Td
+42.5196850393700814 202.3939370078741149 Td
 (FORMACIÓN ACADÉMICA) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 186.8033858267718301 m
-552.7559055118110791 186.8033858267718301 l
+42.5196850393700814 198.9923622047245146 m
+552.7559055118110791 198.9923622047245146 l
 S
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 174.6144094488190603 Td
+42.5196850393700814 186.8033858267717733 Td
 (INSTITUTO TECNOLÓGICO SUPERIOR DE APATZINGÁN) Tj
 ET
 BT
 /F3 11.5 Tf
 13.2249999999999996 TL
 0. g
-491.9209055118110996 174.6144094488190603 Td
+491.9209055118110996 186.8033858267717733 Td
 (2018 - 2023) Tj
 ET
 BT
 /F1 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 161.8585039370079812 Td
+42.5196850393700814 174.0474803149606942 Td
 (Ingeniería en Informática) Tj
 ET
 BT
 /F3 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 149.9529921259844514 Td
+42.5196850393700814 162.1419685039371643 Td
 (Especialización en estructuras de datos, algoritmos y fundamentos de ingeniería de software.) Tj
 ET
 BT
 /F2 11.5 Tf
 13.2249999999999996 TL
 0. g
-42.5196850393700814 126.7088976377955305 Td
+42.5196850393700814 138.8978740157482434 Td
 (CERTIFICACIONES) Tj
 ET
 0.78 G
 0.8503937007874016 w
-42.5196850393700814 123.3073228346458876 m
-552.7559055118110791 123.3073228346458876 l
+42.5196850393700814 135.4962992125985863 m
+552.7559055118110791 135.4962992125985863 l
 S
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 111.1183464566930752 Td
+42.5196850393700814 123.3073228346457881 Td
 (Iniciación al Desarrollo con IA) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-470.2259055118111064 111.1183464566930752 Td
+470.2259055118111064 123.3073228346457881 Td
 (Octubre 2026 \(4 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 99.2128346456695454 Td
+42.5196850393700814 111.4018110236221446 Td
 (mouredev & BIG school) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 84.4726771653546393 Td
+42.5196850393700814 96.6616535433072386 Td
 (Inglés Nivel C1-C2) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-464.3759055118111405 84.4726771653546393 Td
+464.3759055118111405 96.6616535433072386 Td
 (Agosto 2026 \(177 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 72.5671653543309958 Td
+42.5196850393700814 84.756141732283595 Td
 (Edutin Academy  •  ID: 18696518  •  ) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-192.5286850393701457 72.5671653543309958 Td
+192.5286850393701457 84.756141732283595 Td
 (app.edutin.com/verify/18696518) Tj
 ET
 BT
 /F2 10.2 Tf
 11.7299999999999986 TL
 0. g
-42.5196850393700814 57.8270078740160898 Td
+42.5196850393700814 70.015984251968689 Td
 (Curso Aplicaciones Móviles) Tj
 ET
 BT
 /F3 9 Tf
 10.3499999999999996 TL
 0. g
-474.2759055118110609 57.8270078740160898 Td
+474.2759055118110609 70.015984251968689 Td
 (Agosto 2026 \(7 hrs\)) Tj
 ET
 BT
 /F1 9.3 Tf
 10.6950000000000003 TL
 0. g
-42.5196850393700814 45.9214960629924462 Td
+42.5196850393700814 58.1104724409451592 Td
 (BSG Institute  •  ID: 10971648A31172D0P1) Tj
 ET
 endstream
@@ -616,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116112559-06'00')
+/CreationDate (D:20261116114613-06'00')
 >>
 endobj
 20 0 obj
@@ -630,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010419 00000 n 
-0000012236 00000 n 
+0000010421 00000 n 
+0000012238 00000 n 
 0000000015 00000 n 
 0000000976 00000 n 
-0000010476 00000 n 
-0000010601 00000 n 
-0000010731 00000 n 
-0000010864 00000 n 
-0000011001 00000 n 
-0000011124 00000 n 
-0000011253 00000 n 
-0000011385 00000 n 
-0000011521 00000 n 
-0000011649 00000 n 
-0000011776 00000 n 
-0000011905 00000 n 
-0000012038 00000 n 
-0000012140 00000 n 
-0000012484 00000 n 
-0000012570 00000 n 
+0000010478 00000 n 
+0000010603 00000 n 
+0000010733 00000 n 
+0000010866 00000 n 
+0000011003 00000 n 
+0000011126 00000 n 
+0000011255 00000 n 
+0000011387 00000 n 
+0000011523 00000 n 
+0000011651 00000 n 
+0000011778 00000 n 
+0000011907 00000 n 
+0000012040 00000 n 
+0000012142 00000 n 
+0000012486 00000 n 
+0000012572 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <40E1977E7D1761FD63DF867C2BC2EE86> <40E1977E7D1761FD63DF867C2BC2EE86> ]
+/ID [ <5F05FD4B3A4707BAB41A2799E4A2ED2A> <5F05FD4B3A4707BAB41A2799E4A2ED2A> ]
 >>
 startxref
-12674
+12676
 %%EOF
