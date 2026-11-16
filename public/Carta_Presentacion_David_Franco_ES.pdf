@@ -10,7 +10,7 @@
 endobj
 4 0 obj
 <<
-/Length 3861
+/Length 3963
 >>
 stream
 0.5670000000000001 w
@@ -53,81 +53,82 @@ BT
 11.5 TL
 0. g
 62.3622047244094517 683.7167716535432191 Td
-(Atención: Equipo de Reclutamiento IT | The Adecco Group) Tj
+(Atención: Equipo de Selección de Talento | MedTrainer, Inc.) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
 62.3622047244094517 661.0396062992125508 Td
-(Solicitud de Empleo - Desarrollador Java Senior \(Kafka, AWS SQS & Spring Boot\)) Tj
+(Solicitud de Empleo - Senior Frontend Software Engineer \(React, TypeScript & Design) Tj
+T* (Systems\)) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 638.3624409448818824 Td
-(Estimado equipo de selección de The Adecco Group, me dirijo a ustedes con gran entusiasmo para) Tj
-T* (presentar mi candidatura a la posición de Desarrollador Java \(Kafka, SQS o RabbitMQ\) en modalidad) Tj
-T* (100% Home Office. Con 4 años de experiencia profesional en ingeniería de software, arquitectura de) Tj
-T* (microservicios con Java y Spring Boot, diseño de sistemas orientados a eventos e integración en la nube) Tj
-T* (de AWS, considero que mi trayectoria técnica y enfoque en calidad y entrega continua aportarán valor) Tj
-T* (inmediato a sus proyectos empresariales.) Tj
+62.3622047244094517 625.6065354330708033 Td
+(Estimado equipo de selección de MedTrainer, me dirijo a ustedes con gran entusiasmo para presentar mi) Tj
+T* (candidatura a la posición de Senior Frontend Software Engineer en modalidad 100% remota. Con 4 años) Tj
+T* (de experiencia profesional en desarrollo de software, especializándome en la arquitectura de SPAs) Tj
+T* (escalables con React y TypeScript, la construcción de Design Systems robustos y la integración de flujos) Tj
+T* (modernos asistidos por IA y protocolos MCP, me entusiasma la misión de MedTrainer de empoderar a) Tj
+T* (organizaciones de salud con tecnología regulatoria y de cumplimiento de primer nivel.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 551.9057480314960458 Td
-(A lo largo de mi trayectoria en Isotech, he liderado el desarrollo y escalamiento de servicios backend) Tj
-T* (críticos. Mis logros clave incluyen la implementación de microservicios resilientes bajo principios de Clean) Tj
-T* (Architecture y 12-Factor App, la integración de colas y mensajería asíncrona con Apache Kafka, AWS) Tj
-T* (SQS y RabbitMQ, y la construcción de APIs RESTful seguras con autenticación OAuth2 y JWT. Asimismo,) Tj
-T* (optimicé consultas complejas en bases de datos relacionales SQL reduciendo los tiempos de respuesta) Tj
-T* (en un 93% \(de 45s a 3s\), y automaticé pipelines de CI/CD que redujeron las incidencias en producción en) Tj
-T* (un 40%.) Tj
+62.3622047244094517 539.1498425196850803 Td
+(A lo largo de mi trayectoria en Isotech, he liderado decisiones de arquitectura frontend de alto impacto.) Tj
+T* (Mis logros clave incluyen el diseño de arquitecturas modulares en React y TypeScript, la gestión eficiente) Tj
+T* (del estado del servidor mediante React Query \(TanStack Query\) y estado global con Redux y Context API,) Tj
+T* (y la implementación de componentes reutilizables a partir de especificaciones de alta fidelidad en Figma.) Tj
+T* (Asimismo, implementé suites de pruebas automatizadas con Jest y Cypress para blindar la estabilidad del) Tj
+T* (producto y acelerar los ciclos de entrega.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
 62.3622047244094517 452.69314960629913 Td
-(Cuento con experiencia práctica en contenedores Docker, despliegues en infraestructura cloud de AWS) Tj
-T* (\(Lambda, SQS, S3\) y observabilidad con CloudWatch, además de la autoría de suites completas de) Tj
-T* (pruebas unitarias y de integración con JUnit y Mockito. Adicionalmente, cuento con nivel de inglés bilingüe) Tj
-T* (certificado \(C1-C2 por Edutin Academy con 177 horas acreditadas\), lo que me permite colaborar de forma) Tj
-T* (fluida y autónoma en equipos internacionales y ceremonias ágiles \(Scrum\).) Tj
+(Cuento con experiencia práctica integrando herramientas asistidas por IA y aprovechando el protocolo) Tj
+T* (MCP \(Model Context Protocol\) para maximizar la velocidad de ingeniería y el análisis de contexto de) Tj
+T* (código. Poseo sólida comprensión de la comunicación con APIs backend \(REST/JSON\) para colaborar) Tj
+T* (fluidamente en equipos full-stack, y cuento con nivel de inglés bilingüe certificado \(C1-C2 por Edutin) Tj
+T* (Academy con 177 horas\), lo que me permite colaborar de forma natural y autónoma en entornos ágiles) Tj
+T* (\(Scrum\) distribuidos internacionalmente.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 378.9923622047243157 Td
-(Mi formación como Ingeniero en Informática, mi orientación pragmática a resultados y mi compromiso con) Tj
-T* (la excelencia técnica me preparan para integrarme de forma inmediata bajo el esquema de contratación) Tj
-T* (100% nómina y trabajo remoto. Agradezco sinceramente su tiempo y consideración, y quedo a su entera) Tj
-T* (disposición para conversar en una entrevista.) Tj
+62.3622047244094517 366.2364566929132934 Td
+(Mi formación como Ingeniero en Informática, mi capacidad para transformar requerimientos complejos en) Tj
+T* (especificaciones técnicas claras y mi pasión por el código limpio y la excelencia de usuario se alinean) Tj
+T* (perfectamente con los estándares de MedTrainer. Agradezco sinceramente su tiempo y consideración, y) Tj
+T* (quedo a su entera disposición para conversar en una entrevista.) Tj
 ET
 BT
 /F1 10 Tf
 11.5 TL
 0. g
-62.3622047244094517 309.5435433070865656 Td
+62.3622047244094517 296.7876377952754865 Td
 (Atentamente,) Tj
 ET
 BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-62.3622047244094517 289.7010236220471597 Td
+62.3622047244094517 276.9451181102360806 Td
 (José David Ayala Franco) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-62.3622047244094517 276.9451181102360806 Td
-(Desarrollador Java Senior | Spring Boot, Kafka & Cloud) Tj
+62.3622047244094517 264.1892125984251152 Td
+(Senior Frontend Software Engineer | React & TypeScript) Tj
 ET
 endstream
 endobj
@@ -301,7 +302,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116140436-06'00')
+/CreationDate (D:20261116141448-06'00')
 >>
 endobj
 20 0 obj
@@ -315,33 +316,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000004065 00000 n 
-0000005882 00000 n 
+0000004167 00000 n 
+0000005984 00000 n 
 0000000015 00000 n 
 0000000152 00000 n 
-0000004122 00000 n 
-0000004247 00000 n 
-0000004377 00000 n 
-0000004510 00000 n 
-0000004647 00000 n 
-0000004770 00000 n 
-0000004899 00000 n 
-0000005031 00000 n 
-0000005167 00000 n 
-0000005295 00000 n 
-0000005422 00000 n 
-0000005551 00000 n 
-0000005684 00000 n 
+0000004224 00000 n 
+0000004349 00000 n 
+0000004479 00000 n 
+0000004612 00000 n 
+0000004749 00000 n 
+0000004872 00000 n 
+0000005001 00000 n 
+0000005133 00000 n 
+0000005269 00000 n 
+0000005397 00000 n 
+0000005524 00000 n 
+0000005653 00000 n 
 0000005786 00000 n 
-0000006130 00000 n 
-0000006216 00000 n 
+0000005888 00000 n 
+0000006232 00000 n 
+0000006318 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <EB50C363450367A8970944AB44DE64FB> <EB50C363450367A8970944AB44DE64FB> ]
+/ID [ <BAA4BA1CAA5E82E67E9DA1DC480384E2> <BAA4BA1CAA5E82E67E9DA1DC480384E2> ]
 >>
 startxref
-6320
+6422
 %%EOF
