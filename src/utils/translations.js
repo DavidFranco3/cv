@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Programador Senior Backend | Java & Microservicios",
-      summary: "Programador Senior Backend con 4 años de experiencia diseñando e implementando microservicios escalables y resilientes con Java, Spring Boot y APIs REST empresariales. Sólida trayectoria aplicando principios de Domain-Driven Design (DDD), Clean Architecture y 12-Factor App, con autenticación segura vía OAuth2/JWT y persistencia en SQL (PostgreSQL/SQL Server) y Redis Cache. Experiencia en observabilidad en AWS (CloudWatch), contenedores Docker y CI/CD con GitHub Actions. Bilingüe (Inglés C1-C2).",
+      role: "Desarrollador Java Senior | Spring Boot, Kafka & Cloud",
+      summary: "Desarrollador Java Senior con 4 años de experiencia construyendo microservicios escalables y arquitecturas orientadas a eventos (Kafka, AWS SQS, RabbitMQ) con Java y Spring Boot. Sólida trayectoria implementando APIs RESTful empresariales, integración de servicios en la nube de AWS (Lambda, S3, SQS), contenedores Docker/Kubernetes y pipelines de CI/CD. Especialista en optimización de consultas SQL (93% de reducción de latencia) y pruebas automatizadas con JUnit/Mockito. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,28 +27,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Security", "Microservicios", "REST APIs", "Spring Cloud"], color: "#3b82f6" },
-        { category: "Arquitectura & Patrones", techs: ["Clean Architecture", "Domain-Driven Design (DDD)", "Hexagonal", "Event-Driven"], color: "#f59e0b" },
-        { category: "Seguridad & Auth", techs: ["OAuth2", "JWT", "OpenID Connect", "TLS / Crypto", "RBAC", "Secure Coding"], color: "#6366f1" },
-        { category: "Bases de Datos & Caché", techs: ["SQL (PostgreSQL/MS SQL)", "Redis Cache", "MongoDB", "Query Optimization"], color: "#10b981" },
-        { category: "Cloud & DevOps", techs: ["AWS (CloudWatch/Fargate)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#8b5cf6" },
-        { category: "Testing & Móvil / Calidad", techs: ["JUnit", "Mockito", "Unit Testing", "Kotlin / Android", "Code Reviews"], color: "#ec4899" }
+        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Cloud", "Spring Security", "Microservicios", "REST APIs"], color: "#3b82f6" },
+        { category: "Event-Driven & Mensajería", techs: ["Apache Kafka", "AWS SQS", "RabbitMQ", "Event-Driven", "Asynchronous Messaging"], color: "#f59e0b" },
+        { category: "Cloud & DevOps", techs: ["AWS (Lambda/SQS/S3)", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "Terraform"], color: "#6366f1" },
+        { category: "Bases de Datos & Caché", techs: ["SQL (PostgreSQL/MySQL)", "Redis Cache", "Query Optimization", "Data Modeling"], color: "#10b981" },
+        { category: "Testing & Observabilidad", techs: ["JUnit", "Mockito", "Pruebas Unitarias", "CloudWatch", "Logging & APM"], color: "#8b5cf6" },
+        { category: "Metodología & Calidad", techs: ["Clean Architecture", "12-Factor App", "Agile / Scrum", "Code Reviews", "Mentoring"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Programador Senior Backend",
+          role: "Desarrollador Java Senior",
           date: "2022 - Presente",
-          desc: "Liderazgo técnico en desarrollo backend de microservicios con Java/Spring Boot, diseñando APIs REST de alta resiliencia, autenticación OAuth2/JWT y despliegues en AWS.",
+          desc: "Liderazgo técnico en desarrollo backend de microservicios con Java/Spring Boot, arquitectando flujos de mensajería orientados a eventos, integración cloud en AWS y CI/CD.",
           bullets: [
-            "Diseñé e implementé microservicios escalables con Java y Spring Boot, aplicando principios de Clean Architecture, Domain-Driven Design (DDD) y 12-Factor App.",
-            "Desarrollé APIs RESTful empresariales con Spring Security, implementando autenticación y autorización robusta mediante OAuth2, JWT y OpenID Connect.",
-            "Optimizé esquemas y consultas complejas en bases de datos SQL (PostgreSQL/SQL Server) y Redis Cache, reduciendo tiempos de respuesta de 45s a 3s (93%).",
-            "Automaticé pipelines de CI/CD con GitHub Actions y gestión de versiones en Git, agilizando el ciclo de entrega y reduciendo incidencias en un 40%.",
-            "Orquesté microservicios contenerizados en Docker y despliegues en la nube de AWS, configurando observabilidad, logs estructurados y métricas en CloudWatch.",
-            "Implementé comunicación segura con aplicaciones móviles nativas (Android/Kotlin y Flutter), aplicando cifrado, validación de certificados y tokens JWT.",
-            "Escribí suites de pruebas unitarias y de integración con JUnit y Mockito, asegurando alta cobertura de código y cumplimiento de estándares de seguridad.",
-            "Participé activamente en revisiones de código seguro, decisiones de diseño de arquitectura de software y ceremonias ágiles Scrum en equipos multidisciplinarios."
+            "Diseñé y desarrollé microservicios escalables y desacoplados con Java y Spring Boot, aplicando principios de Clean Architecture y 12-Factor App.",
+            "Implementé arquitecturas orientadas a eventos utilizando Apache Kafka, AWS SQS y RabbitMQ para procesamiento asíncrono y alta resiliencia del sistema.",
+            "Arquitecté APIs RESTful empresariales con Spring Security y autenticación OAuth2/JWT, garantizando comunicación segura y protección de endpoints.",
+            "Integré servicios cloud en AWS (Lambda para cómputo sin servidor, SQS para colas y S3 para almacenamiento), orquestando contenedores con Docker.",
+            "Optimizé esquemas y consultas complejas en bases de datos relacionales SQL y capas de caché con Redis, reduciendo la latencia de 45s a 3s (93%).",
+            "Automaticé flujos de integración y despliegue continuo (CI/CD) con GitHub Actions y scripts de infraestructura, reduciendo fallos en producción en un 40%.",
+            "Escribí suites completas de pruebas automatizadas unitarias y de integración con JUnit y Mockito, garantizando cobertura y calidad rigurosa del código.",
+            "Supervisé revisiones de código, colaboré en decisiones de arquitectura y promoví entregas continuas bajo Scrum en equipos globales bilingües."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Programador Senior Backend (Java, Spring Boot & Microservicios)",
-        recipient: "Atención: Equipo de Atracción de Talento | Bradescard México",
-        body1: "Estimado equipo de selección de Bradescard México, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Programador Senior Backend en su sede de Guadalajara / Tlaquepaque (Camino al ITESO). Con 4 años de experiencia profesional en ingeniería de software, arquitectura de microservicios con Java y Spring Boot, diseño de APIs RESTful y aplicaciones de misión crítica, me identifico profundamente con el liderazgo de Bradescard en el sector financiero y el respaldo global de Banco Bradesco.",
-        body2: "A lo largo de mi trayectoria en Isotech, he asumido la responsabilidad de diseñar y mantener soluciones backend escalables y resilientes. Mis logros clave incluyen la implementación de microservicios bajo principios de Domain-Driven Design (DDD), Clean Architecture y 12-Factor App, la integración de esquemas de autenticación con OAuth2 y JWT, y la optimización de bases de datos SQL y capas de caché en Redis, reduciendo los tiempos de respuesta en un 93%. Asimismo, automaticé flujos de CI/CD con GitHub Actions y Docker, reduciendo incidencias en producción en un 40%.",
-        body3: "Poseo experiencia comprobada asegurando la comunicación confiable y cifrada entre servicios backend y aplicaciones móviles (Android/Kotlin y Flutter), aplicando estándares de observabilidad y trazabilidad en AWS (CloudWatch) y suites de pruebas automatizadas con JUnit y Mockito. Adicionalmente, cuento con certificación bilingüe en inglés (C1-C2 por Edutin Academy con 177 horas), lo que me permite colaborar con agilidad en equipos técnicos multidisciplinarios, con total disponibilidad para su esquema de trabajo híbrido.",
-        body4: "Mi formación como Ingeniero en Informática y mi compromiso con el código limpio, la seguridad transaccional y el alto rendimiento me preparan para generar valor inmediato a las iniciativas digitales de Bradescard México. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
+        subject: "Solicitud de Empleo — Desarrollador Java Senior (Kafka, AWS SQS & Spring Boot)",
+        recipient: "Atención: Equipo de Reclutamiento IT | The Adecco Group",
+        body1: "Estimado equipo de selección de The Adecco Group, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Desarrollador Java (Kafka, SQS o RabbitMQ) en modalidad 100% Home Office. Con 4 años de experiencia profesional en ingeniería de software, arquitectura de microservicios con Java y Spring Boot, diseño de sistemas orientados a eventos e integración en la nube de AWS, considero que mi trayectoria técnica y enfoque en calidad y entrega continua aportarán valor inmediato a sus proyectos empresariales.",
+        body2: "A lo largo de mi trayectoria en Isotech, he liderado el desarrollo y escalamiento de servicios backend críticos. Mis logros clave incluyen la implementación de microservicios resilientes bajo principios de Clean Architecture y 12-Factor App, la integración de colas y mensajería asíncrona con Apache Kafka, AWS SQS y RabbitMQ, y la construcción de APIs RESTful seguras con autenticación OAuth2 y JWT. Asimismo, optimicé consultas complejas en bases de datos relacionales SQL reduciendo los tiempos de respuesta en un 93% (de 45s a 3s), y automaticé pipelines de CI/CD que redujeron las incidencias en producción en un 40%.",
+        body3: "Cuento con experiencia práctica en contenedores Docker, despliegues en infraestructura cloud de AWS (Lambda, SQS, S3) y observabilidad con CloudWatch, además de la autoría de suites completas de pruebas unitarias y de integración con JUnit y Mockito. Adicionalmente, cuento con nivel de inglés bilingüe certificado (C1-C2 por Edutin Academy con 177 horas acreditadas), lo que me permite colaborar de forma fluida y autónoma en equipos internacionales y ceremonias ágiles (Scrum).",
+        body4: "Mi formación como Ingeniero en Informática, mi orientación pragmática a resultados y mi compromiso con la excelencia técnica me preparan para integrarme de forma inmediata bajo el esquema de contratación 100% nómina y trabajo remoto. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Backend Developer | Java & Microservices",
-      summary: "Senior Backend Developer with 4 years of experience architecting and deploying scalable, resilient microservices using Java, Spring Boot, and enterprise REST APIs. Proven track record applying Domain-Driven Design (DDD), Clean Architecture, and 12-Factor App principles, with robust OAuth2/JWT security and database persistence across SQL (PostgreSQL/SQL Server) and Redis Cache. Hands-on experience with AWS cloud observability (CloudWatch), Docker, and CI/CD via GitHub Actions. Bilingual (English C1-C2).",
+      role: "Senior Java Developer | Spring Boot, Kafka & Cloud",
+      summary: "Senior Java Developer with 4 years of experience architecting scalable microservices and event-driven systems (Kafka, AWS SQS, RabbitMQ) using Java and Spring Boot. Proven expertise developing enterprise RESTful APIs, integrating AWS cloud services (Lambda, S3, SQS), Docker/Kubernetes containerization, and automated CI/CD pipelines. Strong track record in SQL query optimization (93% performance gain) and automated testing with JUnit/Mockito. Bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,28 +134,28 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Security", "Microservices", "REST APIs", "Spring Cloud"], color: "#3b82f6" },
-        { category: "Architecture & Patterns", techs: ["Clean Architecture", "Domain-Driven Design (DDD)", "Hexagonal", "Event-Driven"], color: "#f59e0b" },
-        { category: "Security & Auth", techs: ["OAuth2", "JWT", "OpenID Connect", "TLS / Crypto", "RBAC", "Secure Coding"], color: "#6366f1" },
-        { category: "Databases & Cache", techs: ["SQL (PostgreSQL/MS SQL)", "Redis Cache", "MongoDB", "Query Optimization"], color: "#10b981" },
-        { category: "Cloud & DevOps", techs: ["AWS (CloudWatch/Fargate)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Linux"], color: "#8b5cf6" },
-        { category: "Testing & Mobile / Quality", techs: ["JUnit", "Mockito", "Unit Testing", "Kotlin / Android", "Code Reviews"], color: "#ec4899" }
+        { category: "Backend & Java", techs: ["Java 11+", "Spring Boot", "Spring Cloud", "Spring Security", "Microservices", "REST APIs"], color: "#3b82f6" },
+        { category: "Event-Driven & Messaging", techs: ["Apache Kafka", "AWS SQS", "RabbitMQ", "Event-Driven", "Asynchronous Messaging"], color: "#f59e0b" },
+        { category: "Cloud & DevOps", techs: ["AWS (Lambda/SQS/S3)", "Docker", "Kubernetes", "GitHub Actions", "CI/CD", "Terraform"], color: "#6366f1" },
+        { category: "Databases & Cache", techs: ["SQL (PostgreSQL/MySQL)", "Redis Cache", "Query Optimization", "Data Modeling"], color: "#10b981" },
+        { category: "Testing & Observability", techs: ["JUnit", "Mockito", "Unit Testing", "CloudWatch", "Logging & APM"], color: "#8b5cf6" },
+        { category: "Methodology & Quality", techs: ["Clean Architecture", "12-Factor App", "Agile / Scrum", "Code Reviews", "Mentoring"], color: "#ec4899" }
       ],
       experience: [
         {
           company: "Isotech",
-          role: "Senior Backend Developer",
+          role: "Senior Java Developer",
           date: "2022 - Present",
-          desc: "Technical leadership in Java/Spring Boot backend microservices development, designing resilient RESTful APIs, OAuth2/JWT authentication, and cloud CI/CD deployments.",
+          desc: "Technical leadership in Java/Spring Boot backend microservices, architecting event-driven messaging pipelines, AWS cloud integration, and automated CI/CD.",
           bullets: [
-            "Designed and implemented scalable backend microservices using Java and Spring Boot, applying Clean Architecture, Domain-Driven Design (DDD), and 12-Factor App.",
-            "Engineered secure enterprise RESTful APIs with Spring Security, enforcing robust authentication and authorization via OAuth2, JWT, and OpenID Connect.",
-            "Tuned SQL schemas (PostgreSQL/MS SQL) and leveraged Redis Cache, slashing complex query and analytical reporting latency by 93% (from 45s down to 3s).",
-            "Configured automated CI/CD deployment pipelines using GitHub Actions and Git, accelerating release frequency and cutting production defect rates by 40%.",
-            "Orchestrated containerized microservices deployments with Docker across AWS cloud infrastructure, enabling structured logging and metrics in CloudWatch.",
-            "Established secure communications with mobile applications (Android/Kotlin and Flutter), enforcing TLS encryption, payload integrity, and token auth.",
-            "Authored automated unit and integration testing suites with JUnit and Mockito, ensuring rigorous test coverage and compliance with secure coding standards.",
-            "Actively led secure peer code reviews, software architectural decision-making, and bilingual Agile/Scrum delivery ceremonies in high-performing teams."
+            "Designed and developed scalable, decoupled microservices using Java and Spring Boot, applying Clean Architecture and 12-Factor App standards.",
+            "Implemented event-driven architectures leveraging Apache Kafka, AWS SQS, and RabbitMQ for resilient, high-throughput asynchronous message handling.",
+            "Architected enterprise RESTful APIs with Spring Security and OAuth2/JWT authentication, ensuring endpoint protection and data integrity.",
+            "Integrated AWS cloud infrastructure (Lambda serverless functions, SQS queues, and S3 asset storage) and orchestrated Docker containers.",
+            "Optimized relational SQL database schemas and implemented Redis Cache layers, slashing query and report processing latency by 93% (from 45s to 3s).",
+            "Configured automated CI/CD deployment pipelines using GitHub Actions and Git version control, cutting release defect rates by 40%.",
+            "Authored comprehensive automated unit and integration testing suites using JUnit and Mockito, ensuring high test coverage and robust code reliability.",
+            "Led peer code reviews, guided architectural system decisions, and mentored engineering teammates in bilingual Agile/Scrum cross-functional environments."
           ],
           commits: ["feat: rest-api-express", "perf: core-query-optim", "init: flutter-mobile-core"]
         }
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Application for Senior Backend Developer (Java, Spring Boot & Microservices)",
-        recipient: "To: Talent Acquisition Team | Bradescard México",
-        body1: "Dear Talent Acquisition Team at Bradescard México, I am writing to express my strong enthusiasm for the Senior Backend Developer position at your Guadalajara / Tlaquepaque campus (Camino al ITESO). With 4 years of software engineering experience specializing in scalable Java and Spring Boot microservices architectures, enterprise RESTful APIs, and mission-critical cloud backends, I am excited by the opportunity to contribute to Bradescard's financial technology innovation backed by Banco Bradesco's international prestige.",
-        body2: "Throughout my career at Isotech, I have led backend systems design, development, and production stability. Key accomplishments include implementing resilient microservices adhering to Domain-Driven Design (DDD), Clean Architecture, and 12-Factor App principles, integrating enterprise security protocols using OAuth2 and JWT, and tuning SQL databases and Redis Cache layers to achieve a 93% query latency reduction. Furthermore, I built automated CI/CD pipelines with GitHub Actions and Docker, reducing deployment defects by 40%.",
-        body3: "I bring hands-on experience establishing secure, encrypted communications between backend microservices and mobile applications (Android/Kotlin and Flutter), implementing cloud observability and structured logging with AWS CloudWatch, and writing rigorous unit and integration tests with JUnit and Mockito. Additionally, I hold certified bilingual English proficiency (C1-C2 with 177 hours), enabling seamless Agile collaboration, with full commitment to your hybrid work schedule in Tlaquepaque.",
-        body4: "Holding a degree in Computer Engineering, I combine analytical rigor with a disciplined focus on transaction security, software maintainability, and business reliability. Thank you for your time and consideration; I welcome the opportunity to discuss how my qualifications align with Bradescard's goals during an interview.",
+        subject: "Application for Senior Java Developer (Kafka, AWS SQS & Spring Boot)",
+        recipient: "To: IT Talent Acquisition Team | The Adecco Group",
+        body1: "Dear Talent Acquisition Team at The Adecco Group, I am writing to express my strong enthusiasm for the Senior Java Developer position (Kafka, SQS or RabbitMQ) in the 100% Home Office modality. With 4 years of software engineering experience specializing in Java and Spring Boot microservices, event-driven distributed architectures, and AWS cloud integration, I am confident in my ability to make an immediate, high-impact contribution to your enterprise client solutions.",
+        body2: "Throughout my career at Isotech, I have spearheaded the design and scalability of mission-critical backend systems. Key accomplishments include implementing decoupled microservices adhering to Clean Architecture and 12-Factor App principles, integrating asynchronous messaging pipelines using Apache Kafka, AWS SQS, and RabbitMQ, and securing enterprise RESTful APIs with OAuth2 and JWT. Furthermore, I optimized relational SQL database schemas achieving a 93% query latency reduction (cutting execution times from 45s down to 3s), and automated CI/CD deployment pipelines that reduced production defect rates by 40%.",
+        body3: "I bring hands-on expertise in Docker containerization, AWS cloud infrastructure (Lambda serverless functions, SQS queues, S3 asset storage) with CloudWatch monitoring, alongside comprehensive automated unit and integration testing using JUnit and Mockito. Additionally, I hold certified bilingual English proficiency (C1-C2 with 177 verified hours), enabling seamless collaboration in Agile/Scrum cross-functional teams.",
+        body4: "Holding a Bachelor's Degree in Computer Engineering, I combine disciplined problem-solving with a results-oriented, independent mindset that thrives in remote engineering environments. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }
