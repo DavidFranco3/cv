@@ -16,7 +16,7 @@
 endobj
 4 0 obj
 <<
-/Length 9336
+/Length 9332
 >>
 stream
 0.5670000000000001 w
@@ -32,8 +32,8 @@ BT
 /F2 10.5 Tf
 12.0749999999999993 TL
 0. g
-121.710295275590596 773.291574803149615 Td
-(SENIOR FULL STACK DEVELOPER | .NET CORE 8, REACT & NODE.JS) Tj
+139.9802952755905778 773.291574803149615 Td
+(SENIOR FULL STACK DEVELOPER | ANGULAR & AWS CLOUD) Tj
 ET
 BT
 /F1 9.6 Tf
@@ -94,11 +94,11 @@ BT
 11.2699999999999996 TL
 0. g
 42.5196850393700814 706.1104724409448181 Td
-(Senior Full Stack Developer con 4 años de experiencia construyendo y liderando sistemas transaccionales y) Tj
-T* (financieros escalables con .NET Core 8, Node.js y React \(v18+\). Especialista en diseño e integración de APIs REST) Tj
-T* (seguras, autenticación \(JWT/RBAC\), integración de proveedores de pago/SPEI y optimización de bases de datos) Tj
-T* (MySQL \(v8.0\) con 93% de reducción en latencia. Experiencia sólida en infraestructura cloud AWS, contenedores) Tj
-T* (Docker y pipelines de CI/CD bajo Scrum/Kanban. Bilingüe \(Inglés C1-C2\).) Tj
+(Senior Full Stack Developer con 4 años de experiencia diseñando, construyendo e implementando aplicaciones web) Tj
+T* (escalables y servicios cloud con Angular, TypeScript y AWS. Especialista en arquitectura de componentes modulares,) Tj
+T* (programación reactiva con RxJS, integración de servicios backend con Node.js y APIs RESTful. Amplia experiencia) Tj
+T* (optimizando rendimiento de aplicaciones y bases de datos relacionales \(reducción del 93% en latencia\), despliegues) Tj
+T* (contenerizados en Docker y pipelines de CI/CD bajo metodologías ágiles Scrum. Bilingüe \(Inglés C1-C2\).) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -117,84 +117,84 @@ BT
 10.9249999999999989 TL
 0. g
 42.5196850393700814 613.9844881889763428 Td
-(•  Backend & .NET Core: ) Tj
+(•  Frontend & Angular: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-154.2396850393700731 613.9844881889763428 Td
-(.NET Core 8  |  C#  |  Node.js  |  APIs RESTful  |  Microservicios  |  Entity Framework) Tj
+145.9746850393700868 613.9844881889763428 Td
+(Angular \(v14+\)  |  TypeScript  |  RxJS  |  NgRx  |  Componentes Modulares  |  SPAs) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 598.3939370078740012 Td
-(•  Frontend & React: ) Tj
+(•  Cloud & AWS: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-135.8096850393700947 598.3939370078740012 Td
-(React \(v18+\)  |  TypeScript  |  JavaScript \(ES6+\)  |  SPAs  |  Hooks  |  Redux Toolkit) Tj
+118.0446850393700799 598.3939370078740012 Td
+(AWS \(S3/EC2/Lambda\)  |  CloudWatch  |  Cloud Integration  |  IAM  |  API Gateway) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 582.8033858267715459 Td
-(•  Bases de Datos & SQL: ) Tj
+(•  Backend & APIs: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-158.8946850393700743 582.8033858267715459 Td
-(MySQL \(v8.0\)  |  PostgreSQL  |  Transacciones ACID  |  Query Tuning  |  Modelado) Tj
+129.4446850393700572 582.8033858267715459 Td
+(Node.js  |  Express.js  |  NestJS  |  APIs RESTful  |  Microservicios  |  JWT/RBAC) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 567.212834645669318 Td
-(•  Fintech & Transaccional: ) Tj
+(•  Bases de Datos & SQL: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-164.5946850393700913 567.212834645669318 Td
-(Sistemas Financieros  |  SPEI / Pagos  |  Integraciones  |  Seguridad  |  JWT/RBAC) Tj
+158.8946850393700743 567.212834645669318 Td
+(MySQL \(v8.0\)  |  PostgreSQL  |  Query Optimization  |  Indexing  |  Transacciones) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 551.6222834645668627 Td
-(•  Cloud & DevOps: ) Tj
+(•  DevOps & CI/CD: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-131.7246850393700583 551.6222834645668627 Td
-(AWS \(S3/EC2\)  |  Docker  |  GitHub Actions  |  CI/CD Pipelines  |  Git) Tj
+130.6796850393700993 551.6222834645668627 Td
+(Docker  |  Contenedores  |  GitHub Actions  |  CI/CD Pipelines  |  Git) Tj
 ET
 BT
 /F2 9.5 Tf
 10.9249999999999989 TL
 0. g
 42.5196850393700814 536.0317322834645211 Td
-(•  Testing & Ágil: ) Tj
+(•  Arquitectura & Ágil: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0. g
-119.7546850393700879 536.0317322834645211 Td
-(Jest  |  Pruebas Unitarias  |  Clean Architecture  |  Code Reviews  |  Scrum / Kanban) Tj
+143.3146850393700618 536.0317322834645211 Td
+(Clean Architecture  |  Optimización  |  Troubleshooting  |  Code Reviews  |  Scrum) Tj
 ET
 BT
 /F2 9.5 Tf
@@ -248,72 +248,72 @@ BT
 11.0399999999999991 TL
 0. g
 42.5196850393700814 451.5592913385826819 Td
-(Desarrollo full-stack de sistemas transaccionales y financieros escalables con .NET Core, Node.js y React \(v18+\), APIs) Tj
-T* (RESTful y cloud AWS.) Tj
+(Desarrollo full-stack y arquitectura de aplicaciones web escalables y soluciones cloud con Angular, TypeScript, Node.js y) Tj
+T* (AWS.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 420.0947244094488155 Td
-(•  Lideré el desarrollo y arquitectura de sistemas transaccionales y financieros de alta concurrencia, garantizando) Tj
-T* (consistencia ACID y alta disponibilidad.) Tj
+(•  Diseñé y desarrollé SPAs empresariales modernas con Angular \(v14+\) y TypeScript, implementando componentes) Tj
+T* (modulares y gestión reactiva con RxJS.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 394.2994488188976447 Td
-(•  Arquitecté e implementé interfaces web transaccionales con React \(v18+\), TypeScript y Redux Toolkit, optimizando) Tj
-T* (la experiencia del usuario y tiempos de carga.) Tj
+(•  Implementé soluciones cloud y servicios en AWS \(S3, EC2, Lambda y CloudWatch\), optimizando la infraestructura) Tj
+T* (y la integración entre capas de la plataforma.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 368.5041732283464739 Td
-(•  Diseñé y construí APIs REST robustas y microservicios con .NET Core 8 y Node.js, implementando autenticación) Tj
-T* (con JWT, RBAC y estándares de ciberseguridad.) Tj
+(•  Desarrollé y mantuve microservicios y APIs RESTful escalables con Node.js y NestJS, garantizando autenticación) Tj
+T* (segura con JWT y autorización basada en roles \(RBAC\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 342.7088976377953031 Td
-(•  Desarrollé módulos de integración con pasarelas de pago y proveedores financieros \(SPEI\), asegurando) Tj
-T* (validaciones de transferencias y conciliaciones en tiempo real.) Tj
+(•  Optimizé el rendimiento de persistencia en bases de datos relacionales MySQL/PostgreSQL, reestructurando) Tj
+T* (índices para reducir la latencia de 45s a 3s \(mejora del 93%\).) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 316.9136220472441892 Td
-(•  Modelé y optimicé bases de datos relacionales en MySQL \(v8.0\), reestructurando índices y consultas complejas) Tj
-T* (para reducir la latencia de 45s a 3s \(mejora del 93%\).) Tj
+(•  Diagnostiqué y resolví incidentes críticos de rendimiento en aplicaciones web y servicios cloud, aplicando) Tj
+T* (monitoreo activo de telemetría y perfiles de depuración.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 291.1183464566929615 Td
-(•  Gestioné infraestructura cloud en AWS \(S3, EC2, CloudWatch\) y orquesté contenedores con Docker, garantizando) Tj
-T* (resiliencia y monitoreo proactivo de incidencias.) Tj
+(•  Orquesté contenedores con Docker y administré configuraciones en entornos Linux, asegurando paridad estricta) Tj
+T* (entre entornos de desarrollo, pruebas y producción.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 265.3230708661418475 Td
-(•  Automaticé flujos de despliegue continuo \(CI/CD\) con GitHub Actions y control de versiones Git, reduciendo) Tj
-T* (errores en producción en un 40% y acelerando releases.) Tj
+(•  Automaticé flujos de integración y despliegue continuo \(CI/CD\) con GitHub Actions y control en Git, acelerando) Tj
+T* (entregas y reduciendo fallos en producción en un 40%.) Tj
 ET
 BT
 /F1 9.6 Tf
 11.0399999999999991 TL
 0. g
 48.1889763779527627 239.5277952755906199 Td
-(•  Escribí suites completas de pruebas unitarias con Jest, lideré revisiones de código y colaboré bajo Scrum/Kanban) Tj
-T* (en equipos multidisciplinarios en inglés bilingüe.) Tj
+(•  Colaboré activamente en ceremonias ágiles Scrum, estimación de requerimientos y revisiones de código,) Tj
+T* (comunicándome con fluidez en inglés bilingüe certificado.) Tj
 ET
 BT
 /F2 11.5 Tf
@@ -609,7 +609,7 @@ endobj
 19 0 obj
 <<
 /Producer (jsPDF 4.2.1)
-/CreationDate (D:20261116144602-06'00')
+/CreationDate (D:20261118141400-06'00')
 >>
 endobj
 20 0 obj
@@ -623,33 +623,33 @@ endobj
 xref
 0 21
 0000000000 65535 f 
-0000010364 00000 n 
-0000012181 00000 n 
+0000010360 00000 n 
+0000012177 00000 n 
 0000000015 00000 n 
 0000000976 00000 n 
-0000010421 00000 n 
-0000010546 00000 n 
-0000010676 00000 n 
-0000010809 00000 n 
-0000010946 00000 n 
-0000011069 00000 n 
-0000011198 00000 n 
-0000011330 00000 n 
-0000011466 00000 n 
-0000011594 00000 n 
-0000011721 00000 n 
-0000011850 00000 n 
-0000011983 00000 n 
-0000012085 00000 n 
-0000012429 00000 n 
-0000012515 00000 n 
+0000010417 00000 n 
+0000010542 00000 n 
+0000010672 00000 n 
+0000010805 00000 n 
+0000010942 00000 n 
+0000011065 00000 n 
+0000011194 00000 n 
+0000011326 00000 n 
+0000011462 00000 n 
+0000011590 00000 n 
+0000011717 00000 n 
+0000011846 00000 n 
+0000011979 00000 n 
+0000012081 00000 n 
+0000012425 00000 n 
+0000012511 00000 n 
 trailer
 <<
 /Size 21
 /Root 20 0 R
 /Info 19 0 R
-/ID [ <213ED8A3E9C4FBB1312BD3002D881921> <213ED8A3E9C4FBB1312BD3002D881921> ]
+/ID [ <B6C13C8348D7CA7258B676F6992EFE6A> <B6C13C8348D7CA7258B676F6992EFE6A> ]
 >>
 startxref
-12619
+12615
 %%EOF

@@ -16,8 +16,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Full Stack Developer | .NET Core 8, React & Node.js",
-      summary: "Senior Full Stack Developer con 4 años de experiencia construyendo y liderando sistemas transaccionales y financieros escalables con .NET Core 8, Node.js y React (v18+). Especialista en diseño e integración de APIs REST seguras, autenticación (JWT/RBAC), integración de proveedores de pago/SPEI y optimización de bases de datos MySQL (v8.0) con 93% de reducción en latencia. Experiencia sólida en infraestructura cloud AWS, contenedores Docker y pipelines de CI/CD bajo Scrum/Kanban. Bilingüe (Inglés C1-C2).",
+      role: "Senior Full Stack Developer | Angular & AWS Cloud",
+      summary: "Senior Full Stack Developer con 4 años de experiencia diseñando, construyendo e implementando aplicaciones web escalables y servicios cloud con Angular, TypeScript y AWS. Especialista en arquitectura de componentes modulares, programación reactiva con RxJS, integración de servicios backend con Node.js y APIs RESTful. Amplia experiencia optimizando rendimiento de aplicaciones y bases de datos relacionales (reducción del 93% en latencia), despliegues contenerizados en Docker y pipelines de CI/CD bajo metodologías ágiles Scrum. Bilingüe (Inglés C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -27,30 +27,30 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & .NET Core", techs: [".NET Core 8", "C#", "Node.js", "APIs RESTful", "Microservicios", "Entity Framework"], color: "#3b82f6" },
-        { category: "Frontend & React", techs: ["React (v18+)", "TypeScript", "JavaScript (ES6+)", "SPAs", "Hooks", "Redux Toolkit"], color: "#f59e0b" },
-        { category: "Bases de Datos & SQL", techs: ["MySQL (v8.0)", "PostgreSQL", "Transacciones ACID", "Query Tuning", "Modelado"], color: "#10b981" },
-        { category: "Fintech & Transaccional", techs: ["Sistemas Financieros", "SPEI / Pagos", "Integraciones", "Seguridad", "JWT/RBAC"], color: "#6366f1" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#ec4899" },
-        { category: "Testing & Ágil", techs: ["Jest", "Pruebas Unitarias", "Clean Architecture", "Code Reviews", "Scrum / Kanban"], color: "#8b5cf6" }
+        { category: "Frontend & Angular", techs: ["Angular (v14+)", "TypeScript", "RxJS", "NgRx", "Componentes Modulares", "SPAs"], color: "#f59e0b" },
+        { category: "Cloud & AWS", techs: ["AWS (S3/EC2/Lambda)", "CloudWatch", "Cloud Integration", "IAM", "API Gateway"], color: "#6366f1" },
+        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "NestJS", "APIs RESTful", "Microservicios", "JWT/RBAC"], color: "#3b82f6" },
+        { category: "Bases de Datos & SQL", techs: ["MySQL (v8.0)", "PostgreSQL", "Query Optimization", "Indexing", "Transacciones"], color: "#10b981" },
+        { category: "DevOps & CI/CD", techs: ["Docker", "Contenedores", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#ec4899" },
+        { category: "Arquitectura & Ágil", techs: ["Clean Architecture", "Optimización", "Troubleshooting", "Code Reviews", "Scrum"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
           role: "Senior Full Stack Developer",
           date: "2022 - Presente",
-          desc: "Desarrollo full-stack de sistemas transaccionales y financieros escalables con .NET Core, Node.js y React (v18+), APIs RESTful y cloud AWS.",
+          desc: "Desarrollo full-stack y arquitectura de aplicaciones web escalables y soluciones cloud con Angular, TypeScript, Node.js y AWS.",
           bullets: [
-            "Lideré el desarrollo y arquitectura de sistemas transaccionales y financieros de alta concurrencia, garantizando consistencia ACID y alta disponibilidad.",
-            "Arquitecté e implementé interfaces web transaccionales con React (v18+), TypeScript y Redux Toolkit, optimizando la experiencia del usuario y tiempos de carga.",
-            "Diseñé y construí APIs REST robustas y microservicios con .NET Core 8 y Node.js, implementando autenticación con JWT, RBAC y estándares de ciberseguridad.",
-            "Desarrollé módulos de integración con pasarelas de pago y proveedores financieros (SPEI), asegurando validaciones de transferencias y conciliaciones en tiempo real.",
-            "Modelé y optimicé bases de datos relacionales en MySQL (v8.0), reestructurando índices y consultas complejas para reducir la latencia de 45s a 3s (mejora del 93%).",
-            "Gestioné infraestructura cloud en AWS (S3, EC2, CloudWatch) y orquesté contenedores con Docker, garantizando resiliencia y monitoreo proactivo de incidencias.",
-            "Automaticé flujos de despliegue continuo (CI/CD) con GitHub Actions y control de versiones Git, reduciendo errores en producción en un 40% y acelerando releases.",
-            "Escribí suites completas de pruebas unitarias con Jest, lideré revisiones de código y colaboré bajo Scrum/Kanban en equipos multidisciplinarios en inglés bilingüe."
+            "Diseñé y desarrollé SPAs empresariales modernas con Angular (v14+) y TypeScript, implementando componentes modulares y gestión reactiva con RxJS.",
+            "Implementé soluciones cloud y servicios en AWS (S3, EC2, Lambda y CloudWatch), optimizando la infraestructura y la integración entre capas de la plataforma.",
+            "Desarrollé y mantuve microservicios y APIs RESTful escalables con Node.js y NestJS, garantizando autenticación segura con JWT y autorización basada en roles (RBAC).",
+            "Optimizé el rendimiento de persistencia en bases de datos relacionales MySQL/PostgreSQL, reestructurando índices para reducir la latencia de 45s a 3s (mejora del 93%).",
+            "Diagnostiqué y resolví incidentes críticos de rendimiento en aplicaciones web y servicios cloud, aplicando monitoreo activo de telemetría y perfiles de depuración.",
+            "Orquesté contenedores con Docker y administré configuraciones en entornos Linux, asegurando paridad estricta entre entornos de desarrollo, pruebas y producción.",
+            "Automaticé flujos de integración y despliegue continuo (CI/CD) con GitHub Actions y control en Git, acelerando entregas y reduciendo fallos en producción en un 40%.",
+            "Colaboré activamente en ceremonias ágiles Scrum, estimación de requerimientos y revisiones de código, comunicándome con fluidez en inglés bilingüe certificado."
           ],
-          commits: ["feat: net-core-spei-service", "perf: mysql-query-optim", "init: react18-portal"]
+          commits: ["feat: angular-cloud-module", "perf: mysql-query-optim", "init: aws-service-layer"]
         }
       ],
       education: {
@@ -96,12 +96,12 @@ export const translations = {
         present: "Actualidad"
       },
       coverLetter: {
-        subject: "Solicitud de Empleo — Desarrollador/a Full Stack Senior (.NET Core 8, React & Node.js)",
-        recipient: "Atención: María Esther Mejía | Reclutamiento & Talento Qualtop",
-        body1: "Estimada María Esther Mejía, me dirijo a usted con gran entusiasmo tras revisar su publicación en LinkedIn para presentar mi postulación a la posición de Desarrollador/a Full Stack Senior en Qualtop. Con 4 años de experiencia profesional en ingeniería de software, arquitectura de sistemas transaccionales y desarrollo full-stack con .NET Core 8, React (v18+) y Node.js, me motiva enormemente sumarme a su equipo para liderar soluciones de alto impacto en el sector financiero.",
-        body2: "A lo largo de mi trayectoria en Isotech, he diseñado y operado aplicaciones críticas de alta concurrencia. Cuento con sólida experiencia construyendo microservicios y APIs RESTful seguras con .NET Core y Node.js, integrando autenticación robusta (JWT, RBAC) e implementando conexiones directas con proveedores de servicios financieros y pasarelas de pago (incluyendo flujos de transferencias SPEI y conciliación automatizada). En el frontend, desarrollo interfaces modernas y reactivas con React (v18+), TypeScript y gestión de estado avanzada.",
-        body3: "En capa de persistencia e infraestructura, modelo y optimizo bases de datos relacionales en MySQL (v8.0), habiendo logrado una reducción del 93% en la latencia de procesamiento de transacciones (de 45s a 3s). Asimismo, opero entornos cloud en AWS (S3, EC2, CloudWatch), contenerización con Docker y automatización de pipelines de CI/CD con GitHub Actions, garantizando una entrega continua con cero fricciones bajo metodologías ágiles Scrum y Kanban.",
-        body4: "Graduado como Ingeniero en Informática y con nivel de inglés bilingüe certificado (C1-C2 por Edutin Academy con 177 horas), poseo una sólida capacidad analítica, comunicación transparente y enfoque en la calidad de código con pruebas unitarias en Jest. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista técnica.",
+        subject: "Solicitud de Empleo — Desarrollador FullStack (Angular / AWS) — Guadalajara",
+        recipient: "Atención: Equipo de Reclutamiento & Selección | Capital Empresarial Horizonte & adlytics GmbH",
+        body1: "Estimado equipo de selección de Capital Empresarial Horizonte y adlytics GmbH, me dirijo a ustedes con gran entusiasmo para presentar mi candidatura a la posición de Desarrollador FullStack Angular / AWS en Guadalajara bajo esquema híbrido. Con 4 años de experiencia profesional diseñando y desarrollando aplicaciones web modernas y soluciones cloud escalables, me entusiasma la oportunidad de aportar mi experiencia técnica al equipo de adlytics GmbH.",
+        body2: "A lo largo de mi trayectoria en Isotech, he liderado el desarrollo fullstack de plataformas de alto impacto. En el frontend, domino la arquitectura de aplicaciones SPA con Angular y TypeScript, implementando componentes modulares reutilizables y gestión reactiva del estado mediante RxJS y NgRx. En la capa backend y cloud, cuento con sólida experiencia diseñando e integrando microservicios y APIs RESTful seguras con Node.js, así como implementando y gestionando servicios en Amazon Web Services (AWS: S3, EC2, Lambda, CloudWatch y API Gateway).",
+        body3: "Cuento con un fuerte enfoque en resolución de problemas técnicos y optimización de rendimiento: reestructuré esquemas relacionales y consultas en bases de datos MySQL, logrando reducir la latencia de procesamiento de 45s a 3s (mejora del 93%). Asimismo, orquesto contenedores con Docker y automatizo pipelines de despliegue continuo (CI/CD) con GitHub Actions bajo metodologías ágiles Scrum, facilitando entregas predecibles y de alta calidad técnica.",
+        body4: "Como Ingeniero en Informática con inglés conversacional y bilingüe certificado (C1-C2 por Edutin Academy con 177 horas acreditadas), cuento con la disponibilidad requerida para colaborar en el esquema híbrido en Guadalajara y comunicarme con fluidez en entornos globales. Agradezco sinceramente su tiempo y consideración, y quedo a su entera disposición para conversar en una entrevista.",
         closing: "Atentamente,"
       }
     }
@@ -123,8 +123,8 @@ export const translations = {
     },
     cv: {
       name: "José David Ayala Franco",
-      role: "Senior Full Stack Developer | .NET Core 8, React & Node.js",
-      summary: "Senior Full Stack Developer with 4 years of experience building and leading scalable transactional and financial systems with .NET Core 8, Node.js, and React (v18+). Proven expertise in secure RESTful API design, authentication (JWT/RBAC), payment/SPEI provider integrations, and MySQL (v8.0) query optimization cutting latency by 93%. Solid background in AWS cloud infrastructure, Docker containerization, and automated CI/CD pipelines under Scrum/Kanban. Certified bilingual (English C1-C2).",
+      role: "Senior Full Stack Developer | Angular & AWS Cloud",
+      summary: "Senior Full Stack Developer with 4 years of experience architecting, building, and deploying scalable web applications and cloud services using Angular, TypeScript, and AWS. Proven expertise in modular component architecture, reactive programming with RxJS, backend integration with Node.js, and secure RESTful APIs. Solid background optimizing application and database performance (93% latency reduction), containerized deployments with Docker, and CI/CD pipelines under Agile Scrum. Certified bilingual (English C1-C2).",
       contact: {
         location: "Parácuaro, Michoacán, México",
         email: "josedavidayalafranco3@gmail.com",
@@ -134,30 +134,30 @@ export const translations = {
         npm: "davidfranco3"
       },
       skills: [
-        { category: "Backend & .NET Core", techs: [".NET Core 8", "C#", "Node.js", "RESTful APIs", "Microservices", "Entity Framework"], color: "#3b82f6" },
-        { category: "Frontend & React", techs: ["React (v18+)", "TypeScript", "JavaScript (ES6+)", "SPAs", "Hooks", "Redux Toolkit"], color: "#f59e0b" },
-        { category: "Databases & SQL", techs: ["MySQL (v8.0)", "PostgreSQL", "ACID Transactions", "Query Tuning", "Data Modeling"], color: "#10b981" },
-        { category: "Fintech & Transactional", techs: ["Financial Systems", "SPEI / Payments", "API Integrations", "Security", "JWT/RBAC"], color: "#6366f1" },
-        { category: "Cloud & DevOps", techs: ["AWS (S3/EC2)", "Docker", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#ec4899" },
-        { category: "Testing & Agile", techs: ["Jest", "Unit Testing", "Clean Architecture", "Code Reviews", "Scrum / Kanban"], color: "#8b5cf6" }
+        { category: "Frontend & Angular", techs: ["Angular (v14+)", "TypeScript", "RxJS", "NgRx", "Modular Components", "SPAs"], color: "#f59e0b" },
+        { category: "Cloud & AWS", techs: ["AWS (S3/EC2/Lambda)", "CloudWatch", "Cloud Integration", "IAM", "API Gateway"], color: "#6366f1" },
+        { category: "Backend & APIs", techs: ["Node.js", "Express.js", "NestJS", "RESTful APIs", "Microservices", "JWT/RBAC"], color: "#3b82f6" },
+        { category: "Databases & SQL", techs: ["MySQL (v8.0)", "PostgreSQL", "Query Optimization", "Indexing", "Transactions"], color: "#10b981" },
+        { category: "DevOps & CI/CD", techs: ["Docker", "Containers", "GitHub Actions", "CI/CD Pipelines", "Git"], color: "#ec4899" },
+        { category: "Architecture & Agile", techs: ["Clean Architecture", "Optimization", "Troubleshooting", "Code Reviews", "Scrum"], color: "#8b5cf6" }
       ],
       experience: [
         {
           company: "Isotech",
           role: "Senior Full Stack Developer",
           date: "2022 - Present",
-          desc: "Full-stack development of scalable transactional and financial systems with .NET Core, Node.js, React (v18+), RESTful APIs, and AWS.",
+          desc: "Full-stack development and architecture of scalable web applications and cloud solutions with Angular, TypeScript, Node.js, and AWS.",
           bullets: [
-            "Led the development and architecture of high-concurrency transactional and financial systems, ensuring strict ACID consistency and high availability.",
-            "Architected and built transactional web frontends using React (v18+), TypeScript, and Redux Toolkit, optimizing user workflows and client render speeds.",
-            "Designed and built robust RESTful APIs and microservices using .NET Core 8 and Node.js, enforcing JWT authentication, RBAC, and strict security protocols.",
-            "Engineered integrations with payment gateways and financial providers (SPEI), implementing real-time transfer validation and automated transaction reconciliations.",
-            "Modeled and optimized relational schemas in MySQL (v8.0), re-indexing and tuning queries to slash complex transaction latency by 93% (from 45s to 3s).",
-            "Managed AWS cloud environments (S3, EC2, CloudWatch logs) and containerized microservices with Docker, ensuring high platform resilience and uptime.",
-            "Automated continuous integration and deployment (CI/CD) pipelines using GitHub Actions and Git, reducing release defects by 40% and accelerating delivery cycles.",
-            "Authored comprehensive automated unit testing suites with Jest, led peer code reviews, and drove Agile (Scrum/Kanban) sprints in certified bilingual English."
+            "Architected and developed enterprise SPAs using Angular (v14+) and TypeScript, implementing reusable modular components and reactive flows with RxJS.",
+            "Implemented scalable cloud solutions and services on AWS (S3, EC2, Lambda, CloudWatch), optimizing infrastructure and inter-service communications.",
+            "Engineered scalable microservices and secure RESTful APIs using Node.js and NestJS, enforcing token authentication with JWT and role-based access control (RBAC).",
+            "Optimized relational database persistence schemas across MySQL/PostgreSQL, refactoring indexes and queries to slash latency by 93% (from 45s to 3s).",
+            "Troubleshot and resolved mission-critical application and cloud performance bottlenecks, leveraging real-time telemetry logs and proactive profiling.",
+            "Containerized full-stack services with Docker across Linux environments, ensuring rigorous parity between development, testing, and production runtimes.",
+            "Automated continuous integration and deployment (CI/CD) pipelines using GitHub Actions and Git, accelerating release cycles and reducing defects by 40%.",
+            "Collaborated actively within Agile Scrum teams, driving sprint planning, code reviews, and cross-functional alignment in certified bilingual English."
           ],
-          commits: ["feat: net-core-spei-service", "perf: mysql-query-optim", "init: react18-portal"]
+          commits: ["feat: angular-cloud-module", "perf: mysql-query-optim", "init: aws-service-layer"]
         }
       ],
       education: {
@@ -203,12 +203,12 @@ export const translations = {
         present: "Present"
       },
       coverLetter: {
-        subject: "Job Application — Senior Full Stack Developer (.NET Core 8, React & Node.js)",
-        recipient: "To: María Esther Mejía | Talent Acquisition & Recruiting Qualtop",
-        body1: "Dear María Esther Mejía, I am writing to express my strong enthusiasm for the Senior Full Stack Developer position at Qualtop, as featured in your LinkedIn announcement. With 4 years of professional software engineering experience designing transactional systems and building full-stack applications with .NET Core 8, React (v18+), and Node.js, I am eager to join your team and contribute to mission-critical financial platforms.",
-        body2: "Throughout my work at Isotech, I have engineered and maintained high-concurrency web applications and transactional microservices. My background includes developing secure RESTful APIs with .NET Core and Node.js, implementing JWT/RBAC authorization, and building seamless integrations with third-party financial providers and payment gateways (including real-time SPEI transfer validation). On the frontend, I deliver fast, modular user experiences using React (v18+), TypeScript, and modern state architectures.",
-        body3: "On the database and DevOps side, I specialize in relational schema design and query tuning in MySQL (v8.0), where I achieved a 93% reduction in execution latency (slashing response times from 45s down to 3s). I manage AWS cloud infrastructure (S3, EC2, CloudWatch logs), orchestrate Docker containers, and automate CI/CD release pipelines with GitHub Actions, ensuring smooth deployments within Agile (Scrum/Kanban) environments.",
-        body4: "Holding a Bachelor's Degree in Computer Engineering and certified bilingual English proficiency (C1-C2 with 177 verified hours), I combine deep architectural problem-solving with proactive ownership and clean testing practices (Jest). Thank you for your time and consideration; I welcome the opportunity to discuss how my experience aligns with Qualtop's goals during an interview.",
+        subject: "Job Application — FullStack Developer (Angular / AWS) — Guadalajara",
+        recipient: "To: Talent Acquisition & Recruitment Team | Capital Empresarial Horizonte & adlytics GmbH",
+        body1: "Dear Talent Acquisition Team at Capital Empresarial Horizonte and adlytics GmbH, I am writing to express my strong enthusiasm for the Senior FullStack Developer (Angular / AWS) position in Guadalajara under a hybrid scheme. With 4 years of professional experience designing, building, and deploying scalable web applications and cloud architectures, I am eager to contribute my full-stack expertise to the adlytics GmbH engineering team.",
+        body2: "Throughout my software engineering career at Isotech, I have spearheaded the architecture of high-performance web platforms. On the frontend, I specialize in building modular enterprise SPAs using Angular and TypeScript, leveraging reactive paradigms with RxJS and predictable state management. On the backend and cloud infrastructure, I bring hands-on experience designing secure RESTful APIs and microservices with Node.js, combined with practical expertise deploying and managing core Amazon Web Services (AWS: S3, EC2, Lambda, CloudWatch, API Gateway).",
+        body3: "I maintain a rigorous focus on analytical problem-solving and application optimization: by refactoring relational schemas and query structures in MySQL, I achieved a 93% reduction in execution latency (from 45s down to 3s). Furthermore, I containerize services with Docker and implement automated CI/CD pipelines with GitHub Actions within Agile Scrum environments, ensuring reliable releases and platform stability.",
+        body4: "Holding a Bachelor's Degree in Computer Engineering and certified bilingual English proficiency (C1-C2 with 177 verified hours), I offer both technical competence and collaborative communication, fully prepared for the hybrid scheme in Guadalajara. Thank you for your time and consideration; I welcome the opportunity to discuss my qualifications during an interview.",
         closing: "Sincerely,"
       }
     }
